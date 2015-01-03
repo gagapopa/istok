@@ -1,0 +1,7 @@
+C:\Maildisk\isbk-src\src - копия\CommonLib\bin\x86\Release\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\CommonLib\bin\x86\Release\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\CommonLib\bin\x86\Release\NLog.dll
+C:\Maildisk\isbk-src\src - копия\CommonLib\bin\x86\Release\NLog.xml
+C:\Maildisk\isbk-src\src - копия\CommonLib\obj\x86\Release\CommonLib.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\CommonLib\obj\x86\Release\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\CommonLib\obj\x86\Release\COTES.ISTOK.Common.pdb

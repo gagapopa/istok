@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="d:\vs2013\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Targets>
+  <Target Name="D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\istoksrv_ui.exe">
+   <Modules>
+    <Module Name="istoksrv_ui.exe">
+     <Namespaces>
+      <Namespace Name="COTES.ISTOK.Assignment.UI">
+       <Types>
+        <Type Name="CreateDBForm" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#createDBButton_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Проверка запросов SQL на уязвимости безопасности" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2014-05-27 01:56:45Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\global_UI" File="CreateDBForm.cs" Line="63">Строка запроса, переданная 'SqlCommand.CommandText.set(string)' в 'CreateDBForm.createDBButton_Click(object, EventArgs)', может содержать следующие переменные 'this.GetScript(Resources.StationCreateCoretables)'. Если любая из этих переменных может поступать из вводимых пользователем данных, рассмотрите возможность использования хранимой процедуры или параметризованного запроса SQL вместо сборки запроса с помощью конкатенации строк.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\global_UI" File="CreateDBForm.cs" Line="58">Строка запроса, переданная 'SqlCommand.CommandText.set(string)' в 'CreateDBForm.createDBButton_Click(object, EventArgs)', может содержать следующие переменные 'this.GetScript(Resources.StationCreateDatabase)'. Если любая из этих переменных может поступать из вводимых пользователем данных, рассмотрите возможность использования хранимой процедуры или параметризованного запроса SQL вместо сборки запроса с помощью конкатенации строк.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\global_UI" File="CreateDBForm.cs" Line="73">Строка запроса, переданная 'SqlCommand.CommandText.set(string)' в 'CreateDBForm.createDBButton_Click(object, EventArgs)', может содержать следующие переменные 'this.GetScript(Resources.StationInsertIntervals)'. Если любая из этих переменных может поступать из вводимых пользователем данных, рассмотрите возможность использования хранимой процедуры или параметризованного запроса SQL вместо сборки запроса с помощью конкатенации строк.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\global_UI" File="CreateDBForm.cs" Line="68">Строка запроса, переданная 'SqlCommand.CommandText.set(string)' в 'CreateDBForm.createDBButton_Click(object, EventArgs)', может содержать следующие переменные 'this.GetScript(Resources.StationInsertTypes)'. Если любая из этих переменных может поступать из вводимых пользователем данных, рассмотрите возможность использования хранимой процедуры или параметризованного запроса SQL вместо сборки запроса с помощью конкатенации строк.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Проверка запросов SQL на уязвимости безопасности" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Проверка запросов SQL на уязвимости безопасности</Name>
+   <Description>Командная строка SQL, создаваемая на основе введенных пользователем данных, уязвима к атакам типа "инъекция SQL". Microsoft SQL Server и другие серверы баз данных поддерживают хранимые процедуры и параметризованные SQL-запросы, что снижает риск атак путем внедрения.</Description>
+   <Resolution Name="WithNonLiterals">Строка запроса, переданная {0} в {1}, может содержать следующие переменные {2}. Если любая из этих переменных может поступать из вводимых пользователем данных, рассмотрите возможность использования хранимой процедуры или параметризованного запроса SQL вместо сборки запроса с помощью конкатенации строк.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Категория</String>
+  <String Key="Certainty">Достоверность</String>
+  <String Key="CollapseAll">Свернуть все</String>
+  <String Key="CheckId">ИД проверки</String>
+  <String Key="Error">Ошибка</String>
+  <String Key="Errors">ошибки</String>
+  <String Key="ExpandAll">Развернуть все</String>
+  <String Key="Help">Справка</String>
+  <String Key="Line">Строка</String>
+  <String Key="Messages">сообщения</String>
+  <String Key="LocationNotStoredInPdb">[расположение не сохранено в PDB]</String>
+  <String Key="Project">Проект</String>
+  <String Key="Resolution">Разрешение</String>
+  <String Key="Rule">Правило</String>
+  <String Key="RuleFile">Файл правил</String>
+  <String Key="RuleDescription">Описание правила</String>
+  <String Key="Source">Источник</String>
+  <String Key="Status">Состояние</String>
+  <String Key="Target">Цель</String>
+  <String Key="Warning">Предупреждение</String>
+  <String Key="Warnings">предупреждения</String>
+  <String Key="ReportTitle">Отчет по анализу кода</String>
+ </Localized>
+</FxCopReport>

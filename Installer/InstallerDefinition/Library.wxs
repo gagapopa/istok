@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include Define.wxi?>
+
+  <!--Структура устанавливаемых папок-->
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLLOCATION" Name="ISTOK">
+          <!--Станционный сервер-->
+          <Directory Id ="ISTOKSTATIONDIRECTORY" Name="Station" />
+
+          <!--Сервер сбора данных-->
+          <Directory Id="ISTOKLOADERDIRECTORY" Name="Loader" />
+
+          <!--Клиентское приложение-->
+          <Directory Id="ISTOKCLIENTDIRECTORY" Name="Client" />
+
+          <!--Документация-->
+          <Directory Id="ISTOKDOCUMENTATIONDIRECTORY" Name="Documentation" />
+        </Directory>
+      </Directory>
+
+      <!--Папка данных приложений (настройки, логи и проч)-->
+      <Directory Id="CommonAppDataFolder">
+        <Directory Id="OrganizationDataFolder" Name="COTES">
+          <Directory Id="ApplicationDataFolder" Name="ISTOK" />
+        </Directory>
+      </Directory>
+      
+      <!--Главное меню-->
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="!(loc.ISTOKFeatureName)">
+          <!--Флаг для создания папки в главном меню и ярлык для удаления программы-->
+          <Component Id="ISTOKMeta" Guid="A3ECF316-F596-437d-912C-A619F8BDE967">
+            <CreateFolder />
+            <RemoveFolder Id="ApplicationProgramsFolder"
+                          Directory="ApplicationProgramsFolder"
+                          On="uninstall"/>
+
+            <Shortcut Id="UninstallProduct"
+                      Name="!(loc.UninstallProductName)"
+                      Description="!(loc.UninstallProductDescription)"
+                      Target="[System64Folder]msiexec.exe"
+                      Arguments="/x [ProductCode]"/>
+
+            <RegistryValue Root="HKCU"
+                           Key="Software\COTES\ISTOK"
+                           Name="installed"
+                           Type="integer"
+                           Value="1"
+                           KeyPath="yes"/>
+          </Component>
+        </Directory>
+      </Directory>
+    </Directory>
+  </Fragment>
+</Wix>

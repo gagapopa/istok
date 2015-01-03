@@ -1,0 +1,41 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Fb.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Fb.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Fb.dll.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Fb.dll.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\obj\Debug\modFb.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\obj\Debug\COTES.ISTOK.Loader.Modules.Fb.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\obj\Debug\COTES.ISTOK.Loader.Modules.Fb.pdb
+C:\Maildisk\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Fb.dll
+C:\Maildisk\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Fb.pdb
+C:\Maildisk\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src\Modules\modFb\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Maildisk\isbk-src\src\Modules\modFb\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src\Modules\modFb\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+C:\Maildisk\isbk-src\src\Modules\modFb\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src\Modules\modFb\obj\Debug\modFb.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src\Modules\modFb\obj\Debug\COTES.ISTOK.Loader.Modules.Fb.dll
+C:\Maildisk\isbk-src\src\Modules\modFb\obj\Debug\COTES.ISTOK.Loader.Modules.Fb.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Fb.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Fb.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\obj\Debug\modFb.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\obj\Debug\COTES.ISTOK.Loader.Modules.Fb.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\obj\Debug\COTES.ISTOK.Loader.Modules.Fb.pdb

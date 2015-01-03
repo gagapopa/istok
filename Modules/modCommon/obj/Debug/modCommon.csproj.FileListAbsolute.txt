@@ -1,0 +1,29 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modCommon\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modCommon\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modCommon\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modCommon\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modCommon\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modCommon\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modCommon\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modCommon\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modCommon\obj\Debug\modCommon.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modCommon\obj\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modCommon\obj\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src\Modules\modCommon\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src\Modules\modCommon\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src\Modules\modCommon\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src\Modules\modCommon\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src\Modules\modCommon\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src\Modules\modCommon\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src\Modules\modCommon\obj\Debug\modCommon.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src\Modules\modCommon\obj\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src\Modules\modCommon\obj\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modCommon\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modCommon\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modCommon\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modCommon\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modCommon\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modCommon\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\Modules\modCommon\obj\Debug\modCommon.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\Modules\modCommon\obj\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modCommon\obj\Debug\COTES.ISTOK.Loader.Modules.Common.pdb

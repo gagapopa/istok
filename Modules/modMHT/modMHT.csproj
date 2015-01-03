@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5A5DA75-55F1-4B22-9781-2F4DBC7A16B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>COTES.ISTOK.Modules.modMHT</RootNamespace>
+    <AssemblyName>COTES.ISTOK.Loader.Modules.MHT</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DKSMDebug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="NLog">
+      <HintPath>..\..\packages\NLog.3.1.0.0\lib\net40\NLog.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MailMessageMimeParser.cs" />
+    <Compile Include="HAP\crc32.cs" />
+    <Compile Include="HAP\EncodingFoundException.cs" />
+    <Compile Include="HAP\HtmlAttribute.cs" />
+    <Compile Include="HAP\HtmlAttributeCollection.cs" />
+    <Compile Include="HAP\HtmlCmdLine.cs" />
+    <Compile Include="HAP\HtmlCommentNode.cs" />
+    <Compile Include="HAP\HtmlConsoleListener.cs" />
+    <Compile Include="HAP\HtmlDocument.cs" />
+    <Compile Include="HAP\HtmlElementFlag.cs" />
+    <Compile Include="HAP\HtmlEntity.cs" />
+    <Compile Include="HAP\HtmlNameTable.cs" />
+    <Compile Include="HAP\HtmlNode.cs" />
+    <Compile Include="HAP\HtmlNodeCollection.cs" />
+    <Compile Include="HAP\HtmlNodeNavigator.cs" />
+    <Compile Include="HAP\HtmlNodeType.cs" />
+    <Compile Include="HAP\HtmlParseError.cs" />
+    <Compile Include="HAP\HtmlParseErrorCode.cs" />
+    <Compile Include="HAP\HtmlTextNode.cs" />
+    <Compile Include="HAP\HtmlWeb.cs" />
+    <Compile Include="HAP\HtmlWebException.cs" />
+    <Compile Include="HAP\IOLibrary.cs" />
+    <Compile Include="HAP\MixedCodeDocument.cs" />
+    <Compile Include="HAP\MixedCodeDocumentCodeFragment.cs" />
+    <Compile Include="HAP\MixedCodeDocumentFragment.cs" />
+    <Compile Include="HAP\MixedCodeDocumentFragmentList.cs" />
+    <Compile Include="HAP\MixedCodeDocumentFragmentType.cs" />
+    <Compile Include="HAP\MixedCodeDocumentTextFragment.cs" />
+    <Compile Include="HAP\NameValuePair.cs" />
+    <Compile Include="HAP\NameValuePairList.cs" />
+    <Compile Include="MHTDataLoaderFactory.cs" />
+    <Compile Include="MHTDataLoader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UNCAccess.cs" />
+    <Compile Include="WNetConnection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CommonLib\CommonLib.csproj">
+      <Project>{80429148-427C-4207-BCD0-AE5E38B405D7}</Project>
+      <Name>CommonLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\modCommon\modCommon.csproj">
+      <Project>{44B54CD2-90EB-4477-B506-992FB81010AB}</Project>
+      <Name>modCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

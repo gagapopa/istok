@@ -1,0 +1,38 @@
+﻿.loadprogress
+{
+	background-color: #4682b4;
+	border-style: solid;
+	border-color: Black;
+	border-width: 1px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px black;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.informtext
+{
+	color: Black;
+	font-family: Times New Roman;
+	font-size: 16px;
+	text-align: center;
+}
+
+.waitlogo
+{
+	border-style: solid;
+	border-color: Black;
+	border-width: 1px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px black;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+#blockinform
+{
+	background-color:White;
+	color: Blue;
+}

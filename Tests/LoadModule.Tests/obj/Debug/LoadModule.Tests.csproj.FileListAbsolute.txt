@@ -1,0 +1,39 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\obj\Debug\LoadModule.Tests.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\bin\Debug\LoadModule.Tests.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\bin\Debug\LoadModule.Tests.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Loader.Core.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\bin\Debug\Moq.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\bin\Debug\nunit.framework.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\bin\Debug\Microsoft.SqlServer.Replication.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Loader.Core.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\bin\Debug\Moq.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\bin\Debug\Moq.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\bin\Debug\nunit.framework.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\bin\Debug\ru\Microsoft.SqlServer.Replication.resources.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\obj\Debug\LoadModule.Tests.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\LoadModule.Tests\obj\Debug\LoadModule.Tests.pdb
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\bin\Debug\LoadModule.Tests.dll
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\bin\Debug\LoadModule.Tests.pdb
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Loader.Core.dll
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\bin\Debug\Moq.dll
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\bin\Debug\nunit.framework.dll
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\bin\Debug\Microsoft.SqlServer.Replication.dll
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Loader.Core.pdb
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\bin\Debug\Moq.xml
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\bin\Debug\nunit.framework.xml
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\bin\Debug\ru\Microsoft.SqlServer.Replication.resources.dll
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\obj\Debug\LoadModule.Tests.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\obj\Debug\LoadModule.Tests.dll
+C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\obj\Debug\LoadModule.Tests.pdb

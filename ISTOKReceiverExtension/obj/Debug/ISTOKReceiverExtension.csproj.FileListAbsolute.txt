@@ -1,0 +1,24 @@
+D:\Cloud@Mail.Ru\isbk-src\src\ISTOKReceiverExtension\bin\Debug\ISTOKReceiverExtension.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ISTOKReceiverExtension\bin\Debug\ISTOKReceiverExtension.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\ISTOKReceiverExtension\bin\Debug\ISTOKReceiverExtension.dll.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\ISTOKReceiverExtension\bin\Debug\ISTOKReceiverExtension.dll.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\ISTOKReceiverExtension\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ISTOKReceiverExtension\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ISTOKReceiverExtension\bin\Debug\ParameterReceiverExtension.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ISTOKReceiverExtension\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\ISTOKReceiverExtension\bin\Debug\ParameterReceiverExtension.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\ISTOKReceiverExtension\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\ISTOKReceiverExtension\obj\Debug\ISTOKReceiverExtension.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\ISTOKReceiverExtension\obj\Debug\ISTOKReceiverExtension.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ISTOKReceiverExtension\obj\Debug\ISTOKReceiverExtension.pdb
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Debug\ISTOKReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Debug\ISTOKReceiverExtension.pdb
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Debug\ParameterReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Debug\ParameterReceiverExtension.pdb
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\obj\Debug\ISTOKReceiverExtension.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\obj\Debug\ISTOKReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\obj\Debug\ISTOKReceiverExtension.pdb

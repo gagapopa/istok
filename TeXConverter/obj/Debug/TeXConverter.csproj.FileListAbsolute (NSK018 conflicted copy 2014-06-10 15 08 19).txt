@@ -1,0 +1,7 @@
+D:\Cloud@Mail.Ru\isbk-src\src\TeXConverter\bin\Debug\MimeTeX.dll
+D:\Cloud@Mail.Ru\isbk-src\src\TeXConverter\bin\Debug\TeXConverter.exe.config
+D:\Cloud@Mail.Ru\isbk-src\src\TeXConverter\bin\Debug\TeXConverter.exe
+D:\Cloud@Mail.Ru\isbk-src\src\TeXConverter\bin\Debug\TeXConverter.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\TeXConverter\obj\Debug\TeXConverter.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\TeXConverter\obj\Debug\TeXConverter.exe
+D:\Cloud@Mail.Ru\isbk-src\src\TeXConverter\obj\Debug\TeXConverter.pdb

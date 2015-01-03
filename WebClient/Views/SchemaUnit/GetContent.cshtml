@@ -1,0 +1,110 @@
+﻿@model COTES.ISTOK.ClientCore.UnitProviders.SchemaUnitProvider
+@using COTES.ISTOK.WebClient.Properties
+@{
+    Layout = null;
+    var snode = Model.UnitNode as COTES.ISTOK.ASC.SchemaNode;
+}
+
+<script>
+    var schemaint = setInterval(function () { usvalupdate() }, '@((snode.UpdateInterval*1000).ToString())');
+    pgtimers.push(schemaint);
+    usvalupdate();
+
+    function usvalupdate() {
+        $.ajax({
+            url: '@Url.Action("GetValues")',
+            data: { pid: $('#@Resources.strPageId').val() },
+            type: "POST"
+        })
+            .done(updval)
+            .fail(function (x1,x2,x3) { });
+    }
+
+    function updval(data) {
+        if (data == null) return;
+        $(".usparameter").each(function () {
+            for (var i = 0; i < data.length; i++) {
+                if (("usp" + data[i].ParameterID) == this.id) {
+                    $(this).text(data[i].Value);
+                    $(this).css("background-color", data[i].Color);
+                    $(this).attr("title", "");
+                    $(this).tooltip({
+                        content: $(this).attr("name") + "<br/>" + data[i].FormattedTime,
+                        track: true,
+                        show: {
+                            delay: 500
+                        },
+                        hide: false
+                    });
+                    break;
+                }
+            }
+        });
+    }
+
+    function usloadgraph( parId ){
+        $.ajax({
+            url: '@Url.Action("GetGraph")',
+            data: { parameterId: parId, pid: $('#@Resources.strPageId').val() },
+            type: "POST"
+        })
+            .done(function (data) {
+                $("#usgraph").html(data);
+                $("#usgraph").dialog("open");
+            })
+            .fail(function (err,err2,err3) {
+                //alert("bug" + er8r);
+            });
+    }
+    $(function(){
+        $("#usgraph").dialog({
+            autoOpen: false,
+            width: 860,
+            height: 600,
+            modal: true,
+            title: "График",
+            closeText: "Закрыть",
+            beforeClose: function () {
+                if ($("#btntimer:checked").length) {
+                    $("#btntimer").prop("checked", false);
+                    $("#btntimer").trigger("click");
+                }
+            },
+            close: function () {
+                $.ajax({
+                    url: '@Url.Action("CloseGraph")',
+                    data: {pid: $('#@Resources.strPageId').val()},
+                    type: "POST",
+                    async: false
+                });
+            }
+        });
+    });
+</script>
+
+<div id="uscontent">
+    <img id="uschema" src="@Url.Action("GetSchema", new {pid=ViewData[Resources.strPageId], t = DateTime.Now.Millisecond })" />
+    @{
+        int w, h, l, t;
+        var sb=new System.Text.StringBuilder();
+        foreach (var item in snode.Parameters)
+        {
+            sb.Clear();
+            int.TryParse(item.Attributes["width"], out w);
+            int.TryParse(item.Attributes["height"], out h);
+            int.TryParse(item.Attributes["left"], out l);
+            int.TryParse(item.Attributes["top"], out t);
+            var bgcolor = string.Format("{0}", System.Drawing.Color.Green.Name);
+            sb.Append(string.Format("width:{0}px;height:{1}px;left:{2}px;top:{3}px;", w, h, l, t));
+            sb.Append(string.Format("background-color:{0};", bgcolor));
+            sb.Append(string.Format("position:absolute;overflow:hidden;"));
+            sb.Append(string.Format("font-size:x-small;"));
+            sb.Append(string.Format("cursor:pointer;"));
+            //sb.Append(string.Format("width:{0}px;height:{1}px;left:{2}px;top:{3}px;background-color:{4};position:absolute;overflow:hidden;font-size:x-small;", w, h, l, t, bgcolor));
+            <div id="@("usp"+item.ParameterId)" class="usparameter" style="@sb.ToString()" onclick="usloadgraph(@item.ParameterId)" name="@item.Text">@item.Text</div>
+        }
+    }
+
+    <div id="usgraph" class="usgraph">
+    </div>
+</div>

@@ -1,0 +1,114 @@
+﻿@model COTES.ISTOK.ClientCore.UnitProviders.ParameterGateUnitProvider
+@using COTES.ISTOK.WebClient.Properties
+@{
+    Layout = null;
+    //Model.StartProvider();
+}
+
+<div id="pargatecontent">
+<script>
+    function updatecontent() {
+        $("#pargatecontent").css("opacity", 0.2);
+        $.ajax({
+            url: '@Url.Action("GetContent","ParameterGate")',
+            data: {pid: $('#@Resources.strPageId').val()},
+            type: 'POST',
+            success: function (data) { $("#pargatecontent").html(data); }
+        }).always(function () { $("#pargatecontent").css("opacity", 1); });
+    }
+
+    $(function () {
+        $(".pargatedatepicker").datepicker({
+            changeMonth: true,
+            changeYear: true,
+            onSelect: function () {
+                $.ajax({
+                    url: '@Url.Action("SetDate","ParameterGate")',
+                    data: { date: this.value, pid: $('#@Resources.strPageId').val() },
+                    type: 'POST',
+                    dataType: "html",
+                    success: updatecontent
+                });
+            }
+        });
+    });
+        
+    function prevdate() {
+        $.ajax({
+            url: '@Url.Action("PrevDate","ParameterGate")',
+            data: {pid: $('#@Resources.strPageId').val()},
+            type: 'POST',
+            success: updatecontent,
+            error: function (xhr, ajaxOption, thrownError) { alert(thError); }
+        });
+    }
+    function nextdate() {
+        $.ajax({
+            url: '@Url.Action("NextDate","ParameterGate")',
+            data: {pid: $('#@Resources.strPageId').val()},
+            type: 'POST',
+            success: updatecontent,
+            error: function (xhr, ajaxOption, thrownError) { alert(thError); }
+        });
+    }
+</script>
+
+<div class="pargatepager">
+    <img class="pargatecalc" src="~/Images/UnitControllers/kcalc.png" style="opacity: 0.2;" title="Рассчитать" />
+    <img class="pargatesave" src="~/Images/UnitControllers/filesave.png" style="opacity: 0.2;" title="Сохранить" />
+    <img class="pargatecancel" src="~/Images/UnitControllers/cancel.png" style="opacity: 0.2;" title="Отмена" />
+    <input type="text" class="pargatedatepicker" value="@Model.QueryTime.ToString("dd.MM.yyyy")" />
+    @{
+        if(Model.Interval==COTES.ISTOK.Interval.Zero)
+        {
+            <script>$(".pargatedatepicker").datepicker('disable').attr('readonly', 'readonly');</script>
+            <img class="pargateleft" src="~/Images/UnitControllers/arrowleft_blue24.png" style="opacity: 0.2;" title="Предыдущий интервал" />
+            <img class="pargateright" src="~/Images/UnitControllers/arrowright_blue24.png" style="opacity: 0.2;" title="Следующий интервал" />
+        }
+        else
+        {
+            <img class="pargateleft" src="~/Images/UnitControllers/arrowleft_blue24.png" onclick="prevdate()" title="Предыдущий интервал" />
+            <img class="pargateright" src="~/Images/UnitControllers/arrowright_blue24.png" onclick="nextdate()" title="Следующий интервал" />
+        }
+    }    
+    @*<img class="pargatetex" src="~/Images/UnitControllers/mimetex.png" title="Код параметра" />*@
+</div>
+<table class="pargatetable">
+    <tr>
+        <th class="tcaption tcappar">Параметр</th>
+        <th class="tcaption tcapcode">Код</th>
+        <th class="tcaption tcapval">Значение</th>
+        <th class="tcaption tcaptime">Время</th>
+        <th class="tcaption tcapch">Время изменения</th>
+    </tr>
+    @{
+        COTES.ISTOK.ParamValueItem val;
+        string code_address;
+        foreach (var param in Model.GetParameterNodes())
+        {
+            val = Model.GetParameterValue(param, 0);
+            code_address = "/images/TeX/" + Convert.ToBase64String(System.Text.Encoding.Unicode.GetBytes(param.Code)) + ".gif";
+            <tr>
+                <td class="colparam">@(param.DocIndex + (string.IsNullOrEmpty(param.DocIndex) ? "" : " ") + param.Text)</td>
+                <td class="colcode"><img src="@code_address" alt="@param.Code" /></td>
+            @{
+            if (val != null && !double.IsNaN(val.Value))
+            {
+                        <td class="colvalue">@val.Value.ToString(param.RoundCount == null ? "0.000" : "0." + new String('0', (int)param.RoundCount))</td>
+                        <td>@val.Time.ToString()</td>
+                        <td class="colchtime">@val.ChangeTime.ToString()</td>
+            }
+            else
+            {
+                        <td class="colvalue">&mdash;</td>
+                        <td>&mdash;</td>
+                        <td class="colchtime">&mdash;</td>
+                                                
+            }
+            }
+            </tr>
+        }
+    }
+</table>
+</div>
+

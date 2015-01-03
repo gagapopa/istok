@@ -1,0 +1,10 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\COTES.ISTOK.Loader.Modules.Vzlet.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\COTES.ISTOK.Loader.Modules.Vzlet.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\obj\Debug\COTES.ISTOK.Loader.Modules.Vzlet.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\obj\Debug\COTES.ISTOK.Loader.Modules.Vzlet.pdb

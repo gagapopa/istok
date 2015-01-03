@@ -1,0 +1,4 @@
+obj\Debug\Library.wixobj
+obj\Debug\LoadServer.wixobj
+obj\Debug\Station.wixobj
+obj\Debug\ThickClient.wixobj

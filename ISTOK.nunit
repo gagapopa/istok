@@ -1,0 +1,38 @@
+﻿<NUnitProject>
+  <Settings activeconfig="Debug" processModel="Default" domainUsage="Default" />
+  <Config name="Debug" binpathtype="Auto" runtimeFramework="net-4.0.21006">
+    <assembly path="Tests\ASCommon.Tests\bin\Debug\ASCommon.Tests.dll" />
+    <assembly path="Tests\Assignment.Tests\bin\Debug\Assignment.Tests.dll" />
+    <assembly path="Tests\CommonLib.Tests\bin\Debug\CommonLib.Tests.dll" />
+    <assembly path="Tests\Calc.Tests\bin\Debug\Calc.Tests.dll" />
+    <assembly path="Tests\LoadModule.Tests\bin\Debug\LoadModule.Tests.dll" />
+  </Config>
+  <Config name="DKSMDebug" binpathtype="Auto">
+    <assembly path="Tests\ASCommon.Tests\bin\Debug\ASCommon.Tests.dll" />
+    <assembly path="Tests\Assignment.Tests\bin\Debug\Assignment.Tests.dll" />
+    <assembly path="Tests\CommonLib.Tests\bin\Debug\CommonLib.Tests.dll" />
+    <assembly path="Tests\Calc.Tests\bin\Debug\Calc.Tests.dll" />
+    <assembly path="Tests\LoadModule.Tests\bin\Debug\LoadModule.Tests.dll" />
+  </Config>
+  <Config name="DKSMRelease" binpathtype="Auto">
+    <assembly path="Tests\ASCommon.Tests\bin\Release\ASCommon.Tests.dll" />
+    <assembly path="Tests\Assignment.Tests\bin\Release\Assignment.Tests.dll" />
+    <assembly path="Tests\CommonLib.Tests\bin\Release\CommonLib.Tests.dll" />
+    <assembly path="Tests\Calc.Tests\bin\Release\Calc.Tests.dll" />
+    <assembly path="Tests\LoadModule.Tests\bin\Release\LoadModule.Tests.dll" />
+  </Config>
+  <Config name="Production" binpathtype="Auto">
+    <assembly path="Tests\ASCommon.Tests\bin\Release\ASCommon.Tests.dll" />
+    <assembly path="Tests\Assignment.Tests\bin\Release\Assignment.Tests.dll" />
+    <assembly path="Tests\CommonLib.Tests\bin\Release\CommonLib.Tests.dll" />
+    <assembly path="Tests\Calc.Tests\bin\Release\Calc.Tests.dll" />
+    <assembly path="Tests\LoadModule.Tests\bin\Release\LoadModule.Tests.dll" />
+  </Config>
+  <Config name="Release" binpathtype="Auto">
+    <assembly path="Tests\ASCommon.Tests\bin\Release\ASCommon.Tests.dll" />
+    <assembly path="Tests\Assignment.Tests\bin\Release\Assignment.Tests.dll" />
+    <assembly path="Tests\CommonLib.Tests\bin\Release\CommonLib.Tests.dll" />
+    <assembly path="Tests\Calc.Tests\bin\Release\Calc.Tests.dll" />
+    <assembly path="Tests\LoadModule.Tests\bin\Release\LoadModule.Tests.dll" />
+  </Config>
+</NUnitProject>

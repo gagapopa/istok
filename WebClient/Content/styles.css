@@ -1,0 +1,264 @@
+﻿/*--------------Patches*/
+.ui-spinner {
+    display: inline;
+}
+.ui-tabs .ui-tabs-nav li a {
+    padding: 2px 5px;
+}
+.ui-tabs .ui-tabs-panel {
+    padding: 5px 0;
+}
+/*--------------Main*/
+html.main {
+    height: 100%;
+}
+
+body {
+    font-family: Cambria,Georgia,"Times New Roman";
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/*DIV#header DIV.title {
+    font: bold 1em "Arial Narrow", "Franklin Gothic Medium", Arial;
+}*/
+
+DIV#header {
+    /*background-color: #542DFF;
+    border-bottom: 2px solid #9cbdff;
+    color: #7AEDFF;*/
+    position: absolute;
+
+    background-color: #66CCFF;
+	overflow: hidden;
+	width: 100%;
+	background: #cfe0fc;/* Old browsers */
+	background: -moz-linear-gradient(top, #cfe0fc 0%, #d1e2fc 100%); /* FF3.6+ ;*/
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cfe0fc), color-stop(100%,#d1e2fc)); /* Chrome,Safari4+ ;*/
+	background: -webkit-linear-gradient(top, #cfe0fc 0%,#d1e2fc 100%); /* Chrome10+,Safari5.1+ ;*/
+	background: -o-linear-gradient(top, #cfe0fc 0%,#d1e2fc 100%); /* Opera 11.10+ ;*/
+	background: -ms-linear-gradient(top, #cfe0fc 0%,#d1e2fc 100%); /* IE10+ ;*/
+	background: linear-gradient(to bottom, #cfe0fc 0%,#d1e2fc 100%); /* W3C ;*/
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe0fc', endColorstr='#d1e2fc',GradientType=0 );
+	background-color: #66CCFF;
+    height: 85px;
+}
+
+    DIV#header #upperlogo {
+        width: 54px;
+        height: 64px;
+    }
+
+    DIV#header DIV.title {
+        /*font-size: xx-large;
+        text-align: left;*/
+        float: left;
+	    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    	font-size: x-large;
+    }
+
+/*--------------LoginStrip*/
+DIV#loginstrip {
+    float: right;
+}
+    DIV#loginstrip .lslogin {
+        font-style: italic;
+    }
+    DIV#loginstrip .lslogout {
+        text-decoration: none;
+        color: blue;
+    }
+/*--------------Revisions*/
+DIV#rev {
+    position: absolute;
+    bottom: 25px;
+    right: 0px;
+}
+/*--------------Menu*/
+DIV#divmenu {
+    width: 100%;
+	border: 1px solid #6795CF; 
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	display: block;
+    position: absolute;
+    bottom: 0px;
+    height: 20px;
+	
+	background: #7abcff; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #7abcff 0%, #0b7ced 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#7abcff), color-stop(100%,#0b7ced)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #7abcff 0%,#0b7ced 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #7abcff 0%,#0b7ced 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #7abcff 0%,#0b7ced 100%); /* IE10+ */
+	background: linear-gradient(135deg, #7abcff 0%,#0b7ced 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#0b7ced',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+TABLE#menu {
+    /*width: 80%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;*/
+
+    margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+    TABLE#menu TD {
+        /*text-align: center;*/
+    }
+
+    TABLE#menu A {
+        /*font: bold 1.1em "Arial Narrow", "Franklin Gothic Medium", Arial;
+        display: block;
+        text-decoration: none;
+        color: #7AEDFF;*/
+        text-decoration: none;
+	    display: block;
+	    color: #FFFFFF;
+	    font-family: Arial, Helvetica, sans-serif;
+	    font-weight: bold;
+    }
+        TABLE#menu A.selected {
+            background-color: rgb(220, 255, 255);
+	        color: #7ABCFF;
+        }
+        TABLE#menu A:hover {
+            background-color: #7ABCFF;
+            /*text-decoration: underline overline;*/
+        }
+        TABLE#menu A.selected:hover {
+            background-color: rgb(220, 255, 255);
+	        color: #7ABCFF;
+        }
+
+#splitter {
+    height: auto;
+    width: 100%;
+    top: 85px;
+    bottom: 50px;
+    position: absolute;
+}
+    #splitter div {
+        /*overflow: auto;*/
+    }
+
+DIV#tree {
+    overflow-x: auto;
+    overflow-y: auto;
+    float: left;
+    width: 300px;
+    height: 100%;
+    /*padding-bottom: 3px;
+    padding-right: .3em;
+    padding-top: .3em;
+    border-right: 3px solid #cbe1fb;*/
+    border-bottom: 3px solid #cbe1fb;
+}
+
+    DIV#tree UL {
+        padding: 0;
+	    margin: 0;
+	    list-style: none;
+    }
+
+DIV#content {
+    float: left;
+    font-size: small;
+    /*margin-left:5px;*/
+    /*padding-left: 10px;*/
+}
+    DIV#content H2 {
+        margin: 0;
+        /*padding: 1em;*/
+    }
+
+    DIV#content #tabs {
+        width: 100%;
+    }
+
+TABLE#props {
+    border: 1px solid grey;
+    border-collapse:collapse;
+    font-size: small;
+    width: 100%;
+    table-layout: fixed;
+}
+    TABLE#props TD {
+        border: 1px solid grey;
+        /*white-space: pre;*/
+        width: 50%;
+        word-wrap: break-word;
+    }
+    TABLE#props TR.cat {
+        background-color: #CCCCCC;
+    }
+
+.ui-tooltip {
+    font-size: 10px;
+}
+
+.pane {
+    display: none;
+}
+
+DIV#footer {
+    /*background-color: #542DFF;
+    height: 52px;
+    line-height: 50px;*/
+
+    border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	background-color: #0000CC;
+	width: 100%;
+	height: 50px;
+    position: absolute;
+    bottom: 0px;
+	overflow: hidden;
+	text-align: center;
+	
+	background: rgb(120,187,255); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(120,187,255,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 60%, rgba(12,124,237,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(120,187,255,1)), color-stop(40%,rgba(255,255,255,1)), color-stop(60%,rgba(255,255,255,1)), color-stop(100%,rgba(12,124,237,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(120,187,255,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 60%,rgba(12,124,237,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(120,187,255,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 60%,rgba(12,124,237,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(120,187,255,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 60%,rgba(12,124,237,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(120,187,255,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 60%,rgba(12,124,237,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78bbff', endColorstr='#0c7ced',GradientType=1 ); /* IE6-9 */
+}
+    DIV#footer .copyout {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 14px;
+        width: 100%;
+    }
+    DIV#footer .copytext {
+        text-align: center;
+    }
+/*--------------LoginPage*/
+DIV.lpmain {
+    width: 100%;
+    position: absolute;
+    top: 85px;
+}
+DIV.lpmain .lptable {
+    margin-left: auto;
+    margin-right: auto;
+}
+    DIV.lpmain .lpcenter {
+        text-align: center;
+    }
+    DIV.lpmain .lpinput {
+        width: 120px;
+    }
+    DIV.lpmain .lpinfo {
+        margin: auto;
+        text-align: center;
+    }
+    DIV.lpmain .btnenter {
+        font-size: small;
+    }

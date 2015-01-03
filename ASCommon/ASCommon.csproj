@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07E81EE7-0B48-4562-A57C-FC595EC84D99}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>COTES.ISTOK.ASC</RootNamespace>
+    <AssemblyName>COTES.ISTOK.Server.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DKSMRelease|AnyCPU' ">
+    <OutputPath>bin\DKSMRelease\</OutputPath>
+    <DefineConstants>TRACE;EMA</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DKSMDebug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EMA</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="FastReport">
+      <HintPath>..\DLLs\FastReport\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.3.1.0.0\lib\net40\NLog.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Assignment\Audit\AuditCalcNode.cs">
+      <Link>Audit\AuditCalcNode.cs</Link>
+    </Compile>
+    <Compile Include="..\Assignment\Audit\AuditCalcStart.cs">
+      <Link>Audit\AuditCalcStart.cs</Link>
+    </Compile>
+    <Compile Include="..\Assignment\Audit\AuditEntry.cs">
+      <Link>Audit\AuditEntry.cs</Link>
+    </Compile>
+    <Compile Include="..\Assignment\Audit\AuditGroup.cs">
+      <Link>Audit\AuditGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\Assignment\Audit\AuditLob.cs">
+      <Link>Audit\AuditLob.cs</Link>
+    </Compile>
+    <Compile Include="..\Assignment\Audit\AuditModel.cs">
+      <Link>Audit\AuditModel.cs</Link>
+    </Compile>
+    <Compile Include="..\Assignment\Audit\AuditProp.cs">
+      <Link>Audit\AuditProp.cs</Link>
+    </Compile>
+    <Compile Include="..\Assignment\Audit\AuditType.cs">
+      <Link>Audit\AuditType.cs</Link>
+    </Compile>
+    <Compile Include="..\Assignment\Audit\AuditUnit.cs">
+      <Link>Audit\AuditUnit.cs</Link>
+    </Compile>
+    <Compile Include="..\Assignment\Audit\AuditUser.cs">
+      <Link>Audit\AuditUser.cs</Link>
+    </Compile>
+    <Compile Include="..\Assignment\Audit\AuditValue.cs">
+      <Link>Audit\AuditValue.cs</Link>
+    </Compile>
+    <Compile Include="AdminUISettings.cs" />
+    <Compile Include="Alive\ConnectReturnContainer.cs" />
+    <Compile Include="Alive\ServiceDataChange.cs" />
+    <Compile Include="Alive\ReturnContainer.cs" />
+    <Compile Include="Alive\ServiceUnitNodeChange.cs" />
+    <Compile Include="Alive\ServiceUnitTypeChange.cs" />
+    <Compile Include="Audit\AuditCalcStart.Partial.cs" />
+    <Compile Include="Audit\AuditEntry.Partial.cs" />
+    <Compile Include="Audit\AuditGroup.Partial.cs" />
+    <Compile Include="Audit\AuditLob.Partial.cs" />
+    <Compile Include="Audit\AuditProp.Partial.cs" />
+    <Compile Include="Audit\AuditRequestContainer.cs" />
+    <Compile Include="Audit\AuditType.Partial.cs" />
+    <Compile Include="Audit\AuditUnit.Partial.cs" />
+    <Compile Include="Audit\AuditValue.Partial.cs" />
+    <Compile Include="ChildParamNode\MonitorTableParamNode.cs" />
+    <Compile Include="ChildParamNode\SchemaParamNode.cs" />
+    <Compile Include="ChildParamNode\HistogramParamNode.cs" />
+    <Compile Include="ChildParamNode\GraphParamNode.cs" />
+    <Compile Include="ChildParamNode\ChildParamNode.cs" />
+    <Compile Include="ChildParamNode\ReportParamNode.cs" />
+    <Compile Include="EntityStruct.cs" />
+    <Compile Include="Exceptions\UnitNodeNotExistException.cs" />
+    <Compile Include="Extension\ExtensionDataType.cs" />
+    <Compile Include="Extension\ExtensionInfo.cs" />
+    <Compile Include="Extension\ExtensionDataInfo.cs" />
+    <Compile Include="Extension\ExtendedColumnInfo.cs" />
+    <Compile Include="Extension\ExtensionDataColumn.cs" />
+    <Compile Include="Extension\IExtension.cs" />
+    <Compile Include="Extension\IExtensionSupplier.cs" />
+    <Compile Include="Extension\ExternalIDTypeConverter.cs" />
+    <Compile Include="IGlobalQueryManager.cs" />
+    <Compile Include="IManualSerilizable.cs" />
+    <Compile Include="ImportDataContainer.cs" />
+    <Compile Include="LineSymbolType.cs" />
+    <Compile Include="Exceptions\LockException.cs" />
+    <Compile Include="MultiDimensionalTable.cs" />
+    <Compile Include="Exceptions\NoOneUserException.cs" />
+    <Compile Include="ParameterFilter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\StructureTableConverter.cs" />
+    <Compile Include="TypeConverters\StructureReportTableConverter.cs" />
+    <Compile Include="TypeConverters\UnitNodeTypeEditor.cs" />
+    <Compile Include="TypeConverters\UnitTypeArrayConverter.cs" />
+    <Compile Include="TypeConverters\UnitTypeArrayEditor.cs" />
+    <Compile Include="TypeConverters\ParameterNodeTypeConverter.cs" />
+    <Compile Include="TypeConverters\ParameterNodeUIEditor.cs" />
+    <Compile Include="ServiceInterface\IUserInterfaceRequest.cs" />
+    <Compile Include="Report\ExtensionDataReportSourceSettings.cs" />
+    <Compile Include="Report\FastReportWrap.cs" />
+    <Compile Include="Report\ParameterReportSourceSetting.cs" />
+    <Compile Include="Report\ReportParametersContainer.cs" />
+    <Compile Include="Report\ReportTimeInterval.cs" />
+    <Compile Include="Report\ReportParameter.cs" />
+    <Compile Include="Report\SimpleReportSourceSettings.cs" />
+    <Compile Include="Report\TimeReportSourceSetting.cs" />
+    <Compile Include="Report\PreferedReportInfo.cs" />
+    <Compile Include="Extension\ExtensionData.cs" />
+    <Compile Include="Report\ReportSourceInfo.cs" />
+    <Compile Include="Report\ReportSourceSettings.cs" />
+    <Compile Include="Report\StructureReportSourceSettings.cs" />
+    <Compile Include="ServiceInterface\IBlockUIDRetrieval.cs" />
+    <Compile Include="ServiceInterface\IChannelRetrieval.cs" />
+    <Compile Include="ServiceInterface\IExternalsSupplier.cs" />
+    <Compile Include="ServiceInterface\IStructureRetrieval.cs" />
+    <Compile Include="ServiceInterface\IAttributeRetrieval.cs" />
+    <Compile Include="ServiceInterface\IModuleLibNameRetrieval.cs" />
+    <Compile Include="ServiceInterface\IOwnerRetrieval.cs" />
+    <Compile Include="ServiceInterface\IScheduleRetrivial.cs" />
+    <Compile Include="ServiceInterface\IUnitProviderSupplier.cs" />
+    <Compile Include="ServiceInterface\IUnitTypeRetrieval.cs" />
+    <Compile Include="TypeConverters\AggregationTypeConverter.cs" />
+    <Compile Include="Extension\ExtensionUnitNodeTypeConverter.cs" />
+    <Compile Include="TypeConverters\CategoryOrderAttribute.cs" />
+    <Compile Include="TypeConverters\LineSymbolTypeConverter.cs" />
+    <Compile Include="TypeConverters\BlockUIDTypeConverter.cs" />
+    <Compile Include="TypeConverters\BooleanTypeConverter.cs" />
+    <Compile Include="TypeConverters\ChannelTypeConverter.cs" />
+    <Compile Include="TypeConverters\DateTimeTypeConverter.cs" />
+    <Compile Include="TypeConverters\DoubleTypeConverter.cs" />
+    <Compile Include="TypeConverters\IntervalTypeConverter.cs" />
+    <Compile Include="TypeConverters\ModuleLibNameTypeConverter.cs" />
+    <Compile Include="TypeConverters\NormFuncNodeTypeConverter.cs" />
+    <Compile Include="TypeConverters\OwnerTypeConverter.cs" />
+    <Compile Include="TypeConverters\RevisionUnitNodeAttribute.cs" />
+    <Compile Include="TypeConverters\ScheduleTypeConverter.cs" />
+    <Compile Include="TypeConverters\UnitNodeTypeConverter.cs" />
+    <Compile Include="TypeConverters\UnitTypeTypeConverter.cs" />
+    <Compile Include="TreeWrapp.cs" />
+    <Compile Include="Extension\ExtensionUnitNode.cs" />
+    <Compile Include="UnitNodeEventArgs.cs" />
+    <Compile Include="UnitNode\OptimizationGateNode.cs" />
+    <Compile Include="UnitNode\NormFuncNode.cs" />
+    <Compile Include="UnitNode\ParametrizedUnitNode.cs" />
+    <Compile Include="UnitNode\ReportNode.cs" />
+    <Compile Include="UnitNode\ServerNode.cs" />
+    <Compile Include="UnitNode\ParameterGateNode.cs" />
+    <Compile Include="UnitNode\SchemaNode.cs" />
+    <Compile Include="UnitNode\HistogramNode.cs" />
+    <Compile Include="UnitNode\GraphNode.cs" />
+    <Compile Include="UnitNode\CalcParameterNode.cs" />
+    <Compile Include="UnitNode\ManualParameterNode.cs" />
+    <Compile Include="UnitNode\LoadParameterNode.cs" />
+    <Compile Include="UnitNode\ParameterNode.cs" />
+    <Compile Include="UnitNode\ChannelNode.cs" />
+    <Compile Include="UnitNode\GlobalNode.cs" />
+    <Compile Include="UnitNode\BlockNode.cs" />
+    <Compile Include="UnitNode\UnitNode.cs" />
+    <Compile Include="UnitNode\UTypeNode.cs" />
+    <Compile Include="UnitNode\GroupNode.cs" />
+    <Compile Include="UnitNode\UserNode.cs" />
+    <Compile Include="UnitNode\MonitorTableNode.cs" />
+    <Compile Include="UnitNode\ExcelReportNode.cs" />
+    <Compile Include="UnitTypeId.cs" />
+    <Compile Include="Exceptions\UserNotConnectedException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TypeConverters\IntervalTypeConverter.resx">
+      <DependentUpon>IntervalTypeConverter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Calc\Calc.csproj">
+      <Project>{B1234928-66F6-49EE-844A-2B302140540E}</Project>
+      <Name>Calc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonLib\CommonLib.csproj">
+      <Project>{80429148-427C-4207-BCD0-AE5E38B405D7}</Project>
+      <Name>CommonLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audit\AuditUser.Partial.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

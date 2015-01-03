@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include Define.wxi?>
+  
+	<!--Компоненты сбора-->
+  <Fragment>
+    <DirectoryRef Id="ISTOKLOADERDIRECTORY">
+      <!--Основные файлы сервера сбора данных и установка службы-->
+      <Component Id="Loader.CommonLib" Guid="{CB6C7A45-9978-4C9F-A2D8-FEDC99ED1765}">
+        <File Id="Loader.CommonLib"
+              Name="$(var.CommonLibFileName)"
+              Source="$(var.CommonLibTargetPath)" />
+      </Component>
+      <Component Id="Loader.ModulesCommon" Guid="{84F36630-AE4E-43C6-94CE-EB367706E198}">
+        <File Id="Loader.ModulesCommon"
+              Name="$(var.modCommonFileName)"
+              Source="$(var.modCommonTargetPath)" />
+      </Component>
+      <Component Id="Loader.Core" Guid="C1BFDD97-B0B4-4bfe-BCA6-7CEF7BF6EA3F">
+        <File Id="Loader.Core"
+              Name="$(var.LoadCoreFileName)"
+              Source="$(var.LoadCoreTargetPath)" />
+      </Component>
+      <Component Id="Loader.App" Guid="{4F6E22F8-25A8-4AA3-AD2D-0076D184D50E}">
+        <File Id="Loader.App"
+              Name="$(var.LoaderAppFileName)"
+              Source="$(var.LoaderAppTargetPath)" />
+        <!--<ServiceInstall Id="$(var.LoaderAppFileName)"
+                        Type="ownProcess"
+                        ErrorControl="normal"
+                        Name="$(var.LoaderServiceName)"
+                        DisplayName="$(var.LoadServiceDisplayName)"
+                        Description="$(var.LoadServiceDescription)"
+                        Start="auto">
+          <ServiceConfig xmlns="http://schemas.microsoft.com/wix/UtilExtension"
+                         FirstFailureActionType="restart"
+                         SecondFailureActionType="restart"
+                         ThirdFailureActionType="restart"
+                         RestartServiceDelayInSeconds="5" />
+        </ServiceInstall>
+     <ServiceControl Id="$(var.LoaderAppFileName)"
+                        Name="$(var.LoaderServiceName)"
+                        Start="install"
+                        Stop="both"
+                        Wait="yes"
+                        Remove="uninstall" />-->
+
+      </Component>
+      <!--Программа конфигурации сервера сбора данных-->
+      <Component Id="Loader.Diag" Guid="{A25FB480-5980-40A4-BAC1-1F5A19C74A04}">
+        <File Id="Loader.Diag"
+              Name="$(var.DiagFileName)"
+              Source="$(var.DiagTargetPath)" />
+      </Component>
+      <Component Id="Loader.UI" Guid="229D1A6C-D20B-4d09-B7E4-F12DE53D5275">
+        <File Id="Loader.UI"
+              Name="$(var.LoaderUIFileName)"
+              Source="$(var.LoaderUITargetPath)" />
+      </Component>
+      <!--Сторонние  библиотеки-->
+      <Component Id="Loader.NLogLibs" Guid="{ACAC02CF-A408-4298-81C3-C72DDAAACB11}">
+        <File Id="Loader.Nlog"
+              Name="$(var.NLogFileName)"
+              Source="$(var.LoaderNLogTargetPath)" />
+      </Component>
+      <!--Конфиги-->
+      <Component Id="Loader.NLogConf" Guid="{472207CA-B3CE-41C9-8DC5-A38529C66058}">
+        <File Id="Loader.NLogConf"
+              Name="$(var.NLogConfFileName)"
+              Source="$(var.LoaderNLogConfTargetPath)" />
+      </Component>
+      <Component Id="Loader.ApplicationConf" Guid="{500DF3AA-011C-43EE-B372-C28DC2DFEB72}">
+        <File Id="Loader.AppConf"
+              Name="$(var.LoaderAppConfFileName)"
+              Source="$(var.LoaderAppConfTargetPath)" />
+      </Component>
+      <Component Id="Loader.UIApplicationConf" Guid="{C6E80D83-8F01-4787-9E18-45B8FCDA123A}">
+        <File Id="Loader.UIAppConf"
+              Name="$(var.LoaderUIAppConfFileName)"
+              Source="$(var.LoaderUIAppConfTargetPath)" />
+      </Component>
+      <!--Компоненты системы-->
+      <!-- Event Source creation for 32bit OS with .NET 4 Full-->
+      <Component Id="Loader.EventLog.32BitFullNet4" Guid="{FE4787FD-74A3-46E1-9363-1F2E2F544EDD}">
+        <Condition><![CDATA[(InstallEventLog = "yes") AND NETFRAMEWORK40FULLINSTALLROOTDIR AND NOT VersionNT64]]></Condition>
+        <CreateFolder/>
+        <!-- Create an Event Source -->
+        <Util:EventSource
+              xmlns:Util="http://schemas.microsoft.com/wix/UtilExtension"
+              Name="$(var.ISTOKSLoaderEventSourceName)"
+              Log="$(var.ISTOKSLoaderEventLogName)"
+              EventMessageFile="[NETFRAMEWORK40FULLINSTALLROOTDIR]EventLogMessages.dll"/>
+      </Component>
+
+      <!-- Event Source creation for 32bit OS with .NET 4 Client Profile-->
+      <Component Id="Loader.EventLog.32BitClientNet4" Guid="{6D489A22-92E2-44F8-A2F6-493C18DE500D}">
+        <Condition><![CDATA[(InstallEventLog = "yes") AND NETFRAMEWORK40CLIENTINSTALLROOTDIR AND NOT VersionNT64]]></Condition>
+        <CreateFolder/>
+        <!-- Create an Event Source -->
+        <Util:EventSource
+          xmlns:Util="http://schemas.microsoft.com/wix/UtilExtension"
+          Name="$(var.ISTOKSLoaderEventSourceName)"
+          Log="$(var.ISTOKSLoaderEventLogName)"
+          EventMessageFile="[NETFRAMEWORK40CLIENTINSTALLROOTDIR]EventLogMessages.dll"/>
+      </Component>
+      <!-- Event Source creation for 64bit OS with .NET 4 Full -->
+      <Component Id="Loader.EventLog.64BitFullNet4" Guid="{45B5A28C-005E-43E9-B0CA-C6D934D88118}">
+        <Condition><![CDATA[(InstallEventLog = "yes") AND NETFRAMEWORK40FULLINSTALLROOTDIR64 AND VersionNT64]]></Condition>
+        <CreateFolder/>
+        <!-- Create an Event Source -->
+        <Util:EventSource
+              xmlns:Util="http://schemas.microsoft.com/wix/UtilExtension"
+              Name="$(var.ISTOKSLoaderEventSourceName)"
+              Log="$(var.ISTOKSLoaderEventLogName)"
+              EventMessageFile="[NETFRAMEWORK40FULLINSTALLROOTDIR64]EventLogMessages.dll"/>
+      </Component>
+
+      <!-- Event Source creation for 64bit OS with .NET 4 Client Profile -->
+      <Component Id="Loader.EventLog.64BitClientNet4" Guid="{432A459C-5A7D-4318-AD5B-7AEB166522EF}">
+        <Condition><![CDATA[(InstallEventLog = "yes") AND NETFRAMEWORK40CLIENTINSTALLROOTDIR64 AND VersionNT64]]></Condition>
+        <CreateFolder/>
+        <!-- Create an Event Source -->
+        <Util:EventSource
+              xmlns:Util="http://schemas.microsoft.com/wix/UtilExtension"
+              Name="$(var.ISTOKSLoaderEventSourceName)"
+              Log="$(var.ISTOKSLoaderEventLogName)"
+              EventMessageFile="[NETFRAMEWORK40CLIENTINSTALLROOTDIR64]EventLogMessages.dll"/>
+      </Component>
+      <!--Модули сбора-->
+      <Directory Id="ISTOKLoadModulesFolder" Name="Modules">
+        <!--Модуль сбора Atec-->
+        <Component Id="LoadModule.Atec" Guid="{22ED682A-EF9E-4001-A3BB-CED5E507EEE8}">
+          <File Id="LoadModule.Atec" 
+                Name="$(var.ModAtecFileName)" 
+                Source="$(var.ModAtecTargetPath)" />
+        </Component>
+        <!--Модуль сбора АРМ ЭНЕРГО (FB)-->
+        <Component Id="LoadModule.FB" Guid="{C7BFAEA3-47B2-413F-9D7B-1DFDEB62730E}">
+          <File Id="LoadModule.FB" 
+                Name="$(var.ModFBFileName)" 
+                Source="$(var.ModFBTargetPath)" />
+        </Component>
+        <Component Id="LoadModule.FBClientLibs" Guid="{15A9D002-AA4A-4306-93CA-7C3B6022F6EB}">
+          <File Id="LoadModule.FBClient" 
+                Name="$(var.FBClientFileName)"
+                Source="$(var.LoadModuleFBFBClientTargetPath)" />
+        </Component>
+        <!--Модуль сбора из файлов MHT-->
+        <Component Id="LoadModule.MHT" Guid="0F2DA024-A35E-4d55-A854-1038BBA57223">
+          <File Id="LoadModule.MHT"
+                Name="$(var.ModMHTFileName)"
+                Source="$(var.ModMHTTargetPath)" />
+        </Component>
+        <!--Модуль сбора OPC-->
+        <Component Id="LoadModule.Opc" Guid="9CFEF01F-B351-478c-8D04-5A9C92D76CDC">
+          <File Id="LoadModule.Opc"
+                Name="$(var.ModOpcFileName)"
+                Source="$(var.ModOpcTargetPath)" />
+        </Component>
+        <Component Id="LoadModule.OpcNetLibs" Guid="{F1DFD676-A0D3-4E2A-93E4-0A474C161441}">
+          <File Id="OpcNetApi"
+                Name="$(var.OpcNetApiFileName)"
+                Source="$(var.OpcNetApiTargetPath)" />
+          <File Id="OpcNetApi.Com"
+                Name="$(var.OpcNetApiComFileName)"
+                Source="$(var.OpcNetApiComTargetPath)" />
+          <!--<File Id="OpcRcw.Ae"
+                Name="$(var.OpcRcwAeileName)"
+                Source="$(var.OpcRcwAeTargetPath)" />
+          <File Id="OpcRcw.Comn"
+                Name="$(var.OpcRcwComnFileName)"
+                Source="$(var.OpcRcwComnTargetPath)" />
+          <File Id="OpcRcw.Da"
+                Name="$(var.OpcRcwDaFileName)"
+                Source="$(var.OpcRcwDaTargetPath)" />
+          <File Id="OpcRcw.Dx"
+                Name="$(var.OpcRcwDxFileName)"
+                Source="$(var.OpcRcwDxTargetPath)" />
+          <File Id="OpcRcw.Hda"
+                Name="$(var.OpcRcwHdaFileName)"
+                Source="$(var.OpcRcwHdaTargetPath)" />-->
+        </Component>
+        <!--Модуль сбора - генератор случайных чисел-->
+        <Component Id="LoadModule.Random" Guid="68358BD0-EF02-4782-B722-C7999E6FE989">
+          <File Id="LoadModule.Random"
+                Name="$(var.ModRandomFileName)"
+                Source="$(var.ModRandomTargetPath)" />
+        </Component>
+        <!--Модуль сбора из таблиц SQL-->
+        <Component Id="LoadModule.Sql" Guid="EC6561D5-A3CB-4b43-B812-038F2766082F">
+          <File Id="LoadModule.Sql"
+                Name="$(var.ModSqlFileName)"
+                Source="$(var.ModSqlTargetPath)" />
+        </Component>
+        <!--Модуль сбора из БД АСУ ТП МСТ-->
+        <Component Id="LoadModule.Tornado" Guid="25F30834-6F03-4131-90F6-1072A797F396">
+          <File Id="LoadModule.Tornado"
+                Name="$(var.ModTornadoFileName)"
+                Source="$(var.ModTornadoTargetPath)" />
+        </Component>
+        <!--Модуль сбора Взлет-->
+        <Component Id="LoadModule.Vzlet" Guid="{E648ABA9-6674-47C7-A28F-834884C6683B}">
+          <File Id="LoadModule.Vzlet"
+                Name="$(var.ModVzletFileName)"
+                Source="$(var.ModVzletTargetPath)" />
+        </Component>
+      </Directory>
+    </DirectoryRef>
+
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <!--Ярлык для конфигурации сервера сбора данных-->
+      <Component Id="Loader.Shortcut" Guid="BB6013B7-0C36-4355-AD5A-753E99F83A84">
+        <Shortcut Id="Loader.UIShortcut"
+                  Name="$(var.LoadServiceDisplayName)"
+                  Description="!(loc.LoadServiceDescription)"
+                  Target="[ISTOKLOADERDIRECTORY]$(var.block_UI.TargetFileName)" />
+        <CreateFolder />
+        <RegistryValue Root="HKCU"
+                       Key="Software\COTES\ISTOK"
+                       Name="LoaderInstalled"
+                       Type="integer"
+                       Value="1"
+                       KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+
+  <!--Фичи сбора-->
+  <Fragment>
+    <Feature Id="LoaderFeature"
+             ConfigurableDirectory="ISTOKLOADERDIRECTORY"
+             Title="!(loc.LoadServerFeatureName)"
+             Description="!(loc.LoadServerFeatureDescription)"
+             Display="expand"
+             Level="1"
+             InstallDefault="local" >
+      <ComponentRef Id="Loader.CommonLib" />
+      <ComponentRef Id="Loader.ModulesCommon" />
+      <ComponentRef Id="Loader.Core" />
+      <ComponentRef Id="Loader.App" />
+      <ComponentRef Id="Loader.Diag" />
+      <ComponentRef Id="Loader.UI" />
+
+      <ComponentRef Id="Loader.NLogLibs"/>
+
+      <ComponentRef Id="Loader.NLogConf"/>
+      <ComponentRef Id="Loader.ApplicationConf"/>
+      <ComponentRef Id="Loader.UIApplicationConf"/>
+
+      <!-- Event Source-->
+      <ComponentRef Id="Loader.EventLog.32BitFullNet4" />
+      <ComponentRef Id="Loader.EventLog.32BitClientNet4" />
+      <ComponentRef Id="Loader.EventLog.64BitFullNet4" />
+      <ComponentRef Id="Loader.EventLog.64BitClientNet4" />
+      
+      <ComponentRef Id="Loader.Shortcut" />
+
+      <!--Модуль сбора Atec-->
+      <Feature Id="LoadModule.Atec"
+               Title="!(loc.LoadModuleAtecFeatureName)"
+               Description="!(loc.LoadModuleAtecFeatureDescription)"
+               Level="0"
+               InstallDefault="followParent">
+        <Condition Level="1">LoadModuleAtecEnabled = "yes"</Condition>
+        <ComponentRef Id="LoadModule.Atec" />
+      </Feature>
+      <!--Модуль сбора АРМ ЭНЕРГО (FB)-->
+      <Feature Id="LoadModule.FB"
+               Title="!(loc.LoadModuleFBFeatureName)"
+               Description="!(loc.LoadModuleFBFeatureDescription)"
+               Level="0"
+               InstallDefault="followParent">
+        <Condition Level="1">LoadModuleFBEnabled = "yes"</Condition>
+        <ComponentRef Id="LoadModule.FB" />
+        <ComponentRef Id="LoadModule.FBClientLibs" />
+      </Feature>
+      <!--Модуль сбора из файлов MHT-->
+      <Feature Id="LoadModule.MHT" 
+               Title="!(loc.LoadModuleMHTFeatureName)"
+               Description="!(loc.LoadModuleMHTFeatureDescription)"
+               Level="0"
+               InstallDefault="followParent">
+        <Condition Level="1">LoadModuleMHTEnabled = "yes"</Condition>
+        <ComponentRef Id="LoadModule.MHT" />
+      </Feature>
+      <!--Модуль сбора OPC-->
+      <Feature Id="LoadModule.Opc"
+               Title="!(loc.LoadModuleOPCFeatureName)"
+               Description="!(loc.LoadModuleOPCFeatureDescription)"
+               Level="0"
+               InstallDefault="followParent" >
+        <Condition Level="1">LoadModuleOpcEnabled = "yes"</Condition>
+        <ComponentRef Id="LoadModule.Opc" />
+        <ComponentRef Id="LoadModule.OpcNetLibs" />
+      </Feature>
+      <!--Модуль сбора - генератор случайных чисел-->
+      <Feature Id="LoadModule.Random" 
+               Title="!(loc.LoadModuleRandomFeatureName)"
+               Description="!(loc.LoadModuleRandomFeatureDescription)"
+               Level="0"
+               InstallDefault="followParent">
+        <Condition Level="1">LoadModuleRandomEnabled = "yes"</Condition>
+        <ComponentRef Id="LoadModule.Random" />
+      </Feature>
+      <!--Модуль сбора из таблиц SQL-->
+      <Feature Id="LoadModule.Sql"  
+               Title="!(loc.LoadModuleSQLFeatureName)"
+               Description="!(loc.LoadModuleSQLFeatureDescription)"
+               Level="0"
+               InstallDefault="followParent">
+        <Condition Level="1">LoadModuleSQLEnabled = "yes"</Condition>
+        <ComponentRef Id="LoadModule.Sql" />
+      </Feature>
+      <!--Модуль сбора из БД АСУ ТП МСТ-->
+      <Feature Id="LoadModule.Tornado" 
+               Title="!(loc.LoadModuleTornadoDBFeatureName)"
+               Description="!(loc.LoadModuleTornadoDBFeatureDescription)"
+               Level="0"
+               InstallDefault="followParent">
+        <Condition Level="1">LoadModuleTornadoEnabled = "yes"</Condition>
+        <ComponentRef Id="LoadModule.Tornado" />
+      </Feature>
+      <!--Модуль сбора Взлет-->
+      <Feature Id="LoadModule.Vzlet"
+               Title="!(loc.LoadModuleVzletFeatureName)"
+               Description="!(loc.LoadModuleVzletFeatureDescription)"
+               Level="0"
+               InstallDefault="followParent">
+        <Condition Level="1">LoadModuleVzletEnabled = "yes"</Condition>
+        <ComponentRef Id="LoadModule.Vzlet" />
+      </Feature>    
+    </Feature>    
+  </Fragment>
+</Wix>

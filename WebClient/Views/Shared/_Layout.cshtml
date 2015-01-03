@@ -1,0 +1,117 @@
+﻿@using COTES.ISTOK.WebClient.HtmlHelpers
+@using COTES.ISTOK.WebClient.Properties
+
+<!DOCTYPE html>
+<html class="main" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>ИСТОК-СБК</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="~/Content/themes/default/style.css" rel="Stylesheet" />
+        <link href="~/Content/themes/base/jquery-ui.css" rel="Stylesheet" />
+        <script src="~/Scripts/jquery-1.8.3.min.js"></script>
+        <script src="~/Scripts/jquery.flot.js"></script>
+        <script src="~/Scripts/jquery.flot.selection.js"></script>
+        <script src="~/Scripts/jquery.flot.time.js"></script>
+        <script src="~/Scripts/jquery.flot.tooltip.min.js"></script>
+        <script src="~/Scripts/jquery.flot.resize.js"></script>
+        <script src="~/Scripts/jquery.flot.crosshair.js"></script>
+        <script src="~/Scripts/jquery-ui-1.10.3.min.js"></script>
+        <script src="~/Scripts/jquery-ui-timepicker-addon.js"></script>
+        <script src="~/Scripts/jquery.ui.datepicker-ru.js"></script>
+        <script src="~/Scripts/jquery.jstree.js"></script>
+        <script src="~/Scripts/jquery.layout-latest.min.js"></script>
+        <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="~/Scripts/excanvas.min.js"></script><![endif]-->
+        <script src="~/Scripts/splitter.js"></script>
+        <link href="~/Content/styles.css" rel="Stylesheet" />
+        <link href="~/Content/unitproviders.css" rel="Stylesheet" />
+        <meta name="viewport" content="width=device-width" />      
+
+    <script type="text/javascript">
+        var pgtimers = [];
+        function loadparamview() {
+            for (var i = 0; i < pgtimers.length; i++) {
+                if (pgtimers[i] != null) clearInterval(pgtimers[i]);
+                pgtimers = [];
+            }
+            $.ajax({
+                url: '@Url.Action("GetParameterView","Nav")',
+                data: { pid: $('#@Resources.strPageId').val() },
+                type: 'POST'
+            })
+                .done(function (data) {
+                    updatebody(data);
+                });
+        }
+        function updatebody(data) {
+            $("#content").html(data);
+        }
+        function loadparam(id) {
+            $.ajax({
+                url: '@Url.Action("SetParameter","Nav")',
+                data: { id: id, pid: $('#@Resources.strPageId').val() },
+                type: 'POST',
+                success: loadparamview
+            });
+        }
+
+        $().ready(function () {
+            $("#splitter").layout({ applyDemoStyles: true });
+        });
+
+        $(function () {
+            $("*").tooltip({
+                track: true,
+                show: {
+                    delay: 500
+                },
+                hide: false
+            });
+            $(".ui-layout-toggler *[title]").tooltip("disable");
+            $(".ui-layout-resizer *[title]").tooltip("disable");
+        });
+
+        $(document).ready(function () {
+            $("#rev").bind("change", function () {
+                var n = $(this).find("option:selected").attr("value");
+                $.ajax({
+                    url: '@Url.Action("SetRevision","Home")',
+                    data: { revId: n, pid: $('#@Resources.strPageId').val() },
+                    type: 'POST',
+                    success: loadparamview
+                });
+            });
+        });
+
+        function bugbug() {
+            alert('@ViewData[Resources.strPageId]');
+        }
+    </script>
+    </head>
+    <body>
+        @Html.Hidden("pgid", ViewData[Resources.strPageId], new { id = Resources.strPageId })
+        <div id="header">
+            @Html.GetLoginStrip()
+            @*<img id="upperlogo" src="~/Content/Images/logo.png" onclick="bugbug()" />*@
+            <div class="title">ИСТОК-СБК</div>
+            <br /><br />
+            @Html.GetSelector((int)ViewData[Resources.strPageId])
+            @{Html.RenderAction("Menu", "Nav", new { pid=(int)ViewData[Resources.strPageId] });}
+        </div>
+        <div id="splitter">
+            <div id="tree" class="pane ui-layout-west">
+                <div id="treeview">
+                    @{Html.RenderAction("Tree", "Nav", new { pid = (int)ViewData[Resources.strPageId] });}
+                </div>
+            </div>        
+            <div id="content" class="pane ui-layout-center">
+                @RenderBody()
+            </div>
+        </div>
+        <div id="footer">
+            <div class="copyout">
+                <div class="copytext"><img src="~/Content/Images/logo0.gif" height="50" width="72" /></div><!-- &copy; @DateTime.Now.Year - ЗАО "Е4-СибКОТЭС". -->
+            </div>
+        </div>
+    </body>
+</html>

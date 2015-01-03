@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include Define.wxi?>
+  
+	<!--Компоненты глобола-->
+  <Fragment>
+    <PropertyRef Id="NETFRAMEWORK40FULLINSTALLROOTDIR"/>
+    <PropertyRef Id="NETFRAMEWORK40FULLINSTALLROOTDIR64"/>
+    <PropertyRef Id="NETFRAMEWORK40CLIENTINSTALLROOTDIR"/>
+    <PropertyRef Id="NETFRAMEWORK40CLIENTINSTALLROOTDIR64"/>
+
+    <DirectoryRef Id="ISTOKSTATIONDIRECTORY">
+      <!--Основные файлы станционного сервера и установка службы-->
+      <Component Id="Station.CommonLib" Guid="{3DA04412-E370-44A1-8266-AC4B6A427694}">
+        <File Id="Station.CommonLib"
+              Name="$(var.CommonLibFileName)"
+              Source="$(var.CommonLibTargetPath)" />
+      </Component>
+      <Component Id="Station.Data" Guid="{8EB63F88-99DC-4E2C-B6A5-F8FBE0A8AF8E}">
+        <File Id="Station.ServerData"
+              Name="$(var.ServerDataFileName)"
+              Source="$(var.ServerDataTargetPath)" />
+      </Component>
+      <Component Id="Station.Calc" Guid="{C1F0200F-B71E-478D-B8D0-AB22163285F4}">
+        <File Id="Station.Calc"
+              Name="$(var.CalcFileName)"
+              Source="$(var.CalcTargetPath)" />
+      </Component>
+      <Component Id="Station.Core" Guid="15FFA45D-2F95-4c3f-99E3-D6F48BABB629">
+        <File Id="Station.ServerCore"
+              Name="$(var.ServerCoreFileName)"
+              Source="$(var.ServerCoreTargetPath)" />
+      </Component>
+      <Component Id="Station.App" Guid="{D2D63E67-4E67-4BEF-976A-CF3FFC9B9DB6}">
+        <File Id="Station.ServerApp"
+              Name="$(var.ServerAppFileName)"
+              Source="$(var.ServerAppTargetPath)" />
+        <!--<ServiceInstall Id="$(var.ServerAppFileName)"
+                Type="ownProcess"
+                ErrorControl="normal"
+                Name="$(var.GloblaServiceName)"
+                DisplayName="$(var.GlobalServiceDisplayName)"
+                Description="$(var.GlobalServiceDescription)"
+                Start="auto">
+          <ServiceConfig xmlns="http://schemas.microsoft.com/wix/UtilExtension"
+                         FirstFailureActionType="restart"
+                         SecondFailureActionType="restart"
+                         ThirdFailureActionType="restart"
+                         RestartServiceDelayInSeconds="5" />
+        </ServiceInstall>
+        <ServiceControl Id="$(var.ServerAppFileName)"
+                        Name="$(var.GloblaServiceName)"
+                        Start="install"
+                        Stop="both"
+                        Wait="yes"
+                        Remove="uninstall" />-->
+
+      </Component>
+      <Component Id="Station.ReceiverExtension" Guid="{F3ADA08E-3ECB-46B8-8F38-F85CF896A9CF}">
+        <File Id="Station.ReceiverExtension"
+              Name="$(var.ReceiverExtensionFileName)" 
+              Source="$(var.ReceiverExtensionTargetPath)" />
+        <File Id="Station.ParameterReceiverExtension"
+              Name="$(var.ParameterReceiverExtensionFileName)"
+              Source="$(var.ParameterReceiverExtensionTargetPath)" />
+      </Component>
+      <!--Программа конфигурации станционного сервера-->
+      <Component Id="Station.UI" Guid="2493D255-8B31-46a3-BDA6-930E388E7C81" >
+        <File Id="Station.UI"
+              Name="$(var.ServerUIFileName)"
+              Source="$(var.ServerUITargetPath)" />
+      </Component>
+      <!--Сторонние библиотеки-->
+      <Component Id="Station.FastReportLibs" Guid="{A40DC841-FDA3-4641-9FDC-8DE42D784701}">
+        <File Id="Station.FastReport"
+              Name="$(var.FastReportFileName)"
+              Source="$(var.FastReportTargetPath)" />
+        <File Id="Station.FastReport.Bars"
+              Name="$(var.FastReportBarsFileName)"
+              Source="$(var.FastReportBarsTargetPath)" />
+        <File Id="Station.FastReport.Editor"
+              Name="$(var.FastReportEditorFileName)"
+              Source="$(var.FastReportEditorTargetPath)" />
+      </Component>
+      <Component Id="Station.OpenXMLLibs" Guid="{6EE3F586-E593-4321-A874-DA025BFD8BA9}">
+        <File Id="Station.OpenXML"
+              Name="$(var.OpenXMLFileName)"
+              Source="$(var.OpenXMLTargetPath)" />
+      </Component>
+      <Component Id="Station.EFLibs" Guid="{22699593-D49C-483B-A6ED-226C45E5A24A}">
+        <File Id="Station.EF"
+              Name="$(var.EFFileName)"
+              Source="$(var.StationEFTargetPath)" />
+      </Component>
+      <Component Id="Station.NLogLibs" Guid="{BDE0D349-8BD7-46AF-BC3D-B1B00513562F}">
+        <File Id="Station.Nlog"
+              Name="$(var.NLogFileName)"
+              Source="$(var.StationNLogTargetPath)" />
+      </Component>
+      <!--Конфиги-->
+      <Component Id="Station.NLogConf" Guid="{82EBFDC8-AA45-40BD-BD13-512381EA115C}">
+        <File Id="Station.NLogConf"
+              Name="$(var.NLogConfFileName)"
+              Source="$(var.StationNLogConfTargetPath)" />
+      </Component>
+      <Component Id="Station.ApplicationConf" Guid="{3A32A3B9-587C-40BB-8843-5E0727DC03BF}">
+        <File Id="Station.AppConf"
+              Name="$(var.StationAppConfFileName)"
+              Source="$(var.StationAppConfTargetPath)" />
+      </Component>
+      <!--Компоненты системы-->
+      <!-- Event Source creation for 32bit OS with .NET 4 Full-->
+      <Component Id="Station.EventLog.32BitFullNet4" Guid="{765B9D2C-AF8F-4376-B4FB-E6C3AE5A53D6}">
+        <Condition><![CDATA[(InstallEventLog = "yes") AND NETFRAMEWORK40FULLINSTALLROOTDIR AND NOT VersionNT64]]></Condition>
+        <CreateFolder/>
+        <!-- Create an Event Source -->
+        <Util:EventSource
+              xmlns:Util="http://schemas.microsoft.com/wix/UtilExtension"
+              Name="$(var.ISTOKStationEventSourceName)"
+              Log="$(var.ISTOKStationEventLogName)"
+              EventMessageFile="[NETFRAMEWORK40FULLINSTALLROOTDIR]EventLogMessages.dll"/>
+      </Component>
+
+      <!-- Event Source creation for 32bit OS with .NET 4 Client Profile-->
+      <Component Id="Station.EventLog.32BitClientNet4" Guid="{21D2AEC8-818B-4E5D-B291-C7D1A07C6CEA}">
+        <Condition><![CDATA[(InstallEventLog = "yes") AND NETFRAMEWORK40CLIENTINSTALLROOTDIR AND NOT VersionNT64]]></Condition>
+          <CreateFolder/>
+          <!-- Create an Event Source -->
+          <Util:EventSource
+            xmlns:Util="http://schemas.microsoft.com/wix/UtilExtension"
+            Name="$(var.ISTOKStationEventSourceName)"
+            Log="$(var.ISTOKStationEventLogName)"
+            EventMessageFile="[NETFRAMEWORK40CLIENTINSTALLROOTDIR]EventLogMessages.dll"/>
+        </Component>
+      <!-- Event Source creation for 64bit OS with .NET 4 Full -->
+      <Component Id="Station.EventLog.64BitFullNet4" Guid="{175D0101-5CB2-4C3C-8351-7C7FCA748BC9}">
+        <Condition><![CDATA[(InstallEventLog = "yes") AND NETFRAMEWORK40FULLINSTALLROOTDIR64 AND VersionNT64]]></Condition>
+        <CreateFolder/>
+        <!-- Create an Event Source -->
+        <Util:EventSource
+              xmlns:Util="http://schemas.microsoft.com/wix/UtilExtension"
+              Name="$(var.ISTOKStationEventSourceName)"
+              Log="$(var.ISTOKStationEventLogName)" 
+              EventMessageFile="[NETFRAMEWORK40FULLINSTALLROOTDIR64]EventLogMessages.dll"/>
+      </Component>
+
+      <!-- Event Source creation for 64bit OS with .NET 4 Client Profile -->
+      <Component Id="Station.EventLog.64BitClientNet4" Guid="{1CA203E2-E584-418B-B8B1-1B4BBC5CEE57}">
+        <Condition><![CDATA[(InstallEventLog = "yes") AND NETFRAMEWORK40CLIENTINSTALLROOTDIR64 AND VersionNT64]]></Condition>
+        <CreateFolder/>
+        <!-- Create an Event Source -->
+        <Util:EventSource
+              xmlns:Util="http://schemas.microsoft.com/wix/UtilExtension"
+              Name="$(var.ISTOKStationEventSourceName)"
+              Log="$(var.ISTOKStationEventLogName)"
+              EventMessageFile="[NETFRAMEWORK40CLIENTINSTALLROOTDIR64]EventLogMessages.dll"/>
+      </Component>     
+      <!--Папка с расчетными функциями-->
+      <Directory Id ="StationCalcDirectory" Name="lib">
+        <!--Библиотека расчётных функций IF97-->
+        <Component Id="Station.IF97CalcLib" Guid="8284FB15-F004-4536-8BF7-FBE31551F114">
+          <File Id="IF97Lib"
+                Name="$(var.IF97CalcLibFileName)"
+                Source="$(var.IF97CalcLibTargetPath)" />
+        </Component>
+      </Directory>
+      <!--Папка для расчширений глобала-->
+      <Directory Id="StationExtensionDirectory" Name="Extension" />
+    </DirectoryRef>
+
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <!--Ярлык для конфигурации станционного сервера-->
+      <Component Id="Station.Shortcut" Guid="E9F24DD1-6545-4d0b-8241-71385C99E9F5">
+        <Shortcut Id="Station.UIShortcut"
+                  Name="$(var.GlobalServiceDisplayName)"
+                  Description="!(loc.GlobalServiceDescription)"
+                  Target="[ISTOKSTATIONDIRECTORY]$(var.ServerUIFileName)" />
+        <CreateFolder />
+        <RegistryValue Root="HKCU"
+                       Key="Software\COTES\ISTOK"
+                       Name="ServerInstalled"
+                       Type="integer"
+                       Value="1"
+                       KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+  
+  <!--Фичи глобола-->
+  <Fragment>
+    <Feature Id="StationFeature"
+             ConfigurableDirectory="ISTOKSTATIONDIRECTORY"
+             Title="!(loc.StationServerFeatureName)"
+             Description="!(loc.StationServerFeatureDescription)"
+             Level="1"
+             InstallDefault="local" >
+      <ComponentRef Id="Station.CommonLib"/>
+      <ComponentRef Id="Station.Data"/>
+      <ComponentRef Id="Station.Calc"/>
+      <ComponentRef Id="Station.Core" />
+      <ComponentRef Id="Station.App" />
+      <ComponentRef Id="Station.ReceiverExtension" />
+      <ComponentRef Id="Station.UI" />
+
+      <ComponentRef Id="Station.FastReportLibs"/>
+      <ComponentRef Id="Station.OpenXMLLibs"/>
+      <ComponentRef Id="Station.EFLibs"/>
+      <ComponentRef Id="Station.NLogLibs"/>
+
+      <ComponentRef Id="Station.NLogConf"/>
+      <ComponentRef Id="Station.ApplicationConf"/>
+      
+      <ComponentRef Id="Station.Shortcut" />
+
+      <!-- Event Source-->
+      <ComponentRef Id="Station.EventLog.32BitFullNet4"/>
+      <ComponentRef Id="Station.EventLog.32BitClientNet4"/>
+      <ComponentRef Id="Station.EventLog.64BitFullNet4"/>
+      <ComponentRef Id="Station.EventLog.64BitClientNet4"/>
+
+        <!--Расчитываемая библиотека IF97-->
+      <Feature Id="IF97CalcLibFeature"
+               Title="!(loc.ISTOKIF97LibraryFeatureName)"
+               Description="!(loc.ISTOKIF97LibraryFeatureDescription)"
+               Level="1"
+               InstallDefault="followParent">
+        <ComponentRef Id="Station.IF97CalcLib" />
+      </Feature>
+    </Feature>
+  </Fragment>
+</Wix>

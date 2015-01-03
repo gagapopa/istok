@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="d:\vs2013\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Targets>
+  <Target Name="D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\bin\Debug\COTES.ISTOK.Server.Data.dll">
+   <Modules>
+    <Module Name="cotes.istok.server.data.dll">
+     <Namespaces>
+      <Namespace Name="COTES.ISTOK.ASC">
+       <Types>
+        <Type Name="ChildParamNode" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.Data.DataRow)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon\ChildParamNode" File="ChildParamNode.cs" Line="82">'ChildParamNode.ChildParamNode(DataRow)' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;ChildParamNode..ctor(DataRow)&#xD;&#xA;ChildParamNode.LoadData(DataRow):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DimensionInfo" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#FromBytes(System.Byte[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon" File="MultiDimensionalTable.cs" Line="1006">Объект "'stream'" можно удалять более одного раза в методе 'DimensionInfo.FromBytes(byte[])'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 1006</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToBytes()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon" File="MultiDimensionalTable.cs" Line="1020">Объект "'stream'" можно удалять более одного раза в методе 'DimensionInfo.ToBytes()'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 1020</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ExtensionDataReportSourceSettings" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#FromBytes(System.Byte[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon\Report" File="ExtensionDataReportSourceSettings.cs" Line="181">Объект "'ms'" можно удалять более одного раза в методе 'ExtensionDataReportSourceSettings.FromBytes(byte[])'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 181</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToBytes()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon\Report" File="ExtensionDataReportSourceSettings.cs" Line="144">Объект "'ms'" можно удалять более одного раза в методе 'ExtensionDataReportSourceSettings.ToBytes()'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 144</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FastReportWrap" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Реализуйте IDisposable для 'FastReportWrap', поскольку он создает члены следующих типов IDisposable: 'Report'. Если 'FastReportWrap' ранее был доставлен, добавление в данный тип новых членов, реализующих IDisposable, считается критическим изменением для существующих потребителей.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="LockException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Добавьте реализацию GetObjectData к типу 'LockException'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="MultiDimensionalTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#FromBytes(System.Byte[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon" File="MultiDimensionalTable.cs" Line="855">Объект "'stream'" можно удалять более одного раза в методе 'MultiDimensionalTable.FromBytes(byte[])'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 855</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToBytes()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon" File="MultiDimensionalTable.cs" Line="875">Объект "'stream'" можно удалять более одного раза в методе 'MultiDimensionalTable.ToBytes()'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 875</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ParameterReportSourceSetting" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#FromBytes(System.Byte[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon\Report" File="ParameterReportSourceSetting.cs" Line="100">Объект "'ms'" можно удалять более одного раза в методе 'ParameterReportSourceSetting.FromBytes(byte[])'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 100</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToBytes()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon\Report" File="ParameterReportSourceSetting.cs" Line="83">Объект "'ms'" можно удалять более одного раза в методе 'ParameterReportSourceSetting.ToBytes()'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 83</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SimpleReportSourceSettings" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#FromBytes(System.Byte[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon\Report" File="SimpleReportSourceSettings.cs" Line="60">Объект "'ms'" можно удалять более одного раза в методе 'SimpleReportSourceSettings.FromBytes(byte[])'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 60</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToBytes()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon\Report" File="SimpleReportSourceSettings.cs" Line="48">Объект "'ms'" можно удалять более одного раза в методе 'SimpleReportSourceSettings.ToBytes()'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 48</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="StructureReportSourceSettings" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#FromBytes(System.Byte[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon\Report" File="StructureReportSourceSettings.cs" Line="200">Объект "'ms'" можно удалять более одного раза в методе 'StructureReportSourceSettings.FromBytes(byte[])'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 200</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToBytes()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon\Report" File="StructureReportSourceSettings.cs" Line="162">Объект "'ms'" можно удалять более одного раза в методе 'StructureReportSourceSettings.ToBytes()'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 162</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="StructureReportTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#FromBytes(System.Byte[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon\Report" File="StructureReportSourceSettings.cs" Line="678">Объект "'ms'" можно удалять более одного раза в методе 'StructureReportTable.FromBytes(byte[])'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 678</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToBytes()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon\Report" File="StructureReportSourceSettings.cs" Line="718">Объект "'ms'" можно удалять более одного раза в методе 'StructureReportTable.ToBytes()'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 718</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TimeReportSourceSetting" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#FromBytes(System.Byte[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon\Report" File="TimeReportSourceSetting.cs" Line="83">Объект "'ms'" можно удалять более одного раза в методе 'TimeReportSourceSetting.FromBytes(byte[])'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 83</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToBytes()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon\Report" File="TimeReportSourceSetting.cs" Line="66">Объект "'ms'" можно удалять более одного раза в методе 'TimeReportSourceSetting.ToBytes()'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 66</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserNode" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.Data.DataRow)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ASCommon\UnitNode" File="UserNode.cs" Line="179">'UserNode.UserNode(DataRow)' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;UserNode..ctor(DataRow)&#xD;&#xA;ServerNode.set_Text(String):Void&#xD;&#xA;UserNode.set_IsAdmin(Boolean):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="COTES.ISTOK.ASC.Audit">
+       <Types>
+        <Type Name="AuditCalcStart" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\Assignment\Audit" File="AuditCalcStart.cs" Line="20">'AuditCalcStart.AuditCalcStart()' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;AuditCalcStart..ctor()&#xD;&#xA;AuditCalcStart.set_AuditCalcNodes(HashSet&lt;AuditCalcNode&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="AuditEntry" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2014-05-27 01:55:54Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\Assignment\Audit" File="AuditEntry.cs" Line="20">'AuditEntry.AuditEntry()' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;AuditEntry..ctor()&#xD;&#xA;AuditEntry.set_AuditCalcStarts(HashSet&lt;AuditCalcStart&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\Assignment\Audit" File="AuditEntry.cs" Line="20">'AuditEntry.AuditEntry()' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;AuditEntry..ctor()&#xD;&#xA;AuditEntry.set_AuditGroups(HashSet&lt;AuditGroup&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\Assignment\Audit" File="AuditEntry.cs" Line="20">'AuditEntry.AuditEntry()' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;AuditEntry..ctor()&#xD;&#xA;AuditEntry.set_AuditTypes(HashSet&lt;AuditType&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\Assignment\Audit" File="AuditEntry.cs" Line="20">'AuditEntry.AuditEntry()' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;AuditEntry..ctor()&#xD;&#xA;AuditEntry.set_AuditUsers(HashSet&lt;AuditUser&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\Assignment\Audit" File="AuditEntry.cs" Line="20">'AuditEntry.AuditEntry()' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;AuditEntry..ctor()&#xD;&#xA;AuditEntry.set_AuditValues(HashSet&lt;AuditValue&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214">
+   <Name>Не вызывайте переопределяемые методы в конструкторах</Name>
+   <Description>Виртуальные методы, определенные в классе, не следует вызывать из конструкторов. Если производный класс переопределил метод, будет вызвана версия производного класса (до вызова конструктора производного класса).</Description>
+   <Resolution Name="Default">{0} содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: {1}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182331.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240">
+   <Name>Правильно реализуйте ISerializable</Name>
+   <Description>Если тип допускает присваивание к ISerializable, он должен реализовать GetObjectData. Для незапечатанных типов производные типы должны иметь возможность вызывать и переопределять метод GetObjectData.</Description>
+   <Resolution Name="Default">Добавьте реализацию GetObjectData к типу {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182342.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="60">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми</Name>
+   <Description>Типы, объявляющие освобождаемые члены, также должны реализовывать IDisposable. Если типу не принадлежат какие-либо неуправляемые ресурсы, нет необходимости реализовывать для него метод завершения.</Description>
+   <Resolution Name="DependsOnFix">Реализуйте IDisposable для {0}, поскольку он создает члены следующих типов IDisposable: {1}. Если {0} ранее был доставлен, добавление в данный тип новых членов, реализующих IDisposable, считается критическим изменением для существующих потребителей.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Не ликвидировать объекты несколько раз</Name>
+   <Description>Правильно реализованный метод Dispose может вызываться неоднократно без создания исключения. Однако такой гарантии нет, и чтобы предотвратить создание System.ObjectDisposedException, не следует вызывать метод Dispose для объекта более одного раза.</Description>
+   <Resolution Name="Default">Объект "{0}" можно удалять более одного раза в методе {1}. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 718</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Категория</String>
+  <String Key="Certainty">Достоверность</String>
+  <String Key="CollapseAll">Свернуть все</String>
+  <String Key="CheckId">ИД проверки</String>
+  <String Key="Error">Ошибка</String>
+  <String Key="Errors">ошибки</String>
+  <String Key="ExpandAll">Развернуть все</String>
+  <String Key="Help">Справка</String>
+  <String Key="Line">Строка</String>
+  <String Key="Messages">сообщения</String>
+  <String Key="LocationNotStoredInPdb">[расположение не сохранено в PDB]</String>
+  <String Key="Project">Проект</String>
+  <String Key="Resolution">Разрешение</String>
+  <String Key="Rule">Правило</String>
+  <String Key="RuleFile">Файл правил</String>
+  <String Key="RuleDescription">Описание правила</String>
+  <String Key="Source">Источник</String>
+  <String Key="Status">Состояние</String>
+  <String Key="Target">Цель</String>
+  <String Key="Warning">Предупреждение</String>
+  <String Key="Warnings">предупреждения</String>
+  <String Key="ReportTitle">Отчет по анализу кода</String>
+ </Localized>
+</FxCopReport>

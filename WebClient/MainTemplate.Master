@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainTemplate.Master.cs" Inherits="WebClient.MainTemplate" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<%@ Register Assembly="ZedGraph.Web" Namespace="ZedGraph.Web" TagPrefix="zgw" %>
+
+<%@ Register Src="~/PropertiesView.ascx" TagName="PropertiesView" TagPrefix="uc"  %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Веб-клиент.</title>
+    <link rel="shortcut icon" href="Images/page_ico.png" />
+</head>
+<body>
+    <form id="TemplateForm" runat="server">
+    
+        <asp:ToolkitScriptManager ID="MainScriptManager" runat="server" 
+            EnableScriptGlobalization="True" />
+    
+        <div id="blockup">
+            <div id="blockmenu">
+                <div id="blocklogout">
+                    <asp:ImageButton ID="LogoutButton" runat="server" 
+                        AlternateText="Выход" ImageUrl="~/Images/exit.png"
+                        onclick="LogoutButton_Click" CausesValidation="false" 
+                        Height="24" Width="24" 
+                        ToolTip="Выход" />
+                    <asp:ImageButton ID="AdminLink" 
+                        runat="server" 
+                        ImageUrl="~/Images/configure.png"
+                        AlternateText="Администрирование" 
+                        Height="24" Width="24" 
+                        ToolTip="Администрирование" onclick="AdminLink_Click"/>
+                    &nbsp
+                    <span class=".userlabel">
+                        <asp:Label ID="UserLabel" Text=" " runat="server" />
+                    </span>
+                </div>
+        
+                <div id="blocknavigate">
+                    <asp:SiteMapDataSource ID="WebClientMapDataSource" runat="server"/>
+                    <asp:Menu StaticDisplayLevels="2" 
+                        Orientation="Horizontal" 
+                        ID="Menu" runat="server" 
+                        DataSourceID="WebClientMapDataSource"/>
+                </div>
+            </div>
+        </div>
+    
+        <div id="blockbody">
+        
+            <div id="blockmaincontent">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+    
+        </div>
+    
+        <div id="blockdown">
+            <center>ЗАО Е4-СибКОТЭС (с) 2011</center>
+        </div>
+    </form>
+</body>
+</html>

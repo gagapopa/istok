@@ -1,0 +1,94 @@
+﻿#blockup
+{
+	padding: 10px;
+	margin: 0 10px 10px 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: Black;
+	border-radius: 0 0 15px 15px;
+	box-shadow: 0 0 10px black;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    background-color: #3a75c4;
+}
+
+#blockbody
+{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#blocklogout
+{
+	max-width: 250px;
+	height: 30px;
+	float: right;
+	font-size: 18px;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+#blocknavigate
+{
+	height: 20px;
+	min-width: 400px;
+	padding: 0px;
+	margin-right: 270px;
+	background-color: White;
+}
+
+#blockmenu
+{
+	padding: 5px;
+	padding-bottom: 10px;
+	background-color: White;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+}
+
+/* dirty hack for chrome and safari */
+
+#blockmenu a:hover
+{
+	background-color: #4682b4;
+	border-radius: 5px;
+	border-color: Black;
+	border-width: 1px;
+	border-style: solid;
+}
+
+/* end dirty hack */
+
+#blockmaincontent
+{ 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#blockdown
+{
+	padding: 10px;
+	margin: 10px;
+	background-color: #3a75c4;
+	border-style: solid;
+	border-width: 1px;
+	border-color: Black;
+	border-radius: 5px;
+	box-shadow: 0 0 10px black;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.userlabel
+{
+	text-align: right;
+	float: right;
+}

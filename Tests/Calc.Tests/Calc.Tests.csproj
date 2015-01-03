@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47AAF34C-3D5B-48B7-87FF-02EEE11E6F69}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>COTES.ISTOK.Tests.Calc</RootNamespace>
+    <AssemblyName>Calc.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq">
+      <HintPath>..\..\packages\Moq.4.2.1409.1722\lib\net40\Moq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalcContext\CalcContextTests.cs" />
+    <Compile Include="CalcContext\CalcStateStorageTests.cs" />
+    <Compile Include="CallContext\CallContextTests.cs" />
+    <Compile Include="CompilerTests.cs" />
+    <Compile Include="Function\FunctionTests.cs" />
+    <Compile Include="Function\MacrosFunctionTests.cs" />
+    <Compile Include="Function\SetParameterFunctionTests.cs" />
+    <Compile Include="InterpreterTests.cs" />
+    <Compile Include="CallContext\NodeContextTests.cs" />
+    <Compile Include="CallContext\OptimizationContextTests.cs" />
+    <Compile Include="Function\ParameterFunctionTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CalcContext\SymbolTableTests.cs" />
+    <Compile Include="TestData\TestCalcNodeRepository.cs" />
+    <Compile Include="TestData\TestOptimizationArgument.cs" />
+    <Compile Include="TestData\TestOptimzationInfo.cs" />
+    <Compile Include="TestData\TestParameterinfo.cs" />
+    <Compile Include="TestData\TestCalcNode.cs" />
+    <Compile Include="TestData\TestCallContext.cs" />
+    <Compile Include="TestData\TestFunction.cs" />
+    <Compile Include="CalcContext\ValuesKeeperTests.cs" />
+    <Compile Include="TestTool\CodeAssert.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Calc\Calc.csproj">
+      <Project>{B1234928-66F6-49EE-844A-2B302140540E}</Project>
+      <Name>Calc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CommonLib\CommonLib.csproj">
+      <Project>{80429148-427C-4207-BCD0-AE5E38B405D7}</Project>
+      <Name>CommonLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

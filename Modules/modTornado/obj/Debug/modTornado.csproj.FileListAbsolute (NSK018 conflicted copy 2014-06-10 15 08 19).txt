@@ -1,0 +1,11 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\COTES.ISTOK.Loader.Modules.Tornado.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\COTES.ISTOK.Loader.Modules.Tornado.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\obj\Debug\COTES.ISTOK.Loader.Modules.Tornado.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\obj\Debug\COTES.ISTOK.Loader.Modules.Tornado.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\obj\Debug\modTornado.csprojResolveAssemblyReference.cache

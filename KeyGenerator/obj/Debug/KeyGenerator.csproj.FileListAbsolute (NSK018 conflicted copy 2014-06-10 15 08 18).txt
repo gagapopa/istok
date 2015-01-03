@@ -1,0 +1,10 @@
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\bin\Debug\KeyGenerator.exe.config
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\bin\Debug\KeyGenerator.exe
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\bin\Debug\KeyGenerator.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\obj\Debug\COTES.ISTOK.KeyGenerator.KeyGeneratorForm.resources
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\obj\Debug\COTES.ISTOK.KeyGenerator.Properties.Resources.resources
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\obj\Debug\KeyGenerator.csproj.GenerateResource.Cache
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\obj\Debug\KeyGenerator.exe
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\obj\Debug\KeyGenerator.pdb

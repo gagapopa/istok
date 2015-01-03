@@ -1,0 +1,17 @@
+﻿@model IEnumerable<COTES.ISTOK.WebClient.Controllers.TreeItem>
+
+@Html.Raw("[")
+@{
+    System.Text.StringBuilder sb = new System.Text.StringBuilder();
+    foreach (var link in Model)
+    {
+        if (Model.First() != link) { sb.Append(","); }
+        sb.Append("{");
+        if (!link.IsLeaf) { sb.Append("\"state\":\"closed\","); }
+        sb.Append("\"data\":\"" + link.Text + "\",");//Html.Encode(link.Text)
+        sb.Append("\"attr\":{\"id\": \"li" + link.id.ToString() + "\", \"rel\":\"type" + link.type + "\", \"title\":\"" + link.Text + "\"}");//Html.Encode(link.Text)
+        sb.Append("}");
+    }
+    @Html.Raw(sb.ToString());
+}
+@Html.Raw("]")

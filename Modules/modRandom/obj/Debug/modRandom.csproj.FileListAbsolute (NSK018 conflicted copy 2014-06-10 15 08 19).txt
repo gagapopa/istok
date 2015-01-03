@@ -1,0 +1,11 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Random.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Random.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\obj\Debug\modRandom.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\obj\Debug\COTES.ISTOK.Loader.Modules.Random.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\obj\Debug\COTES.ISTOK.Loader.Modules.Random.pdb

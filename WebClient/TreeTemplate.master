@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MainTemplate.Master" AutoEventWireup="true" CodeBehind="TreeTemplate.master.cs" Inherits="WebClient.TreeTemplate" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<%@ Register Assembly="ZedGraph.Web" Namespace="ZedGraph.Web" TagPrefix="zgw" %>
+
+<%@ Register Src="~/PropertiesView.ascx" TagName="PropertiesView" TagPrefix="uc"  %>
+
+<asp:Content ID="Content" ContentPlaceHolderID="MainContent" runat="server">
+    <div id="treepageblock">
+        <div id="blocktree">
+            <asp:UpdatePanel ID="TreeViewPanel" runat="server">
+                <ContentTemplate>
+                    <asp:TreeView ID="TreeViewStructure" runat="server"
+                        PopulateNodesFromClient="true"
+                        EnableClientScript="true"
+                        onload="TreeViewStructure_Load" 
+                        ontreenodeexpanded="TreeViewStructure_TreeNodeExpanded" 
+                        ontreenodecollapsed="TreeViewStructure_TreeNodeCollapsed" 
+                        onunload="TreeViewStructure_Unload"
+                        HoverNodeStyle-CssClass="selected">
+                        
+                    </asp:TreeView>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+     
+        <div id="blocktreecontent">
+            <asp:TabContainer runat="server" ID="Tabs">
+                <asp:TabPanel ID="ContentTab" runat="server" HeaderText="Данные объекта">
+                    <ContentTemplate>
+                        <asp:UpdatePanel runat="server" UpdateMode="Conditional">
+                            <ContentTemplate>
+                                <div id="datatab">
+                                    <asp:ContentPlaceHolder ID="TreeContent" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </div>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </ContentTemplate>
+                </asp:TabPanel>
+                <asp:TabPanel ID="PropertyViewTab" runat="server" HeaderText="Свойства">
+                    <ContentTemplate>
+                        <asp:Label ID="ObjectInformLabel" runat="server" />
+                        <uc:PropertiesView ID="UnitPropertiesView" runat="server" CssCategory="categorycell" CssProperty="propertycell" />
+                    </ContentTemplate>
+                </asp:TabPanel>
+            </asp:TabContainer>
+        </div>
+    </div>
+</asp:Content>

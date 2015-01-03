@@ -1,0 +1,5 @@
+D:\Cloud@Mail.Ru\isbk-src\src\DataUpdate\OldAssignment\bin\Debug\Assignment.dll
+D:\Cloud@Mail.Ru\isbk-src\src\DataUpdate\OldAssignment\bin\Debug\Assignment.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\DataUpdate\OldAssignment\obj\Debug\OldAssignment.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\DataUpdate\OldAssignment\obj\Debug\Assignment.dll
+D:\Cloud@Mail.Ru\isbk-src\src\DataUpdate\OldAssignment\obj\Debug\Assignment.pdb

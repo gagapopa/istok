@@ -1,0 +1,23 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modAtec\bin\Debug\COTES.ISTOK.Loader.Modules.Atec.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modAtec\bin\Debug\COTES.ISTOK.Loader.Modules.Atec.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modAtec\bin\Debug\COTES.ISTOK.Loader.Modules.Atec.dll.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modAtec\bin\Debug\COTES.ISTOK.Loader.Modules.Atec.dll.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modAtec\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modAtec\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modAtec\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modAtec\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modAtec\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modAtec\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modAtec\obj\Debug\COTES.ISTOK.Loader.Modules.Atec.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modAtec\obj\Debug\COTES.ISTOK.Loader.Modules.Atec.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modAtec\bin\Debug\COTES.ISTOK.Loader.Modules.Atec.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modAtec\bin\Debug\COTES.ISTOK.Loader.Modules.Atec.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modAtec\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modAtec\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modAtec\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modAtec\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modAtec\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modAtec\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\Modules\modAtec\obj\Debug\COTES.ISTOK.Loader.Modules.Atec.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modAtec\obj\Debug\COTES.ISTOK.Loader.Modules.Atec.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modAtec\obj\Debug\modAtec.csprojResolveAssemblyReference.cache

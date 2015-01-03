@@ -1,0 +1,83 @@
+﻿@using COTES.ISTOK.WebClient.Properties
+@model IEnumerable<COTES.ISTOK.WebClient.Controllers.TreeItem>
+@{
+    Layout = null;
+}
+
+<noscript>
+    <ul>
+    @foreach (var link in Model)
+    {
+        <li>
+        @Html.Raw(DrawTree(link))
+        </li>
+    }
+    </ul>
+</noscript>
+
+<script type="text/javascript">
+    $().ready(function()
+    {
+        var pid = $('#@Resources.strPageId').val();
+        $("#treeview").jstree({
+            "plugins": ["themes", "ui", "json_data", "types"],
+            "ui": {
+                "select_limit": 1
+            },
+            "json_data": {
+                "ajax": {
+                    "url": '@Url.Action("GetParams","Nav")',
+                    "data": function (n) {
+                        return {
+                            "id": n.attr ? n.attr("id").replace("li", "") : 0,
+                            "pid": pid
+                        };
+                    },
+                    "type": "POST"
+                }
+            },
+            @Html.Raw(Session["JTTypes"].ToString())
+        })
+            .bind("select_node.jstree", function (event, data) {
+                loadparam(data.rslt.obj.attr ? data.rslt.obj.attr("id").replace("li", "") : 0);//data.rslt.obj.attr("id")
+            })
+            //.delegate("a", "click", function (event, data) { event.preventDefault(); })
+    });    
+</script>
+
+@functions{
+    string DrawTree(COTES.ISTOK.WebClient.Controllers.TreeItem ti)
+    {
+        System.Text.StringBuilder sb = new System.Text.StringBuilder();
+
+        sb.Append(FormatTreeItem(ti));
+        if (ti.items.Count > 0)
+        {
+            sb.Append("<ul>");
+                
+            foreach (var item in ti.items)
+            {
+                if (item.isPlaceholder)
+                {
+                    sb.Append(string.Format("<li id=\"li{0}\"><span class=\"placeholder\">&nbsp;</span>", ti.id));
+                    //continue;
+                }
+                else
+                    sb.Append(string.Format("<li id=\"li{0}\" class=\"jstree-closed jstree-last\">", item.id));
+
+                sb.Append(DrawTree(item));
+                sb.Append("</li>");
+            }
+            sb.Append("</ul>");
+        }
+        return sb.ToString();
+    }
+
+    string FormatTreeItem(COTES.ISTOK.WebClient.Controllers.TreeItem ti)
+    {
+        return string.Format("<a href=\"{0}\" onclick=\"loadparam({1});\")>{2}</a>",
+            "javascript:void(0)",
+            ti.id,
+            ti.id.ToString() + " " + ti.Text);
+    }
+}

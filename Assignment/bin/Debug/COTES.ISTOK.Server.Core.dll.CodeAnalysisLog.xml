@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="d:\vs2013\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Targets>
+  <Target Name="D:\Cloud@Mail.Ru\isbk-src\src\Assignment\bin\Debug\COTES.ISTOK.Server.Core.dll">
+   <Modules>
+    <Module Name="cotes.istok.server.core.dll">
+     <Namespaces>
+      <Namespace Name="COTES.ISTOK.Assignment">
+       <Types>
+        <Type Name="Creator" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2014-05-27 01:56:37Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Реализуйте IDisposable для 'Creator', поскольку он создает члены следующих типов IDisposable: 'ServiceHost', 'MyDBdata'. Если 'Creator' ранее был доставлен, добавление в данный тип новых членов, реализующих IDisposable, считается критическим изменением для существующих потребителей.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#BackupDB()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:56:37Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\Assignment" File="Creator.cs" Line="225">'Creator.BackupDB()' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GlobalQueryManager" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="asyncOperation" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2014-05-27 01:56:37Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\Assignment" File="GlobalQueryManager.cs" Line="533">'GlobalQueryManager' содержит поле 'GlobalQueryManager.asyncOperation' типа IDisposable: 'AsyncOperation'. Замените метод Dispose для 'GlobalQueryManager' на вызов Dispose или Close по этому полю.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ReportUtility" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#DeserializeReportProperties(System.Byte[])" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:56:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\Assignment\Reports" File="ReportUtility.cs" Line="636">Объект "'ms'" можно удалять более одного раза в методе 'ReportUtility.DeserializeReportProperties(byte[])'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 636</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GenerateReport(COTES.ISTOK.ASC.UserNode,COTES.ISTOK.OperationState,COTES.ISTOK.ASC.ExcelReportNode,System.DateTime,System.DateTime,System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:56:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\Assignment\Reports" File="ReportUtility.cs" Line="460">Объект "'doc'" можно удалять более одного раза в методе 'ReportUtility.GenerateReport(UserNode, OperationState, ExcelReportNode, DateTime, DateTime, bool)'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 460</Issue>
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\Assignment\Reports" File="ReportUtility.cs" Line="460">Объект "'ms'" можно удалять более одного раза в методе 'ReportUtility.GenerateReport(UserNode, OperationState, ExcelReportNode, DateTime, DateTime, bool)'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 460, 463</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SerializeReportProperties(COTES.ISTOK.ASC.ReportParameter[])" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:56:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\Assignment\Reports" File="ReportUtility.cs" Line="615">Объект "'ms'" можно удалять более одного раза в методе 'ReportUtility.SerializeReportProperties(ReportParameter[])'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 615</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Scheduler" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2014-05-27 01:56:37Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Реализуйте IDisposable для 'Scheduler', поскольку он создает члены следующих типов IDisposable: 'Timer'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="UnitManager" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#SerializeDataSet(COTES.ISTOK.OperationState,System.Data.DataSet)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:56:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\Assignment\Structure" File="UnitManager.cs" Line="2121">Объект "'stream'" можно удалять более одного раза в методе 'UnitManager.SerializeDataSet(OperationState, DataSet)'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 2121</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ValueReceiver" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#argumentedValuesFromBinary(System.DateTime,System.Byte[])" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:56:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\Assignment\Values" File="ValueReceiver.cs" Line="1436">Объект "'ms'" можно удалять более одного раза в методе 'ValueReceiver.argumentedValuesFromBinary(DateTime, byte[])'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 1436</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#argumentedValuesToBinary(System.Collections.Generic.IEnumerable`1&lt;COTES.ISTOK.ParamValueItem&gt;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:56:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\Assignment\Values" File="ValueReceiver.cs" Line="1472">Объект "'ms'" можно удалять более одного раза в методе 'ValueReceiver.argumentedValuesToBinary(IEnumerable&lt;ParamValueItem&gt;)'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 1472</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="XmlExporter" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Deserialize(COTES.ISTOK.OperationState,System.Byte[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:56:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\Assignment\ExportImport" File="XmlExporter.cs" Line="585">Объект "'stream'" можно удалять более одного раза в методе 'XmlExporter.Deserialize(OperationState, byte[])'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 585</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Serialize(COTES.ISTOK.OperationState,COTES.ISTOK.ASC.TreeWrapp`1&lt;COTES.ISTOK.ASC.UnitNode&gt;[],System.Int32,COTES.ISTOK.ASC.ParameterNode[],System.DateTime,System.DateTime)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:56:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\Assignment\ExportImport" File="XmlExporter.cs" Line="354">Объект "'str'" можно удалять более одного раза в методе 'XmlExporter.Serialize(OperationState, TreeWrapp&lt;UnitNode&gt;[], int, ParameterNode[], DateTime, DateTime)'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 354</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="COTES.ISTOK.Assignment.Extension">
+       <Types>
+        <Type Name="ExtensionManager" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2014-05-27 01:56:37Z" FixCategory="NonBreaking">
+           <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Реализуйте IDisposable для 'ExtensionManager', поскольку он создает члены следующих типов IDisposable: 'EventWaitHandle'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213">
+   <Name>Следует высвобождать высвобождаемые поля</Name>
+   <Description>Если типу, реализующему IDisposable, принадлежат поля, которые также реализуют IDisposable, реализация Dispose() инкапсулирующего типа должна вызывать Dispose() по каждому высвобождаемому полю.</Description>
+   <Resolution Name="Default">{0} содержит поле {1} типа IDisposable: {2}. Замените метод Dispose для {0} на вызов Dispose или Close по этому полю.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182328.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200">
+   <Name>Повторно порождайте исключения для сохранения сведений стека</Name>
+   <Description>Используйте инструкцию IL rethrow для сохранения исходных сведений стека при повторном вызове перехваченного исключения.</Description>
+   <Resolution Name="Default">{0} повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182363.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми</Name>
+   <Description>Типы, объявляющие освобождаемые члены, также должны реализовывать IDisposable. Если типу не принадлежат какие-либо неуправляемые ресурсы, нет необходимости реализовывать для него метод завершения.</Description>
+   <Resolution Name="DependsOnFix">Реализуйте IDisposable для {0}, поскольку он создает члены следующих типов IDisposable: {1}. Если {0} ранее был доставлен, добавление в данный тип новых членов, реализующих IDisposable, считается критическим изменением для существующих потребителей.</Resolution>
+   <Resolution Name="NonBreaking">Реализуйте IDisposable для {0}, поскольку он создает члены следующих типов IDisposable: {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Не ликвидировать объекты несколько раз</Name>
+   <Description>Правильно реализованный метод Dispose может вызываться неоднократно без создания исключения. Однако такой гарантии нет, и чтобы предотвратить создание System.ObjectDisposedException, не следует вызывать метод Dispose для объекта более одного раза.</Description>
+   <Resolution Name="Default">Объект "{0}" можно удалять более одного раза в методе {1}. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 2121</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Категория</String>
+  <String Key="Certainty">Достоверность</String>
+  <String Key="CollapseAll">Свернуть все</String>
+  <String Key="CheckId">ИД проверки</String>
+  <String Key="Error">Ошибка</String>
+  <String Key="Errors">ошибки</String>
+  <String Key="ExpandAll">Развернуть все</String>
+  <String Key="Help">Справка</String>
+  <String Key="Line">Строка</String>
+  <String Key="Messages">сообщения</String>
+  <String Key="LocationNotStoredInPdb">[расположение не сохранено в PDB]</String>
+  <String Key="Project">Проект</String>
+  <String Key="Resolution">Разрешение</String>
+  <String Key="Rule">Правило</String>
+  <String Key="RuleFile">Файл правил</String>
+  <String Key="RuleDescription">Описание правила</String>
+  <String Key="Source">Источник</String>
+  <String Key="Status">Состояние</String>
+  <String Key="Target">Цель</String>
+  <String Key="Warning">Предупреждение</String>
+  <String Key="Warnings">предупреждения</String>
+  <String Key="ReportTitle">Отчет по анализу кода</String>
+ </Localized>
+</FxCopReport>

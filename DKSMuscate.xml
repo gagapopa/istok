@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE dotfuscator SYSTEM "http://www.preemptive.com/dotfuscator/dtd/dotfuscator_v2.1.dtd">
+<dotfuscator version="2.1">
+  <!--This is application generated code. Do not edit manually.-->
+  <input>
+    <asmlist>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\Modules\modCommon\bin\DKSMRelease" name="modCommon.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\Assignment\bin\DKSMRelease" name="Assignment.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\LoadModule\bin\DKSMRelease" name="LoadModule.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <file dir="${configdir}\ModTunnel\bin\DKSMRelease" name="ModTunnel.exe" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\CommonLib\bin\DKSMRelease" name="CommonLib.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\Modules\modOpc\bin\DKSMRelease" name="modOpc.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\Modules\modRandom\bin\DKSMRelease" name="modRandom.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <option>library</option>
+        <file dir="${configdir}\Modules\modSql\bin\DKSMRelease" name="modSql.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <file dir="${configdir}\Modules\modVzlet\bin\DKSMRelease" name="modVzlet.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <file dir="${configdir}\Client\bin\DKSMRelease" name="ISTOKClient.exe" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <file dir="${configdir}\ASCommon\bin\DKSMRelease" name="ASCommon.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <file dir="${configdir}\IDiag\bin\DKSMRelease" name="IDiag.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <file dir="${configdir}\block_UI\bin\DKSMRelease" name="DKSMS_UI.exe" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <file dir="${configdir}\BlockSvc\bin\DKSMRelease" name="DKSMServer.exe" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <file dir="${configdir}\global_UI\bin\DKSMRelease" name="DKSMC_UI.exe" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <file dir="${configdir}\GlobSvc\bin\DKSMRelease" name="DKSMClient.exe" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <file dir="${configdir}\Calc\bin\DKSMRelease" name="Calc.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <file dir="${configdir}\LogsConfigurationsUI\bin\Release" name="LogsConfigurationsUI.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <file dir="${configdir}\Modules\modMHT\bin\Release" name="modMHT.dll" />
+      </inputassembly>
+      <inputassembly>
+        <option>honoroas</option>
+        <option>stripoa</option>
+        <file dir="${configdir}\Modules\modTornado\bin\Release" name="modTornado.dll" />
+      </inputassembly>
+    </asmlist>
+  </input>
+  <output>
+    <file dir="${configdir}\DKSMbin" />
+  </output>
+  <renaming>
+    <option>keepnamespace</option>
+    <excludelist>
+      <assembly>
+        <file dir="${configdir}\ASCommon\bin\DKSMRelease" name="ASCommon.dll" />
+      </assembly>
+      <assembly>
+        <file dir="${configdir}\Client\bin\DKSMRelease" name="ISTOKClient.exe" />
+      </assembly>
+      <assembly>
+        <file dir="${configdir}\CommonLib\bin\DKSMRelease" name="CommonLib.dll" />
+      </assembly>
+      <module name="Calc.dll" assemblyname="Calc" />
+      <module name="modCommon.dll" assemblyname="modCommon" />
+      <namespace name="LogsConfigurationsUI" />
+    </excludelist>
+    <mapping>
+      <mapoutput overwrite="false">
+        <file dir="${configdir}\Dotfuscated" name="Map.xml" />
+      </mapoutput>
+    </mapping>
+    <referencerulelist />
+  </renaming>
+  <controlflow level="high" />
+  <stringencrypt />
+  <signing>
+    <resign />
+  </signing>
+  <licensing>
+    <option>disable</option>
+    <permutation name="" />
+    <product versionmask="revision" />
+    <nolicenseaction name="showactivation" />
+    <unlockingfeature name="" />
+  </licensing>
+  <smartobfuscation>
+    <smartobfuscationreport verbosity="all" />
+  </smartobfuscation>
+</dotfuscator>

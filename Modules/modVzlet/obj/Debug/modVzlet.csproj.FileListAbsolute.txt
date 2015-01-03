@@ -1,0 +1,24 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\COTES.ISTOK.Loader.Modules.Vzlet.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\COTES.ISTOK.Loader.Modules.Vzlet.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\COTES.ISTOK.Loader.Modules.Vzlet.dll.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\COTES.ISTOK.Loader.Modules.Vzlet.dll.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\obj\Debug\modVzlet.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\obj\Debug\COTES.ISTOK.Loader.Modules.Vzlet.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modVzlet\obj\Debug\COTES.ISTOK.Loader.Modules.Vzlet.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Debug\COTES.ISTOK.Loader.Modules.Vzlet.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Debug\COTES.ISTOK.Loader.Modules.Vzlet.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\obj\Debug\modVzlet.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\obj\Debug\COTES.ISTOK.Loader.Modules.Vzlet.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\obj\Debug\COTES.ISTOK.Loader.Modules.Vzlet.pdb

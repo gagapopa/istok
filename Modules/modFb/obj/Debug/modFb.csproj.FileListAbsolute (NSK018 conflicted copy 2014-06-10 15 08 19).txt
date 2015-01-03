@@ -1,0 +1,13 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Fb.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Fb.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\obj\Debug\modFb.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\obj\Debug\COTES.ISTOK.Loader.Modules.Fb.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modFb\obj\Debug\COTES.ISTOK.Loader.Modules.Fb.pdb

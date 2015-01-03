@@ -1,0 +1,60 @@
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\bin\x86\Debug\istokloader.exe.config
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\obj\x86\Debug\BlockSvc.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\obj\x86\Debug\COTES.ISTOK.Block.Service.Properties.Resources.resources
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\obj\x86\Debug\BlockSvc.csproj.GenerateResource.Cache
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\bin\x86\Debug\names.xml
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\bin\x86\Debug\NLog.config
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\bin\x86\Debug\istokloader.exe
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\bin\x86\Debug\istokloader.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\bin\x86\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\bin\x86\Debug\COTES.ISTOK.Loader.Core.dll
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\bin\x86\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\bin\x86\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\bin\x86\Debug\Microsoft.SqlServer.Replication.dll
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\bin\x86\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\bin\x86\Debug\COTES.ISTOK.Loader.Core.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\bin\x86\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\bin\x86\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\bin\x86\Debug\ru\Microsoft.SqlServer.Replication.resources.dll
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\obj\x86\Debug\istokloader.exe
+D:\Cloud@Mail.Ru\isbk-src\src\BlockSvc\obj\x86\Debug\istokloader.pdb
+C:\Maildisk\isbk-src\src\BlockSvc\bin\x86\Debug\istokloader.exe.config
+C:\Maildisk\isbk-src\src\BlockSvc\obj\x86\Debug\istokloader.exe
+C:\Maildisk\isbk-src\src\BlockSvc\obj\x86\Debug\istokloader.pdb
+C:\Maildisk\isbk-src\src\BlockSvc\bin\x86\Debug\names.xml
+C:\Maildisk\isbk-src\src\BlockSvc\bin\x86\Debug\NLog.config
+C:\Maildisk\isbk-src\src\BlockSvc\bin\x86\Debug\istokloader.exe
+C:\Maildisk\isbk-src\src\BlockSvc\bin\x86\Debug\istokloader.pdb
+C:\Maildisk\isbk-src\src\BlockSvc\bin\x86\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src\BlockSvc\bin\x86\Debug\COTES.ISTOK.Loader.Core.dll
+C:\Maildisk\isbk-src\src\BlockSvc\bin\x86\Debug\NLog.dll
+C:\Maildisk\isbk-src\src\BlockSvc\bin\x86\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src\BlockSvc\bin\x86\Debug\Microsoft.SqlServer.Replication.dll
+C:\Maildisk\isbk-src\src\BlockSvc\bin\x86\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src\BlockSvc\bin\x86\Debug\COTES.ISTOK.Loader.Core.pdb
+C:\Maildisk\isbk-src\src\BlockSvc\bin\x86\Debug\NLog.xml
+C:\Maildisk\isbk-src\src\BlockSvc\bin\x86\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src\BlockSvc\bin\x86\Debug\ru\Microsoft.SqlServer.Replication.resources.dll
+C:\Maildisk\isbk-src\src\BlockSvc\obj\x86\Debug\BlockSvc.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src\BlockSvc\obj\x86\Debug\COTES.ISTOK.Block.Service.Properties.Resources.resources
+C:\Maildisk\isbk-src\src\BlockSvc\obj\x86\Debug\BlockSvc.csproj.GenerateResource.Cache
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\x86\Debug\istokloader.exe.config
+C:\Maildisk\isbk-src\src - копия\BlockSvc\obj\x86\Debug\istokloader.exe
+C:\Maildisk\isbk-src\src - копия\BlockSvc\obj\x86\Debug\istokloader.pdb
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\x86\Debug\names.xml
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\x86\Debug\NLog.config
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\x86\Debug\istokloader.exe
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\x86\Debug\istokloader.pdb
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\x86\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\x86\Debug\COTES.ISTOK.Loader.Core.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\x86\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\x86\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\x86\Debug\Microsoft.SqlServer.Replication.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\x86\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\x86\Debug\COTES.ISTOK.Loader.Core.pdb
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\x86\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\x86\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\x86\Debug\ru\Microsoft.SqlServer.Replication.resources.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\obj\x86\Debug\BlockSvc.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\BlockSvc\obj\x86\Debug\COTES.ISTOK.Block.Service.Properties.Resources.resources
+C:\Maildisk\isbk-src\src - копия\BlockSvc\obj\x86\Debug\BlockSvc.csproj.GenerateResource.Cache

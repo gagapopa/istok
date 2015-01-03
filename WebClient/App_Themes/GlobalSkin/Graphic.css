@@ -1,0 +1,93 @@
+﻿
+#datetimeblock
+{
+	text-align:left;
+}
+
+#datetimeblock table, #graphblock img { 
+    margin: 5px auto;
+}
+
+#graphblock img  
+{
+    display: block;
+}
+
+.validate_cell 
+{
+    width: 200px;
+}
+
+.timeeditfocus
+{
+	background-color: #ffffcc;
+    color: #000000;
+}
+
+.timeeditinvalid
+{
+	background-color: #ffcccc;
+}
+
+tr.datetimerow
+{
+	border-style:double;
+	border-width:medium;
+	border-bottom-width:medium;
+	display:table-row;
+	text-align:left;
+}
+
+td.labelcell
+{
+	font-family:Arial;
+	font-size:14px;
+}
+
+td.refreshbuttoncell
+{
+	text-align:right;
+}
+
+.dateBox
+{
+	height:20px;
+	width:145px;
+}
+
+.intervaldrowdown
+{
+	height:20px;
+	width:151px;
+}
+
+td.datebuttoncell
+{
+	text-align:center;
+}
+
+caption.tablecaption
+{
+	text-align:left;
+    font-family:Arial;
+    font-size:20px;
+}
+
+.collapsecontentpanel
+{
+	background-color:white;
+	overflow:hidden;
+}
+
+.collapsepanelheader
+{
+	width:100%;
+	height:30px;
+	cursor:pointer;
+}
+
+.graphdatatable
+{
+	border-color:Blue;
+	border-style:solid;
+}

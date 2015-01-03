@@ -1,0 +1,8 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Installer\ServerInstaller\bin\Debug\ru-RU\ISTOKServer.msi
+D:\Cloud@Mail.Ru\isbk-src\src\Installer\ServerInstaller\bin\Debug\ru-RU\ISTOKServer.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\ServerInstaller.wixproj.BindContentsFileListru-RU.txt
+obj\Debug\ServerInstaller.wixproj.BindOutputsFileListru-RU.txt
+obj\Debug\ServerInstaller.wixproj.BindBuiltOutputsFileListru-RU.txt
+C:\Maildisk\isbk-src\src - копия\Installer\ServerInstaller\bin\Debug\ru-RU\ISTOKServer.msi
+C:\Maildisk\isbk-src\src - копия\Installer\ServerInstaller\bin\Debug\ru-RU\ISTOKServer.wixpdb

@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="COTES.InfoSys.Block" GeneratedClassName="Strings">
+  <Profiles />
+  <Settings>
+    <Setting Name="cfgMirroringBackupPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Mirroring/BackupPath</Value>
+    </Setting>
+    <Setting Name="cfgMirroringPort" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Mirroring/Port</Value>
+    </Setting>
+    <Setting Name="cfgDBName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Settings/DB_name</Value>
+    </Setting>
+    <Setting Name="cfgDBHost" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Settings/DB_host</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

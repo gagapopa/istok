@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include Define.wxi?>
+  
+	<!--Компоненты толстого клиента-->
+  <Fragment>
+    <DirectoryRef Id="ISTOKCLIENTDIRECTORY">
+      <!--Основные файлы клиента-->
+      <Component Id="ThickClient.Core" Guid="1AAE7D3D-F48F-440c-97EE-BB3571A67FE1">
+        <File Id="ThickClient.CommonLib"
+              Name="$(var.CommonLibFileName)"
+              Source="$(var.CommonLibTargetPath)" />
+        <File Id="ThickClient.ServerData"
+              Name="$(var.ServerDataFileName)"
+              Source="$(var.ServerDataTargetPath)" />
+        <File Id="ThickClient.Calc"
+              Name="$(var.CalcFileName)"
+              Source="$(var.CalcTargetPath)" />
+        <File Id="ThickClient.Core"
+              Name="$(var.ClientCoreFileName)"
+              Source="$(var.ClientCoreTargetPath)" />
+        <File Id="ThickClient.App"
+              Name="$(var.ClientFileName)"
+              Source="$(var.ClientTargetPath)" />
+      </Component>
+      <!--Сторонние библиотеки-->
+      <Component Id="ThickClient.ZedGraphLibs" Guid="{3DDEE03B-94D2-407B-BF16-4CBC86DA7474}">
+        <File Id="ZedGraph"
+              Name="$(var.ZedGraphFileName)"
+              Source="$(var.ZedGraphTargetPath)" />
+      </Component>
+      <Component Id="ThickClient.MimeTexLibs" Guid="{970D0618-4816-48E7-B89E-E8EA090310B3}">
+        <File Id="MimeTex"
+              Name="$(var.MimeTexFileName)"
+              Source="$(var.MimeTexTargetPath)" />
+      </Component>
+      <Component Id="ThickClient.FastReportLibs" Guid="{E1149BD3-6AD3-486E-87F5-4125F24269FC}">
+        <File Id="ClientFastReport"
+              Name="$(var.FastReportFileName)"
+              Source="$(var.FastReportTargetPath)" />
+        <File Id="ClientFastReport.Bars"
+              Name="$(var.FastReportBarsFileName)"
+              Source="$(var.FastReportBarsTargetPath)" />
+        <File Id="ClientFastReport.Editor"
+              Name="$(var.FastReportEditorFileName)"
+              Source="$(var.FastReportEditorTargetPath)" />
+      </Component>
+      <Component Id="ThickClient.OpenXMLLibs" Guid="{B12FD025-C58E-4748-94CA-F9FF2BB22735}">
+        <File Id="ThickClient.OpenXML" 
+              Name="$(var.OpenXMLFileName)" 
+              Source="$(var.OpenXMLTargetPath)" />
+      </Component>
+      <Component Id="ThickClient.BCLLibs" Guid="{262FAFC9-2E0A-4AE4-A077-C98CF4BF6035}">
+        <File Id="ThickClient.BCL.Tasks" 
+              Name="$(var.BCLTasksFileName)"
+              Source="$(var.BCLTasksTargetPath)" />
+        <File Id="ThickClient.BCL.TasksExtension"
+              Name="$(var.BCLTasksExtensionFileName)" 
+              Source="$(var.BCLTasksExtensionTargetPath)" />
+        <File Id="ThickClient.BCL.TasksExtensionDesktop" 
+              Name="$(var.BCLTasksExtensionDesktopFileName)" 
+              Source="$(var.BCLTasksExtensionDesktopTargetPath)" />
+        <File Id="ThickClient.BCL.SystemRuntime" 
+              Name="$(var.BCLSystemRuntimeFileName)" 
+              Source="$(var.BCLSystemRuntimeTargetPath)" />
+        <File Id="ThickClient.BCL.SystemTasks"
+              Name="$(var.BCLSystemTasksFileName)"
+              Source="$(var.BCLSystemTasksTargetPath)" />
+      </Component>
+      <Component Id="ThickClient.NLogLibs" Guid="{69DAE11D-3263-49B2-B404-246473624E98}">
+        <File Id="ThickClient.Nlog" 
+              Name="$(var.NLogFileName)" 
+              Source="$(var.ThickClientNLogTargetPath)" />
+      </Component>
+      <!--Конфиги-->
+      <Component Id="ThickClient.NLogConf" Guid="{7B902A0F-2553-4541-A9A6-E4225A1E6C79}">
+        <File Id="ThickClient.NLogConf"
+              Name="$(var.NLogConfFileName)"
+              Source="$(var.ThickClientNLogConfTargetPath)" />
+      </Component>
+      <Component Id="ThickClient.ApplicationConf" Guid="{5771E70D-C913-4AD5-B71F-39D6C3957D74}">
+        <File Id="ThickClient.AppConf"
+              Name="$(var.ThickClientAppConfFileName)"
+              Source="$(var.ThickClientAppConfTargetPath)" />
+      </Component>
+      <Directory Id="ISTOKClientExtensionDirectory" Name="Extension" />
+    </DirectoryRef>
+
+    <DirectoryRef Id="ApplicationProgramsFolder">
+      <!--Ярлык для клиентского приложения-->
+      <Component Id="ThickClient.Shortcut" Guid="2B48A301-0F92-455f-A8A4-D88BEFF0450C">
+        <Shortcut Id="ClientShortcut"
+                  Name="$(var.ClientFeatureName)"
+                  Description="$(var.ClientFeatureDescription)"
+                  Target="[ISTOKCLIENTDIRECTORY]$(var.ClientFileName)" />
+
+        <CreateFolder />
+        <RegistryValue Root="HKCU"
+                       Key="Software\COTES\ISTOK"
+                       Name="ClientInstalled"
+                       Type="integer"
+                       Value="1"
+                       KeyPath="yes"/>
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+
+  <!--Фичи толстого клиента-->
+  <Fragment>
+    <Feature Id="ThickClientFeature"
+             ConfigurableDirectory="ISTOKCLIENTDIRECTORY"
+             Title="!(loc.ClientFeatureName)"
+             Description="!(loc.ClientFeatureDescription)"
+             Level="1"
+             InstallDefault="local">
+      <ComponentRef Id="ThickClient.Core" />
+      <ComponentRef Id="ThickClient.ZedGraphLibs" />
+      <ComponentRef Id="ThickClient.MimeTexLibs" />
+      <ComponentRef Id="ThickClient.FastReportLibs" />
+      <ComponentRef Id="ThickClient.OpenXMLLibs" />
+      <ComponentRef Id="ThickClient.BCLLibs" />
+      <ComponentRef Id="ThickClient.NLogLibs" />
+
+      <ComponentRef Id="ThickClient.NLogConf" />
+      <ComponentRef Id="ThickClient.ApplicationConf" />
+
+      <ComponentRef Id="ThickClient.Shortcut" />
+    </Feature>    
+  </Fragment>
+</Wix>

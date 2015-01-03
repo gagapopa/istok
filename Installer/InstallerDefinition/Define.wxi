@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include>
+  <!--Имена служб-->
+  <?define GloblaServiceName                      = ISTOKStation?>
+  <?define LoaderServiceName                      = ISTOKLoader?>
+  <?define ISTOKStationEventSourceName            = ISTOKStationLogSource?>
+  <?define ISTOKStationEventLogName               = ISTOKStationLog?>
+  <?define ISTOKSLoaderEventSourceName            = ISTOKLoaderLogSource?>
+  <?define ISTOKSLoaderEventLogName               = ISTOKLoaderLog?>
+
+  <!--Заголовки и прочии локализуемые строки-->
+  <?define GlobalServiceDisplayName               = !(loc.GlobalServiceDisplayName)?>
+  <?define LoadServerFeatureName                  = !(loc.LoadServerFeatureName)?>
+  <?define GlobalServiceDescription               = !(loc.GlobalServiceDescription)?>
+  <?define LoadServiceDisplayName                 = !(loc.LoadServiceDisplayName)?>
+  <?define LoadServiceDescription                 = !(loc.LoadServiceDescription)?>
+  <?define ISTOKFeatureName                       = !(loc.ISTOKFeatureName)?>
+  <?define ISTOKFeatureDescription                = !(loc.ISTOKFeatureDescription)?>
+  <?define LoadServerFeatureDescription           = !(loc.LoadServerFeatureDescription)?>
+  <?define StationServerFeatureName               = !(loc.StationServerFeatureName)?>
+  <?define StationServerFeatureDescription        = !(loc.StationServerFeatureDescription)?>
+  <?define ClientFeatureName                      = !(loc.ClientFeatureName)?>
+  <?define ClientFeatureDescription               = !(loc.ClientFeatureDescription)?>
+  <?define OPCLoadModuleFeatureName               = !(loc.OPCLoadModuleFeatureName)?>
+  <?define OPCLoadModuleFeatureDescription        = !(loc.OPCLoadModuleFeatureDescription)?>
+  <?define RandomLoadModuleFeatureName            = !(loc.RandomLoadModuleFeatureName)?>
+  <?define RandomLoadModuleFeatureDescription     = !(loc.RandomLoadModuleFeatureDescription)?>
+  <?define TornadoDBLoadModuleFeatureName         = !(loc.TornadoDBLoadModuleFeatureName)?>
+  <?define TornadoDBLoadModuleFeatureDescription  = !(loc.TornadoDBLoadModuleFeatureDescription)?>
+  <?define MHTLoadModuleFeatureName               = !(loc.MHTLoadModuleFeatureName)?>
+  <?define MHTLoadModuleFeatureDescription        = !(loc.MHTLoadModuleFeatureDescription)?>
+  <?define SQLLoadModuleFeatureName               = !(loc.SQLLoadModuleFeatureName)?>
+  <?define SQLLoadModuleFeatureDescription        = !(loc.SQLLoadModuleFeatureDescription)?>
+  <?define ISTOKIF97LibraryFeatureName            = !(loc.ISTOKIF97LibraryFeatureName)?>
+  <?define ISTOKIF97LibraryFeatureDescription     = !(loc.ISTOKIF97LibraryFeatureDescription)?>
+
+  <!--Пути для сборок (проекты)-->
+  <?define CommonLibFileName                      = "$(var.CommonLib.TargetFileName)"?>
+  <?define CommonLibTargetPath                    = "$(var.CommonLib.TargetPath)"?>
+  <?define ServerDataFileName                     = "$(var.ASCommon.TargetFileName)"?>
+  <?define ServerDataTargetPath                   = "$(var.ASCommon.TargetPath)"?>
+  <?define ServerCoreFileName                     = "$(var.Assignment.TargetFileName)"?>
+  <?define ServerCoreTargetPath                   = "$(var.Assignment.TargetPath)"?>
+  <?define LoadCoreFileName                       = "$(var.LoadModule.TargetFileName)"?>
+  <?define LoadCoreTargetPath                     = "$(var.LoadModule.TargetPath)"?>
+  <?define CalcFileName                           = "$(var.Calc.TargetFileName)"?>
+  <?define CalcTargetPath                         = "$(var.Calc.TargetPath)"?>
+  <?define ServerAppFileName                      = "$(var.GlobSvc.TargetFileName)"?>
+  <?define ServerAppTargetPath                    = "$(var.GlobSvc.TargetPath)"?>
+  <?define LoaderAppFileName                      = "$(var.BlockSvc.TargetFileName)"?>
+  <?define LoaderAppTargetPath                    = "$(var.BlockSvc.TargetPath)"?>
+  <?define ClientCoreFileName                     = "$(var.ClientCore.TargetFileName)"?>
+  <?define ClientCoreTargetPath                   = "$(var.ClientCore.TargetPath)"?>
+  <?define ClientFileName                         = "$(var.Client.TargetFileName)"?>
+  <?define ClientTargetPath                       = "$(var.Client.TargetPath)"?>
+  <?define ServerUIFileName                       = "$(var.global_UI.TargetFileName)"?>
+  <?define ServerUITargetPath                     = "$(var.global_UI.TargetPath)"?>
+  <?define LoaderUIFileName                       = "$(var.block_UI.TargetFileName)"?>
+  <?define LoaderUITargetPath                     = "$(var.block_UI.TargetPath)"?>
+  <?define DiagFileName                           = "$(var.IDiag.TargetFileName)"?>
+  <?define DiagTargetPath                         = "$(var.IDiag.TargetPath)"?>
+  <?define modCommonFileName                      = "$(var.modCommon.TargetFileName)"?>
+  <?define modCommonTargetPath                    = "$(var.modCommon.TargetPath)"?>
+  <?define ReceiverExtensionFileName              = "$(var.ISTOKReceiverExtension.TargetFileName)"?>
+  <?define ReceiverExtensionTargetPath            = "$(var.ISTOKReceiverExtension.TargetPath)"?>
+  <?define ParameterReceiverExtensionFileName     = "$(var.ParameterReceiverExtension.TargetFileName)"?>
+  <?define ParameterReceiverExtensionTargetPath   = "$(var.ParameterReceiverExtension.TargetPath)"?>
+
+  <?define ModAtecFileName                        = "$(var.modAtec.TargetFileName)"?>
+  <?define ModAtecTargetPath                      = "$(var.modAtec.TargetPath)"?>
+  <?define ModFBFileName                          = "$(var.modFb.TargetFileName)"?>
+  <?define ModFBTargetPath                        = "$(var.modFb.TargetPath)"?>
+  <?define ModMHTFileName                         = "$(var.modMHT.TargetFileName)"?>
+  <?define ModMHTTargetPath                       = "$(var.modMHT.TargetPath)"?>
+  <?define ModOpcFileName                         = "$(var.modOpc.TargetFileName)"?>
+  <?define ModOpcTargetPath                       = "$(var.modOpc.TargetPath)"?>
+  <?define ModRandomFileName                      = "$(var.modRandom.TargetFileName)"?>
+  <?define ModRandomTargetPath                    = "$(var.modRandom.TargetPath)"?>
+  <?define ModSqlFileName                         = "$(var.modSql.TargetFileName)"?>
+  <?define ModSqlTargetPath                       = "$(var.modSql.TargetPath)"?>
+  <?define ModTornadoFileName                     = "$(var.modTornado.TargetFileName)"?>
+  <?define ModTornadoTargetPath                   = "$(var.modTornado.TargetPath)"?>
+  <?define ModVzletFileName                       = "$(var.modVzlet.TargetFileName)"?>
+  <?define ModVzletTargetPath                     = "$(var.modVzlet.TargetPath)"?>
+
+  <?define IF97CalcLibFileName                    = "$(var.IF97Lib.TargetFileName)"?>
+  <?define IF97CalcLibTargetPath                  = "$(var.IF97Lib.TargetPath)"?>
+
+  <!--Чужие Dll'ки имена и пути до них-->
+  <?define ManualDLLDir                           = "../../DLLs/"?>
+  <!--OpcNet-->
+  <?define ManualOpcNetDir                        = "../../Modules/modOpc/Reference/"?>
+  <?define OpcNetApiFileName                      = "OpcNetApi.dll"?>
+  <?define OpcNetApiTargetPath                    = "$(var.ManualOpcNetDir)$(var.OpcNetApiFileName)"?>
+  <?define OpcNetApiComFileName                   = "OpcNetApi.Com.dll"?>
+  <?define OpcNetApiComTargetPath                 = "$(var.ManualOpcNetDir)$(var.OpcNetApiComFileName)"?>
+  <?define OpcRcwAeileName                        = "OpcRcw.Ae.dll"?>
+  <?define OpcRcwAeTargetPath                     = "$(var.ManualOpcNetDir)$(var.OpcRcwAeileName)"?>
+  <?define OpcRcwComnFileName                     = "OpcRcw.Comn.dll"?>
+  <?define OpcRcwComnTargetPath                   = "$(var.ManualOpcNetDir)$(var.OpcRcwComnFileName)"?>
+  <?define OpcRcwDaFileName                       = "OpcRcw.Da.dll"?>
+  <?define OpcRcwDaTargetPath                     = "$(var.ManualOpcNetDir)$(var.OpcRcwDaFileName)"?>
+  <?define OpcRcwDxFileName                       = "OpcRcw.Dx.dll"?>
+  <?define OpcRcwDxTargetPath                     = "$(var.ManualOpcNetDir)$(var.OpcRcwDxFileName)"?>
+  <?define OpcRcwHdaFileName                      = "OpcRcw.Hda.dll"?>
+  <?define OpcRcwHdaTargetPath                    = "$(var.ManualOpcNetDir)$(var.OpcRcwHdaFileName)"?>
+  <!--ZedGraph-->
+  <?define ZedGraphFileName                       = "ZedGraph.dll"?>
+  <?define ZedGraphTargetPath                     = "$(var.ManualDLLDir)$(var.ZedGraphFileName)"?>
+  <!--MimeTeX-->
+  <?define MimeTexFileName                        = "MimeTex.dll"?>
+  <?define MimeTexTargetPath                      = "$(var.ManualDLLDir)$(var.MimeTexFileName)"?>
+  <!--FastReport-->
+  <?define ManualFastReportDir                    = "$(var.ManualDLLDir)FastReport/"?>
+  <?define FastReportFileName                     = "FastReport.dll"?>
+  <?define FastReportTargetPath                   = "$(var.ManualFastReportDir)$(var.FastReportFileName)"?>
+  <?define FastReportBarsFileName                 = "FastReport.Bars.dll"?>
+  <?define FastReportBarsTargetPath               = "$(var.ManualFastReportDir)$(var.FastReportBarsFileName)"?>
+  <?define FastReportEditorFileName               = "FastReport.Editor.dll"?>
+  <?define FastReportEditorTargetPath             = "$(var.ManualFastReportDir)$(var.FastReportEditorFileName)"?>
+  <!--
+  <?define FastReportInstallFileName              = "FastReport.Install.dll"?>
+  <?define FastReportInstallTargetPath            = "$(var.ManualFastReportDir)$(var.FastReportInstallFileName)"?>
+  <?define FastReportVSDesignFileName             = "FastReport.VSDesign.dll"?>
+  <?define FastReportVSDesignTargetPath           = "$(var.ManualFastReportDir)$(var.FastReportVSDesignFileName)"?>
+  -->
+  <!--OpenXml-->
+  <?define OpenXMLFileName                        = "DocumentFormat.OpenXml.dll"?>
+  <?define OpenXMLTargetPath                      = "$(var.ManualDLLDir)$(var.OpenXMLFileName)"?>
+  <!--BCL (via nuget)-->
+  <?define BCLTasksFileName                       = "Microsoft.Threading.Tasks.dll"?>
+  <?define BCLTasksTargetPath                     = "$(var.Client.TargetDir)$(var.BCLTasksFileName)"?>
+  <?define BCLTasksExtensionFileName              = "Microsoft.Threading.Tasks.Extensions.dll"?>
+  <?define BCLTasksExtensionTargetPath            = "$(var.Client.TargetDir)$(var.BCLTasksExtensionFileName)"?>
+  <?define BCLTasksExtensionDesktopFileName       = "Microsoft.Threading.Tasks.Extensions.Desktop.dll"?>
+  <?define BCLTasksExtensionDesktopTargetPath     = "$(var.Client.TargetDir)$(var.BCLTasksExtensionDesktopFileName)"?>
+  <?define BCLSystemRuntimeFileName               = "System.Runtime.dll"?>
+  <?define BCLSystemRuntimeTargetPath             = "$(var.Client.TargetDir)$(var.BCLSystemRuntimeFileName)"?>
+  <?define BCLSystemTasksFileName                 = "System.Threading.Tasks.dll"?>
+  <?define BCLSystemTasksTargetPath               = "$(var.Client.TargetDir)$(var.BCLSystemTasksFileName)"?>
+  <!--NLog (via nuget)-->
+  <?define NLogFileName                           = "NLog.dll"?>
+  <?define ThickClientNLogTargetPath              = "$(var.Client.TargetDir)$(var.NLogFileName)"?>
+  <?define StationNLogTargetPath                  = "$(var.GlobSvc.TargetDir)$(var.NLogFileName)"?>
+  <?define LoaderNLogTargetPath                   = "$(var.BlockSvc.TargetDir)$(var.NLogFileName)"?>
+  <!--Entity Framework (via nuget)-->
+  <?define EFFileName                             = "EntityFramework.dll"?>
+  <?define StationEFTargetPath                    = "$(var.GlobSvc.TargetDir)$(var.EFFileName)"?>
+  <!--FireBirdClient (via nuget)-->
+  <?define FBClientFileName                       = "FirebirdSql.Data.FirebirdClient.dll"?>
+  <?define LoadModuleFBFBClientTargetPath         = "$(var.modFb.TargetDir)$(var.FBClientFileName)"?>
+
+  <!--Файлы конфигурации-->
+  <?define NLogConfFileName                       = "NLog.config"?>
+  <?define ThickClientNLogConfTargetPath          = "$(var.Client.ProjectDir)$(var.NLogConfFileName)"?>
+  <?define StationNLogConfTargetPath              = "$(var.GlobSvc.ProjectDir)$(var.NLogConfFileName)"?>
+  <?define LoaderNLogConfTargetPath               = "$(var.BlockSvc.ProjectDir)$(var.NLogConfFileName)"?>
+  <?define ThickClientAppConfFileName             = "$(var.Client.TargetFileName).config"?>
+  <?define ThickClientAppConfTargetPath           = "$(var.Client.TargetDir)$(var.ThickClientAppConfFileName)"?>
+  <?define StationAppConfFileName                 = "$(var.GlobSvc.TargetFileName).config"?>
+  <?define StationAppConfTargetPath               = "$(var.GlobSvc.TargetDir)$(var.StationAppConfFileName)"?>
+  <?define LoaderAppConfFileName                  = "$(var.BlockSvc.TargetFileName).config"?>
+  <?define LoaderAppConfTargetPath                = "$(var.BlockSvc.TargetDir)$(var.LoaderAppConfFileName)"?>
+  <?define LoaderUIAppConfFileName                = "$(var.block_UI.TargetFileName).config"?>
+  <?define LoaderUIAppConfTargetPath              = "$(var.block_UI.TargetDir)$(var.LoaderUIAppConfFileName)"?>
+</Include>

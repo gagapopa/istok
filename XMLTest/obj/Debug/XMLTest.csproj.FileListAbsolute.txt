@@ -1,0 +1,24 @@
+D:\Cloud@Mail.Ru\isbk-src\src\XMLTest\bin\Debug\XMLTest.exe.config
+D:\Cloud@Mail.Ru\isbk-src\src\XMLTest\bin\Debug\XMLTest.exe
+D:\Cloud@Mail.Ru\isbk-src\src\XMLTest\bin\Debug\XMLTest.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\XMLTest\bin\Debug\XMLTest.exe.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\XMLTest\bin\Debug\XMLTest.exe.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\XMLTest\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\XMLTest\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\XMLTest\obj\Debug\XMLTest.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\XMLTest\obj\Debug\XMLTest.Form1.resources
+D:\Cloud@Mail.Ru\isbk-src\src\XMLTest\obj\Debug\XMLTest.Properties.Resources.resources
+D:\Cloud@Mail.Ru\isbk-src\src\XMLTest\obj\Debug\XMLTest.csproj.GenerateResource.Cache
+D:\Cloud@Mail.Ru\isbk-src\src\XMLTest\obj\Debug\XMLTest.exe
+D:\Cloud@Mail.Ru\isbk-src\src\XMLTest\obj\Debug\XMLTest.pdb
+C:\Maildisk\isbk-src\src - копия\XMLTest\bin\Debug\XMLTest.exe.config
+C:\Maildisk\isbk-src\src - копия\XMLTest\bin\Debug\XMLTest.exe
+C:\Maildisk\isbk-src\src - копия\XMLTest\bin\Debug\XMLTest.pdb
+C:\Maildisk\isbk-src\src - копия\XMLTest\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\XMLTest\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\XMLTest\obj\Debug\XMLTest.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\XMLTest\obj\Debug\XMLTest.Form1.resources
+C:\Maildisk\isbk-src\src - копия\XMLTest\obj\Debug\XMLTest.Properties.Resources.resources
+C:\Maildisk\isbk-src\src - копия\XMLTest\obj\Debug\XMLTest.csproj.GenerateResource.Cache
+C:\Maildisk\isbk-src\src - копия\XMLTest\obj\Debug\XMLTest.exe
+C:\Maildisk\isbk-src\src - копия\XMLTest\obj\Debug\XMLTest.pdb

@@ -1,0 +1,42 @@
+﻿.cellHeader
+{
+	text-align: center;
+	background-color: #C0C0C0;
+	margin: 0px;
+	padding: 5px;
+	border-style: solid;
+	border-spacing: 0px 0px;
+	border-width: 1px;
+}
+.cellParam
+{
+	margin: 0px;
+	padding: 5px;
+	border-style: solid;
+	border-spacing: 0px 0px;
+	border-width: 1px;
+}
+.cellCode
+{
+	margin: 0px;
+	padding: 5px;
+	border-style: solid;
+	border-spacing: 0px 0px;
+	border-width: 1px;
+}
+.cellValue
+{
+	margin: 0px;
+	padding: 5px;
+	border-style: solid;
+	border-spacing: 0px 0px;
+	border-width: 1px;
+}
+.cellDate
+{
+	margin: 0px;
+	padding: 5px;
+	border-style: solid;
+	border-spacing: 0px 0px;
+	border-width: 1px;
+}

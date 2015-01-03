@@ -1,0 +1,23 @@
+D:\Cloud@Mail.Ru\isbk-src\src\CommonLib\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\CommonLib\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\CommonLib\bin\Debug\COTES.ISTOK.Common.dll.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\CommonLib\bin\Debug\COTES.ISTOK.Common.dll.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\CommonLib\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\CommonLib\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\CommonLib\obj\Debug\CommonLib.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\CommonLib\obj\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\CommonLib\obj\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src\CommonLib\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src\CommonLib\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src\CommonLib\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src\CommonLib\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src\CommonLib\obj\Debug\CommonLib.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src\CommonLib\obj\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src\CommonLib\obj\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\CommonLib\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\CommonLib\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\CommonLib\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\CommonLib\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\CommonLib\obj\Debug\CommonLib.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\CommonLib\obj\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\CommonLib\obj\Debug\COTES.ISTOK.Common.pdb

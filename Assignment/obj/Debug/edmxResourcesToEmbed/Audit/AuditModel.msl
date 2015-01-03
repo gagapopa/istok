@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="AuditEntities">
+    <EntitySetMapping Name="AuditEntries">
+      <EntityTypeMapping TypeName="Model.AuditEntry">
+        <MappingFragment StoreEntitySet="audit_entry">
+          <ScalarProperty Name="ID" ColumnName="id" />
+          <ScalarProperty Name="Time" ColumnName="time" />
+          <ScalarProperty Name="UserLogin" ColumnName="user_login" />
+          <ScalarProperty Name="UserFullName" ColumnName="user_fullname" />
+          <ScalarProperty Name="UserPosition" ColumnName="user_position" />
+          <ScalarProperty Name="UserRole" ColumnName="user_role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditLobs">
+      <EntityTypeMapping TypeName="Model.AuditLob">
+        <MappingFragment StoreEntitySet="audit_lobs">
+          <ScalarProperty Name="ID" ColumnName="id" />
+          <ScalarProperty Name="EntryID" ColumnName="entry_id" />
+          <ScalarProperty Name="UnitNodeID" ColumnName="unitnode_id" />
+          <ScalarProperty Name="UnitNodeFullPath" ColumnName="unitnode_fullpath" />
+          <ScalarProperty Name="PropName" ColumnName="prop_name" />
+          <ScalarProperty Name="RevisionID" ColumnName="revision_id" />
+          <ScalarProperty Name="RevisionTime" ColumnName="revision_time" />
+          <ScalarProperty Name="RevisionBrief" ColumnName="revision_brief" />
+          <ScalarProperty Name="ValueOld" ColumnName="value_old" />
+          <ScalarProperty Name="ValueNew" ColumnName="value_new" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditProps">
+      <EntityTypeMapping TypeName="Model.AuditProp">
+        <MappingFragment StoreEntitySet="audit_props">
+          <ScalarProperty Name="ID" ColumnName="id" />
+          <ScalarProperty Name="EntryID" ColumnName="entry_id" />
+          <ScalarProperty Name="UnitNodeID" ColumnName="unitnode_id" />
+          <ScalarProperty Name="UnitNodeFullPath" ColumnName="unitnode_fullpath" />
+          <ScalarProperty Name="PropName" ColumnName="prop_name" />
+          <ScalarProperty Name="RevisionID" ColumnName="revision_id" />
+          <ScalarProperty Name="RevisionTime" ColumnName="revision_time" />
+          <ScalarProperty Name="RevisionBrief" ColumnName="revision_brief" />
+          <ScalarProperty Name="ValueOld" ColumnName="value_old" />
+          <ScalarProperty Name="ValueNew" ColumnName="value_new" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditUnits">
+      <EntityTypeMapping TypeName="Model.AuditUnit">
+        <MappingFragment StoreEntitySet="audit_unit">
+          <ScalarProperty Name="ID" ColumnName="id" />
+          <ScalarProperty Name="EntryID" ColumnName="entry_id" />
+          <ScalarProperty Name="UnitNodeID" ColumnName="unitnode_id" />
+          <ScalarProperty Name="FullPathOld" ColumnName="fullpath_old" />
+          <ScalarProperty Name="FullPathNew" ColumnName="fullpath_new" />
+          <ScalarProperty Name="TypeNameOld" ColumnName="type_name_old" />
+          <ScalarProperty Name="TypeNameNew" ColumnName="type_name_new" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditCalcNodes">
+      <EntityTypeMapping TypeName="Model.AuditCalcNode">
+        <MappingFragment StoreEntitySet="audit_calc_node">
+          <ScalarProperty Name="UnitNodeFullPath" ColumnName="unitnode_fullpath" />
+          <ScalarProperty Name="UnitNodeID" ColumnName="unitnode_id" />
+          <ScalarProperty Name="CalcStartID" ColumnName="calc_start_id" />
+          <ScalarProperty Name="ID" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditCalcStarts">
+      <EntityTypeMapping TypeName="Model.AuditCalcStart">
+        <MappingFragment StoreEntitySet="audit_calc_start">
+          <ScalarProperty Name="CalcRecalc" ColumnName="calc_recalc" />
+          <ScalarProperty Name="CalcEnd" ColumnName="calc_end" />
+          <ScalarProperty Name="CalcStart" ColumnName="calc_start" />
+          <ScalarProperty Name="EntryID" ColumnName="entry_id" />
+          <ScalarProperty Name="ID" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditValues">
+      <EntityTypeMapping TypeName="Model.AuditValue">
+        <MappingFragment StoreEntitySet="audit_value">
+          <ScalarProperty Name="ValueTime" ColumnName="value_time" />
+          <ScalarProperty Name="ValueNew" ColumnName="value_new" />
+          <ScalarProperty Name="ValueOriginal" ColumnName="value_original" />
+          <ScalarProperty Name="ValueArgs" ColumnName="value_args" />
+          <ScalarProperty Name="UnitNodeFullPath" ColumnName="unitnode_fullpath" />
+          <ScalarProperty Name="UnitNodeID" ColumnName="unitnode_id" />
+          <ScalarProperty Name="EntryID" ColumnName="entry_id" />
+          <ScalarProperty Name="ID" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditGroups">
+      <EntityTypeMapping TypeName="Model.AuditGroup">
+        <MappingFragment StoreEntitySet="audit_group">
+          <ScalarProperty Name="GroupDescriptionNew" ColumnName="group_description_new" />
+          <ScalarProperty Name="GroupDescriptionOld" ColumnName="group_description_old" />
+          <ScalarProperty Name="GroupNameNew" ColumnName="group_name_new" />
+          <ScalarProperty Name="GroupNameOld" ColumnName="group_name_old" />
+          <ScalarProperty Name="GroupID" ColumnName="group_id" />
+          <ScalarProperty Name="EntryID" ColumnName="entry_id" />
+          <ScalarProperty Name="ID" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditTypes">
+      <EntityTypeMapping TypeName="Model.AuditType">
+        <MappingFragment StoreEntitySet="audit_type">
+          <ScalarProperty Name="TypeChildFilterNew" ColumnName="type_child_filter_new" />
+          <ScalarProperty Name="TypeChildFilterOld" ColumnName="type_child_filter_old" />
+          <ScalarProperty Name="TypeImageNew" ColumnName="type_image_new" />
+          <ScalarProperty Name="TypeImageOld" ColumnName="type_image_old" />
+          <ScalarProperty Name="TypePropsNew" ColumnName="type_props_new" />
+          <ScalarProperty Name="TypePropsOld" ColumnName="type_props_old" />
+          <ScalarProperty Name="TypeNameNew" ColumnName="type_name_new" />
+          <ScalarProperty Name="TypeNameOld" ColumnName="type_name_old" />
+          <ScalarProperty Name="ExtGuidBinary" ColumnName="ext_guid" />
+          <ScalarProperty Name="TypeID" ColumnName="type_id" />
+          <ScalarProperty Name="EntryID" ColumnName="entry_id" />
+          <ScalarProperty Name="ID" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditUsers">
+      <EntityTypeMapping TypeName="Model.AuditUser">
+        <MappingFragment StoreEntitySet="audit_user">
+          <ScalarProperty Name="UserPasswordChanged" ColumnName="user_password_changed" />
+          <ScalarProperty Name="UserRoleNew" ColumnName="user_role_new" />
+          <ScalarProperty Name="UserRoleOld" ColumnName="user_role_old" />
+          <ScalarProperty Name="UserPositionNew" ColumnName="user_position_new" />
+          <ScalarProperty Name="UserPositionOld" ColumnName="user_position_old" />
+          <ScalarProperty Name="UserFullNameNew" ColumnName="user_fullname_new" />
+          <ScalarProperty Name="UserFullNameOld" ColumnName="user_fullname_old" />
+          <ScalarProperty Name="UserGroupsNew" ColumnName="user_groups_new" />
+          <ScalarProperty Name="UserGroupsOld" ColumnName="user_groups_old" />
+          <ScalarProperty Name="UserLoginNew" ColumnName="user_login_new" />
+          <ScalarProperty Name="UserLoginOld" ColumnName="user_login_old" />
+          <ScalarProperty Name="UserID" ColumnName="user_id" />
+          <ScalarProperty Name="EntryID" ColumnName="entry_id" />
+          <ScalarProperty Name="ID" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

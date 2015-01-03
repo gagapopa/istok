@@ -1,0 +1,6 @@
+D:\Cloud@Mail.Ru\isbk-src\src\CommonLib\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\CommonLib\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\CommonLib\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\CommonLib\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\CommonLib\obj\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\CommonLib\obj\Debug\COTES.ISTOK.Common.pdb

@@ -1,0 +1,4 @@
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\obj\Debug\COTES.ISTOK.Form1.resources
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\obj\Debug\COTES.ISTOK.Properties.Resources.resources
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\obj\Debug\PackageViewer.csproj.GenerateResource.Cache
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\obj\Debug\PackageViewer.csprojResolveAssemblyReference.cache

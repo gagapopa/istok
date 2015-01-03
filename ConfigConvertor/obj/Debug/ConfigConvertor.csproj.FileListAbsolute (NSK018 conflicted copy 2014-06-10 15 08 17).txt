@@ -1,0 +1,10 @@
+D:\Cloud@Mail.Ru\isbk-src\src\ConfigConvertor\bin\Debug\ConfigConvertor.exe.config
+D:\Cloud@Mail.Ru\isbk-src\src\ConfigConvertor\bin\Debug\ConfigConvertor.exe
+D:\Cloud@Mail.Ru\isbk-src\src\ConfigConvertor\bin\Debug\ConfigConvertor.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\ConfigConvertor\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ConfigConvertor\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ConfigConvertor\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\ConfigConvertor\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\ConfigConvertor\obj\Debug\ConfigConvertor.exe
+D:\Cloud@Mail.Ru\isbk-src\src\ConfigConvertor\obj\Debug\ConfigConvertor.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\ConfigConvertor\obj\Debug\ConfigConvertor.csprojResolveAssemblyReference.cache

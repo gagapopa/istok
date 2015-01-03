@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{78472114-6CAA-4634-AB77-2DEEAF2A9C62}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>COTES.ISTOK.Assignment</RootNamespace>
+    <AssemblyName>COTES.ISTOK.Server.Core</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DKSMRelease|AnyCPU' ">
+    <OutputPath>bin\DKSMRelease\</OutputPath>
+    <DefineConstants>TRACE;EMA</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DKSMDebug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EMA</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>..\DLLs\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport">
+      <HintPath>..\DLLs\FastReport\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.3.1.0.0\lib\net40\NLog.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alive\AliveMessageQueue.cs" />
+    <Compile Include="all.cs" />
+    <None Include="Audit\AuditCalcNode.cs">
+      <DependentUpon>AuditModel.tt</DependentUpon>
+    </None>
+    <None Include="Audit\AuditCalcStart.cs">
+      <DependentUpon>AuditModel.tt</DependentUpon>
+    </None>
+    <None Include="Audit\AuditEntry.cs">
+      <DependentUpon>AuditModel.tt</DependentUpon>
+    </None>
+    <None Include="Audit\AuditGroup.cs">
+      <DependentUpon>AuditModel.tt</DependentUpon>
+    </None>
+    <None Include="Audit\AuditLob.cs">
+      <DependentUpon>AuditModel.tt</DependentUpon>
+    </None>
+    <Compile Include="Audit\AuditModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuditModel.Context.tt</DependentUpon>
+    </Compile>
+    <None Include="Audit\AuditModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuditModel.tt</DependentUpon>
+    </None>
+    <Compile Include="Audit\AuditModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AuditModel.edmx</DependentUpon>
+    </Compile>
+    <None Include="Audit\AuditProp.cs">
+      <DependentUpon>AuditModel.tt</DependentUpon>
+    </None>
+    <Compile Include="Audit\AuditServer.cs" />
+    <None Include="Audit\AuditType.cs">
+      <DependentUpon>AuditModel.tt</DependentUpon>
+    </None>
+    <None Include="Audit\AuditUnit.cs">
+      <DependentUpon>AuditModel.tt</DependentUpon>
+    </None>
+    <None Include="Audit\AuditUser.cs">
+      <DependentUpon>AuditModel.tt</DependentUpon>
+    </None>
+    <None Include="Audit\AuditValue.cs">
+      <DependentUpon>AuditModel.tt</DependentUpon>
+    </None>
+    <Compile Include="Audit\IAuditServer.cs" />
+    <Compile Include="Audit\UnitManagerAuditDecorator.cs" />
+    <Compile Include="Audit\UnitTypeManagerAuditDecorator.cs" />
+    <Compile Include="Audit\UserManagerAuditDecorator.cs" />
+    <Compile Include="BlockProxy.cs" />
+    <Compile Include="Calc\AssignmentCalcSupplier.cs" />
+    <Compile Include="Calc\CalcServerAdapter.cs" />
+    <Compile Include="Calc\CTableFunction.cs" />
+    <Compile Include="Calc\InterpolateFunctionInfo.cs" />
+    <Compile Include="Alive\AliveRegistrator.cs" />
+    <Compile Include="Creator.cs" />
+    <Compile Include="Cryptor.cs" />
+    <Compile Include="ExportImport\WordExporter.cs" />
+    <Compile Include="ExportImport\ExcelExporter.cs" />
+    <Compile Include="ExportImport\XmlExporter.cs" />
+    <Compile Include="ExportImport\IExportService.cs" />
+    <Compile Include="ExportImport\Exporter.cs" />
+    <Compile Include="ExportImport\ExportImportManager.cs" />
+    <Compile Include="Extension\DomainedExtension.cs" />
+    <Compile Include="Extension\ExtensionManager.cs" />
+    <Compile Include="GlobalDiagnostics.cs" />
+    <Compile Include="ClientInfo.cs" />
+    <Compile Include="LogReceiverServer.cs" />
+    <Compile Include="Schedule\ScheduleManager.cs" />
+    <Compile Include="Security\ILockManager.cs" />
+    <Compile Include="Security\SessionIDEventArgs.cs" />
+    <Compile Include="Security\ISecurityManager.cs" />
+    <Compile Include="Security\IUserManager.cs" />
+    <Compile Include="Security\LockManager.cs" />
+    <Compile Include="Security\UserManager.cs" />
+    <Compile Include="Structure\IUnitManager.cs" />
+    <Compile Include="Structure\IUnitTypeManager.cs" />
+    <Compile Include="Structure\UnitTypeManager.cs" />
+    <Compile Include="Values\ParamsLoadManager.cs" />
+    <Compile Include="GlobalQueryManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\ExtensionDataReportSource.cs" />
+    <Compile Include="Reports\MessageReportSource.cs" />
+    <Compile Include="Reports\UserReportSource.cs" />
+    <Compile Include="Reports\IReportSource.cs" />
+    <Compile Include="Reports\ParameterReportSource.cs" />
+    <Compile Include="Reports\SettingsReportSource.cs" />
+    <Compile Include="Reports\TimeReportSource.cs" />
+    <Compile Include="Reports\ReportUtility.cs" />
+    <Compile Include="Reports\StructureReportSource.cs" />
+    <Compile Include="RevisionManager.cs" />
+    <Compile Include="Schedule\Scheduler.cs" />
+    <Compile Include="Security\SecurityManager.cs" />
+    <Compile Include="Values\ValueReceiver.cs" />
+    <Compile Include="Structure\UnitManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ASCommon\ASCommon.csproj">
+      <Project>{07E81EE7-0B48-4562-A57C-FC595EC84D99}</Project>
+      <Name>ASCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Calc\Calc.csproj">
+      <Project>{B1234928-66F6-49EE-844A-2B302140540E}</Project>
+      <Name>Calc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonLib\CommonLib.csproj">
+      <Project>{80429148-427C-4207-BCD0-AE5E38B405D7}</Project>
+      <Name>CommonLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISTOKReceiverExtension\ISTOKReceiverExtension.csproj">
+      <Project>{5755546E-23C0-471E-9899-CB96FA7E0852}</Project>
+      <Name>ISTOKReceiverExtension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ParameterReceiverExtension\ParameterReceiverExtension.csproj">
+      <Project>{7FA10DE6-D260-49DD-90A0-B3BB822B8F6E}</Project>
+      <Name>ParameterReceiverExtension</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Audit\AuditModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AuditModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config" />
+    <None Include="Audit\AuditModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AuditModel.edmx</DependentUpon>
+      <LastGenOutput>AuditModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Audit\AuditModel.edmx.diagram">
+      <DependentUpon>AuditModel.edmx</DependentUpon>
+    </None>
+    <None Include="Audit\AuditModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AuditModel.edmx</DependentUpon>
+      <LastGenOutput>AuditModel.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

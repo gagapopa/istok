@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="d:\vs2013\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Targets>
+  <Target Name="D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Opc.dll">
+   <Modules>
+    <Module Name="cotes.istok.loader.modules.opc.dll">
+     <Namespaces>
+      <Namespace Name="COTES.ISTOK.Modules.modOpc">
+       <Types>
+        <Type Name="OpcDaDataLoader" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetCurrent()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:56:08Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc" File="OpcDaDataLoader.cs" Line="293">'OpcDaDataLoader.GetCurrent()' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="OpcDataLoaderFactory" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#CreateLoader(COTES.ISTOK.ChannelInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Задайте правильные аргументы для методов форматирования" Category="Microsoft.Usage" CheckId="CA2241" Status="Active" Created="2014-05-27 01:56:08Z" FixCategory="DependsOnFix">
+             <Issue Name="MissingFormatItem" Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc" File="OpcDataLoaderFactory.cs" Line="138">Метод 'OpcDataLoaderFactory.CreateLoader(ChannelInfo)' вызывает 'string.Format(string, object, object)', но не предоставляет элемента формата для аргумента "1". Указанная строка формата: '"Некорректное значение свойства {1}"'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="OpcHdaDataLoader" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreateItems(Opc.Hda.Trend,Opc.ItemIdentifier[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:56:08Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc" File="OpcHdaDataLoader.cs" Line="136">'OpcHdaDataLoader.CreateItems(Trend, ItemIdentifier[])' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetArchive(System.DateTime,System.DateTime)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:56:08Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc" File="OpcHdaDataLoader.cs" Line="325">'OpcHdaDataLoader.GetArchive(DateTime, DateTime)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="WrongSpecificationException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237" Status="Active" Created="2014-05-27 01:56:08Z" FixCategory="NonBreaking">
+           <Issue Certainty="95" Level="Error">Добавьте [Serializable] к 'WrongSpecificationException', так как этот тип реализует ISerializable.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237">
+   <Name>Пометьте типы ISerializable атрибутом SerializableAttribute</Name>
+   <Description>Интерфейс System.Runtime.Serialization.ISerializable дает возможность типу настраивать свою сериализацию, в то время как атрибут Serializable дает возможность исполняющей среде опознавать этот тип как сериализуемый.</Description>
+   <Resolution Name="Default">Добавьте [Serializable] к {0}, так как этот тип реализует ISerializable.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182350.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200">
+   <Name>Повторно порождайте исключения для сохранения сведений стека</Name>
+   <Description>Используйте инструкцию IL rethrow для сохранения исходных сведений стека при повторном вызове перехваченного исключения.</Description>
+   <Resolution Name="Default">{0} повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182363.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="Задайте правильные аргументы для методов форматирования" Category="Microsoft.Usage" CheckId="CA2241">
+   <Name>Задайте правильные аргументы для методов форматирования</Name>
+   <Description>Предоставьте корректное число аргументов для вызовов String.Format.</Description>
+   <Resolution Name="MissingFormatItem">Метод {0} вызывает {1}, но не предоставляет элемента формата для аргумента {2}. Указанная строка формата: '{3}'</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182361.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Категория</String>
+  <String Key="Certainty">Достоверность</String>
+  <String Key="CollapseAll">Свернуть все</String>
+  <String Key="CheckId">ИД проверки</String>
+  <String Key="Error">Ошибка</String>
+  <String Key="Errors">ошибки</String>
+  <String Key="ExpandAll">Развернуть все</String>
+  <String Key="Help">Справка</String>
+  <String Key="Line">Строка</String>
+  <String Key="Messages">сообщения</String>
+  <String Key="LocationNotStoredInPdb">[расположение не сохранено в PDB]</String>
+  <String Key="Project">Проект</String>
+  <String Key="Resolution">Разрешение</String>
+  <String Key="Rule">Правило</String>
+  <String Key="RuleFile">Файл правил</String>
+  <String Key="RuleDescription">Описание правила</String>
+  <String Key="Source">Источник</String>
+  <String Key="Status">Состояние</String>
+  <String Key="Target">Цель</String>
+  <String Key="Warning">Предупреждение</String>
+  <String Key="Warnings">предупреждения</String>
+  <String Key="ReportTitle">Отчет по анализу кода</String>
+ </Localized>
+</FxCopReport>

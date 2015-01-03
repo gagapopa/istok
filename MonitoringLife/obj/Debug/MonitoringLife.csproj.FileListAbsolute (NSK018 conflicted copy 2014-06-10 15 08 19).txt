@@ -1,0 +1,6 @@
+D:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife\bin\Debug\MonitoringLife.dll.config
+D:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife\bin\Debug\MonitoringLife.dll
+D:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife\bin\Debug\MonitoringLife.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife\obj\Debug\MonitoringLife.dll
+D:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife\obj\Debug\MonitoringLife.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife\obj\Debug\MonitoringLife.csprojResolveAssemblyReference.cache

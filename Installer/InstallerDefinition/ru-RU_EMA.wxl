@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="ru-RU" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+  <!--Локализация установщика для Таганрока-->
+  <String Id="EMA_GlobalServiceDisplayName">!(loc.EMA_ISTOKFeatureName). !(loc.EMA_StationServerFeatureName)</String>
+  <String Id="EMA_GlobalServiceDescription">Общестанционный сервер информационной системы "ИСТОК-СБК"</String>
+
+  <String Id="EMA_LoadServiceDisplayName">!(loc.EMA_ISTOKFeatureName). !(loc.EMA_LoadServerFeatureName)</String>
+  <String Id="EMA_LoadServiceDescription">Сервер сбора данных информационной системы "ИСТОК-СБК"</String>
+
+  <String Id="EMA_ISTOKFeatureName">ИСТОК-СБК</String>
+  <String Id="EMA_ISTOKFeatureDescription">Информационная система для сбора и обработки данных</String>
+
+  <String Id="EMA_LoadServerFeatureName">ДКСМ-Сервер</String>
+  <String Id="EMA_LoadServerFeatureDescription">Компонент, осуществляющий сбор данных с оборудования</String>
+
+  <String Id="EMA_StationServerFeatureName">ДКСМ-Клиент</String>
+  <String Id="EMA_StationServerFeatureDescription">Компонент, получающий данные от нескольких ДКСМ-Серверов, осуществляет расчет и обрабатывает пользовательские запросы</String>
+
+  <String Id="EMA_ClientFeatureName">Интерфейсный модуль</String>
+  <String Id="EMA_ClientFeatureDescription">Клиентское приложение для конечных пользователей</String>
+
+  <String Id="EMA_EMAStationExtensionFeatureName">Модуль расширения ДКСМ-Клиента для ЭМАльянс</String>
+  <String Id="EMA_EMAStationExtensionFeatureDescription">Модуль расширения ДКСМ-Клиента для ЭМАльянс</String>
+
+  <String Id="EMA_EMAClientExtensionFeatureName">Модуль расширения интерфейса пользователя для ЭМАльянс</String>
+  <String Id="EMA_EMAClientExtensionFeatureDescription">Модуль расширения интерфейса пользователя для ЭМАльянс</String>
+</WixLocalization>

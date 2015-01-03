@@ -1,0 +1,12 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Calculus\bin\Debug\Calculus.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Calculus\bin\Debug\Calculus.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Calculus\bin\Debug\Calculus.dll.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Calculus\bin\Debug\Calculus.dll.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\Calculus\obj\Debug\Calculus.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\Calculus\obj\Debug\Calculus.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Calculus\obj\Debug\Calculus.pdb
+C:\Maildisk\isbk-src\src - копия\Calculus\bin\Debug\Calculus.dll
+C:\Maildisk\isbk-src\src - копия\Calculus\bin\Debug\Calculus.pdb
+C:\Maildisk\isbk-src\src - копия\Calculus\obj\Debug\Calculus.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\Calculus\obj\Debug\Calculus.dll
+C:\Maildisk\isbk-src\src - копия\Calculus\obj\Debug\Calculus.pdb

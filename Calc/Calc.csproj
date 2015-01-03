@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1234928-66F6-49EE-844A-2B302140540E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>COTES.ISTOK</RootNamespace>
+    <AssemblyName>COTES.ISTOK.Calc</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DKSMRelease|AnyCPU' ">
+    <OutputPath>bin\DKSMRelease\</OutputPath>
+    <DefineConstants>TRACE;EMA</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DKSMDebug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EMA</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.3.1.0.0\lib\net40\NLog.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calc\Abstract\Entity\CalcNodeExtension.cs" />
+    <Compile Include="Calc\Abstract\Entity\ICalcNode.cs" />
+    <Compile Include="Calc\Abstract\Entity\IParameterInfo.cs" />
+    <Compile Include="Calc\Abstract\Entity\IOptimizationInfo.cs" />
+    <Compile Include="Calc\Abstract\Entity\IOptimizationArgument.cs" />
+    <Compile Include="Calc\CalcContext\CalcContext.cs" />
+    <Compile Include="Calc\CalcContext\CalcContextExtension.cs" />
+    <Compile Include="Calc\CalcContext\TimeRange.cs" />
+    <Compile Include="Calc\CallContext\CommonContext.cs" />
+    <Compile Include="Calc\Compile\CodePart.cs" />
+    <Compile Include="Calc\Data\CalcMessage.cs" />
+    <Compile Include="Calc\CalcServer.cs" />
+    <Compile Include="Calc\Compile\CalcTree.cs" />
+    <Compile Include="Calc\Data\Address.cs" />
+    <Compile Include="Calc\Data\CalcNodeKey.cs" />
+    <Compile Include="Calc\Function\ContextFunction.cs" />
+    <Compile Include="Calc\Function\SetParameterFunction.cs" />
+    <Compile Include="Calc\Info\ConstsInfo.cs" />
+    <Compile Include="Calc\Abstract\ICalcContext.cs" />
+    <Compile Include="Calc\Abstract\ICallContext.cs" />
+    <Compile Include="Calc\Compile\CompileContext.cs" />
+    <Compile Include="Calc\CalcContext\SymbolTable.cs" />
+    <Compile Include="Calc\CallContext\NodeContext.cs" />
+    <Compile Include="Calc\CallContext\OptimizationContext.cs" />
+    <Compile Include="Calc\CallContext\CallContext.cs" />
+    <Compile Include="Calc\CalcContext\CalcStateStorage.cs" />
+    <Compile Include="Calc\Function\StandardFunction.cs" />
+    <Compile Include="Calc\Function\LibraryFunction.cs" />
+    <Compile Include="Calc\Function\CustomFunction.cs" />
+    <Compile Include="Calc\Function\ParameterFunction.cs" />
+    <Compile Include="Calc\Function\ExternalFunction.cs" />
+    <Compile Include="Calc\Function\MacrosFunction.cs" />
+    <Compile Include="Calc\Abstract\ICalcStateStorage.cs" />
+    <Compile Include="Calc\Abstract\ICalcSupplier.cs" />
+    <Compile Include="Calc\Info\CustomFunctionInfo.cs" />
+    <Compile Include="Calc\Abstract\IExternalFunctionInfo.cs" />
+    <Compile Include="Calc\Info\CalcArgumentInfo.cs" />
+    <Compile Include="Calc\Info\FunctionInfo.cs" />
+    <Compile Include="Calc\Abstract\ICompiler.cs" />
+    <Compile Include="Calc\Abstract\Entity\ICalcNodeInfo.cs" />
+    <Compile Include="Calc\Abstract\IValuesKeeper.cs" />
+    <Compile Include="Calc\CalcState\CalcState.cs" />
+    <Compile Include="Calc\Abstract\ICalcState.cs" />
+    <Compile Include="Calc\CalcState\OptimizationState.cs" />
+    <Compile Include="Calc\Function\RemoteFunctionManager.cs" />
+    <Compile Include="Calc\Interpreter.cs" />
+    <Compile Include="Calc\Compile\Compiler.cs" />
+    <Compile Include="Calc\Function\Function.cs" />
+    <Compile Include="Calc\Data\Instruction.cs" />
+    <Compile Include="Calc\NodeBack.cs" />
+    <Compile Include="Calc\CalcState\NodeState.cs" />
+    <Compile Include="Calc\Info\RoundRobinInfo.cs" />
+    <Compile Include="Calc\Symbol\ArrayElementRefference.cs" />
+    <Compile Include="Calc\Symbol\IValueRefference.cs" />
+    <Compile Include="Calc\Symbol\Variable.cs" />
+    <Compile Include="Calc\Symbol\Parameter.cs" />
+    <Compile Include="Calc\Symbol\Symbol.cs" />
+    <Compile Include="Calc\SymbolValue\DoubleValue.cs" />
+    <Compile Include="Calc\SymbolValue\StringValue.cs" />
+    <Compile Include="Calc\SymbolValue\ArrayValue.cs" />
+    <Compile Include="Calc\SymbolValue\SymbolValue.cs" />
+    <Compile Include="Calc\TepParser.cs" />
+    <Compile Include="Calc\TepParser.designer.cs">
+      <DependentUpon>TepParser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calc\TepScanner.cs" />
+    <Compile Include="Calc\TepScanner.designer.cs">
+      <DependentUpon>TepScanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calc\CalcContext\ValuesKeeper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShiftReduceParser\IScanner.cs" />
+    <Compile Include="ShiftReduceParser\ParserStack.cs" />
+    <Compile Include="ShiftReduceParser\Rule.cs" />
+    <Compile Include="ShiftReduceParser\ShiftReduceParser.cs" />
+    <Compile Include="ShiftReduceParser\State.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Calc\tepparser.y">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Calc\TepScanner.l">
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLib\CommonLib.csproj">
+      <Project>{80429148-427C-4207-BCD0-AE5E38B405D7}</Project>
+      <Name>CommonLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

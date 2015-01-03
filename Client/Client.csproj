@@ -1,0 +1,1034 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4AD69A96-C731-4D96-9845-623AF7CADC1A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>COTES.ISTOK.Client</RootNamespace>
+    <AssemblyName>istokclient</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>TXT.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Господин\AppData\Roaming\ICSharpCode\SharpDevelop5\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DKSMRelease|AnyCPU' ">
+    <OutputPath>bin\DKSMRelease\</OutputPath>
+    <DefineConstants>TRACE;EMA</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DKSMDebug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EMA</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Threading.Tasks">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>..\DLLs\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport">
+      <HintPath>..\DLLs\FastReport\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars">
+      <HintPath>..\DLLs\FastReport\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor">
+      <HintPath>..\DLLs\FastReport\FastReport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph">
+      <HintPath>..\DLLs\ZedGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.3.1.0.0\lib\net40\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>..\packages\Microsoft.Bcl.1.1.9\lib\net40\System.IO.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calc\CalcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calc\CalcForm.Designer.cs">
+      <DependentUpon>CalcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calc\CalcMessageViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Calc\CalcMessageViewControl.Designer.cs">
+      <DependentUpon>CalcMessageViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calc\ConstantEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calc\ConstantEditForm.Designer.cs">
+      <DependentUpon>ConstantEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calc\ArgumentNameEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calc\ArgumentNameEditForm.Designer.cs">
+      <DependentUpon>ArgumentNameEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calc\RoundRobinCalcSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calc\RoundRobinCalcSettingsForm.Designer.cs">
+      <DependentUpon>RoundRobinCalcSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calc\TepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calc\TepForm.Designer.cs">
+      <DependentUpon>TepForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnostics\LogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostics\LogForm.Designer.cs">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnostics\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostics\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportImport\ImportUnitNodeTypeConverter.cs" />
+    <Compile Include="ExportImport\ImportUnitNode.cs">
+    </Compile>
+    <Compile Include="ExportImport\ExportImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportImport\ExportImportForm.Designer.cs">
+      <DependentUpon>ExportImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportImport\ExcelImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportImport\ExcelImportForm.designer.cs">
+      <DependentUpon>ExcelImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extension\ClientExtensionManager.cs" />
+    <Compile Include="Extension\ClientState.cs" />
+    <Compile Include="Extension\IClientExtension.cs" />
+    <Compile Include="Extension\IClientState.cs" />
+    <Compile Include="IntervalEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IntervalEdit.Designer.cs">
+      <DependentUpon>IntervalEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogUnitNodeEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogUnitNodeEditForm.Designer.cs">
+      <DependentUpon>LogUnitNodeEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\About.designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\CreatedReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\CreatedReportsForm.Designer.cs">
+      <DependentUpon>CreatedReportsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnostics\DiagnosticsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diagnostics\DiagnosticsForm.Designer.cs">
+      <DependentUpon>DiagnosticsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\GetParamsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\GetParamsForm.Designer.cs">
+      <DependentUpon>GetParamsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IBoilerPanelContainer.cs" />
+    <Compile Include="MainForms\IValuesController.cs" />
+    <Compile Include="MainForms\MessagesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\MessagesForm.Designer.cs">
+      <DependentUpon>MessagesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diagnostics\MessageInfo.cs" />
+    <Compile Include="MainForms\ParameterValuesController.cs" />
+    <Compile Include="Report\ReportParamsPropertyTab.cs" />
+    <Compile Include="Report\UserInterfaceServiceContainer.cs" />
+    <Compile Include="Report\ReportSourceSettingPropertyTab.cs" />
+    <Compile Include="Report\IstokInjectionFastReportTooltip.cs" />
+    <Compile Include="Report\ReportParametersContainer.cs" />
+    <Compile Include="RevisionEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RevisionEditForm.Designer.cs">
+      <DependentUpon>RevisionEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleGroupEdits\BaseScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleGroupEdits\BaseScheduleForm.Designer.cs">
+      <DependentUpon>BaseScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleGroupEdits\GetScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleGroupEdits\GetScheduleForm.Designer.cs">
+      <DependentUpon>GetScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetPropertyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetPropertyForm.Designer.cs">
+      <DependentUpon>SetPropertyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControls\FormulaEditControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabControls\FormulaEditControl.Designer.cs">
+      <DependentUpon>FormulaEditControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulaTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormulaTextBox.Designer.cs">
+      <DependentUpon>FormulaTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\AutorizationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\AutorizationForm.designer.cs">
+      <DependentUpon>AutorizationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\BannerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\BannerForm.Designer.cs">
+      <DependentUpon>BannerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\ParameterValuesEditrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\ParameterValuesEditrorForm.Designer.cs">
+      <DependentUpon>ParameterValuesEditrorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControls\GraphUnitControl\GraphUnitControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabControls\MonitorTableUnitControl\MonitorTableUnitControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabControls\MonitorTableUnitControl\MonitorTableUnitControl.Designer.cs">
+      <DependentUpon>MonitorTableUnitControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControls\NormFuncUnitControl\NormFuncAddBranchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabControls\NormFuncUnitControl\NormFuncAddBranchForm.designer.cs">
+      <DependentUpon>NormFuncAddBranchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControls\NormFuncUnitControl\NormFuncAddDimensionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabControls\NormFuncUnitControl\NormFuncAddDimensionForm.designer.cs">
+      <DependentUpon>NormFuncAddDimensionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControls\NormFuncUnitControl\NormFuncUnitControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabControls\NormFuncUnitControl\NormFuncUnitControl.Designer.cs">
+      <DependentUpon>NormFuncUnitControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControls\OptimizationUnitControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabControls\OptimizationUnitControl.Designer.cs">
+      <DependentUpon>OptimizationUnitControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControls\OptimizationValuesUnitControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabControls\OptimizationValuesUnitControl.Designer.cs">
+      <DependentUpon>OptimizationValuesUnitControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControls\ParameterGateControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabControls\ParameterGateControl.Designer.cs">
+      <DependentUpon>ParameterGateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControls\ExcelReportUnitControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabControls\ExcelReportUnitControl.Designer.cs">
+      <DependentUpon>ExcelReportUnitControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControls\ReportUnitControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabControls\ReportUnitControl.Designer.cs">
+      <DependentUpon>ReportUnitControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniForms\ExtendSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniForms\ExtendSelectForm.Designer.cs">
+      <DependentUpon>ExtendSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniForms\LogsViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniForms\LogsViewer.Designer.cs">
+      <DependentUpon>LogsViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniForms\ParamSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniForms\ParamSearchForm.designer.cs">
+      <DependentUpon>ParamSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniForms\SelectTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniForms\SelectTimeForm.Designer.cs">
+      <DependentUpon>SelectTimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitEditForms\ButtonEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitEditForms\ButtonEditForm.Designer.cs">
+      <DependentUpon>ButtonEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitEditForms\ExcelEditForm\ExcelEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitEditForms\ExcelEditForm\ExcelEditForm.Designer.cs">
+      <DependentUpon>ExcelEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitEditForms\ExcelEditForm\WinExcelControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabControls\Schema\SchemaParamControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabControls\Schema\SchemaParamControl.designer.cs">
+      <DependentUpon>SchemaParamControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControls\Schema\SchemaUnitControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabControls\Schema\SchemaUnitControl.Designer.cs">
+      <DependentUpon>SchemaUnitControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniForms\BaseAsyncWorkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniForms\BaseAsyncWorkForm.Designer.cs">
+      <DependentUpon>BaseAsyncWorkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControls\GraphUnitControl\GraphUnitControl.Designer.cs">
+      <DependentUpon>GraphUnitControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleGroupEdits\AddEditScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleGroupEdits\AddEditScheduleForm.Designer.cs">
+      <DependentUpon>AddEditScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabControls\BaseUnitControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabControls\BaseUnitControl.Designer.cs">
+      <DependentUpon>BaseUnitControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleGroupEdits\ParamsSheduleEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleGroupEdits\ParamsSheduleEditorForm.Designer.cs">
+      <DependentUpon>ParamsSheduleEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Audit\ViewAuditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audit\ViewAuditForm.Designer.cs">
+      <DependentUpon>ViewAuditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowAction\ChangeParameterCodeWorkflowAction.cs" />
+    <Compile Include="WorkflowAction\LockExceptionWorkflowAction.cs" />
+    <Compile Include="WorkflowAction\SaveNodeWorkflowAction.cs" />
+    <Compile Include="WorkflowAction\WorkflowSelector.cs" />
+    <Compile Include="WorkflowAction\WorkflowAction.cs" />
+    <EmbeddedResource Include="Audit\ViewAuditForm.resx">
+      <DependentUpon>ViewAuditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calc\CalcForm.resx">
+      <DependentUpon>CalcForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calc\CalcMessageViewControl.resx">
+      <DependentUpon>CalcMessageViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calc\ConstantEditForm.resx">
+      <DependentUpon>ConstantEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calc\ArgumentNameEditForm.resx">
+      <DependentUpon>ArgumentNameEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calc\RoundRobinCalcSettingsForm.resx">
+      <DependentUpon>RoundRobinCalcSettingsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calc\TepForm.resx">
+      <DependentUpon>TepForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnostics\LogForm.resx">
+      <DependentUpon>LogForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnostics\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportImport\ExcelImportForm.resx">
+      <DependentUpon>ExcelImportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntervalEdit.resx">
+      <DependentUpon>IntervalEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogUnitNodeEditForm.resx">
+      <DependentUpon>LogUnitNodeEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\CreatedReportsForm.resx">
+      <DependentUpon>CreatedReportsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diagnostics\DiagnosticsForm.resx">
+      <DependentUpon>DiagnosticsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\MessagesForm.resx">
+      <DependentUpon>MessagesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RevisionEditForm.resx">
+      <DependentUpon>RevisionEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleGroupEdits\BaseScheduleForm.resx">
+      <DependentUpon>BaseScheduleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleGroupEdits\GetScheduleForm.resx">
+      <DependentUpon>GetScheduleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportImport\ExportImportForm.resx">
+      <DependentUpon>ExportImportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\GetParamsForm.resx">
+      <DependentUpon>GetParamsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetPropertyForm.resx">
+      <DependentUpon>SetPropertyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControls\FormulaEditControl.resx">
+      <DependentUpon>FormulaEditControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulaTextBox.resx">
+      <DependentUpon>FormulaTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\AutorizationForm.resx">
+      <DependentUpon>AutorizationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\BannerForm.resx">
+      <DependentUpon>BannerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\ParameterValuesEditrorForm.resx">
+      <DependentUpon>ParameterValuesEditrorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControls\MonitorTableUnitControl\MonitorTableUnitControl.resx">
+      <DependentUpon>MonitorTableUnitControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControls\NormFuncUnitControl\NormFuncAddBranchForm.resx">
+      <DependentUpon>NormFuncAddBranchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControls\NormFuncUnitControl\NormFuncAddDimensionForm.resx">
+      <DependentUpon>NormFuncAddDimensionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControls\NormFuncUnitControl\NormFuncUnitControl.resx">
+      <DependentUpon>NormFuncUnitControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControls\OptimizationUnitControl.resx">
+      <DependentUpon>OptimizationUnitControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControls\OptimizationValuesUnitControl.resx">
+      <DependentUpon>OptimizationValuesUnitControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControls\ParameterGateControl.resx">
+      <DependentUpon>ParameterGateControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControls\ExcelReportUnitControl.resx">
+      <DependentUpon>ExcelReportUnitControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControls\ReportUnitControl.resx">
+      <DependentUpon>ReportUnitControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniForms\ExtendSelectForm.resx">
+      <DependentUpon>ExtendSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniForms\LogsViewer.resx">
+      <DependentUpon>LogsViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniForms\ParamSearchForm.resx">
+      <DependentUpon>ParamSearchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniForms\SelectTimeForm.resx">
+      <DependentUpon>SelectTimeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitEditForms\ButtonEditForm.resx">
+      <DependentUpon>ButtonEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitEditForms\ExcelEditForm\ExcelEditForm.resx">
+      <DependentUpon>ExcelEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitEditForms\ExcelEditForm\WinExcelControl.resx">
+      <DependentUpon>WinExcelControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControls\Schema\SchemaParamControl.resx">
+      <DependentUpon>SchemaParamControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControls\Schema\SchemaUnitControl.resx">
+      <DependentUpon>SchemaUnitControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniForms\BaseAsyncWorkForm.resx">
+      <DependentUpon>BaseAsyncWorkForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleGroupEdits\AddEditScheduleForm.resx">
+      <DependentUpon>AddEditScheduleForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleGroupEdits\ParamsSheduleEditorForm.resx">
+      <DependentUpon>ParamsSheduleEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControls\CommonUnitControl.resx">
+      <DependentUpon>CommonUnitControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabControls\GraphUnitControl\GraphUnitControl.resx">
+      <DependentUpon>GraphUnitControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniForms\SelectForm.resx">
+      <DependentUpon>SelectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniForms\TreeForm.resx">
+      <DependentUpon>TreeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UniForms\UniForm.resx">
+      <DependentUpon>UniForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitEditForms\MonitorTableEdit\ColumnNameForm.resx">
+      <DependentUpon>ColumnNameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitEditForms\MonitorTableEdit\MonitorTableEditForm.resx">
+      <DependentUpon>MonitorTableEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitEditForms\NormFuncEdit\NormFuncEditForm.resx">
+      <DependentUpon>NormFuncEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitEditForms\ParamEditForm.resx">
+      <DependentUpon>ParamEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitEditForms\ReportEditForm.resx">
+      <DependentUpon>ReportEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitEditForms\SchemaEditForm.resx">
+      <DependentUpon>SchemaEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitType\UnitTypeEditForm.resx">
+      <DependentUpon>UnitTypeEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitEditForms\GraphEditForm.resx">
+      <DependentUpon>GraphEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitEditForms\UnitEditForm.resx">
+      <DependentUpon>UnitEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitType\UnitTypeFindForm.resx">
+      <DependentUpon>UnitTypeFindForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TabControls\CommonUnitControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabControls\CommonUnitControl.Designer.cs">
+      <DependentUpon>CommonUnitControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniForms\MultiSelectTreeViewControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UniForms\SelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniForms\SelectForm.Designer.cs">
+      <DependentUpon>SelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniForms\TreeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniForms\TreeForm.Designer.cs">
+      <DependentUpon>TreeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UniForms\UniForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UniForms\UniForm.Designer.cs">
+      <DependentUpon>UniForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="User\GroupEditForm.resx">
+      <DependentUpon>GroupEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\UserEditForm.resx">
+      <DependentUpon>UserEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\UserFindForm.resx">
+      <DependentUpon>UserFindForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExportImport\WordImportForm.resx">
+      <DependentUpon>WordImportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="UnitEditForms\GraphEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitEditForms\GraphEditForm.Designer.cs">
+      <DependentUpon>GraphEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitEditForms\MonitorTableEdit\ColumnNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitEditForms\MonitorTableEdit\ColumnNameForm.Designer.cs">
+      <DependentUpon>ColumnNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitEditForms\MonitorTableEdit\MonitorTableEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitEditForms\MonitorTableEdit\MonitorTableEditForm.Designer.cs">
+      <DependentUpon>MonitorTableEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitEditForms\NormFuncEdit\NormFuncEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitEditForms\NormFuncEdit\NormFuncEditForm.designer.cs">
+      <DependentUpon>NormFuncEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitEditForms\ParamEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitEditForms\ParamEditForm.Designer.cs">
+      <DependentUpon>ParamEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitEditForms\ReportEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitEditForms\ReportEditForm.Designer.cs">
+      <DependentUpon>ReportEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitEditForms\SchemaEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitEditForms\SchemaEditForm.Designer.cs">
+      <DependentUpon>SchemaEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitEditForms\UnitEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitEditForms\UnitEditForm.Designer.cs">
+      <DependentUpon>UnitEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitProviders\UnitProviders.cs" />
+    <Compile Include="UniForms\UnitTreeNode.cs" />
+    <Compile Include="UnitType\UnitTypeEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitType\UnitTypeEditForm.Designer.cs">
+      <DependentUpon>UnitTypeEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitType\UnitTypeFindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\GroupEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\GroupEditForm.Designer.cs">
+      <DependentUpon>GroupEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\UserEditForm.designer.cs">
+      <DependentUpon>UserEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserFindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitType\UnitTypeFindForm.Designer.cs">
+      <DependentUpon>UnitTypeFindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserFindForm.designer.cs">
+      <DependentUpon>UserFindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExportImport\WordImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExportImport\WordImportForm.designer.cs">
+      <DependentUpon>WordImportForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ASCommon\ASCommon.csproj">
+      <Project>{07E81EE7-0B48-4562-A57C-FC595EC84D99}</Project>
+      <Name>ASCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Calc\Calc.csproj">
+      <Project>{B1234928-66F6-49EE-844A-2B302140540E}</Project>
+      <Name>Calc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClientCore\ClientCore.csproj">
+      <Project>{A0EB51CF-85F9-4319-B255-C8C1AE9B5517}</Project>
+      <Name>ClientCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonLib\CommonLib.csproj">
+      <Project>{80429148-427C-4207-BCD0-AE5E38B405D7}</Project>
+      <Name>CommonLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1downarrow.png" />
+    <None Include="Resources\1leftarrow.png" />
+    <None Include="Resources\1rightarrow.png" />
+    <None Include="Resources\1uparrow.png" />
+    <Content Include="MimeTeX.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\administrator1_%28edit%29_16x16.gif" />
+    <Content Include="Resources\arrowdown_blue24.bmp" />
+    <Content Include="Resources\arrowleft_blue24.bmp" />
+    <Content Include="Resources\arrowright_blue24.bmp" />
+    <Content Include="Resources\arrowup_blue24.bmp" />
+    <None Include="Resources\arrowleft_blue24.png" />
+    <None Include="Resources\arrowright_blue24.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\bell.png" />
+    <None Include="Resources\clock4.png" />
+    <None Include="Resources\blank.ico" />
+    <None Include="Resources\revision_log.png" />
+    <Content Include="Resources\config.png" />
+    <None Include="Resources\dock.png" />
+    <None Include="Resources\editcopy.png" />
+    <None Include="Resources\editcut.png" />
+    <None Include="Resources\editpaste.png" />
+    <None Include="Resources\config_mini.png" />
+    <None Include="Resources\edit_add.png" />
+    <None Include="Resources\edit_remove.png" />
+    <None Include="Resources\constant.png" />
+    <None Include="Resources\edit.png" />
+    <Content Include="Resources\editshred16.png" />
+    <Content Include="Resources\excel.bmp" />
+    <None Include="Resources\function.png" />
+    <None Include="Resources\filesave.png" />
+    <None Include="Resources\folder_home.png" />
+    <None Include="Resources\folder_orange_open.png" />
+    <None Include="Resources\folder_orange.png" />
+    <Content Include="Resources\ISTOK-logotype.png" />
+    <None Include="Resources\kcalc.png" />
+    <None Include="Resources\kcalc_ico.ico" />
+    <None Include="Resources\calcargument.png" />
+    <None Include="Resources\ledblue.ico" />
+    <None Include="Resources\ledgray.ico" />
+    <None Include="Resources\ledgreen.ico" />
+    <None Include="Resources\ledred.ico" />
+    <Content Include="Resources\lock.png" />
+    <None Include="Resources\log.ico" />
+    <Content Include="Resources\logo0.gif" />
+    <None Include="Resources\optimization_node.png" />
+    <None Include="Resources\mimetex.png" />
+    <None Include="Resources\main.ico" />
+    <Content Include="Resources\player_play.png" />
+    <Content Include="Resources\player_stop.png" />
+    <Content Include="Resources\plot.png" />
+    <None Include="Resources\schedule.png" />
+    <Content Include="Resources\report1.png" />
+    <Content Include="Resources\schedule_file.png" />
+    <Content Include="Resources\tep.png" />
+    <None Include="Resources\timer24.png" />
+    <Content Include="Resources\toolStripGraf.png" />
+    <Content Include="Resources\toolStripMnem.png" />
+    <Content Include="Resources\toolStripReport.png" />
+    <Content Include="Resources\unlock.png" />
+    <None Include="Resources\view_tree.png" />
+    <None Include="Resources\snippet.png" />
+    <Content Include="TXT.ico" />
+    <None Include="Resources\editshred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets')" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+</Project>

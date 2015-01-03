@@ -1,0 +1,16 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\CommonLib.Tests\bin\Debug\CommonLib.Tests.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\CommonLib.Tests\bin\Debug\CommonLib.Tests.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\CommonLib.Tests\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\CommonLib.Tests\bin\Debug\Moq.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\CommonLib.Tests\bin\Debug\nunit.framework.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\CommonLib.Tests\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\CommonLib.Tests\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\CommonLib.Tests\bin\Debug\Moq.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\CommonLib.Tests\bin\Debug\Moq.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\CommonLib.Tests\bin\Debug\nunit.framework.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\CommonLib.Tests\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\CommonLib.Tests\obj\Debug\CommonLib.Tests.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\CommonLib.Tests\obj\Debug\COTES.ISTOK.Tests.Properties.Resources.resources
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\CommonLib.Tests\obj\Debug\CommonLib.Tests.csproj.GenerateResource.Cache
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\CommonLib.Tests\obj\Debug\CommonLib.Tests.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\CommonLib.Tests\obj\Debug\CommonLib.Tests.pdb

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <!--<?define ProductVersion=!(bind.fileVersion.StationCommonLib)?>-->
+
+  <Product Id="*"
+           Name="!(loc.ProductName)"
+           Language="1049"
+           Codepage="1251"
+           Version="$(var.ProductVersion)"
+           Manufacturer="!(loc.CompanyName)"
+           UpgradeCode="9ed54f3e-80e2-4b14-baa7-26c3a20302e6">
+
+    <Package Description="!(loc.ProductDescription)"
+             Manufacturer="!(loc.CompanyName)"
+             Comments="$(var.ProductVersion)"
+             Languages="1049"
+             SummaryCodepage="1251"
+             InstallerVersion="200"
+             Compressed="yes"
+             InstallScope="perMachine" />
+
+    <!--Разрешить обновлять старую версию программы-->
+    <MajorUpgrade Schedule="afterInstallInitialize"
+                  AllowSameVersionUpgrades="yes"
+                  DowngradeErrorMessage="!(loc.DowngradeMessage)"/>
+
+    <MediaTemplate EmbedCab="yes"/>
+
+    <!--Проверить наличие установленного .NET Framework 4.0-->
+    <PropertyRef Id="NETFRAMEWORK40FULL"/>
+
+    <Condition Message="!(loc.FrameworkRequiredMessage)">
+      <![CDATA[Installed OR NETFRAMEWORK40FULL]]>
+    </Condition>
+
+    <!--Иконка в Установке/удалении программ и ссылка для справки -->
+    <Icon Id="icon.ico" SourceFile="installer.ico"/>
+    <Property Id="ARPPRODUCTICON" Value="icon.ico" />
+    <Property Id="ARPHELPLINK" Value="http://www.cotes.ru/" />
+
+    <!--Настройки пользовательского интерфейса установщика-->
+    <UI Id="ISTOKInstallUI">
+      <!--Выбираем стандартное окно настроек-->
+      <UIRef Id="WixUI_FeatureTree" />
+
+      <!--Пропускаем окно лицензии-->
+      <Publish Dialog="WelcomeDlg" Control="Next" Event="NewDialog" Value="CustomizeDlg">1</Publish>
+      <Publish Dialog="CustomizeDlg" Control="Back" Event="NewDialog" Value="WelcomeDlg" Order="3">1</Publish>
+    </UI>
+    <!--Установить фон в окне установки-->
+    <WixVariable Id="WixUIBannerBmp" Value="banner_top.bmp"/>
+    <WixVariable Id="WixUIDialogBmp" Value="banner_back.bmp"/>
+    
+    <!--Разрешить создавать системные журналы-->
+    <Property Id="InstallEventLog" Value="no" />
+
+    <!--Разрешить установку некоторых модулей сбора-->
+    <Property Id="LoadModuleAtecEnabled" Value="no" />
+    <Property Id="LoadModuleFBEnabled" Value="yes" />
+    <Property Id="LoadModuleMHTEnabled" Value="no" />
+    <Property Id="LoadModuleOpcEnabled" Value="yes" />
+    <Property Id="LoadModuleRandomEnabled" Value="yes" />
+    <Property Id="LoadModuleSQLEnabled" Value="yes" />
+    <Property Id="LoadModuleTornadoEnabled" Value="no" />
+    <Property Id="LoadModuleVzletEnabled" Value="yes" />
+    
+    <Feature Id="ISTOK"
+             Title="!(loc.ISTOKFeatureName)"
+             Description="!(loc.ISTOKFeatureDescription)"
+             ConfigurableDirectory="INSTALLLOCATION"
+             Absent="disallow"
+             Display="expand"
+             Level="1">
+      <ComponentRef Id="ISTOKMeta"/>
+
+      <!--Сервер сбора данных-->
+      <FeatureRef Id="LoaderFea ture" />
+
+      <!--Станционный сервер-->
+      <FeatureRef Id="StationFeature" />
+
+      <!--Клиентское приложение-->
+      <FeatureRef Id="ThickClientFeature" />
+		</Feature>
+	</Product>
+</Wix>

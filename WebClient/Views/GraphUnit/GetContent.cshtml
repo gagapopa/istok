@@ -1,0 +1,471 @@
+﻿@using COTES.ISTOK.WebClient.Properties
+@using COTES.ISTOK.ClientCore.UnitProviders
+@model COTES.ISTOK.ClientCore.UnitProviders.GraphUnitProvider
+
+@{
+    Layout = null;
+    COTES.ISTOK.ClientCore.UnitProviders.GraphUnitProviderState graphState = Model.GetState(null);
+    COTES.ISTOK.ASC.GraphNode node = Model.UnitNode as COTES.ISTOK.ASC.GraphNode;
+}
+
+<script type="text/javascript">
+    var plotdata = [];
+    var plot = null;
+    var updateLegendTimeout = null;
+    var latestPosition = null;
+    var options = {
+        legend: {
+            show: false
+        },
+        lines: {
+            show: true
+        },
+        points: {
+            show: false
+        },
+        grid: {
+            hoverable: true
+        },
+        crosshair: {
+            mode: "x"
+        },
+        xaxis: {
+            mode: "time",
+            timezone: "browser",
+            timeformat: "%d.%m.%Y %H:%M:%S",
+            tickColor: "#D9D9D9",
+            ticks: 4
+        },
+        selection: {
+            mode: "x"
+        },
+        tooltip: true,
+        tooltipOpts: {
+            content: "%s: %x; %y",
+            xDateFormat: "%d.%m.%Y %H:%M:%S",
+            onHover: function (flotItem, $tooltipEl) { $tooltipEl.css("z-index", 200); }
+        }
+    };
+
+    function tabletab(kill) {
+        if (kill) $("#graphctable").tabs("destroy");
+        $("#graphctable").tabs();
+    }
+
+    $(document).ready(function(){
+        querydata();
+    });
+    var previousPoint = null;
+
+    var rtime = new Date(1, 1, 2000, 12, 00, 00);
+    var timeout = false;
+    var delta = 200;
+    function resizeend() {
+        if (new Date() - rtime < delta) {
+            setTimeout(resizeend, delta);
+        } else {
+            timeout = false;
+            updgraph();
+        }
+    }
+
+    $(function () {
+        tabletab(0);
+        gupdpages(1);
+
+        $("#btnload").button({ text: false, icons: { primary: "ui-icon-loaddata" } });
+        $("#btntimer").button({ text: false, icons: { primary: "ui-icon-loadtimer" } });
+        $("#graphmidata").button({ text: false, icons: { primary: "ui-icon-play" } }).hide();
+        $("#graphmruse").button({ text: false, icons: { primary: "ui-icon-loadremote" } });
+        
+        plot = $.plot("#gcplot", [], options);
+        var gcplot = $("#gcplot");
+        gcplot.resize(function () {
+            rtime = new Date();
+            if (timeout === false) {
+                timeout = true;
+                setTimeout(resizeend, delta);
+            }
+        });
+        gcplot.bind("plothover", function (event, pos, item) {
+            latestPosition = pos;
+            if (!updateLegendTimeout) {
+                updateLegendTimeout = setTimeout(updateLegend, 50);
+            }
+        });
+        gcplot.dblclick(function () {
+            updplot();
+        });
+        gcplot.bind("plotselected", function (event, ranges) {
+            if (ranges.xaxis.to - ranges.xaxis.from < 0.00001) {
+                ranges.xaxis.to = ranges.xaxis.from + 0.00001;
+            }
+            var zdata = getvisgdata();
+            var ndata = [];
+            for (var i = 0; i < zdata.length; i++) {
+                var pt = [];
+                var padd = false;
+                var nadd = false;
+                var ppt = null;
+                for (var p = 0; p < zdata[i].data.length; p++) {
+                    var point = zdata[i].data[p];
+                    if (point[0] > ranges.xaxis.from && !padd && ppt != null) {
+                        pt.push([ranges.xaxis.from, ppt[1] + (point[1] - ppt[1]) * (ranges.xaxis.from - ppt[0]) / (point[0] - ppt[0])]);
+                        padd = true;
+                    }
+                    if (point[0] >= ranges.xaxis.from && point[0] <= ranges.xaxis.to) {
+                        if (point[0] == ranges.xaxis.from) padd = true;
+                        pt.push(point);
+                        if (point[0] == ranges.xaxis.to) nadd = true;
+                    }
+                    if (!nadd && point[0] > ranges.xaxis.to && ppt != null) {
+                        pt.push([ranges.xaxis.to, ppt[1] + (point[1] - ppt[1]) * (ranges.xaxis.to - ppt[0]) / (point[0] - ppt[0])]);
+                        nadd = true;
+                    }
+                    ppt = point;
+                }
+                if (pt.length > 0) {
+                    var ser = $.extend(true, {}, zdata[i]);
+                    ser.data = pt;
+                    ndata.push(ser);
+                }
+            }
+            plot = $.plot("#gcplot", ndata,
+				$.extend(true, {}, options, {
+				    xaxis: { min: ranges.xaxis.from, max: ranges.xaxis.to }
+				})
+			);
+        });
+    });
+    
+    function updateLegend() {
+        updateLegendTimeout = null;
+        var pos = latestPosition;
+        var axes = plot.getAxes();
+        var i, j, dataset = plot.getData();
+        for (i = 0; i < dataset.length; i++) {
+            var series = dataset[i];
+            if (series.data.length < 2) continue;
+            for (j = 0; j < series.data.length; j++) {
+                if (series.data[j] != null && series.data[j][0] > pos.x) {
+                    break;
+                }
+            }
+            var y,
+                p1 = series.data[j - 1],
+                p2 = series.data[j];
+            if (p1 == null) {
+                y = p2[1];
+            } else if (p2 == null) {
+                y = p1[1];
+            } else {
+                y = p1[1] + (p2[1] - p1[1]) * (pos.x - p1[0]) / (p2[0] - p1[0]);
+            }
+            $("#cgv"+series.parameterId).text(y.toFixed(2));
+        }
+    }
+
+    function updplot() {
+        plot = $.plot("#gcplot", getvisgdata(), options);
+    }
+
+    $(function () {
+        $("#graphmponpage").spinner({
+            max: 10,
+            min: 1,
+            spin: function (event, ui) {
+                gupdpages('', ui.value);
+            }
+        });
+    });
+    $(function () {
+        $("#graphmdatefrom").datetimepicker({
+            changeMonth: true,
+            changeYear: true
+        });
+        $("#graphmdateto").datetimepicker({
+            changeMonth: true,
+            changeYear: true
+        });
+        
+        $("#graphmicombo").change(function () {
+            $.ajax({
+                url: "@Url.Action("ChangeInterval","GraphUnit")",
+                data: {
+                    dateFrom: $("#graphmdatefrom").attr("value"),
+                    interval: $("#graphmicombo").find("option:selected").val(),
+                    pid: $('#@Resources.strPageId').val()
+                },
+                type: "POST",
+                success: function (data) {
+                    $("#graphmdatefrom").attr("value", data[0]);
+                    $("#graphmdateto").attr("value", data[1]);
+                },
+                error: function (xhr, ajaxOption, thrownError) { alert(xhr); }
+            });
+        });
+
+        $("#graphmponpage").change(function () {
+            $.ajax({
+                url: "@Url.Action("ChangeOnPage","GraphUnit")",
+                data: { onPage: parseInt($("#graphmponpage").attr("value")), pid: $('#@Resources.strPageId').val() },
+                type: "POST"
+            });
+        });
+    });
+
+    function getvisgdata(){
+        var data = [];
+        $("#graphttabval").find("input:checked").each(function () {
+            var id = $(this).attr("id").replace("cg", "");
+            if (id && plotdata[id])
+                data.push(plotdata[id]);
+        });
+        return data;
+    }
+
+    function gtsetvisibility(cbox) {
+        var id = cbox.id.replace("cg", "");
+        var v = cbox.checked;
+        $.ajax({
+            url: '@Url.Action("SetVisibility","GraphUnit")',
+            data: { id: id, value: v, pid: $('#@Resources.strPageId').val() },
+            type: 'POST'
+        })
+            .done(function () {
+                updplot();
+            })
+            .fail(function (xhr, ajaxOption, thrownError) { alert(xhr); });
+    }
+
+    function gmnextp() {
+        var pg = $("#gmpage").text();
+        var p = pg.search("/");
+        if (p != -1) {
+            var curP = parseInt(pg.substring(0, p));
+            var maxP = parseInt(pg.substring(p + 1));
+            if (curP < maxP) {
+                curP++;
+                //$("#gmpage").text(curP + "/" + maxP);
+                gupdpages(curP);
+                updgraph();
+            }
+        }
+    }
+    function gmprevp() {
+        var pg = $("#gmpage").text();
+        var p = pg.search("/");
+        if (p != -1) {
+            var curP = parseInt(pg.substring(0, p));
+            var maxP = parseInt(pg.substring(p + 1));
+            if (curP > 1) {
+                curP--;
+                //$("#gmpage").text(curP + "/" + maxP);
+                gupdpages(curP);
+                updgraph();
+            }
+        }
+    }
+
+    function updgraph(updtables) {
+        $("#graphcimg").css("opacity", 0.2);
+        var maxPar = parseInt($("#graphmponpage").val());
+        var pg = $("#gmpage").text();
+        var p = pg.search("/");
+        var curPar = (parseInt(pg.substring(0, p)) - 1) * maxPar;
+
+        @*var d = new Date(); $("#graphcimg").attr("src", "/GraphUnit/GetGraph"
+            + "?pid=" + $('#@Resources.strPageId').val()
+            + "&curPar=" + curPar
+            + "&maxPar=" + maxPar + "&" + d.getTime());*@
+        $("#graphcimg").css("opacity", 1);
+
+        $.ajax({
+            url: '@Url.Action("GetGraphData")',
+            data: {
+                pid: $('#@Resources.strPageId').val(),
+                curPar: curPar,
+                maxPar: maxPar
+            },
+            dataType: "json",
+            type: "POST",
+            async: false
+        })
+            .done(function (data) {
+                plotdata = data;
+                var axes = [];
+                var i = 0;
+                for (var key in data) {
+                    var obj = { alignTicksWithAxis: 1, color: data[key].color, tickColor: "#D9D9D9" };
+                    obj.font = { color: data[key].color };
+                    if (i % 2 == 0) {
+                        obj.position = "left";
+                    }
+                    else {
+                        obj.position = "right";
+                    }
+                    axes.push(obj);
+                    i++;
+                }
+                options.yaxes = axes;
+                updplot();
+            })
+            .fail(function (err) {
+                alert(err);
+            });
+
+        if (updtables) {
+            //$("#graphctable").css("opacity", 0.2);
+            $.ajax({
+                url: '@Url.Action("GetTables","GraphUnit")',
+                data: { pid: $('#@Resources.strPageId').val() },
+                type: 'POST'
+            })
+                .done(function (data) { $("#graphctable").html(data); })
+                .fail(function (xhr, ajaxOption, thrownError) { alert(xhr); })
+                .always(function () { tabletab(1); /*$("#graphctable").css("opacity", 1);*/ });
+        }
+    }
+
+    function gupdpages(c, nval) {
+        var maxP, curP;
+        var pg = $("#gmpage").text();
+        var p = pg.search("/");
+        if (nval) maxP = nval;
+        else maxP = parseInt($("#graphmponpage").val());
+        if (c) curP = c;
+        else curP = parseInt(pg.substring(0, p));        
+        var allp = "@((Model.UnitNode as COTES.ISTOK.ASC.GraphNode).Parameters.Length)";
+        maxP = Math.ceil(allp / maxP);
+        if (curP > maxP) curP = maxP;
+        if (curP == maxP) $("#gmpnext").addClass("disabled"); else $("#gmpnext").removeClass("disabled");
+        if (curP == 1) $("#gmpprev").addClass("disabled"); else $("#gmpprev").removeClass("disabled");
+        $("#gmpage").text(curP + "/" + maxP);
+    }
+
+    function gnextdate() {
+        $.ajax({
+            url: '@Url.Action("GetNextDate","GraphUnit")',
+            data: {
+                dateFrom: $("#graphmdatefrom").attr("value"),
+                dateTo: $("#graphmdateto").attr("value"),
+                interval: $("select#graphmicombo").val(),
+                pid: $('#@Resources.strPageId').val()
+            },
+            type: 'POST',
+            success:  function(data){
+                $("#graphmdatefrom").attr("value", data[0]);
+                $("#graphmdateto").attr("value", data[1]);
+                if ($("#graphmidata").is(":checked")) querydata();
+            }
+        });
+    }
+    function gprevdate() {
+        $.ajax({
+            url: '@Url.Action("GetPrevDate","GraphUnit")',
+            data: {
+                dateFrom: $("#graphmdatefrom").attr("value"),
+                dateTo: $("#graphmdateto").attr("value"),
+                interval: $("select#graphmicombo").val(),
+                pid: $('#@Resources.strPageId').val()
+            },
+            type: 'POST',
+            success: function (data) {
+                $("#graphmdatefrom").attr("value", data[0]);
+                $("#graphmdateto").attr("value", data[1]);
+                if ($("#graphmidata").is(":checked")) querydata();
+            }
+        });
+    }
+
+    function querydata(online) {
+        $.ajax({
+            url: '@Url.Action("QueryData","GraphUnit")',
+            data: {
+                dateFrom: $("#graphmdatefrom").attr("value"),
+                dateTo: $("#graphmdateto").attr("value"),
+                useRemote: $("#graphmruse").is(":checked"),
+                online: online == undefined ? false : online,
+                pid: $('#@Resources.strPageId').val()
+            },
+            type: 'POST'
+        })
+            .done(function () {
+                updgraph(true);
+            });
+    }
+
+    var tm = null;
+    function timerclick() {
+        if (tm != null) clearInterval(tm);
+        if ($("#btntimer:checked").length) {
+            tm = setInterval(querydata, '@((node.UpdateInterval*1000).ToString())', true);
+            pgtimers.push(tm);
+        }
+    }
+</script>
+
+<div id="graphmenu" class="ui-widget-header ui-corner-all">
+    <div class="graphtoolbox" title="Запросить данные">
+        <button id="btnload" class="gtpatch" onclick="querydata()"></button>
+    </div>
+    <input id="graphmruse" class="graphtoolbox" type="checkbox" @(graphState.RemoteServer?"checked":"") />
+    <label for="graphmruse" class="graphtoolbox">Запрашивать с удаленного сервера</label>
+
+    <div id="graphmpages" class="graphtoolbox">
+        <span id="gmpage">1/@Math.Ceiling((double)(Model.UnitNode as COTES.ISTOK.ASC.GraphNode).Parameters.Length/graphState.OnPage)</span>
+        <input id="graphmponpage" value="@graphState.OnPage" readonly="true" title="Количество параметров на графике" />
+    </div>
+    @*<div id="graphmsort">
+        <select disabled>
+            <option selected="selected">Не сортировать</option>
+            <option>Возрастание</option>
+            <option>Убывание</option>
+        </select>
+    </div>*@
+    <label for="graphmdatefrom" class="graphtoolbox">От:&nbsp;</label>
+    <input id="graphmdatefrom" class="graphtoolbox" type="text" value="@graphState.GraphFrom.ToString("dd.MM.yyyy HH:mm")" title="Начальное время" />
+    <label for="graphmdateto" class="graphtoolbox">До:&nbsp;</label>
+    <input id="graphmdateto" class="graphtoolbox" type="text" value="@graphState.GraphTo.ToString("dd.MM.yyyy HH:mm")" title="Конечное время" />
+    <div class="graphtoolbox" title="Временной интервал">
+        <select id="graphmicombo" class="gtpatch">
+            <option value="@((int)GraphTimePeriod.Minutes30)" @(graphState.GraphPeriod==GraphTimePeriod.Minutes30?"selected":"") >
+                @GraphTimePeriodFormatter.Format(GraphTimePeriod.Minutes30)</option>
+            <option value="@((int)GraphTimePeriod.Hours1)" @(graphState.GraphPeriod==GraphTimePeriod.Hours1?"selected":"")>
+                @GraphTimePeriodFormatter.Format(GraphTimePeriod.Hours1)</option>
+            <option value="@((int)GraphTimePeriod.Hours4)" @(graphState.GraphPeriod==GraphTimePeriod.Hours4?"selected":"")>
+                @GraphTimePeriodFormatter.Format(GraphTimePeriod.Hours4)</option>
+            <option value="@((int)GraphTimePeriod.Days1)" @(graphState.GraphPeriod==GraphTimePeriod.Days1?"selected":"")>
+                @GraphTimePeriodFormatter.Format(GraphTimePeriod.Days1)</option>
+            <option value="@((int)GraphTimePeriod.Days30)" @(graphState.GraphPeriod==GraphTimePeriod.Days30?"selected":"")>
+                @GraphTimePeriodFormatter.Format(GraphTimePeriod.Days30)</option>
+            <option value="@((int)GraphTimePeriod.User)" @(graphState.GraphPeriod==GraphTimePeriod.User?"selected":"")>
+                @GraphTimePeriodFormatter.Format(GraphTimePeriod.User)</option>
+        </select>
+    </div>
+    <input id="graphmidata" type="checkbox" checked/>
+    @*<label for="graphmidata">Автоматически обновлять данные</label>*@
+    <input id="btntimer" type="checkbox" class="graphtoolbox" onclick="timerclick()"/>
+    <label for="btntimer" class="graphtoolbox">Онлайн обновление</label>
+</div>
+
+<div id="graphcontent">
+    <div id="gcontent">
+        <div id="gcleft">
+		    <div class="gcupper"><div class="gccell"><img id="gmpprev" class="gci" alt="" src="~/Images/UnitControllers/1leftarrow.png" onclick="gmprevp()" title="Предыдущие параметры" /></div></div>
+		    <div class="gclower"><div class="gccell"><img class="gci" alt="" src="~/Images/UnitControllers/arrowleft_blue24.png" onclick="gprevdate()" title="Предыдущий интервал" /></div></div>
+	    </div>
+	    <div id="gcmiddle">
+		    @*<img id="gcimg" src="@Url.Action("GetGraph", new { pid=ViewData[Resources.strPageId], curPar = 0, maxPar = graphState.OnPage, t = DateTime.Now.Millisecond })" />*@
+            <div id="gcplot"></div>
+	    </div>
+	    <div id="gcright">
+		    <div class="gcupper"><div class="gccell"><img id="gmpnext" class="gci" alt="" src="~/Images/UnitControllers/1rightarrow.png" onclick="gmnextp()" title="Следующие параметры" /></div></div>
+		    <div class="gclower"><div class="gccell"><img class="gci" alt="" src="~/Images/UnitControllers/arrowright_blue24.png" onclick="gnextdate()" title="Следующий интервал" /></div></div>
+	    </div>
+    </div>
+
+    <div id="graphctable">
+        @{Html.RenderPartial("GetTables");}
+    </div>
+</div>

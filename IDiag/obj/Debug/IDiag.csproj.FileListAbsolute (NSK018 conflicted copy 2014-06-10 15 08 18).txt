@@ -1,0 +1,11 @@
+D:\Cloud@Mail.Ru\isbk-src\src\IDiag\bin\Debug\COTES.ISTOK.Diag.dll
+D:\Cloud@Mail.Ru\isbk-src\src\IDiag\bin\Debug\COTES.ISTOK.Diag.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\IDiag\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\IDiag\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\IDiag\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\IDiag\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\IDiag\obj\Debug\COTES.ISTOK.Monitoring.ChannelMonitoringControl.resources
+D:\Cloud@Mail.Ru\isbk-src\src\IDiag\obj\Debug\COTES.ISTOK.Monitoring.PropertyGridForm.resources
+D:\Cloud@Mail.Ru\isbk-src\src\IDiag\obj\Debug\IDiag.csproj.GenerateResource.Cache
+D:\Cloud@Mail.Ru\isbk-src\src\IDiag\obj\Debug\COTES.ISTOK.Diag.dll
+D:\Cloud@Mail.Ru\isbk-src\src\IDiag\obj\Debug\COTES.ISTOK.Diag.pdb

@@ -1,0 +1,46 @@
+﻿@model COTES.ISTOK.ClientCore.UnitProviders.ExcelReportUnitProvider
+@using COTES.ISTOK.WebClient.Properties
+@{
+    Layout = null;
+}
+
+<script>
+    $(function () {
+        $("#rudatefrom").datetimepicker({
+            changeMonth: true,
+            changeYear: true
+        });
+        $("#rudateto").datetimepicker({
+            changeMonth: true,
+            changeYear: true
+        });
+
+        $(".rugenerate").button();
+    });
+
+    function rugenerate() {
+        window.location.href = '@Url.Action("GenerateReport")'
+            + "?pid=" + '@ViewData[Resources.strPageId]'
+            + "&dateFrom=" + $("#rudatefrom").val()
+            + "&dateTo=" + $("#rudateto").val();
+    }
+</script>
+
+<div id="rucontent">
+    <fieldset class="rufield">
+        <legend>Формирование отчета</legend>
+        <table class="rutable">
+            <tr>
+                <td><span>От:&nbsp</span></td>
+                <td><input id="rudatefrom" type="text" value="@DateTime.Now.AddDays(-1).ToString("dd.MM.yyyy 00:00")" /></td>
+            </tr>
+            <tr>
+                <td><span>До:&nbsp</span></td>
+                <td><input id="rudateto" type="text" value="@DateTime.Now.ToString("dd.MM.yyyy 00:00")" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><a class="rugenerate" href="javascript:void(0)" onclick="rugenerate()" >Сформировать</a></td>
+            </tr>
+        </table>
+    </fieldset>
+</div>

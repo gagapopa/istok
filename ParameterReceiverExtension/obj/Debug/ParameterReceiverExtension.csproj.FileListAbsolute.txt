@@ -1,0 +1,16 @@
+D:\Cloud@Mail.Ru\isbk-src\src\ParameterReceiverExtension\bin\Debug\ParameterReceiverExtension.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ParameterReceiverExtension\bin\Debug\ParameterReceiverExtension.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\ParameterReceiverExtension\bin\Debug\ParameterReceiverExtension.dll.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\ParameterReceiverExtension\bin\Debug\ParameterReceiverExtension.dll.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\ParameterReceiverExtension\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ParameterReceiverExtension\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\ParameterReceiverExtension\obj\Debug\ParameterReceiverExtension.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\ParameterReceiverExtension\obj\Debug\ParameterReceiverExtension.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ParameterReceiverExtension\obj\Debug\ParameterReceiverExtension.pdb
+C:\Maildisk\isbk-src\src - копия\ParameterReceiverExtension\bin\Debug\ParameterReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\ParameterReceiverExtension\bin\Debug\ParameterReceiverExtension.pdb
+C:\Maildisk\isbk-src\src - копия\ParameterReceiverExtension\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\ParameterReceiverExtension\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\ParameterReceiverExtension\obj\Debug\ParameterReceiverExtension.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\ParameterReceiverExtension\obj\Debug\ParameterReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\ParameterReceiverExtension\obj\Debug\ParameterReceiverExtension.pdb

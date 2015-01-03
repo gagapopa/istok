@@ -1,0 +1,6 @@
+C:\Maildisk\isbk-src\src - копия\Installer\ClientInstaller\bin\Debug\ru-RU\ISTOKClient.msi
+C:\Maildisk\isbk-src\src - копия\Installer\ClientInstaller\bin\Debug\ru-RU\ISTOKClient.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\ClientInstaller.wixproj.BindContentsFileListru-RU.txt
+obj\Debug\ClientInstaller.wixproj.BindOutputsFileListru-RU.txt
+obj\Debug\ClientInstaller.wixproj.BindBuiltOutputsFileListru-RU.txt

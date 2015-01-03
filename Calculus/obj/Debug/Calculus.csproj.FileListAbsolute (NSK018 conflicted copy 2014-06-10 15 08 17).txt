@@ -1,0 +1,5 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Calculus\bin\Debug\Calculus.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Calculus\bin\Debug\Calculus.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Calculus\obj\Debug\Calculus.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\Calculus\obj\Debug\Calculus.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Calculus\obj\Debug\Calculus.pdb

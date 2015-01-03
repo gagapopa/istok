@@ -1,0 +1,24 @@
+D:\Cloud@Mail.Ru\isbk-src\src\IF97Calc\bin\Debug\IF97Calc.exe.config
+D:\Cloud@Mail.Ru\isbk-src\src\IF97Calc\bin\Debug\IF97Calc.exe
+D:\Cloud@Mail.Ru\isbk-src\src\IF97Calc\bin\Debug\IF97Calc.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\IF97Calc\bin\Debug\IF97Calc.exe.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\IF97Calc\bin\Debug\IF97Calc.exe.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\IF97Calc\bin\Debug\IF97Lib.dll
+D:\Cloud@Mail.Ru\isbk-src\src\IF97Calc\bin\Debug\IF97Lib.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\IF97Calc\obj\Debug\IF97Calc.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\IF97Calc\obj\Debug\IF97Calc.IF97CalcForm.resources
+D:\Cloud@Mail.Ru\isbk-src\src\IF97Calc\obj\Debug\IF97Calc.Properties.Resources.resources
+D:\Cloud@Mail.Ru\isbk-src\src\IF97Calc\obj\Debug\IF97Calc.csproj.GenerateResource.Cache
+D:\Cloud@Mail.Ru\isbk-src\src\IF97Calc\obj\Debug\IF97Calc.exe
+D:\Cloud@Mail.Ru\isbk-src\src\IF97Calc\obj\Debug\IF97Calc.pdb
+C:\Maildisk\isbk-src\src - копия\IF97Calc\bin\Debug\IF97Calc.exe.config
+C:\Maildisk\isbk-src\src - копия\IF97Calc\bin\Debug\IF97Calc.exe
+C:\Maildisk\isbk-src\src - копия\IF97Calc\bin\Debug\IF97Calc.pdb
+C:\Maildisk\isbk-src\src - копия\IF97Calc\bin\Debug\IF97Lib.dll
+C:\Maildisk\isbk-src\src - копия\IF97Calc\bin\Debug\IF97Lib.pdb
+C:\Maildisk\isbk-src\src - копия\IF97Calc\obj\Debug\IF97Calc.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\IF97Calc\obj\Debug\IF97Calc.IF97CalcForm.resources
+C:\Maildisk\isbk-src\src - копия\IF97Calc\obj\Debug\IF97Calc.Properties.Resources.resources
+C:\Maildisk\isbk-src\src - копия\IF97Calc\obj\Debug\IF97Calc.csproj.GenerateResource.Cache
+C:\Maildisk\isbk-src\src - копия\IF97Calc\obj\Debug\IF97Calc.exe
+C:\Maildisk\isbk-src\src - копия\IF97Calc\obj\Debug\IF97Calc.pdb

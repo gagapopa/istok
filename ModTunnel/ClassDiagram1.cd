@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="COTES.loadtp.modules.Tunnel.ModTunnel" Collapsed="true">
+    <Position X="10.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ModTunnel.cs</FileName>
+      <HashCode>AAAAAAAAICCAAQICFBACQgIACABEAAgAIAwnAAEQQAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="COTES.loadtp.modules.Tunnel.RemoteServer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RemoteServer.cs</FileName>
+      <HashCode>EAAAAAAAAAAAIAAAAAAIAAAAAAhAMAAAIAAAAAACEAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.229" Collapsed="true" />
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.Consts" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.PropertyTable" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.ServerConnection" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.ItemNotFoundException" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.ItemIsAlreadyExistException" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.ServerNotFoundException" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.ServerIsAbsentException" Collapsed="true">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.CannotReadTagsException" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.BaseModuleEx">
+    <Position X="0.5" Y="5.5" Width="3.75" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Field Name="m_Handler" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="lstMachines" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.Machine">
+    <Position X="17.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Handler" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.TagName" Collapsed="true">
+    <Position X="14.25" Y="4" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.TagNames" Collapsed="true">
+    <Position X="15.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.XmlPropertyReader" Collapsed="true">
+    <Position X="17.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.Property" Collapsed="true">
+    <Position X="17.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.Handler" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="5.25" Width="2.75" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.ParameterTable" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="5" Width="3.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.Parameter" Collapsed="true">
+    <Position X="14" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="COTES.loadtp.modules.modCommon.Channel" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Exception" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="COTES.loadtp.modules.modCommon.IHandler">
+    <Position X="20.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+</ClassDiagram>

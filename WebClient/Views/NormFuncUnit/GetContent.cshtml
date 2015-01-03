@@ -1,0 +1,79 @@
+﻿@model COTES.ISTOK.ClientCore.UnitProviders.NormFuncUnitProvider
+@using COTES.ISTOK.WebClient.Models
+@using COTES.ISTOK.WebClient.Properties
+
+@{
+    Layout = null;
+    COTES.ISTOK.ASC.NormFuncNode nnode = Model.UnitNode as COTES.ISTOK.ASC.NormFuncNode;
+    COTES.ISTOK.RevisionInfo rev = Model.StructureProvider.CurrentRevision;
+    COTES.ISTOK.ClientCore.Utils.NormFuncCalculator calc = new COTES.ISTOK.ClientCore.Utils.NormFuncCalculator(nnode.GetMDTable(rev));
+}
+
+<script>
+    $(function () {
+        $(".nfuval").keyup(function (event) {
+            if (event.keyCode == 13) {
+                nfuvalchanged();
+            }
+        });
+    });
+
+    function nfuvalchanged() {
+        var lstProps = [];
+        var lstVals = [];
+        $(".nfuval").each(function () {
+            lstProps.push($(this).attr("id").replace("nfu", ""));
+            lstVals.push($(this).val());
+        });
+        $.ajax({
+            url: '@Url.Action("Calc")',
+            traditional: true,
+            data: { pid: '@ViewData[Resources.strPageId]', props: lstProps, values: lstVals },
+            type: "POST"
+        })
+            .done(function (data) { $(".nfucalcres").text(data); });
+    }
+</script>
+
+<div id="nfucontent">
+    <img class="nfugraph" src="@(Url.Action("GetGraph", "NormFuncUnit", new {pid=ViewData[Resources.strPageId], t = DateTime.Now.Millisecond }))" />
+    <div id="nfucalc">
+        <table class="unitprops">
+            @{
+                IEnumerable<CategoryProperties> props = PropertyFormatter.GetProperties(Model.StructureProvider.Session, calc);
+            }
+            @foreach (var cat in props)
+            {
+                <tr class="cat">
+                    <td colspan="2">@(cat.Category == "" ? "Разное" : Html.Encode(cat.Category))</td>
+                </tr>
+                foreach (var prop in cat.Properties)
+                {
+                    <tr>
+                        <td title="@Html.Encode(prop.Descriptor.Description)">@Html.Encode(prop.Descriptor.DisplayName)</td>
+                        <td>
+                            @{
+                                string val = Html.Encode(PropertyFormatter.GetPropertyValue(Model, prop));
+                                if(!prop.Descriptor.IsReadOnly)
+                                {
+                                    <input id="@("nfu" + prop.Descriptor.Name)" class="nfuval" type="number" value="@val" onchange="nfuvalchanged()" />
+                                }
+                                else
+                                {
+                                    if (prop.Descriptor.Name == "Result")
+                                    {
+                                        <span class="nfucalcres">@val</span>                                        
+                                    }
+                                    else
+                                    {
+                                        @val
+                                    }
+                                }
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+</div>

@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="d:\vs2013\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Targets>
+  <Target Name="D:\Cloud@Mail.Ru\isbk-src\src\ClientCore\bin\Debug\COTES.ISTOK.Client.Core.dll">
+   <Modules>
+    <Module Name="cotes.istok.client.core.dll">
+     <Namespaces>
+      <Namespace Name="COTES.ISTOK.ClientCore">
+       <Types>
+        <Type Name="Cell" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#FromBytes(System.Byte[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore" File="Cell.cs" Line="73">Объект "'stream'" можно удалять более одного раза в методе 'Cell.FromBytes(byte[])'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 73</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToBytes()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore" File="Cell.cs" Line="56">Объект "'stream'" можно удалять более одного раза в методе 'Cell.ToBytes()'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 56</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ISTOKServiceContainer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#COTES.ISTOK.ASC.IBlockUIDRetrieval.GetBlockUIDs()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore" File="ISTOKServiceContainer.cs" Line="221">Запечатайте 'ISTOKServiceContainer' (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность 'IBlockUIDRetrieval.GetBlockUIDs()' и видим производным классам.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#COTES.ISTOK.ASC.IChannelRetrieval.GetBlockNode(COTES.ISTOK.ASC.ChannelNode)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore" File="ISTOKServiceContainer.cs" Line="276">Запечатайте 'ISTOKServiceContainer' (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность 'IChannelRetrieval.GetBlockNode(ChannelNode)' и видим производным классам.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#COTES.ISTOK.ASC.IModuleLibNameRetrieval.GetBlockNode(COTES.ISTOK.ASC.ChannelNode)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore" File="ISTOKServiceContainer.cs" Line="253">Запечатайте 'ISTOKServiceContainer' (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность 'IModuleLibNameRetrieval.GetBlockNode(ChannelNode)' и видим производным классам.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#COTES.ISTOK.ASC.IOwnerRetrieval.GetCurrentUser()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore" File="ISTOKServiceContainer.cs" Line="154">Запечатайте 'ISTOKServiceContainer' (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность 'IOwnerRetrieval.GetCurrentUser()' и видим производным классам.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#COTES.ISTOK.ASC.IOwnerRetrieval.GetGroups()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore" File="ISTOKServiceContainer.cs" Line="160">Запечатайте 'ISTOKServiceContainer' (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность 'IOwnerRetrieval.GetGroups()' и видим производным классам.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#COTES.ISTOK.ASC.IOwnerRetrieval.GetOwnerLocalization(System.Int32,System.Globalization.CultureInfo)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore" File="ISTOKServiceContainer.cs" Line="190">Запечатайте 'ISTOKServiceContainer' (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность 'IOwnerRetrieval.GetOwnerLocalization(int, CultureInfo)' и видим производным классам.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#COTES.ISTOK.ASC.IOwnerRetrieval.GetUsers()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore" File="ISTOKServiceContainer.cs" Line="185">Запечатайте 'ISTOKServiceContainer' (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность 'IOwnerRetrieval.GetUsers()' и видим производным классам.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#COTES.ISTOK.ASC.IScheduleRetrivial.GetSchedule(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore" File="ISTOKServiceContainer.cs" Line="308">Запечатайте 'ISTOKServiceContainer' (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность 'IScheduleRetrivial.GetSchedule(int)' и видим производным классам.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#COTES.ISTOK.ASC.IScheduleRetrivial.GetSchedule(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore" File="ISTOKServiceContainer.cs" Line="331">Запечатайте 'ISTOKServiceContainer' (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность 'IScheduleRetrivial.GetSchedule(string)' и видим производным классам.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#COTES.ISTOK.ASC.IScheduleRetrivial.GetSchedules()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore" File="ISTOKServiceContainer.cs" Line="285">Запечатайте 'ISTOKServiceContainer' (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность 'IScheduleRetrivial.GetSchedules()' и видим производным классам.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#COTES.ISTOK.ASC.IUnitTypeRetrieval.GetUnitTypeLocalization(System.Globalization.CultureInfo)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore" File="ISTOKServiceContainer.cs" Line="127">Запечатайте 'ISTOKServiceContainer' (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность 'IUnitTypeRetrieval.GetUnitTypeLocalization(CultureInfo)' и видим производным классам.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#COTES.ISTOK.ASC.IUnitTypeRetrieval.GetUnitTypeNode(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore" File="ISTOKServiceContainer.cs" Line="139">Запечатайте 'ISTOKServiceContainer' (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность 'IUnitTypeRetrieval.GetUnitTypeNode(int)' и видим производным классам.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#COTES.ISTOK.ASC.IUnitTypeRetrieval.GetUnitTypes(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore" File="ISTOKServiceContainer.cs" Line="90">Запечатайте 'ISTOKServiceContainer' (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность 'IUnitTypeRetrieval.GetUnitTypes(int)' и видим производным классам.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ErrorOcuired" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">Объявите первый параметр для 'Action&lt;Exception&gt;' как объект с именем "sender".</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">Объявите второй параметр для 'Action&lt;Exception&gt;' как EventArgs или экземпляр типа, расширяющего EventArgs, и присвойте ему имя "e".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RemoteDataService" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Реализуйте IDisposable для 'RemoteDataService', поскольку он создает члены следующих типов IDisposable: 'Timer'. Если 'RemoteDataService' ранее был доставлен, добавление в данный тип новых членов, реализующих IDisposable, считается критическим изменением для существующих потребителей.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Session" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Реализуйте IDisposable для 'Session', поскольку он создает члены следующих типов IDisposable: 'ChannelFactory&lt;IGlobalQueryManager&gt;'. Если 'Session' ранее был доставлен, добавление в данный тип новых членов, реализующих IDisposable, считается критическим изменением для существующих потребителей.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#ErrorOcuired" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">Объявите первый параметр для 'Action&lt;Exception&gt;' как объект с именем "sender".</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">Объявите второй параметр для 'Action&lt;Exception&gt;' как EventArgs или экземпляр типа, расширяющего EventArgs, и присвойте ему имя "e".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="StructureProvider" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="Breaking">
+           <Issue Name="ProvideDisposeBool" Certainty="95" Level="Error">Предоставьте перегружаемую реализацию Dispose(bool) для 'StructureProvider' или отметьте тип как запечатанный. При вызове Dispose(false) должны очищаться только машинные ресурсы. При вызове Dispose(true) должны очищаться и управляемые, и машинные ресурсы.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="Breaking">
+             <Issue Name="DisposeImplementation" Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore" File="StructureProvider.cs" Line="484">Измените 'StructureProvider.Dispose()', чтобы он вызывал Dispose(true), затем вызывал GC.SuppressFinalize для текущего экземпляра объекта ("this" или "Me" в Visual Basic), а затем возвращал результат.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="COTES.ISTOK.ClientCore.UnitProviders">
+       <Types>
+        <Type Name="FormulaUnitProvider" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(COTES.ISTOK.ClientCore.StructureProvider,COTES.ISTOK.ASC.UnitNode)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore\UnitProviders" File="FormulaUnitProvider.cs" Line="17">'FormulaUnitProvider.FormulaUnitProvider(StructureProvider, UnitNode)' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;FormulaUnitProvider..ctor(StructureProvider, UnitNode)&#xD;&#xA;UnitProvider.LoadWorkInfo():Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ArgumentsRetrieved" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">Объявите первый параметр для 'Action&lt;CalcArgumentInfo[]&gt;' как объект с именем "sender".</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">Объявите второй параметр для 'Action&lt;CalcArgumentInfo[]&gt;' как EventArgs или экземпляр типа, расширяющего EventArgs, и присвойте ему имя "e".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ConstsRetrieved" Kind="Event" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="Breaking">
+             <Issue Name="First" Certainty="95" Level="Error">Объявите первый параметр для 'Action&lt;ConstsInfo[]&gt;' как объект с именем "sender".</Issue>
+             <Issue Name="Second" Certainty="95" Level="Error">Объявите второй параметр для 'Action&lt;ConstsInfo[]&gt;' как EventArgs или экземпляр типа, расширяющего EventArgs, и присвойте ему имя "e".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GraphUnitProviderState" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore\UnitProviders" File="CommonGraphUnitProvider.cs" Line="290">'GraphUnitProviderState.GraphUnitProviderState()' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;GraphUnitProviderState..ctor()&#xD;&#xA;GraphUnitProviderState.set_GraphPeriod(GraphTimePeriod):Void&#xD;&#xA;GraphUnitProviderState.OnGraphPeriodChanged():Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore\UnitProviders" File="CommonGraphUnitProvider.cs" Line="290">'GraphUnitProviderState.GraphUnitProviderState()' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;GraphUnitProviderState..ctor()&#xD;&#xA;GraphUnitProviderState.set_GraphTo(DateTime):Void&#xD;&#xA;GraphUnitProviderState.OnGraphToChanged():Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore\UnitProviders" File="CommonGraphUnitProvider.cs" Line="290">'GraphUnitProviderState.GraphUnitProviderState()' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;GraphUnitProviderState..ctor()&#xD;&#xA;GraphUnitProviderState.set_RemoteServer(Boolean):Void&#xD;&#xA;GraphUnitProviderState.OnRemoteServerChanged():Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore\UnitProviders" File="CommonGraphUnitProvider.cs" Line="290">'GraphUnitProviderState.GraphUnitProviderState()' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;GraphUnitProviderState..ctor()&#xD;&#xA;GraphUnitProviderState.set_RequestData(Boolean):Void&#xD;&#xA;GraphUnitProviderState.OnRequestDataChanged():Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore\UnitProviders" File="CommonGraphUnitProvider.cs" Line="290">'GraphUnitProviderState.GraphUnitProviderState()' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;GraphUnitProviderState..ctor()&#xD;&#xA;GraphUnitProviderState.set_ShowMarker(Boolean):Void&#xD;&#xA;GraphUnitProviderState.OnShowMarkerChanged():Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore\UnitProviders" File="CommonGraphUnitProvider.cs" Line="290">'GraphUnitProviderState.GraphUnitProviderState()' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;GraphUnitProviderState..ctor()&#xD;&#xA;GraphUnitProviderState.set_SplitterDistance(Single):Void&#xD;&#xA;GraphUnitProviderState.OnSplitterDistanceChanged():Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#.ctor(COTES.ISTOK.ClientCore.UnitProviders.GraphUnitProviderState)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore\UnitProviders" File="CommonGraphUnitProvider.cs" Line="290">'GraphUnitProviderState.GraphUnitProviderState(GraphUnitProviderState)' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;GraphUnitProviderState..ctor(GraphUnitProviderState)&#xD;&#xA;GraphUnitProviderState.set_GraphFrom(DateTime):Void&#xD;&#xA;GraphUnitProviderState.OnGraphFromChanged():Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore\UnitProviders" File="CommonGraphUnitProvider.cs" Line="290">'GraphUnitProviderState.GraphUnitProviderState(GraphUnitProviderState)' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;GraphUnitProviderState..ctor(GraphUnitProviderState)&#xD;&#xA;GraphUnitProviderState.set_GraphPeriod(GraphTimePeriod):Void&#xD;&#xA;GraphUnitProviderState.OnGraphPeriodChanged():Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore\UnitProviders" File="CommonGraphUnitProvider.cs" Line="290">'GraphUnitProviderState.GraphUnitProviderState(GraphUnitProviderState)' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;GraphUnitProviderState..ctor(GraphUnitProviderState)&#xD;&#xA;GraphUnitProviderState.set_GraphTo(DateTime):Void&#xD;&#xA;GraphUnitProviderState.OnGraphToChanged():Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore\UnitProviders" File="CommonGraphUnitProvider.cs" Line="290">'GraphUnitProviderState.GraphUnitProviderState(GraphUnitProviderState)' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;GraphUnitProviderState..ctor(GraphUnitProviderState)&#xD;&#xA;GraphUnitProviderState.set_RemoteServer(Boolean):Void&#xD;&#xA;GraphUnitProviderState.OnRemoteServerChanged():Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore\UnitProviders" File="CommonGraphUnitProvider.cs" Line="290">'GraphUnitProviderState.GraphUnitProviderState(GraphUnitProviderState)' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;GraphUnitProviderState..ctor(GraphUnitProviderState)&#xD;&#xA;GraphUnitProviderState.set_RequestData(Boolean):Void&#xD;&#xA;GraphUnitProviderState.OnRequestDataChanged():Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore\UnitProviders" File="CommonGraphUnitProvider.cs" Line="290">'GraphUnitProviderState.GraphUnitProviderState(GraphUnitProviderState)' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;GraphUnitProviderState..ctor(GraphUnitProviderState)&#xD;&#xA;GraphUnitProviderState.set_ShowMarker(Boolean):Void&#xD;&#xA;GraphUnitProviderState.OnShowMarkerChanged():Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore\UnitProviders" File="CommonGraphUnitProvider.cs" Line="290">'GraphUnitProviderState.GraphUnitProviderState(GraphUnitProviderState)' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;GraphUnitProviderState..ctor(GraphUnitProviderState)&#xD;&#xA;GraphUnitProviderState.set_SplitterDistance(Single):Void&#xD;&#xA;GraphUnitProviderState.OnSplitterDistanceChanged():Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="OptimizationUnitProvider" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(COTES.ISTOK.ClientCore.StructureProvider,COTES.ISTOK.ASC.OptimizationGateNode)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore\UnitProviders" File="OptimizationUnitProvider.cs" Line="358">'OptimizationUnitProvider.OptimizationUnitProvider(StructureProvider, OptimizationGateNode)' содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: &#xD;&#xA;&#xD;&#xA;OptimizationUnitProvider..ctor(StructureProvider, OptimizationGateNode)&#xD;&#xA;UnitProvider.ClearUnsavedData():Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UnitProvider" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="Breaking">
+           <Issue Name="ProvideDisposeBool" Certainty="95" Level="Error">Предоставьте перегружаемую реализацию Dispose(bool) для 'UnitProvider' или отметьте тип как запечатанный. При вызове Dispose(false) должны очищаться только машинные ресурсы. При вызове Dispose(true) должны очищаться и управляемые, и машинные ресурсы.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Dispose()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Status="Active" Created="2014-05-27 01:56:05Z" FixCategory="Breaking">
+             <Issue Name="DisposeImplementation" Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore\UnitProviders" File="UnitProvider.cs" Line="184">Измените 'UnitProvider.Dispose()', чтобы он вызывал Dispose(true), затем вызывал GC.SuppressFinalize для текущего экземпляра объекта ("this" или "Me" в Visual Basic), а затем возвращал результат.</Issue>
+             <Issue Name="DisposeSignature" Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\ClientCore\UnitProviders" File="UnitProvider.cs" Line="184">Убедитесь, что 'UnitProvider.Dispose()' объявлен как общий и запечатанный.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009">
+   <Name>Правильно объявите обработчики событий</Name>
+   <Description>По соглашению для событий .NET предусмотрены два параметра, определяющие источник события и данные события. Сигнатуры обработчиков событий должны иметь следующую форму: void MyEventHandler(object sender, EventArgs e). Параметр "sender" всегда имеет тип System.Object, даже если есть возможность использовать более конкретный тип. Параметр "e" всегда имеет тип System.EventArgs. События, не предоставляющие данных о себе, должны использовать тип делегата System.EventHandler. Обработчики событий возвращают значение void, благодаря чему они могут отправлять каждое событие множеству целевых методов. Любое значение, возвращенное целевым объектом, будет утеряно после первого вызова.</Description>
+   <Resolution Name="First">Объявите первый параметр для {0} как объект с именем "sender".</Resolution>
+   <Resolution Name="Second">Объявите второй параметр для {0} как EventArgs или экземпляр типа, расширяющего EventArgs, и присвойте ему имя "e".</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182133.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214">
+   <Name>Не вызывайте переопределяемые методы в конструкторах</Name>
+   <Description>Виртуальные методы, определенные в классе, не следует вызывать из конструкторов. Если производный класс переопределил метод, будет вызвана версия производного класса (до вызова конструктора производного класса).</Description>
+   <Resolution Name="Default">{0} содержит цепочку вызовов, которая приводит к вызову виртуального метода, определенного классом. Просмотрите следующий стек вызовов для обнаружения непреднамеренных последствий: {1}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182331.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063">
+   <Name>Правильно реализуйте IDisposable</Name>
+   <Description>Во всех типах IDisposable шаблон Dispose должен быть реализован правильно.</Description>
+   <Resolution Name="DisposeImplementation">Измените {0}, чтобы он вызывал Dispose(true), затем вызывал GC.SuppressFinalize для текущего экземпляра объекта ("this" или "Me" в Visual Basic), а затем возвращал результат.</Resolution>
+   <Resolution Name="DisposeSignature">Убедитесь, что {0} объявлен как общий и запечатанный.</Resolution>
+   <Resolution Name="ProvideDisposeBool">Предоставьте перегружаемую реализацию Dispose(bool) для {0} или отметьте тип как запечатанный. При вызове Dispose(false) должны очищаться только машинные ресурсы. При вызове Dispose(true) должны очищаться и управляемые, и машинные ресурсы.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms244737.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033">
+   <Name>Методы интерфейса должны быть доступны для вызова дочерним типам</Name>
+   <Description>Явные реализации методов определены с режимом доступа private. Классы, производные от классов с явной реализацией методов и выбравшие их повторное объявление на своем уровне, не смогут вызывать реализации базового класса, если базовый класс не предоставит альтернативный метод с соответствующим режимом доступа. В случае переопределения метода базового класса, который был скрыт, благодаря явной реализации интерфейса, производный класс, чтобы вызвать реализацию базового класса, должен выполнить приведение базового указателя к соответствующему интерфейсу. Однако при вызове при помощи данной ссылки фактически будет вызываться реализация производного класса, что приведет к рекурсии и, в конце концов, к переполнению стека.</Description>
+   <Resolution Name="Default">Запечатайте {0} (критическое изменение, если ранее данный класс был доставлен), реализуйте метод неявно или реализуйте новый метод, который предоставляет функциональность {1} и видим производным классам.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182153.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>Типы, которым принадлежат освобождаемые поля, должны быть освобождаемыми</Name>
+   <Description>Типы, объявляющие освобождаемые члены, также должны реализовывать IDisposable. Если типу не принадлежат какие-либо неуправляемые ресурсы, нет необходимости реализовывать для него метод завершения.</Description>
+   <Resolution Name="DependsOnFix">Реализуйте IDisposable для {0}, поскольку он создает члены следующих типов IDisposable: {1}. Если {0} ранее был доставлен, добавление в данный тип новых членов, реализующих IDisposable, считается критическим изменением для существующих потребителей.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Не ликвидировать объекты несколько раз</Name>
+   <Description>Правильно реализованный метод Dispose может вызываться неоднократно без создания исключения. Однако такой гарантии нет, и чтобы предотвратить создание System.ObjectDisposedException, не следует вызывать метод Dispose для объекта более одного раза.</Description>
+   <Resolution Name="Default">Объект "{0}" можно удалять более одного раза в методе {1}. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 73</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Категория</String>
+  <String Key="Certainty">Достоверность</String>
+  <String Key="CollapseAll">Свернуть все</String>
+  <String Key="CheckId">ИД проверки</String>
+  <String Key="Error">Ошибка</String>
+  <String Key="Errors">ошибки</String>
+  <String Key="ExpandAll">Развернуть все</String>
+  <String Key="Help">Справка</String>
+  <String Key="Line">Строка</String>
+  <String Key="Messages">сообщения</String>
+  <String Key="LocationNotStoredInPdb">[расположение не сохранено в PDB]</String>
+  <String Key="Project">Проект</String>
+  <String Key="Resolution">Разрешение</String>
+  <String Key="Rule">Правило</String>
+  <String Key="RuleFile">Файл правил</String>
+  <String Key="RuleDescription">Описание правила</String>
+  <String Key="Source">Источник</String>
+  <String Key="Status">Состояние</String>
+  <String Key="Target">Цель</String>
+  <String Key="Warning">Предупреждение</String>
+  <String Key="Warnings">предупреждения</String>
+  <String Key="ReportTitle">Отчет по анализу кода</String>
+ </Localized>
+</FxCopReport>

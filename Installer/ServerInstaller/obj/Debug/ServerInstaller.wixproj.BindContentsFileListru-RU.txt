@@ -1,0 +1,57 @@
+../../DLLs/FastReport/FastReport.dll
+../../DLLs/FastReport/FastReport.Bars.dll
+../../DLLs/FastReport/FastReport.Editor.dll
+C:\Maildisk\isbk-src\src - копия\CalculusETO\bin\Debug\IF97Lib.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\istokloader.exe
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\istokloader.exe.config
+C:\Maildisk\isbk-src\src - копия\CommonLib\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\LoadModule\bin\Debug\COTES.ISTOK.Loader.Core.dll
+C:\Maildisk\isbk-src\src - копия\IDiag\bin\Debug\COTES.ISTOK.Diag.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modCommon\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\NLog.config
+C:\Maildisk\isbk-src\src - копия\block_UI\bin\Debug\istokloader_ui.exe
+C:\Maildisk\isbk-src\src - копия\block_UI\bin\Debug\istokloader_ui.exe.config
+C:\Maildisk\isbk-src\src - копия\Modules\modAtec\bin\Debug\COTES.ISTOK.Loader.Modules.Atec.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Fb.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modMHT\bin\Debug\COTES.ISTOK.Loader.Modules.MHT.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Opc.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Random.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modSql\bin\Debug\COTES.ISTOK.Loader.Modules.Sql.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Debug\COTES.ISTOK.Loader.Modules.Tornado.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Debug\COTES.ISTOK.Loader.Modules.Vzlet.dll
+../../DLLs/MimeTex.dll
+../../Modules/modOpc/Reference/OpcNetApi.dll
+../../Modules/modOpc/Reference/OpcNetApi.Com.dll
+C:\Maildisk\isbk-src\src - копия\GlobSvc\bin\Debug\istoksrv.exe.config
+C:\Maildisk\isbk-src\src - копия\Calc\bin\Debug\COTES.ISTOK.Calc.dll
+C:\Maildisk\isbk-src\src - копия\CommonLib\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\GlobSvc\bin\Debug\EntityFramework.dll
+../../DLLs/FastReport/FastReport.dll
+../../DLLs/FastReport/FastReport.Bars.dll
+../../DLLs/FastReport/FastReport.Editor.dll
+C:\Maildisk\isbk-src\src - копия\GlobSvc\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\GlobSvc\NLog.config
+../../DLLs/DocumentFormat.OpenXml.dll
+C:\Maildisk\isbk-src\src - копия\ParameterReceiverExtension\bin\Debug\ParameterReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Debug\ISTOKReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\GlobSvc\bin\Debug\istoksrv.exe
+C:\Maildisk\isbk-src\src - копия\Assignment\bin\Debug\COTES.ISTOK.Server.Core.dll
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Debug\COTES.ISTOK.Server.Data.dll
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\istoksrv_ui.exe
+C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\istokclient.exe
+C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\istokclient.exe.config
+C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\System.Runtime.dll
+C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\System.Threading.Tasks.dll
+C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Maildisk\isbk-src\src - копия\Calc\bin\Debug\COTES.ISTOK.Calc.dll
+C:\Maildisk\isbk-src\src - копия\CommonLib\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\ClientCore\bin\Debug\COTES.ISTOK.Client.Core.dll
+C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Client\NLog.config
+../../DLLs/DocumentFormat.OpenXml.dll
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Debug\COTES.ISTOK.Server.Data.dll
+../../DLLs/ZedGraph.dll

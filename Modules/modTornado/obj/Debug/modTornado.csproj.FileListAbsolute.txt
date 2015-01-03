@@ -1,0 +1,23 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\COTES.ISTOK.Loader.Modules.Tornado.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\COTES.ISTOK.Loader.Modules.Tornado.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\COTES.ISTOK.Loader.Modules.Tornado.dll.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\COTES.ISTOK.Loader.Modules.Tornado.dll.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\obj\Debug\COTES.ISTOK.Loader.Modules.Tornado.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modTornado\obj\Debug\COTES.ISTOK.Loader.Modules.Tornado.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Debug\COTES.ISTOK.Loader.Modules.Tornado.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Debug\COTES.ISTOK.Loader.Modules.Tornado.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\obj\Debug\modTornado.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\obj\Debug\COTES.ISTOK.Loader.Modules.Tornado.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\obj\Debug\COTES.ISTOK.Loader.Modules.Tornado.pdb

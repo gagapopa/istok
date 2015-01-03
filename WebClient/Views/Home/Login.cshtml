@@ -1,0 +1,100 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Аутентификация</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/Content/styles.css" rel="Stylesheet" />
+    <link href="~/Content/themes/base/jquery-ui.css" rel="Stylesheet" />
+    <script src="~/Scripts/jquery-1.8.3.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.10.3.min.js"></script>
+
+    <script>
+        $().ready(function () {
+            showbtn();
+            $(".btnenter").button();
+            $("#txtusername").focus();
+            $("#txtusername").keyup(function (event) { if (event.keyCode == 13) checkauth(); });
+            $("#txtpassword").keyup(function (event) { if (event.keyCode == 13) checkauth(); });
+        });
+        function checkauth() {
+            $("#lpres").text("\xa0");// &nbsp;
+            hidebtn();
+            $.ajax({
+                url: '@Url.Action("CheckLogin")',
+                type: "POST",
+                data: { user: $("#txtusername").val(), pass: $("#txtpassword").val() },
+                async: false
+            })
+                .done(function (data) {
+                    $("#txtpassword").val("");
+                    switch (data) {
+                        case '0':
+                            window.location.href = "/";
+                            break;
+                        case '2':
+                            showbtn();
+                            $("#lpres").text("Ошибка связи.");
+                            break;
+                        default:
+                            showbtn();
+                            $("#lpres").text("Неверное имя пользователя или пароль.");
+                    }
+                })
+                .fail(function(){
+                    showbtn();
+                });
+        }
+        function hidebtn() {
+            $(".btnenter").hide();
+            $(".lploader").show();
+        }
+        function showbtn() {
+            $(".lploader").hide();
+            $(".btnenter").show();
+        }
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div class="title">ИСТОК-СБК</div>
+        <br /><br />
+        @{Html.RenderAction("Menu", "Nav", new { pid = 0 });}
+    </div>
+    <div class="lpmain">
+        <br /><br /><br />
+        <table class="lptable">
+            <tr>
+                <td>Пользователь:</td>
+                <td><input id="txtusername" class="lpinput" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Пароль:</td>
+                <td><input id="txtpassword" class="lpinput" type="password" /></td>
+            </tr>
+            <tr>
+                <td class="lpcenter" colspan="2">
+                    <div style="height:30px;">
+                    <img class="lploader" src="~/Content/Images/loader.gif"/>
+                    &nbsp;
+                    <a class="btnenter" href="javascript:void(0);" onclick="checkauth()">Войти</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <div class="lpinfo"><span id="lpres">&nbsp;</span></div>
+        <br /><br />
+    </div>
+    <div id="footer">
+        <div class="copyout">
+            <div class="copytext"><img src="~/Content/Images/logo0.gif" height="50" width="72" /></div><!-- &copy; @DateTime.Now.Year - ЗАО "Е4-СибКОТЭС". -->
+        </div>
+    </div>
+</body>
+</html>

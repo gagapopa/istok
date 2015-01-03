@@ -1,0 +1,23 @@
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\bin\Debug\KeyGenerator.exe.config
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\bin\Debug\KeyGenerator.exe
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\bin\Debug\KeyGenerator.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\bin\Debug\KeyGenerator.exe.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\bin\Debug\KeyGenerator.exe.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\obj\Debug\COTES.ISTOK.KeyGenerator.KeyGeneratorForm.resources
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\obj\Debug\COTES.ISTOK.KeyGenerator.Properties.Resources.resources
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\obj\Debug\KeyGenerator.csproj.GenerateResource.Cache
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\obj\Debug\KeyGenerator.exe
+D:\Cloud@Mail.Ru\isbk-src\src\KeyGenerator\obj\Debug\KeyGenerator.pdb
+C:\Maildisk\isbk-src\src - копия\KeyGenerator\bin\Debug\KeyGenerator.exe.config
+C:\Maildisk\isbk-src\src - копия\KeyGenerator\bin\Debug\KeyGenerator.exe
+C:\Maildisk\isbk-src\src - копия\KeyGenerator\bin\Debug\KeyGenerator.pdb
+C:\Maildisk\isbk-src\src - копия\KeyGenerator\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\KeyGenerator\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\KeyGenerator\obj\Debug\COTES.ISTOK.KeyGenerator.KeyGeneratorForm.resources
+C:\Maildisk\isbk-src\src - копия\KeyGenerator\obj\Debug\COTES.ISTOK.KeyGenerator.Properties.Resources.resources
+C:\Maildisk\isbk-src\src - копия\KeyGenerator\obj\Debug\KeyGenerator.csproj.GenerateResource.Cache
+C:\Maildisk\isbk-src\src - копия\KeyGenerator\obj\Debug\KeyGenerator.exe
+C:\Maildisk\isbk-src\src - копия\KeyGenerator\obj\Debug\KeyGenerator.pdb
+C:\Maildisk\isbk-src\src - копия\KeyGenerator\obj\Debug\KeyGenerator.csprojResolveAssemblyReference.cache

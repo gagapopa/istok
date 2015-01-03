@@ -1,0 +1,12 @@
+D:\Cloud@Mail.Ru\isbk-src\src\CalculusETO\bin\Debug\IF97Lib.dll
+D:\Cloud@Mail.Ru\isbk-src\src\CalculusETO\bin\Debug\IF97Lib.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\CalculusETO\bin\Debug\IF97Lib.dll.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\CalculusETO\bin\Debug\IF97Lib.dll.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\CalculusETO\obj\Debug\IF97Lib.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\CalculusETO\obj\Debug\IF97Lib.dll
+D:\Cloud@Mail.Ru\isbk-src\src\CalculusETO\obj\Debug\IF97Lib.pdb
+C:\Maildisk\isbk-src\src - копия\CalculusETO\bin\Debug\IF97Lib.dll
+C:\Maildisk\isbk-src\src - копия\CalculusETO\bin\Debug\IF97Lib.pdb
+C:\Maildisk\isbk-src\src - копия\CalculusETO\obj\Debug\IF97Lib.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\CalculusETO\obj\Debug\IF97Lib.dll
+C:\Maildisk\isbk-src\src - копия\CalculusETO\obj\Debug\IF97Lib.pdb

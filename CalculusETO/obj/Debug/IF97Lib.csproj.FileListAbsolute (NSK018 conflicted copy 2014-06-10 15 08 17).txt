@@ -1,0 +1,5 @@
+D:\Cloud@Mail.Ru\isbk-src\src\CalculusETO\bin\Debug\IF97Lib.dll
+D:\Cloud@Mail.Ru\isbk-src\src\CalculusETO\bin\Debug\IF97Lib.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\CalculusETO\obj\Debug\IF97Lib.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\CalculusETO\obj\Debug\IF97Lib.dll
+D:\Cloud@Mail.Ru\isbk-src\src\CalculusETO\obj\Debug\IF97Lib.pdb

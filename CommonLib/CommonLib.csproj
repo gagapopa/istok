@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{80429148-427C-4207-BCD0-AE5E38B405D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>COTES.ISTOK</RootNamespace>
+    <AssemblyName>COTES.ISTOK.Common</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DKSMRelease|AnyCPU' ">
+    <OutputPath>bin\DKSMRelease\</OutputPath>
+    <DefineConstants>TRACE;EMA VC_REVISION</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DKSMDebug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DKSMDebug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EMA VC_REVISION</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DKSMRelease|x86'">
+    <OutputPath>bin\x86\DKSMRelease\</OutputPath>
+    <DefineConstants>TRACE;EMA VC_REVISION</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DKSMDebug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\DKSMDebug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EMA VC_REVISION</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DKSMRelease|x64'">
+    <OutputPath>bin\x64\DKSMRelease\</OutputPath>
+    <DefineConstants>TRACE;EMA VC_REVISION</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DKSMDebug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\DKSMDebug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EMA VC_REVISION</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.3.1.0.0\lib\net40\NLog.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsyncOperations\AsyncOperation.cs" />
+    <Compile Include="AsyncOperations\AsyncContext.cs" />
+    <Compile Include="AsyncOperations\OperationInfo.cs" />
+    <Compile Include="AsyncOperations\OperationState.cs" />
+    <Compile Include="BaseClasses.cs" />
+    <Compile Include="CacheObjects.cs" />
+    <Compile Include="CalcMessage.cs" />
+    <Compile Include="Configurations\BackupSettings.cs" />
+    <Compile Include="Configurations\BaseSettings.cs" />
+    <Compile Include="Configurations\BlockSettings.cs" />
+    <Compile Include="Configurations\ClientSettings.cs" />
+    <Compile Include="Configurations\DataBaseSettings.cs" />
+    <Compile Include="Configurations\FormSettings.cs" />
+    <Compile Include="Configurations\GlobalSettings.cs" />
+    <Compile Include="Configurations\MaintenanceSettings.cs" />
+    <Compile Include="Configurations\ServerSettings.cs" />
+    <Compile Include="Configurations\VPNSettings.cs" />
+    <Compile Include="Consts.cs" />
+    <Compile Include="DiagnosticsInfo\IDiagnostics.cs" />
+    <Compile Include="ValueAggregator.cs" />
+    <Compile Include="DataLoad\DataLoadMethod.cs" />
+    <Compile Include="DataLoad\DataLoadMethodTypeConverter.cs" />
+    <Compile Include="DiagnosticsInfo\BatteryDiagnostician.cs" />
+    <Compile Include="DiagnosticsInfo\BlockDiag.cs" />
+    <Compile Include="DiagnosticsInfo\GlobalDiag.cs" />
+    <Compile Include="DiagnosticsInfo\SystemDiagnostician.cs" />
+    <Compile Include="DataLoad\ChannelInfo.cs" />
+    <Compile Include="NodeBack.cs" />
+    <Compile Include="Property\IPropertyable.cs" />
+    <Compile Include="Property\IRevisedPropertyable.cs" />
+    <Compile Include="DataLoad\ModuleInfo.cs" />
+    <Compile Include="DataLoad\ParameterItem.cs" />
+    <Compile Include="Property\ItemProperty.cs" />
+    <Compile Include="Property\PropertyRevisedValueContainer.cs" />
+    <Compile Include="Property\PropertyValueContainer.cs" />
+    <Compile Include="Exceptions\TransactionNotFoundException.cs" />
+    <Compile Include="MyDBData.cs" />
+    <Compile Include="DiagnosticsInfo\Diagnostics.cs" />
+    <Compile Include="AsyncOperations\IAsyncOperationManager.cs" />
+    <Compile Include="ExportFormat.cs" />
+    <Compile Include="Exceptions\ISTOKException.cs" />
+    <Compile Include="Revision\RevisedStorage.cs" />
+    <Compile Include="Revision\RevisionInfo.cs" />
+    <Compile Include="Schedule\Schedule.cs" />
+    <Compile Include="QueryManagers\IBlockQueryManager.cs" />
+    <Compile Include="QueryManagers\IGlobal.cs" />
+    <Compile Include="Interval.cs" />
+    <Compile Include="LicenseKey.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="MachineIdentification.cs" />
+    <Compile Include="MimeTexWrapper.cs" />
+    <Compile Include="ParameterCommons.cs" />
+    <Compile Include="ParameterRegistrator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schedule\ScheduleReg.cs" />
+    <Compile Include="Exceptions\ServerNotAccessibleException.cs" />
+    <Compile Include="Tools.cs" />
+    <Compile Include="BaseValueReceiver.cs" />
+    <Compile Include="UAsyncResult.cs" />
+    <Compile Include="UnloadParamsSchedule.cs" />
+    <Compile Include="Value\ArgumentsValues.cs" />
+    <Compile Include="Value\CorrectedParamValueItem.cs" />
+    <Compile Include="Value\ParamValueItem.cs" />
+    <Compile Include="Value\ParamValueItemWithID.cs" />
+    <Compile Include="Value\Package.cs" />
+    <Compile Include="VersionInfo.cs" />
+    <Compile Include="WindowsServiceHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MySql.Data.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Version.cs.template" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

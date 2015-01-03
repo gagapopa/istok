@@ -1,0 +1,779 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="audit_calc_node" EntityType="Model.Store.audit_calc_node" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="audit_calc_start" EntityType="Model.Store.audit_calc_start" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="audit_entry" EntityType="Model.Store.audit_entry" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="audit_group" EntityType="Model.Store.audit_group" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="audit_lobs" EntityType="Model.Store.audit_lobs" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="audit_props" EntityType="Model.Store.audit_props" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="audit_type" EntityType="Model.Store.audit_type" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="audit_unit" EntityType="Model.Store.audit_unit" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="audit_user" EntityType="Model.Store.audit_user" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="audit_value" EntityType="Model.Store.audit_value" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_audit_calc_node_audit_calc_start" Association="Model.Store.FK_audit_calc_node_audit_calc_start">
+            <End Role="audit_calc_start" EntitySet="audit_calc_start" />
+            <End Role="audit_calc_node" EntitySet="audit_calc_node" />
+          </AssociationSet>
+          <AssociationSet Name="FK_audit_calc_start_audit_entry" Association="Model.Store.FK_audit_calc_start_audit_entry">
+            <End Role="audit_entry" EntitySet="audit_entry" />
+            <End Role="audit_calc_start" EntitySet="audit_calc_start" />
+          </AssociationSet>
+          <AssociationSet Name="FK_audit_group_audit_entry" Association="Model.Store.FK_audit_group_audit_entry">
+            <End Role="audit_entry" EntitySet="audit_entry" />
+            <End Role="audit_group" EntitySet="audit_group" />
+          </AssociationSet>
+          <AssociationSet Name="FK_audit_lobs_audit_entry" Association="Model.Store.FK_audit_lobs_audit_entry">
+            <End Role="audit_entry" EntitySet="audit_entry" />
+            <End Role="audit_lobs" EntitySet="audit_lobs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_audit_props_audit_entry" Association="Model.Store.FK_audit_props_audit_entry">
+            <End Role="audit_entry" EntitySet="audit_entry" />
+            <End Role="audit_props" EntitySet="audit_props" />
+          </AssociationSet>
+          <AssociationSet Name="FK_audit_type_audit_entry" Association="Model.Store.FK_audit_type_audit_entry">
+            <End Role="audit_entry" EntitySet="audit_entry" />
+            <End Role="audit_type" EntitySet="audit_type" />
+          </AssociationSet>
+          <AssociationSet Name="FK_audit_unit_audit_entry" Association="Model.Store.FK_audit_unit_audit_entry">
+            <End Role="audit_entry" EntitySet="audit_entry" />
+            <End Role="audit_unit" EntitySet="audit_unit" />
+          </AssociationSet>
+          <AssociationSet Name="FK_audit_user_audit_entry" Association="Model.Store.FK_audit_user_audit_entry">
+            <End Role="audit_entry" EntitySet="audit_entry" />
+            <End Role="audit_user" EntitySet="audit_user" />
+          </AssociationSet>
+          <AssociationSet Name="FK_audit_value_audit_entry" Association="Model.Store.FK_audit_value_audit_entry">
+            <End Role="audit_entry" EntitySet="audit_entry" />
+            <End Role="audit_value" EntitySet="audit_value" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="audit_calc_node">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="calc_start_id" Type="int" Nullable="false" />
+          <Property Name="unitnode_id" Type="int" Nullable="false" />
+          <Property Name="unitnode_fullpath" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="audit_calc_start">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="entry_id" Type="int" Nullable="false" />
+          <Property Name="calc_start" Type="datetime" Nullable="false" />
+          <Property Name="calc_end" Type="datetime" Nullable="false" />
+          <Property Name="calc_recalc" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="audit_entry">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="time" Type="datetime" Nullable="false" />
+          <Property Name="user_login" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="user_fullname" Type="nvarchar" MaxLength="1024" />
+          <Property Name="user_position" Type="nvarchar" MaxLength="256" />
+          <Property Name="user_role" Type="nvarchar" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="audit_group">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="entry_id" Type="int" Nullable="false" />
+          <Property Name="group_id" Type="int" Nullable="false" />
+          <Property Name="group_name_old" Type="nvarchar" MaxLength="100" />
+          <Property Name="group_name_new" Type="nvarchar" MaxLength="100" />
+          <Property Name="group_description_old" Type="nvarchar" MaxLength="128" />
+          <Property Name="group_description_new" Type="nvarchar" MaxLength="128" />
+        </EntityType>
+        <EntityType Name="audit_lobs">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="entry_id" Type="int" Nullable="false" />
+          <Property Name="unitnode_id" Type="int" Nullable="false" />
+          <Property Name="unitnode_fullpath" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="prop_name" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="revision_id" Type="int" />
+          <Property Name="revision_time" Type="datetime" />
+          <Property Name="revision_brief" Type="nvarchar" MaxLength="128" />
+          <Property Name="value_old" Type="image" />
+          <Property Name="value_new" Type="image" />
+        </EntityType>
+        <EntityType Name="audit_props">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="entry_id" Type="int" Nullable="false" />
+          <Property Name="unitnode_id" Type="int" Nullable="false" />
+          <Property Name="unitnode_fullpath" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="prop_name" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="revision_id" Type="int" />
+          <Property Name="revision_time" Type="datetime" />
+          <Property Name="revision_brief" Type="nvarchar" MaxLength="128" />
+          <Property Name="value_old" Type="nvarchar(max)" />
+          <Property Name="value_new" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="audit_type">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="entry_id" Type="int" Nullable="false" />
+          <Property Name="type_id" Type="int" Nullable="false" />
+          <Property Name="ext_guid" Type="binary" MaxLength="16" />
+          <Property Name="type_name_old" Type="nvarchar" MaxLength="100" />
+          <Property Name="type_name_new" Type="nvarchar" MaxLength="100" />
+          <Property Name="type_props_old" Type="nvarchar(max)" />
+          <Property Name="type_props_new" Type="nvarchar(max)" />
+          <Property Name="type_image_old" Type="image" />
+          <Property Name="type_image_new" Type="image" />
+          <Property Name="type_child_filter_old" Type="nvarchar" MaxLength="1024" />
+          <Property Name="type_child_filter_new" Type="nvarchar" MaxLength="1024" />
+        </EntityType>
+        <EntityType Name="audit_unit">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="entry_id" Type="int" Nullable="false" />
+          <Property Name="unitnode_id" Type="int" Nullable="false" />
+          <Property Name="fullpath_old" Type="nvarchar(max)" />
+          <Property Name="fullpath_new" Type="nvarchar(max)" />
+          <Property Name="type_name_old" Type="nvarchar" MaxLength="100" />
+          <Property Name="type_name_new" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="audit_user">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="entry_id" Type="int" Nullable="false" />
+          <Property Name="user_id" Type="int" Nullable="false" />
+          <Property Name="user_login_old" Type="nvarchar" MaxLength="100" />
+          <Property Name="user_login_new" Type="nvarchar" MaxLength="100" />
+          <Property Name="user_groups_old" Type="nvarchar(max)" />
+          <Property Name="user_groups_new" Type="nvarchar(max)" />
+          <Property Name="user_fullname_old" Type="nvarchar" MaxLength="1024" />
+          <Property Name="user_fullname_new" Type="nvarchar" MaxLength="1024" />
+          <Property Name="user_position_old" Type="nvarchar" MaxLength="256" />
+          <Property Name="user_position_new" Type="nvarchar" MaxLength="256" />
+          <Property Name="user_role_old" Type="nvarchar" MaxLength="256" />
+          <Property Name="user_role_new" Type="nvarchar" MaxLength="256" />
+          <Property Name="user_password_changed" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="audit_value">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="entry_id" Type="int" Nullable="false" />
+          <Property Name="unitnode_id" Type="int" Nullable="false" />
+          <Property Name="unitnode_fullpath" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="value_time" Type="datetime" Nullable="false" />
+          <Property Name="value_args" Type="nvarchar" MaxLength="256" />
+          <Property Name="value_original" Type="decimal" Precision="25" Scale="7" />
+          <Property Name="value_new" Type="decimal" Precision="25" Scale="7" />
+        </EntityType>
+        <Association Name="FK_audit_calc_node_audit_calc_start">
+          <End Role="audit_calc_start" Type="Model.Store.audit_calc_start" Multiplicity="1" />
+          <End Role="audit_calc_node" Type="Model.Store.audit_calc_node" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="audit_calc_start">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="audit_calc_node">
+              <PropertyRef Name="calc_start_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_audit_calc_start_audit_entry">
+          <End Role="audit_entry" Type="Model.Store.audit_entry" Multiplicity="1" />
+          <End Role="audit_calc_start" Type="Model.Store.audit_calc_start" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="audit_entry">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="audit_calc_start">
+              <PropertyRef Name="entry_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_audit_group_audit_entry">
+          <End Role="audit_entry" Type="Model.Store.audit_entry" Multiplicity="1" />
+          <End Role="audit_group" Type="Model.Store.audit_group" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="audit_entry">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="audit_group">
+              <PropertyRef Name="entry_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_audit_lobs_audit_entry">
+          <End Role="audit_entry" Type="Model.Store.audit_entry" Multiplicity="1" />
+          <End Role="audit_lobs" Type="Model.Store.audit_lobs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="audit_entry">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="audit_lobs">
+              <PropertyRef Name="entry_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_audit_props_audit_entry">
+          <End Role="audit_entry" Type="Model.Store.audit_entry" Multiplicity="1" />
+          <End Role="audit_props" Type="Model.Store.audit_props" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="audit_entry">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="audit_props">
+              <PropertyRef Name="entry_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_audit_type_audit_entry">
+          <End Role="audit_entry" Type="Model.Store.audit_entry" Multiplicity="1" />
+          <End Role="audit_type" Type="Model.Store.audit_type" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="audit_entry">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="audit_type">
+              <PropertyRef Name="entry_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_audit_unit_audit_entry">
+          <End Role="audit_entry" Type="Model.Store.audit_entry" Multiplicity="1" />
+          <End Role="audit_unit" Type="Model.Store.audit_unit" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="audit_entry">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="audit_unit">
+              <PropertyRef Name="entry_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_audit_user_audit_entry">
+          <End Role="audit_entry" Type="Model.Store.audit_entry" Multiplicity="1" />
+          <End Role="audit_user" Type="Model.Store.audit_user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="audit_entry">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="audit_user">
+              <PropertyRef Name="entry_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_audit_value_audit_entry">
+          <End Role="audit_entry" Type="Model.Store.audit_entry" Multiplicity="1" />
+          <End Role="audit_value" Type="Model.Store.audit_value" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="audit_entry">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="audit_value">
+              <PropertyRef Name="entry_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="AuditEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AuditEntries" EntityType="Model.AuditEntry" />
+          <EntitySet Name="AuditLobs" EntityType="Model.AuditLob" />
+          <EntitySet Name="AuditProps" EntityType="Model.AuditProp" />
+          <EntitySet Name="AuditUnits" EntityType="Model.AuditUnit" />
+          <AssociationSet Name="FK_audit_lobs_audit_entry" Association="Model.FK_audit_lobs_audit_entry">
+            <End Role="audit_entry" EntitySet="AuditEntries" />
+            <End Role="audit_lobs" EntitySet="AuditLobs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_audit_props_audit_entry" Association="Model.FK_audit_props_audit_entry">
+            <End Role="audit_entry" EntitySet="AuditEntries" />
+            <End Role="audit_props" EntitySet="AuditProps" />
+          </AssociationSet>
+          <AssociationSet Name="FK_audit_unit_audit_entry" Association="Model.FK_audit_unit_audit_entry">
+            <End Role="audit_entry" EntitySet="AuditEntries" />
+            <End Role="audit_unit" EntitySet="AuditUnits" />
+          </AssociationSet>
+          <EntitySet Name="AuditCalcNodes" EntityType="Model.AuditCalcNode" />
+          <EntitySet Name="AuditCalcStarts" EntityType="Model.AuditCalcStart" />
+          <EntitySet Name="AuditValues" EntityType="Model.AuditValue" />
+          <AssociationSet Name="FK_audit_calc_node_audit_calc_start" Association="Model.FK_audit_calc_node_audit_calc_start">
+            <End Role="audit_calc_start" EntitySet="AuditCalcStarts" />
+            <End Role="audit_calc_node" EntitySet="AuditCalcNodes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_audit_calc_start_audit_entry" Association="Model.FK_audit_calc_start_audit_entry">
+            <End Role="AuditEntry" EntitySet="AuditEntries" />
+            <End Role="audit_calc_start" EntitySet="AuditCalcStarts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_audit_value_audit_entry" Association="Model.FK_audit_value_audit_entry">
+            <End Role="AuditEntry" EntitySet="AuditEntries" />
+            <End Role="audit_value" EntitySet="AuditValues" />
+          </AssociationSet>
+          <EntitySet Name="AuditGroups" EntityType="Model.AuditGroup" />
+          <EntitySet Name="AuditTypes" EntityType="Model.AuditType" />
+          <EntitySet Name="AuditUsers" EntityType="Model.AuditUser" />
+          <AssociationSet Name="FK_audit_group_audit_entry" Association="Model.FK_audit_group_audit_entry">
+            <End Role="AuditEntry" EntitySet="AuditEntries" />
+            <End Role="audit_group" EntitySet="AuditGroups" />
+          </AssociationSet>
+          <AssociationSet Name="FK_audit_type_audit_entry" Association="Model.FK_audit_type_audit_entry">
+            <End Role="AuditEntry" EntitySet="AuditEntries" />
+            <End Role="audit_type" EntitySet="AuditTypes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_audit_user_audit_entry" Association="Model.FK_audit_user_audit_entry">
+            <End Role="AuditEntry" EntitySet="AuditEntries" />
+            <End Role="audit_user" EntitySet="AuditUsers" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="AuditEntry">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <Property Name="Time" Type="DateTime" Precision="3" Nullable="false" />
+          <Property Name="UserLogin" Type="String" MaxLength="100" Unicode="true" FixedLength="false" Nullable="false" />
+          <Property Name="UserFullName" Type="String" MaxLength="1024" Unicode="true" FixedLength="false" />
+          <Property Name="UserPosition" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <Property Name="UserRole" Type="String" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="AuditLobs" Relationship="Model.FK_audit_lobs_audit_entry" FromRole="audit_entry" ToRole="audit_lobs" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <NavigationProperty Name="AuditProps" Relationship="Model.FK_audit_props_audit_entry" FromRole="audit_entry" ToRole="audit_props" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <NavigationProperty Name="AuditUnits" Relationship="Model.FK_audit_unit_audit_entry" FromRole="audit_entry" ToRole="audit_unit" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <NavigationProperty Name="AuditCalcStarts" Relationship="Model.FK_audit_calc_start_audit_entry" FromRole="AuditEntry" ToRole="audit_calc_start" />
+          <NavigationProperty Name="AuditValues" Relationship="Model.FK_audit_value_audit_entry" FromRole="AuditEntry" ToRole="audit_value" />
+          <NavigationProperty Name="AuditGroups" Relationship="Model.FK_audit_group_audit_entry" FromRole="AuditEntry" ToRole="audit_group" />
+          <NavigationProperty Name="AuditTypes" Relationship="Model.FK_audit_type_audit_entry" FromRole="AuditEntry" ToRole="audit_type" />
+          <NavigationProperty Name="AuditUsers" Relationship="Model.FK_audit_user_audit_entry" FromRole="AuditEntry" ToRole="audit_user" />
+        </EntityType>
+        <EntityType Name="AuditLob">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <Property Name="EntryID" Type="Int32" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:GetterAccess="Private" Nullable="false" />
+          <Property Name="UnitNodeID" Type="Int32" Nullable="false" />
+          <Property Name="UnitNodeFullPath" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" Nullable="false" />
+          <Property Name="PropName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" Nullable="false" />
+          <Property Name="RevisionID" Type="Int32" />
+          <Property Name="RevisionTime" Type="DateTime" Precision="3" />
+          <Property Name="RevisionBrief" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="ValueOld" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="ValueNew" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="AuditEntry" Relationship="Model.FK_audit_lobs_audit_entry" FromRole="audit_lobs" ToRole="audit_entry" />
+        </EntityType>
+        <EntityType Name="AuditProp">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <Property Name="EntryID" Type="Int32" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:GetterAccess="Private" Nullable="false" />
+          <Property Name="UnitNodeID" Type="Int32" Nullable="false" />
+          <Property Name="UnitNodeFullPath" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" Nullable="false" />
+          <Property Name="PropName" Type="String" MaxLength="100" Unicode="true" FixedLength="false" Nullable="false" />
+          <Property Name="RevisionID" Type="Int32" />
+          <Property Name="RevisionTime" Type="DateTime" Precision="3" />
+          <Property Name="RevisionBrief" Type="String" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="ValueOld" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="ValueNew" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="AuditEntry" Relationship="Model.FK_audit_props_audit_entry" FromRole="audit_props" ToRole="audit_entry" />
+        </EntityType>
+        <EntityType Name="AuditUnit">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <Property Name="EntryID" Type="Int32" Nullable="false" />
+          <Property Name="UnitNodeID" Type="Int32" Nullable="false" />
+          <Property Name="FullPathOld" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="FullPathNew" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="TypeNameOld" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="TypeNameNew" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="AuditEntry" Relationship="Model.FK_audit_unit_audit_entry" FromRole="audit_unit" ToRole="audit_entry" />
+        </EntityType>
+        <Association Name="FK_audit_lobs_audit_entry">
+          <End Role="audit_entry" Type="Model.AuditEntry" Multiplicity="1" />
+          <End Role="audit_lobs" Type="Model.AuditLob" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="audit_entry">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="audit_lobs">
+              <PropertyRef Name="EntryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_audit_props_audit_entry">
+          <End Role="audit_entry" Type="Model.AuditEntry" Multiplicity="1" />
+          <End Role="audit_props" Type="Model.AuditProp" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="audit_entry">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="audit_props">
+              <PropertyRef Name="EntryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_audit_unit_audit_entry">
+          <End Role="audit_entry" Type="Model.AuditEntry" Multiplicity="1" />
+          <End Role="audit_unit" Type="Model.AuditUnit" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="audit_entry">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="audit_unit">
+              <PropertyRef Name="EntryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="AuditCalcNode">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="CalcStartID" Nullable="false" />
+          <Property Type="Int32" Name="UnitNodeID" Nullable="false" />
+          <Property Type="String" Name="UnitNodeFullPath" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AuditCalcStart" Relationship="Model.FK_audit_calc_node_audit_calc_start" FromRole="audit_calc_node" ToRole="audit_calc_start" />
+        </EntityType>
+        <EntityType Name="AuditCalcStart">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="EntryID" Nullable="false" />
+          <Property Type="DateTime" Name="CalcStart" Nullable="false" Precision="3" />
+          <Property Type="DateTime" Name="CalcEnd" Nullable="false" Precision="3" />
+          <Property Type="Boolean" Name="CalcRecalc" Nullable="false" />
+          <NavigationProperty Name="AuditCalcNodes" Relationship="Model.FK_audit_calc_node_audit_calc_start" FromRole="audit_calc_start" ToRole="audit_calc_node" />
+          <NavigationProperty Name="AuditEntry" Relationship="Model.FK_audit_calc_start_audit_entry" FromRole="audit_calc_start" ToRole="AuditEntry" />
+        </EntityType>
+        <EntityType Name="AuditValue">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="EntryID" Nullable="false" />
+          <Property Type="Int32" Name="UnitNodeID" Nullable="false" />
+          <Property Type="String" Name="UnitNodeFullPath" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ValueArgs" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="Decimal" Name="ValueOriginal" Precision="25" Scale="7" />
+          <Property Type="Decimal" Name="ValueNew" Precision="25" Scale="7" />
+          <NavigationProperty Name="AuditEntry" Relationship="Model.FK_audit_value_audit_entry" FromRole="audit_value" ToRole="AuditEntry" />
+          <Property Type="DateTime" Name="ValueTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <Association Name="FK_audit_calc_node_audit_calc_start">
+          <End Type="Model.AuditCalcStart" Role="audit_calc_start" Multiplicity="1" />
+          <End Type="Model.AuditCalcNode" Role="audit_calc_node" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="audit_calc_start">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="audit_calc_node">
+              <PropertyRef Name="CalcStartID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_audit_calc_start_audit_entry">
+          <End Type="Model.AuditEntry" Role="AuditEntry" Multiplicity="1" />
+          <End Type="Model.AuditCalcStart" Role="audit_calc_start" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AuditEntry">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="audit_calc_start">
+              <PropertyRef Name="EntryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_audit_value_audit_entry">
+          <End Type="Model.AuditEntry" Role="AuditEntry" Multiplicity="1" />
+          <End Type="Model.AuditValue" Role="audit_value" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AuditEntry">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="audit_value">
+              <PropertyRef Name="EntryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="AuditGroup">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" a:GetterAccess="Public" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Private" />
+          <Property Type="Int32" Name="EntryID" Nullable="false" a:GetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Private" />
+          <Property Type="Int32" Name="GroupID" Nullable="false" />
+          <Property Type="String" Name="GroupNameOld" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GroupNameNew" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GroupDescriptionOld" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GroupDescriptionNew" MaxLength="128" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AuditEntry" Relationship="Model.FK_audit_group_audit_entry" FromRole="audit_group" ToRole="AuditEntry" />
+        </EntityType>
+        <EntityType Name="AuditType">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <Property Type="Int32" Name="EntryID" Nullable="false" a:GetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Private" />
+          <Property Type="Int32" Name="TypeID" Nullable="false" />
+          <Property Type="Binary" Name="ExtGuidBinary" a:GetterAccess="Protected" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Protected" />
+          <Property Type="String" Name="TypeNameOld" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TypeNameNew" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TypePropsOld" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TypePropsNew" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Binary" Name="TypeImageOld" MaxLength="Max" FixedLength="false" />
+          <Property Type="Binary" Name="TypeImageNew" MaxLength="Max" FixedLength="false" />
+          <Property Type="String" Name="TypeChildFilterOld" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TypeChildFilterNew" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AuditEntry" Relationship="Model.FK_audit_type_audit_entry" FromRole="audit_type" ToRole="AuditEntry" />
+        </EntityType>
+        <EntityType Name="AuditUser">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" a:SetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" />
+          <Property Type="Int32" Name="EntryID" Nullable="false" a:GetterAccess="Private" xmlns:a="http://schemas.microsoft.com/ado/2006/04/codegeneration" a:SetterAccess="Private" />
+          <Property Type="Int32" Name="UserID" Nullable="false" />
+          <Property Type="String" Name="UserLoginOld" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UserLoginNew" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UserGroupsOld" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UserGroupsNew" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UserFullNameOld" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UserFullNameNew" MaxLength="1024" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UserPositionOld" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UserPositionNew" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UserRoleOld" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UserRoleNew" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="UserPasswordChanged" Nullable="false" />
+          <NavigationProperty Name="AuditEntry" Relationship="Model.FK_audit_user_audit_entry" FromRole="audit_user" ToRole="AuditEntry" />
+        </EntityType>
+        <Association Name="FK_audit_group_audit_entry">
+          <End Type="Model.AuditEntry" Role="AuditEntry" Multiplicity="1" />
+          <End Type="Model.AuditGroup" Role="audit_group" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AuditEntry">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="audit_group">
+              <PropertyRef Name="EntryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_audit_type_audit_entry">
+          <End Type="Model.AuditEntry" Role="AuditEntry" Multiplicity="1" />
+          <End Type="Model.AuditType" Role="audit_type" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AuditEntry">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="audit_type">
+              <PropertyRef Name="EntryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_audit_user_audit_entry">
+          <End Type="Model.AuditEntry" Role="AuditEntry" Multiplicity="1" />
+          <End Type="Model.AuditUser" Role="audit_user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AuditEntry">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="audit_user">
+              <PropertyRef Name="EntryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="AuditEntities">
+          <EntitySetMapping Name="AuditEntries">
+            <EntityTypeMapping TypeName="Model.AuditEntry">
+              <MappingFragment StoreEntitySet="audit_entry">
+                <ScalarProperty Name="ID" ColumnName="id" />
+                <ScalarProperty Name="Time" ColumnName="time" />
+                <ScalarProperty Name="UserLogin" ColumnName="user_login" />
+                <ScalarProperty Name="UserFullName" ColumnName="user_fullname" />
+                <ScalarProperty Name="UserPosition" ColumnName="user_position" />
+                <ScalarProperty Name="UserRole" ColumnName="user_role" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AuditLobs">
+            <EntityTypeMapping TypeName="Model.AuditLob">
+              <MappingFragment StoreEntitySet="audit_lobs">
+                <ScalarProperty Name="ID" ColumnName="id" />
+                <ScalarProperty Name="EntryID" ColumnName="entry_id" />
+                <ScalarProperty Name="UnitNodeID" ColumnName="unitnode_id" />
+                <ScalarProperty Name="UnitNodeFullPath" ColumnName="unitnode_fullpath" />
+                <ScalarProperty Name="PropName" ColumnName="prop_name" />
+                <ScalarProperty Name="RevisionID" ColumnName="revision_id" />
+                <ScalarProperty Name="RevisionTime" ColumnName="revision_time" />
+                <ScalarProperty Name="RevisionBrief" ColumnName="revision_brief" />
+                <ScalarProperty Name="ValueOld" ColumnName="value_old" />
+                <ScalarProperty Name="ValueNew" ColumnName="value_new" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AuditProps">
+            <EntityTypeMapping TypeName="Model.AuditProp">
+              <MappingFragment StoreEntitySet="audit_props">
+                <ScalarProperty Name="ID" ColumnName="id" />
+                <ScalarProperty Name="EntryID" ColumnName="entry_id" />
+                <ScalarProperty Name="UnitNodeID" ColumnName="unitnode_id" />
+                <ScalarProperty Name="UnitNodeFullPath" ColumnName="unitnode_fullpath" />
+                <ScalarProperty Name="PropName" ColumnName="prop_name" />
+                <ScalarProperty Name="RevisionID" ColumnName="revision_id" />
+                <ScalarProperty Name="RevisionTime" ColumnName="revision_time" />
+                <ScalarProperty Name="RevisionBrief" ColumnName="revision_brief" />
+                <ScalarProperty Name="ValueOld" ColumnName="value_old" />
+                <ScalarProperty Name="ValueNew" ColumnName="value_new" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AuditUnits">
+            <EntityTypeMapping TypeName="Model.AuditUnit">
+              <MappingFragment StoreEntitySet="audit_unit">
+                <ScalarProperty Name="ID" ColumnName="id" />
+                <ScalarProperty Name="EntryID" ColumnName="entry_id" />
+                <ScalarProperty Name="UnitNodeID" ColumnName="unitnode_id" />
+                <ScalarProperty Name="FullPathOld" ColumnName="fullpath_old" />
+                <ScalarProperty Name="FullPathNew" ColumnName="fullpath_new" />
+                <ScalarProperty Name="TypeNameOld" ColumnName="type_name_old" />
+                <ScalarProperty Name="TypeNameNew" ColumnName="type_name_new" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AuditCalcNodes">
+            <EntityTypeMapping TypeName="Model.AuditCalcNode">
+              <MappingFragment StoreEntitySet="audit_calc_node">
+                <ScalarProperty Name="UnitNodeFullPath" ColumnName="unitnode_fullpath" />
+                <ScalarProperty Name="UnitNodeID" ColumnName="unitnode_id" />
+                <ScalarProperty Name="CalcStartID" ColumnName="calc_start_id" />
+                <ScalarProperty Name="ID" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AuditCalcStarts">
+            <EntityTypeMapping TypeName="Model.AuditCalcStart">
+              <MappingFragment StoreEntitySet="audit_calc_start">
+                <ScalarProperty Name="CalcRecalc" ColumnName="calc_recalc" />
+                <ScalarProperty Name="CalcEnd" ColumnName="calc_end" />
+                <ScalarProperty Name="CalcStart" ColumnName="calc_start" />
+                <ScalarProperty Name="EntryID" ColumnName="entry_id" />
+                <ScalarProperty Name="ID" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AuditValues">
+            <EntityTypeMapping TypeName="Model.AuditValue">
+              <MappingFragment StoreEntitySet="audit_value">
+                <ScalarProperty Name="ValueTime" ColumnName="value_time" />
+                <ScalarProperty Name="ValueNew" ColumnName="value_new" />
+                <ScalarProperty Name="ValueOriginal" ColumnName="value_original" />
+                <ScalarProperty Name="ValueArgs" ColumnName="value_args" />
+                <ScalarProperty Name="UnitNodeFullPath" ColumnName="unitnode_fullpath" />
+                <ScalarProperty Name="UnitNodeID" ColumnName="unitnode_id" />
+                <ScalarProperty Name="EntryID" ColumnName="entry_id" />
+                <ScalarProperty Name="ID" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AuditGroups">
+            <EntityTypeMapping TypeName="Model.AuditGroup">
+              <MappingFragment StoreEntitySet="audit_group">
+                <ScalarProperty Name="GroupDescriptionNew" ColumnName="group_description_new" />
+                <ScalarProperty Name="GroupDescriptionOld" ColumnName="group_description_old" />
+                <ScalarProperty Name="GroupNameNew" ColumnName="group_name_new" />
+                <ScalarProperty Name="GroupNameOld" ColumnName="group_name_old" />
+                <ScalarProperty Name="GroupID" ColumnName="group_id" />
+                <ScalarProperty Name="EntryID" ColumnName="entry_id" />
+                <ScalarProperty Name="ID" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AuditTypes">
+            <EntityTypeMapping TypeName="Model.AuditType">
+              <MappingFragment StoreEntitySet="audit_type">
+                <ScalarProperty Name="TypeChildFilterNew" ColumnName="type_child_filter_new" />
+                <ScalarProperty Name="TypeChildFilterOld" ColumnName="type_child_filter_old" />
+                <ScalarProperty Name="TypeImageNew" ColumnName="type_image_new" />
+                <ScalarProperty Name="TypeImageOld" ColumnName="type_image_old" />
+                <ScalarProperty Name="TypePropsNew" ColumnName="type_props_new" />
+                <ScalarProperty Name="TypePropsOld" ColumnName="type_props_old" />
+                <ScalarProperty Name="TypeNameNew" ColumnName="type_name_new" />
+                <ScalarProperty Name="TypeNameOld" ColumnName="type_name_old" />
+                <ScalarProperty Name="ExtGuidBinary" ColumnName="ext_guid" />
+                <ScalarProperty Name="TypeID" ColumnName="type_id" />
+                <ScalarProperty Name="EntryID" ColumnName="entry_id" />
+                <ScalarProperty Name="ID" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AuditUsers">
+            <EntityTypeMapping TypeName="Model.AuditUser">
+              <MappingFragment StoreEntitySet="audit_user">
+                <ScalarProperty Name="UserPasswordChanged" ColumnName="user_password_changed" />
+                <ScalarProperty Name="UserRoleNew" ColumnName="user_role_new" />
+                <ScalarProperty Name="UserRoleOld" ColumnName="user_role_old" />
+                <ScalarProperty Name="UserPositionNew" ColumnName="user_position_new" />
+                <ScalarProperty Name="UserPositionOld" ColumnName="user_position_old" />
+                <ScalarProperty Name="UserFullNameNew" ColumnName="user_fullname_new" />
+                <ScalarProperty Name="UserFullNameOld" ColumnName="user_fullname_old" />
+                <ScalarProperty Name="UserGroupsNew" ColumnName="user_groups_new" />
+                <ScalarProperty Name="UserGroupsOld" ColumnName="user_groups_old" />
+                <ScalarProperty Name="UserLoginNew" ColumnName="user_login_new" />
+                <ScalarProperty Name="UserLoginOld" ColumnName="user_login_old" />
+                <ScalarProperty Name="UserID" ColumnName="user_id" />
+                <ScalarProperty Name="EntryID" ColumnName="entry_id" />
+                <ScalarProperty Name="ID" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

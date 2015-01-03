@@ -1,0 +1,13 @@
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\x86\Debug\COTES.ISTOK.Loader.Modules.Opc.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\x86\Debug\COTES.ISTOK.Loader.Modules.Opc.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\x86\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\x86\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\x86\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\x86\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\x86\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\x86\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\obj\x86\Debug\modOpc.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\obj\x86\Debug\COTES.ISTOK.Loader.Modules.Opc.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\obj\x86\Debug\COTES.ISTOK.Loader.Modules.Opc.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\x86\Debug\OpcNetApi.Com.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\x86\Debug\OpcNetApi.dll

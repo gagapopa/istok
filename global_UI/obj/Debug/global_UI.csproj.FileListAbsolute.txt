@@ -1,0 +1,64 @@
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\istoksrv_ui.exe.config
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\istoksrv_ui.exe
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\istoksrv_ui.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\istoksrv_ui.exe.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\istoksrv_ui.exe.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\COTES.ISTOK.Server.Core.dll
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\EntityFramework.dll
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\COTES.ISTOK.Calc.dll
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\COTES.ISTOK.Server.Data.dll
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\ISTOKReceiverExtension.dll
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\ParameterReceiverExtension.dll
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\FastReport.dll
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\DocumentFormat.OpenXml.dll
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\FastReport.Bars.dll
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\FastReport.Editor.dll
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\COTES.ISTOK.Server.Core.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\EntityFramework.xml
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\COTES.ISTOK.Calc.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\COTES.ISTOK.Server.Data.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\ISTOKReceiverExtension.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\ParameterReceiverExtension.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\FastReport.xml
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\bin\Debug\DocumentFormat.OpenXml.xml
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\obj\Debug\global_UI.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\obj\Debug\COTES.ISTOK.Assignment.UI.CreateDBForm.resources
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\obj\Debug\COTES.ISTOK.Assignment.UI.EnterRegisterKeyForm.resources
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\obj\Debug\COTES.ISTOK.Assignment.UI.Properties.Resources.resources
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\obj\Debug\COTES.ISTOK.Assignment.UI.SettingForm.resources
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\obj\Debug\global_UI.csproj.GenerateResource.Cache
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\obj\Debug\istoksrv_ui.exe
+D:\Cloud@Mail.Ru\isbk-src\src\global_UI\obj\Debug\istoksrv_ui.pdb
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\istoksrv_ui.exe.config
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\istoksrv_ui.exe
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\istoksrv_ui.pdb
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\COTES.ISTOK.Server.Core.dll
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\EntityFramework.dll
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\COTES.ISTOK.Calc.dll
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\COTES.ISTOK.Server.Data.dll
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\ISTOKReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\ParameterReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\COTES.ISTOK.Server.Core.pdb
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\EntityFramework.xml
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\COTES.ISTOK.Calc.pdb
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\COTES.ISTOK.Server.Data.pdb
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\ISTOKReceiverExtension.pdb
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\ParameterReceiverExtension.pdb
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Maildisk\isbk-src\src - копия\global_UI\obj\Debug\global_UI.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\global_UI\obj\Debug\COTES.ISTOK.Assignment.UI.CreateDBForm.resources
+C:\Maildisk\isbk-src\src - копия\global_UI\obj\Debug\COTES.ISTOK.Assignment.UI.EnterRegisterKeyForm.resources
+C:\Maildisk\isbk-src\src - копия\global_UI\obj\Debug\COTES.ISTOK.Assignment.UI.Properties.Resources.resources
+C:\Maildisk\isbk-src\src - копия\global_UI\obj\Debug\COTES.ISTOK.Assignment.UI.SettingForm.resources
+C:\Maildisk\isbk-src\src - копия\global_UI\obj\Debug\global_UI.csproj.GenerateResource.Cache
+C:\Maildisk\isbk-src\src - копия\global_UI\obj\Debug\istoksrv_ui.exe
+C:\Maildisk\isbk-src\src - копия\global_UI\obj\Debug\istoksrv_ui.pdb

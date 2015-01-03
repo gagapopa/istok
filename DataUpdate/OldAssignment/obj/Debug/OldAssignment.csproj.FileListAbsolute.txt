@@ -1,0 +1,12 @@
+D:\Cloud@Mail.Ru\isbk-src\src\DataUpdate\OldAssignment\bin\Debug\Assignment.dll
+D:\Cloud@Mail.Ru\isbk-src\src\DataUpdate\OldAssignment\bin\Debug\Assignment.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\DataUpdate\OldAssignment\bin\Debug\Assignment.dll.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\DataUpdate\OldAssignment\bin\Debug\Assignment.dll.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\DataUpdate\OldAssignment\obj\Debug\OldAssignment.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\DataUpdate\OldAssignment\obj\Debug\Assignment.dll
+D:\Cloud@Mail.Ru\isbk-src\src\DataUpdate\OldAssignment\obj\Debug\Assignment.pdb
+C:\Maildisk\isbk-src\src - копия\DataUpdate\OldAssignment\bin\Debug\Assignment.dll
+C:\Maildisk\isbk-src\src - копия\DataUpdate\OldAssignment\bin\Debug\Assignment.pdb
+C:\Maildisk\isbk-src\src - копия\DataUpdate\OldAssignment\obj\Debug\OldAssignment.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\DataUpdate\OldAssignment\obj\Debug\Assignment.dll
+C:\Maildisk\isbk-src\src - копия\DataUpdate\OldAssignment\obj\Debug\Assignment.pdb

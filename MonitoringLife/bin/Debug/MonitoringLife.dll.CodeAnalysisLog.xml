@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="d:\vs2013\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Targets>
+  <Target Name="D:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife\bin\Debug\MonitoringLife.dll">
+   <Modules>
+    <Module Name="monitoringlife.dll">
+     <Namespaces>
+      <Namespace Name="EMA.ASTDK.Data">
+       <Types>
+        <Type Name="ConnectionDB" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#ExecuteSQLCmd(System.Data.SqlClient.SqlCommand)" Kind="Method" Static="True" Accessibility="Assembly" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="ConnectionDB.cs" Line="34">Объект "'sqlConnection'" можно удалять более одного раза в методе 'ConnectionDB.ExecuteSQLCmd(SqlCommand)'. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 34</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MonitoringData" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AddInfoBoiler(System.Int32,System.Int32,System.String,System.Int32&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="561">'MonitoringData.AddInfoBoiler(int, int, string, ref int)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddInfoPlant(System.Int32,System.String,System.Int32&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="517">'MonitoringData.AddInfoPlant(int, string, ref int)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetBend(System.Int32,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="87">'MonitoringData.GetBend(int, string)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetConstant()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="479">'MonitoringData.GetConstant()' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetCreepTemperature()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="437">'MonitoringData.GetCreepTemperature()' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDrum(System.Int32,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="27">'MonitoringData.GetDrum(int, string)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDrumNozzle(System.Int32,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="47">'MonitoringData.GetDrumNozzle(int, string)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetEquivalentStress(System.Int32,System.String,System.Nullable`1&lt;System.DateTime&gt;,System.Nullable`1&lt;System.DateTime&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="113">'MonitoringData.GetEquivalentStress(int, string, DateTime?, DateTime?)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetExponent()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="451">'MonitoringData.GetExponent()' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetLifeCreep(System.Int32,System.String,System.Nullable`1&lt;System.DateTime&gt;,System.Nullable`1&lt;System.DateTime&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="139">'MonitoringData.GetLifeCreep(int, string, DateTime?, DateTime?)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetLifeCreepCurrent(System.Int32,System.String,System.DateTime&amp;,System.Double&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="161">'MonitoringData.GetLifeCreepCurrent(int, string, out DateTime, out double)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetLifeHFC(System.Int32,System.String,System.Nullable`1&lt;System.DateTime&gt;,System.Nullable`1&lt;System.DateTime&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="187">'MonitoringData.GetLifeHFC(int, string, DateTime?, DateTime?)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetLifeHFCCurrent(System.Int32,System.String,System.DateTime&amp;,System.Double&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="209">'MonitoringData.GetLifeHFCCurrent(int, string, out DateTime, out double)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetLifeLFC(System.Int32,System.String,System.Nullable`1&lt;System.DateTime&gt;,System.Nullable`1&lt;System.DateTime&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="235">'MonitoringData.GetLifeLFC(int, string, DateTime?, DateTime?)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetLifeLFCCurrent(System.Int32,System.String,System.DateTime&amp;,System.Double&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="257">'MonitoringData.GetLifeLFCCurrent(int, string, out DateTime, out double)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetLifeStartStop(System.Int32,System.String,System.Nullable`1&lt;System.DateTime&gt;,System.Nullable`1&lt;System.DateTime&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="287">'MonitoringData.GetLifeStartStop(int, string, DateTime?, DateTime?)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetLifeStartStopCurrent(System.Int32,System.String,System.DateTime&amp;,System.DateTime&amp;,System.Double&amp;,System.Double&amp;,System.Double&amp;,System.Double&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="313">'MonitoringData.GetLifeStartStopCurrent(int, string, out DateTime, out DateTime, out double, out double, out double, out double)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetLinearExpansion()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="388">'MonitoringData.GetLinearExpansion()' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetListBoiler(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="534">'MonitoringData.GetListBoiler(int)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetListPlant()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="493">'MonitoringData.GetListPlant()' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetMessageLog(System.String,System.Nullable`1&lt;System.DateTime&gt;,System.Nullable`1&lt;System.DateTime&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="360">'MonitoringData.GetMessageLog(string, DateTime?, DateTime?)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetModulusElasticity()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="374">'MonitoringData.GetModulusElasticity()' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetPermissibleStress()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="423">'MonitoringData.GetPermissibleStress()' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetReducing()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="465">'MonitoringData.GetReducing()' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetStartCount(System.Int32,System.Int32&amp;,System.Int32&amp;,System.Int32&amp;,System.Int32&amp;,System.Int32&amp;,System.Int32&amp;,System.Int32&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="337">'MonitoringData.GetStartCount(int, out int, out int, out int, out int, out int, out int, out int)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetStraightPipe(System.Int32,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="67">'MonitoringData.GetStraightPipe(int, string)' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetThermalConduct()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2014-05-27 01:55:42Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife" File="MonitoringData.cs" Line="402">'MonitoringData.GetThermalConduct()' повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200">
+   <Name>Повторно порождайте исключения для сохранения сведений стека</Name>
+   <Description>Используйте инструкцию IL rethrow для сохранения исходных сведений стека при повторном вызове перехваченного исключения.</Description>
+   <Resolution Name="Default">{0} повторно порождает перехваченное исключение и явно указывает его в качестве аргумента. Используйте вместо этого "throw" без аргумента, чтобы сохранить место стека, где первоначально было вызвано исключение.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182363.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="Не ликвидировать объекты несколько раз" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Не ликвидировать объекты несколько раз</Name>
+   <Description>Правильно реализованный метод Dispose может вызываться неоднократно без создания исключения. Однако такой гарантии нет, и чтобы предотвратить создание System.ObjectDisposedException, не следует вызывать метод Dispose для объекта более одного раза.</Description>
+   <Resolution Name="Default">Объект "{0}" можно удалять более одного раза в методе {1}. Чтобы избежать исключения System.ObjectDisposedException, следует вызывать метод "Dispose" для объекта только один раз.: Lines: 34</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Категория</String>
+  <String Key="Certainty">Достоверность</String>
+  <String Key="CollapseAll">Свернуть все</String>
+  <String Key="CheckId">ИД проверки</String>
+  <String Key="Error">Ошибка</String>
+  <String Key="Errors">ошибки</String>
+  <String Key="ExpandAll">Развернуть все</String>
+  <String Key="Help">Справка</String>
+  <String Key="Line">Строка</String>
+  <String Key="Messages">сообщения</String>
+  <String Key="LocationNotStoredInPdb">[расположение не сохранено в PDB]</String>
+  <String Key="Project">Проект</String>
+  <String Key="Resolution">Разрешение</String>
+  <String Key="Rule">Правило</String>
+  <String Key="RuleFile">Файл правил</String>
+  <String Key="RuleDescription">Описание правила</String>
+  <String Key="Source">Источник</String>
+  <String Key="Status">Состояние</String>
+  <String Key="Target">Цель</String>
+  <String Key="Warning">Предупреждение</String>
+  <String Key="Warnings">предупреждения</String>
+  <String Key="ReportTitle">Отчет по анализу кода</String>
+ </Localized>
+</FxCopReport>

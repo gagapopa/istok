@@ -1,0 +1,46 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Opc.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Opc.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Opc.dll.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Opc.dll.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\OpcNetApi.Com.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\OpcNetApi.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\obj\Debug\modOpc.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\obj\Debug\COTES.ISTOK.Loader.Modules.Opc.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\obj\Debug\COTES.ISTOK.Loader.Modules.Opc.pdb
+C:\Maildisk\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Opc.dll
+C:\Maildisk\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Opc.pdb
+C:\Maildisk\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src\Modules\modOpc\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src\Modules\modOpc\bin\Debug\OpcNetApi.Com.dll
+C:\Maildisk\isbk-src\src\Modules\modOpc\bin\Debug\OpcNetApi.dll
+C:\Maildisk\isbk-src\src\Modules\modOpc\bin\Debug\OpcRcw.Comn.dll
+C:\Maildisk\isbk-src\src\Modules\modOpc\bin\Debug\OpcRcw.Ae.dll
+C:\Maildisk\isbk-src\src\Modules\modOpc\bin\Debug\OpcRcw.Da.dll
+C:\Maildisk\isbk-src\src\Modules\modOpc\bin\Debug\OpcRcw.Hda.dll
+C:\Maildisk\isbk-src\src\Modules\modOpc\bin\Debug\OpcRcw.Dx.dll
+C:\Maildisk\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src\Modules\modOpc\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src\Modules\modOpc\obj\Debug\modOpc.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src\Modules\modOpc\obj\Debug\COTES.ISTOK.Loader.Modules.Opc.dll
+C:\Maildisk\isbk-src\src\Modules\modOpc\obj\Debug\COTES.ISTOK.Loader.Modules.Opc.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Opc.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Opc.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\Debug\OpcNetApi.Com.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\Debug\OpcNetApi.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\obj\Debug\modOpc.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\obj\Debug\COTES.ISTOK.Loader.Modules.Opc.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\obj\Debug\COTES.ISTOK.Loader.Modules.Opc.pdb

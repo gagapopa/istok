@@ -1,0 +1,35 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Random.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Random.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Random.dll.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Random.dll.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\obj\Debug\modRandom.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\obj\Debug\COTES.ISTOK.Loader.Modules.Random.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modRandom\obj\Debug\COTES.ISTOK.Loader.Modules.Random.pdb
+C:\Maildisk\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Random.dll
+C:\Maildisk\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Random.pdb
+C:\Maildisk\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src\Modules\modRandom\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src\Modules\modRandom\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src\Modules\modRandom\obj\Debug\modRandom.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src\Modules\modRandom\obj\Debug\COTES.ISTOK.Loader.Modules.Random.dll
+C:\Maildisk\isbk-src\src\Modules\modRandom\obj\Debug\COTES.ISTOK.Loader.Modules.Random.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Random.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Random.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\obj\Debug\modRandom.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\obj\Debug\COTES.ISTOK.Loader.Modules.Random.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\obj\Debug\COTES.ISTOK.Loader.Modules.Random.pdb

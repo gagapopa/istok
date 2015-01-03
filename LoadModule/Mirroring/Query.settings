@@ -1,0 +1,47 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MirroringManager" GeneratedClassName="Query">
+  <Profiles />
+  <Settings>
+    <Setting Name="Suspend" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ALTER DATABASE {0} SET PARTNER SUSPEND;
+</Value>
+    </Setting>
+    <Setting Name="Resume" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ALTER DATABASE {0} SET PARTNER RESUME;
+</Value>
+    </Setting>
+    <Setting Name="Switch" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ALTER DATABASE {0} SET PARTNER FAILOVER;</Value>
+    </Setting>
+    <Setting Name="ForceSwitch" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ALTER DATABASE {0} SET PARTNER FORCE_SERVICE_ALLOW_DATA_LOSS;</Value>
+    </Setting>
+    <Setting Name="BackupDataBase" Type="System.String" Scope="User">
+      <Value Profile="(Default)">BACKUP DATABASE {0} TO DISK = '{1}';
+</Value>
+    </Setting>
+    <Setting Name="RestoreDataBase" Type="System.String" Scope="User">
+      <Value Profile="(Default)">RESTORE DATABASE {0} FROM DISK = '{1}' WITH NORECOVERY;
+</Value>
+    </Setting>
+    <Setting Name="CreateEndpoint" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CREATE ENDPOINT mirroring_endpoint STATE=STARTED AS TCP(LISTENER_PORT={0}) FOR DATABASE_MIRRORING( AUTHENTICATION=WINDOWS NEGOTIATE, ENCRYPTION=SUPPORTED, ROLE=PARTNER);
+</Value>
+    </Setting>
+    <Setting Name="SetPartner" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ALTER DATABASE {0} SET PARTNER= N'TCP://{1}:{2}'
+</Value>
+    </Setting>
+    <Setting Name="BackupLog" Type="System.String" Scope="User">
+      <Value Profile="(Default)">BACKUP LOG {0} TO DISK = '{1}';
+</Value>
+    </Setting>
+    <Setting Name="RestoreLog" Type="System.String" Scope="User">
+      <Value Profile="(Default)">RESTORE LOG {0} FROM DISK = '{1}' WITH NORECOVERY;
+</Value>
+    </Setting>
+    <Setting Name="StateQuery" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SELECT sys.database_mirroring.mirroring_state_desc, sys.database_mirroring.mirroring_role_desc FROM sys.database_mirroring INNER JOIN sys.databases ON sys.database_mirroring.database_id = sys.databases.database_id AND sys.database_mirroring.mirroring_guid IS NOT NULL AND sys.databases.name = '{0}';</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

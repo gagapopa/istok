@@ -1,0 +1,33 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\bin\Debug\Calc.Tests.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\bin\Debug\Calc.Tests.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\bin\Debug\Calc.Tests.dll.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\bin\Debug\Calc.Tests.dll.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\bin\Debug\COTES.ISTOK.Calc.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\bin\Debug\Moq.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\bin\Debug\nunit.framework.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\bin\Debug\COTES.ISTOK.Calc.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\bin\Debug\Moq.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\bin\Debug\Moq.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\bin\Debug\nunit.framework.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\obj\Debug\Calc.Tests.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\obj\Debug\Calc.Tests.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Tests\Calc.Tests\obj\Debug\Calc.Tests.pdb
+C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\bin\Debug\Calc.Tests.dll
+C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\bin\Debug\Calc.Tests.pdb
+C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\bin\Debug\COTES.ISTOK.Calc.dll
+C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\bin\Debug\Moq.dll
+C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\bin\Debug\nunit.framework.dll
+C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\bin\Debug\COTES.ISTOK.Calc.pdb
+C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\bin\Debug\Moq.xml
+C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\bin\Debug\nunit.framework.xml
+C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\obj\Debug\Calc.Tests.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\obj\Debug\Calc.Tests.dll
+C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\obj\Debug\Calc.Tests.pdb

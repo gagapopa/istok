@@ -1,0 +1,13 @@
+D:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife\bin\Debug\MonitoringLife.dll.config
+D:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife\bin\Debug\MonitoringLife.dll
+D:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife\bin\Debug\MonitoringLife.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife\bin\Debug\MonitoringLife.dll.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife\bin\Debug\MonitoringLife.dll.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife\obj\Debug\MonitoringLife.dll
+D:\Cloud@Mail.Ru\isbk-src\src\MonitoringLife\obj\Debug\MonitoringLife.pdb
+C:\Maildisk\isbk-src\src - копия\MonitoringLife\bin\Debug\MonitoringLife.dll.config
+C:\Maildisk\isbk-src\src - копия\MonitoringLife\bin\Debug\MonitoringLife.dll
+C:\Maildisk\isbk-src\src - копия\MonitoringLife\bin\Debug\MonitoringLife.pdb
+C:\Maildisk\isbk-src\src - копия\MonitoringLife\obj\Debug\MonitoringLife.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\MonitoringLife\obj\Debug\MonitoringLife.dll
+C:\Maildisk\isbk-src\src - копия\MonitoringLife\obj\Debug\MonitoringLife.pdb

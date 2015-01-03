@@ -1,0 +1,76 @@
+﻿@using COTES.ISTOK.WebClient.Models
+@using COTES.ISTOK.ClientCore.UnitProviders
+@using COTES.ISTOK.WebClient.Properties
+
+@model COTES.ISTOK.ClientCore.UnitProviders.UnitProvider
+@{
+    Layout = null;
+}
+
+<script type="text/javascript">
+    $(function () {
+        $("#tabs").tabs({
+            active: '@(ViewData[Resources.strActiveTab])',
+            activate: function (event, ui) {
+                var t = 0;
+                if (ui.newPanel.attr("id") == "tabs-2") t = 1;
+                $.ajax({
+                    url: '@Url.Action("SetActiveTab","Nav")',
+                    data: { pid: $('#@Resources.strPageId').val(), tab: t},
+                    type: "POST"
+                });
+            }
+        });
+    });
+</script>
+
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Свойства</a></li>
+        @{
+            if (Model is ParameterGateUnitProvider ||
+                Model is GraphUnitProvider ||
+                Model is NormFuncUnitProvider ||
+                Model is SchemaUnitProvider ||
+                Model is ExcelReportUnitProvider)
+            {
+                <li><a href="#tabs-2">Содержимое</a></li>
+            }
+        }
+    </ul>
+    <div id="tabs-1">
+        <table id="props">
+            @{
+                IEnumerable<CategoryProperties> props = PropertyFormatter.GetNodeProperties(Model);
+            }
+            @foreach (var cat in props)
+            {
+                <tr class="cat">
+                    <td colspan="2">@(cat.Category == "" ? "Разное" : cat.Category)</td>
+                </tr>
+                foreach (var prop in cat.Properties)
+                {
+                    <tr>
+                        <td title="@prop.Descriptor.Description">@prop.Descriptor.DisplayName</td>
+                        <td>@PropertyFormatter.GetPropertyValue(Model, prop)</td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+    @{
+        var controller = "";
+        if (Model is ParameterGateUnitProvider) { controller="ParameterGate"; }
+        if (Model is GraphUnitProvider) { controller = "GraphUnit"; }
+        if (Model is NormFuncUnitProvider) { controller = "NormFuncUnit"; }
+        if (Model is SchemaUnitProvider) { controller = "SchemaUnit"; }
+        if (Model is ExcelReportUnitProvider) { controller = "ReportUnit"; }
+
+        if(!string.IsNullOrEmpty(controller))
+        {
+            <div id="tabs-2">@{Html.RenderAction("GetContent", controller, new { pid=ViewData[Resources.strPageId] });}</div>
+        }
+    }
+</div>
+
+

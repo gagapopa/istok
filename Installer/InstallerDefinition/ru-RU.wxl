@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="ru-RU" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+  <!--Метаинформация-->
+  <String Id="ProductName">!(loc.ISTOKFeatureName)</String>
+  <String Id="CompanyName">ЗАО "Е4-СибКОТЭС"</String>
+  <String Id="ProductDescription">!(loc.ISTOKFeatureName)</String>
+
+  <!--Сообщения об ошибках-->
+  <!--Newer version already installed.-->
+  <String Id="DowngradeMessage">Установлена более новая версия продукта.</String>
+  <!--This application requires .NET Framework 3.5. Please install the .NET Framework then run this installer again.-->
+  <String Id="FrameworkRequiredMessage">Для работы приложения требуется .NET Framework 4.0. Пожалуйста установите .NET Framework и запустите установщик заново.</String>
+
+  <!--Локализация для главного меню-->
+  <String Id="UninstallProductName">Удалить !(loc.ISTOKFeatureName)</String>
+  <String Id="UninstallProductDescription">Удалить все установленные компоненты !(loc.ISTOKFeatureName)</String>
+
+  <!--Локализация установщика и название компонентов-->
+  <String Id="GlobalServiceDisplayName">!(loc.ISTOKFeatureName). !(loc.StationServerFeatureName)</String>
+  <String Id="GlobalServiceDescription">Общестанционный сервер информационной системы "ИСТОК-СБК"</String>
+
+  <String Id="LoadServiceDisplayName">!(loc.ISTOKFeatureName). !(loc.LoadServerFeatureName)</String>
+  <String Id="LoadServiceDescription">Сервер сбора данных информационной системы "ИСТОК-СБК"</String>
+
+  <String Id="ISTOKFeatureName">ИСТОК-СБК</String>
+  <String Id="ISTOKFeatureDescription">Информационная система для сбора и обработки данных</String>
+
+  <String Id="LoadServerFeatureName">Сервер сбора данных</String>
+  <String Id="LoadServerFeatureDescription">Компонент, осуществляющий сбор данных с оборудования</String>
+
+  <String Id="LoadModuleOPCFeatureName">Модуль сбора OPC</String>
+  <String Id="LoadModuleOPCFeatureDescription">Модуль для сбора данных по протоколам OPC DA/HDA</String>
+
+  <String Id="LoadModuleRandomFeatureName">Модуль сбора. Генератор случайных чисел</String>
+  <String Id="LoadModuleRandomFeatureDescription">Модуль для получения параметров со случайными значениями</String>
+
+  <String Id="LoadModuleTornadoDBFeatureName">Модуль сбора из АСУ ТП МСТ</String>
+  <String Id="LoadModuleTornadoDBFeatureDescription"></String>
+
+  <String Id="LoadModuleMHTFeatureName">Модуль сбора из файлов MHT</String>
+  <String Id="LoadModuleMHTFeatureDescription"></String>
+
+  <String Id="LoadModuleSQLFeatureName">Модуль сбора из произвольной БД SQL</String>
+  <String Id="LoadModuleSQLFeatureDescription"></String>
+
+  <String Id="LoadModuleVzletFeatureName">Модуль сбора из БД АСКУТЭ Взлёт</String>
+  <String Id="LoadModuleVzletFeatureDescription"></String>
+
+  <String Id="LoadModuleAtecFeatureName">Модуль сбора из ПО "Отчет" Астраханской ТЭЦ</String>
+  <String Id="LoadModuleAtecFeatureDescription"></String>
+
+  <String Id="LoadModuleFBFeatureName">Модуль сбора из БД АРМ "Энерго" (Firebird)</String>
+  <String Id="LoadModuleFBFeatureDescription"></String>
+
+  <String Id="StationServerFeatureName">Станционный сервер</String>
+  <String Id="StationServerFeatureDescription">Компонент, получающий данные от нескольких серверов сбора данных, осуществляет расчет и обрабатывает пользовательские запросы</String>
+
+  <String Id="ClientFeatureName">Интерфейсный модуль</String>
+  <String Id="ClientFeatureDescription">Клиентское приложение для конечных пользователей</String>
+
+  <String Id="ISTOKIF97LibraryFeatureName">Библиотека IF97</String>
+  <String Id="ISTOKIF97LibraryFeatureDescription">Функции для расчёта</String>
+
+  <String Id="EMAStationExtensionFeatureName">Модуль расширения станционного сервера для ЭМАльянс</String>
+  <String Id="EMAStationExtensionFeatureDescription">Модуль расширения станционного сервера для ЭМАльянс</String>
+
+  <String Id="EMAClientExtensionFeatureName">Модуль расширения интерфейса пользователя для ЭМАльянс</String>
+  <String Id="EMAClientExtensionFeatureDescription">Модуль расширения интерфейса пользователя для ЭМАльянс</String>
+</WixLocalization>

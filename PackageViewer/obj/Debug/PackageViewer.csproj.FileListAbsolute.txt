@@ -1,0 +1,38 @@
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\obj\Debug\COTES.ISTOK.Form1.resources
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\obj\Debug\COTES.ISTOK.Properties.Resources.resources
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\obj\Debug\PackageViewer.csproj.GenerateResource.Cache
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\bin\Debug\PackageViewer.exe.config
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\bin\Debug\PackageViewer.exe
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\bin\Debug\PackageViewer.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\bin\Debug\COTES.ISTOK.Loader.Core.dll
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\bin\Debug\Microsoft.SqlServer.Replication.dll
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\bin\Debug\COTES.ISTOK.Loader.Core.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\bin\Debug\ru\Microsoft.SqlServer.Replication.resources.dll
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\obj\Debug\PackageViewer.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\obj\Debug\PackageViewer.exe
+D:\Cloud@Mail.Ru\isbk-src\src\PackageViewer\obj\Debug\PackageViewer.pdb
+C:\Maildisk\isbk-src\src - копия\PackageViewer\bin\Debug\PackageViewer.exe.config
+C:\Maildisk\isbk-src\src - копия\PackageViewer\bin\Debug\PackageViewer.exe
+C:\Maildisk\isbk-src\src - копия\PackageViewer\bin\Debug\PackageViewer.pdb
+C:\Maildisk\isbk-src\src - копия\PackageViewer\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\PackageViewer\bin\Debug\COTES.ISTOK.Loader.Core.dll
+C:\Maildisk\isbk-src\src - копия\PackageViewer\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\PackageViewer\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\PackageViewer\bin\Debug\Microsoft.SqlServer.Replication.dll
+C:\Maildisk\isbk-src\src - копия\PackageViewer\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\PackageViewer\bin\Debug\COTES.ISTOK.Loader.Core.pdb
+C:\Maildisk\isbk-src\src - копия\PackageViewer\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\PackageViewer\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\PackageViewer\bin\Debug\ru\Microsoft.SqlServer.Replication.resources.dll
+C:\Maildisk\isbk-src\src - копия\PackageViewer\obj\Debug\PackageViewer.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\PackageViewer\obj\Debug\COTES.ISTOK.Form1.resources
+C:\Maildisk\isbk-src\src - копия\PackageViewer\obj\Debug\COTES.ISTOK.Properties.Resources.resources
+C:\Maildisk\isbk-src\src - копия\PackageViewer\obj\Debug\PackageViewer.csproj.GenerateResource.Cache
+C:\Maildisk\isbk-src\src - копия\PackageViewer\obj\Debug\PackageViewer.exe
+C:\Maildisk\isbk-src\src - копия\PackageViewer\obj\Debug\PackageViewer.pdb

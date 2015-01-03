@@ -1,0 +1,11 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modSql\bin\Debug\COTES.ISTOK.Loader.Modules.Sql.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modSql\bin\Debug\COTES.ISTOK.Loader.Modules.Sql.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modSql\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modSql\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modSql\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modSql\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modSql\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modSql\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modSql\obj\Debug\COTES.ISTOK.Loader.Modules.Sql.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modSql\obj\Debug\COTES.ISTOK.Loader.Modules.Sql.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modSql\obj\Debug\modSql.csprojResolveAssemblyReference.cache

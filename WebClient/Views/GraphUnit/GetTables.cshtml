@@ -1,0 +1,69 @@
+﻿@model COTES.ISTOK.ClientCore.UnitProviders.GraphUnitProvider
+
+@{
+    Layout = null;    
+}
+
+<ul>
+    <li><a href="#graphttabval">Значения</a></li>
+    <li><a href="#graphttabtable">Таблица</a></li>
+</ul>
+
+<div id="graphttabval" class="graphttable">
+    <table class="unittable">
+        <tr>
+            <th>Отображать</th>
+            <th>Параметр</th>
+            <th>Значение</th>
+        </tr>
+        @{
+            var node = Model.UnitNode as COTES.ISTOK.ASC.GraphNode;
+            foreach (COTES.ISTOK.ASC.GraphParamNode item in node.Parameters)
+            {
+                <tr>
+                    <td class="centered"><input id="@("cg"+item.ParameterId.ToString())" onclick="gtsetvisibility(this);" type="checkbox" @(Model.GetParameterVisibility(item.ParameterId) ? "checked" : "") /></td>
+                    <td>
+                        <div class="graphtparcolor" style="background-color: @COTES.ISTOK.WebClient.Models.ParameterStyleGenerator.FormatColor(item.LineColor)"></div>
+                        @item.Text
+                    </td>
+                    <td><span id="@("cgv"+item.ParameterId.ToString())"></span></td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+<div id="graphttabtable" class="graphttable">
+    <table class="unittable">
+        <tr>
+        @{  
+            var dtable = Model.DataTable(null);
+            if(dtable == null) { dtable = new System.Data.DataTable(); }
+            foreach (System.Data.DataColumn item in dtable.Columns)
+            {
+                <th>@item.Caption</th>                    
+            }
+        }   
+        </tr>
+            @{
+                IEnumerable<System.Data.DataRow> rows;
+                string clmTime = "tictime";
+                if (dtable.Columns.Contains(clmTime))
+                {
+                    rows = dtable.Select("", "tictime ASC");
+                }
+                else
+                {
+                    rows = dtable.Select();
+                }
+                foreach (System.Data.DataRow row in rows)
+                {
+                    <tr>
+                        @foreach (System.Data.DataColumn col in dtable.Columns)
+	                    {
+                            <td>@row[col]</td>
+	                    }
+                    </tr>
+                }
+            }
+    </table>
+</div>

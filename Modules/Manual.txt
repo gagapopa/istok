@@ -1,0 +1,92 @@
+
+// modOleOdk {
+TagListMask;	*	- фильтр запрашиваемых параметров
+//  }
+
+
+// modOPC {
+Host;	server	- имя компьютера, на котором стоит OPC сервер
+Server;	server.OPCServerHDA.WinCC	- название OPC сервера
+ConnectionType;	OPCHDA|OPCDA_20	- тип сбора данных (HDA или DA)
+TagCatalog;	SIMATIC S7 PROTOCOL SUITE\TCP/IP	- путь к параметрам на сервере (только для DA)
+//  }
+
+
+// modCommon (общий модуль) {
+MaxChannelFailureCount;	10	- количество сбоев, после которых модуль желательно перезагрузить
+CaptureDifference;	600	- разница в секундах с текущим временем; если меньше - берется пачка временем CaptureIntervalNormal, иначе - CaptureIntervalLarge
+CaptureIntervalNormal;	60	- размер запроса в секунжах
+CaptureIntervalLarge;	600	- размер запроса в секундах
+BufferLimit;	1000	- размер буфера параметров, по превышению которого прекращается сбор параметров
+Pause;	0	- задержка между запросами (с)
+MessageLevel;	0,1,2	- уровень логгирования (0-ошибки,1-предупреждения,2-простые сообщения)
+UseRemoting;	"y"|""	- использовать туннель (любой символ - использовать, пусто - не использовать)
+RemotingHost;	host	- адрес туннеля
+RemotingPort;	20101	- порт туннеля
+NamesFile;	names.xml	- файл с описанием параметров
+NamesStruct;	block5	- имя структуры в файле с описанием
+TimeLag;	0	- задержка от текущего времени (сек)
+TimeMode;	archive|current	- алгоритм получения параметров (архивные|текущие)
+CollectionType	syn|asyn|sub	- способ получения данных (синхронно|асинхронно|по подписке)
+// в FB используется тип man(ручной ввод), где каждый параметр собирается независимо...
+MaxWaitInterval	1	- максимальный размер запроса в часах
+WaitPause	60	- задержка в секундах между запросами, если нет данных
+//  }
+
+
+// modSql {
+Host;	dbserver	- имя компьютера, на котором стоит база данных источника
+Database;	Piramida2000	- название базы данных
+Username;	user	- имя пользователя
+Password;	passw	- пароль
+TagNamesTable;	?	- имя таблицы с названиями параметров (справочник)
+TagNamesFieldId;	?	- имя поля с номером записи в таблице параметров
+TagNamesFieldName;	?	- имя поля с названием параметра в таблице параметров
+TagValuesTable;	Data	- имя таблицы со значениями
+TagValuesFieldId;	?	- имя поля с номером записи в таблице значений
+TagValuesFieldName;	Value0	- имя поля с названием параметра в таблице значений
+TagValuesFieldTagId;	?	- имя поля с номером параметра (из справочника) в таблице значений
+TagValuesFieldTagName;	Object\Item	- имя поля с кодовым обозначением параметра в таблице значений
+TagValuesFieldQualityName;	P2KStatus	- имя поля с названием (или кодом) качества в таблице значений
+TagValuesFieldQualityId;	?	- имя поля с номером качества (из справочника) в таблице значений
+TagValuesFieldTimeName;	Data_date	- имя поля с временем записи в таблице значений
+QualityTable;	?	- имя таблицы с качеством (справочник)
+QualityFieldId;	?	- имя поля с номером записи в таблице качеств
+QualityFieldName;	?	- имя поля с названием качества в таблице качеств
+QueryWhere;	ParNumber=12	- доп. условие для запроса значений
+QueryTagNames;	SELECT cast([DEVICES].[Name] as varchar)+'\'+cast([SENSORS].[Name] as varchar),cast([DEVICES].[Code] as varchar)+'\'+cast([SENSORS].[Code] as varchar) FROM [DEVICES],[SENSORS] WHERE [DEVICES].[Id]=[SENSORS].[StationId]	- SQL-запрос на получение списка параметров из базы
+//  }
+
+// modFb {
+Host; 			?	- имя компьютера, на котором стоит база данных источника
+Database; 		?	- название базы данных
+Username;		SYSDBA	- имя пользователя
+Password;		masterkey	- пароль
+TagNamesTable;		AKS	- имя таблицы с названиями параметров (справочник)
+TagNamesFieldId;	ID	- имя поля с номером записи в таблице параметров
+TagNamesFieldName;	name	- имя поля с названием параметра в таблице параметров
+TagValuesTable; 	AWORK	- имя таблицы со значениями
+TagValuesFieldPName; 	P	- имя поля со значением давления
+TagValuesFieldTName; 	T	- имя поля со значением температуры
+TagValuesFieldRName; 	R	- имя поля со значением расхода
+TagValuesFieldXName; 	ATIME	- имя поля со значением времени работы
+TagValuesFieldTimeName;	ADATE	- имя поля с датой записи в таблице значений
+TagValuesFieldID; 	IDUNIT	- имя поле с кодом параметра
+CaptureIntervalPrevious; 0 - размер запроса в секундах, получающий предыдущие значения 
+(запрос предыдущих значений, производиться только для запроса размером CaptureIntervalNormal)
+//  }
+
+// modDBCopier {
+SourceHost;		?	- имя компьютера, на котором стоит база данных источника
+SourceDatabase;		OTLogger	- название базы данных источника
+SourceUsername;		?	- имя пользователя
+SourcePassword;		?	- пароль
+SourceIntegratedSecurity; yes	- yes true - использовать Windows авторизацию, иначе SQL
+
+Host;			?	- имя компьютера, на котором стоит база данных
+Database;		?	- название базы данных
+Username;		?	- имя пользователя
+Password;		?	- пароль
+IntegratedSecurity;	?	- yes true - использовать Windows авторизацию, иначе SQL
+QueryInterval; 		15	- количество дней, за которое копируются база
+// }

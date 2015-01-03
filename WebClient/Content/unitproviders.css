@@ -1,0 +1,318 @@
+﻿/*--------------Common*/
+TABLE.unittable {
+    border-collapse: collapse;
+	border: 1px solid #A0A0A0;
+    font-size: x-small;
+    width: 100%;
+}
+    TABLE.unittable TH {
+        border: 1px solid #A0A0A0;
+        text-align: center;
+        /*background-color: #C0C0C0;*/
+        
+        /* IE10 Consumer Preview */ 
+        background-image: -ms-linear-gradient(bottom, #F2F2F3 0%, #FFFFFF 90%, #F2F2F3 100%);
+
+        /* Mozilla Firefox */ 
+        background-image: -moz-linear-gradient(bottom, #F2F2F3 0%, #FFFFFF 90%, #F2F2F3 100%);
+
+        /* Opera */ 
+        background-image: -o-linear-gradient(bottom, #F2F2F3 0%, #FFFFFF 90%, #F2F2F3 100%);
+
+        /* Webkit (Safari/Chrome 10) */ 
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #F2F2F3), color-stop(0.9, #FFFFFF), color-stop(1, #F2F2F3));
+
+        /* Webkit (Chrome 11+) */ 
+        background-image: -webkit-linear-gradient(bottom, #F2F2F3 0%, #FFFFFF 90%, #F2F2F3 100%);
+
+        /* W3C Markup, IE10 Release Preview */ 
+        background-image: linear-gradient(to top, #F2F2F3 0%, #FFFFFF 90%, #F2F2F3 100%);
+    }
+    TABLE.unittable TD {
+        border: 1px solid #A0A0A0;
+        background-color: #E0E0E0;
+    }
+    TABLE.unittable .centered {
+        text-align: center;
+    }
+    TABLE.unittable .lefted {
+        text-align: left;
+    }
+    TABLE.unittable .righted {
+        text-align: right;
+    }
+    TABLE.unittable .editable {
+        background-color: white;
+    }
+
+.disabled {
+    opacity: 0.2;
+}
+
+TABLE.unitprops {
+    border: 1px solid grey;
+    border-collapse:collapse;
+    font-size: small;
+    width: 100%;
+}
+    TABLE.unitprops TD {
+        border: 1px solid grey;
+        width: 50%;
+    }
+    TABLE.unitprops TR.cat {
+        background-color: #808080;
+    }
+    
+/*--------------ParameterGate*/
+#pargatecontent {
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+DIV.ui-datepicker{
+    font-size: small;
+}
+
+DIV.pargatepager {
+    background-color: #FAFAFA;
+    font-size: small;
+}
+    DIV.pargatepager .pargatedatepicker {
+        
+    }
+    DIV.pargatepager IMG {
+        width: 24px;
+        height: 24px;
+    }    
+
+
+TABLE.pargatetable {
+    border-collapse: collapse;
+	border: 1px solid #808080;
+    font-size: small;
+}
+    TABLE.pargatetable TD {
+        border: 1px solid black;
+    }
+    TABLE.pargatetable .tcaption {
+        border: 1px solid #000000;
+	    /*background-color: #C0C0C0;*/        
+        /* IE10 Consumer Preview */ 
+        background-image: -ms-linear-gradient(bottom, #F2F2F3 0%, #FFFFFF 90%, #F2F2F3 100%);
+        /* Mozilla Firefox */ 
+        background-image: -moz-linear-gradient(bottom, #F2F2F3 0%, #FFFFFF 90%, #F2F2F3 100%);
+        /* Opera */ 
+        background-image: -o-linear-gradient(bottom, #F2F2F3 0%, #FFFFFF 90%, #F2F2F3 100%);
+        /* Webkit (Safari/Chrome 10) */ 
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #F2F2F3), color-stop(0.9, #FFFFFF), color-stop(1, #F2F2F3));
+        /* Webkit (Chrome 11+) */ 
+        background-image: -webkit-linear-gradient(bottom, #F2F2F3 0%, #FFFFFF 90%, #F2F2F3 100%);
+        /* W3C Markup, IE10 Release Preview */ 
+        background-image: linear-gradient(to top, #F2F2F3 0%, #FFFFFF 90%, #F2F2F3 100%);
+    }
+    TABLE.pargatetable .colparam {
+        text-align: left;
+	    background-color: #E0E0E0;
+    }
+    TABLE.pargatetable .colcode {
+        background-color: #E0E0E0;
+        text-align: center;
+    }
+    TABLE.pargatetable .colvalue {
+        text-align: right;
+    }
+    TABLE.pargatetable .colchtime {
+        background-color: #E0E0E0;
+    }
+
+    TABLE.pargatetable .tcappar {
+        width: 40%;
+    }
+    TABLE.pargatetable .tcapcode {
+        width: 15%;
+    }
+    TABLE.pargatetable .tcapval {
+        width: 5%;
+    }
+    TABLE.pargatetable .tcaptime {
+        width: 20%;
+    }
+    TABLE.pargatetable .tcapch {
+        width: 20%;
+    }
+
+/*--------------GraphUnit*/
+.ui-icon-loaddata {
+    background-image: url("/Images/UnitControllers/dock16.png") !important;
+}
+.ui-icon-loadtimer {
+    background-image: url("/Images/UnitControllers/timer16.png") !important;
+}
+.ui-icon-loadremote {
+    background-image: url("/Images/UnitControllers/remote.png") !important;
+}
+DIV#graphmenu {
+    display: block;
+    width: 100%;
+    height: 18px;
+    font-size: x-small;
+    margin-bottom: 5px;
+}
+    DIV#graphmenu #gmpage {
+        display: none;
+    }
+    DIV#graphmenu IMG {
+        width: 24px;
+        height: 24px;
+    }
+.graphtoolbox {
+    float: left;
+    margin: 1px;
+    padding: 0;
+    line-height: 14px;
+    height: 14px;
+}
+.gtpatch {
+    height: 16px;
+}
+#graphmponpage {
+    width: 25px;
+}
+#graphmsort {
+    width: 141px;
+    height: 71px;
+}
+#graphmidata {
+    display: none;
+}
+.graphtparcolor {
+    width: 30px;
+    height: 11px;
+    background-color: yellow;
+    display: inline-block;
+}
+DIV#graphcontent {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+    DIV#graphcontent #graphctable {
+        text-align: left;
+        /*overflow: hidden;*/
+        /*height: 300px;
+        overflow-y: scroll;*/
+    }
+    DIV#graphcontent .graphcolvis {
+        text-align: center;
+    }
+/*** IE6 Fix **
+* html #left {
+  left: 150px;
+}*/
+DIV#gcontent {
+    min-width: 120px;
+	height: 450px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+DIV#gcontent #gcleft {
+	height: 100%;
+	width: 40px;
+	float: left;
+    margin-left: -40px;
+    position: relative;
+}
+DIV#gcontent #gcmiddle {
+	height: 100%;
+    width: 100%;
+    position: relative;
+	float: left;
+}
+DIV#gcontent #gcright {
+	height: 100%;
+	width: 40px;
+    margin-right: -40px;
+	float: left;
+    position: relative;
+}
+DIV#gcontent .gcupper {
+	width: 100%;
+	height: 25%;
+	text-align: center;
+	display: table;
+}
+DIV#gcontent .gclower {
+	width: 100%;
+	height: 75%;
+	text-align: center;
+	display: table;
+}
+DIV#gcontent #gcimg {
+	width: 100%;
+}
+DIV#gcontent .gccell {
+	display: table-cell;
+	vertical-align: middle;
+}
+    DIV#gcontent #gcplot {
+        width: 100%;
+        height: 100%;
+    }
+        DIV#gcontent #gcplot div.xAxis div.tickLabel {
+            /*transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);*/
+
+            /*rotation-point:50% 50%;*/ /* CSS3 */
+            /*rotation:270deg;*/ /* CSS3 */
+        }
+DIV.graphttable {
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/*--------------NormFuncUnit*/
+DIV#nfucontent {
+    width: 100%;
+    text-align: center;
+    font-size: x-small;
+}
+/*--------------SchemaUnit*/
+DIV#uscontent {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+    DIV#uscontent #uschema {
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+    }
+    DIV#uscontent #usparameter {
+    }
+.usgraph {
+    font-size: small;
+}
+/*--------------ReportUnit*/
+DIV#rucontent {
+    font-size: small;
+}
+    DIV#rucontent .rufield {
+        width: 190px;
+        padding: 8px;    
+        border: 1px solid #AAAAAA;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+    DIV#rucontent #rudatefrom, #rudateto {
+        width: 143px;
+    }
+    DIV#rucontent .rugenerate {
+        display: block;
+        float: right;
+    }

@@ -1,0 +1,54 @@
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\bin\Debug\ModTunnel.exe.config
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\bin\Debug\ModTunnel.exe
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\bin\Debug\ModTunnel.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\bin\Debug\ru\ModTunnel.resources.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\bin\Debug\en\ModTunnel.resources.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\bin\Debug\ModTunnel.exe.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\bin\Debug\ModTunnel.exe.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\obj\Debug\ModTunnel.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.ConfigurationForm.resources
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.ModTunnelForm.resources
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.Properties.Resources.resources
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.PropertyGridForm.resources
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.ConfigurationForm.ru.resources
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.ModTunnelForm.ru.resources
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.Properties.Resources.ru.resources
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.Properties.Resources.en.resources
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.PropertyGridForm.ru.resources
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\obj\Debug\ModTunnel.csproj.GenerateResource.Cache
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\obj\Debug\ru\ModTunnel.resources.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\obj\Debug\en\ModTunnel.resources.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\obj\Debug\ModTunnel.exe
+D:\Cloud@Mail.Ru\isbk-src\src\ModTunnel\obj\Debug\ModTunnel.pdb
+C:\Maildisk\isbk-src\src - копия\ModTunnel\bin\Debug\ModTunnel.exe.config
+C:\Maildisk\isbk-src\src - копия\ModTunnel\bin\Debug\ModTunnel.exe
+C:\Maildisk\isbk-src\src - копия\ModTunnel\bin\Debug\ModTunnel.pdb
+C:\Maildisk\isbk-src\src - копия\ModTunnel\bin\Debug\ru\ModTunnel.resources.dll
+C:\Maildisk\isbk-src\src - копия\ModTunnel\bin\Debug\en\ModTunnel.resources.dll
+C:\Maildisk\isbk-src\src - копия\ModTunnel\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\ModTunnel\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\ModTunnel\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\ModTunnel\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\ModTunnel\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\ModTunnel\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\ModTunnel.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.ConfigurationForm.resources
+C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.ModTunnelForm.resources
+C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.Properties.Resources.resources
+C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.PropertyGridForm.resources
+C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.ConfigurationForm.ru.resources
+C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.ModTunnelForm.ru.resources
+C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.Properties.Resources.ru.resources
+C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.Properties.Resources.en.resources
+C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.PropertyGridForm.ru.resources
+C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\ModTunnel.csproj.GenerateResource.Cache
+C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\ru\ModTunnel.resources.dll
+C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\en\ModTunnel.resources.dll
+C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\ModTunnel.exe
+C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\ModTunnel.pdb

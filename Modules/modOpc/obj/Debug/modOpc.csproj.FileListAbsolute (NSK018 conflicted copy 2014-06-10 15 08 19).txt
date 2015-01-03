@@ -1,0 +1,13 @@
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Opc.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Opc.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\OpcNetApi.Com.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\OpcNetApi.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\obj\Debug\modOpc.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\obj\Debug\COTES.ISTOK.Loader.Modules.Opc.dll
+D:\Cloud@Mail.Ru\isbk-src\src\Modules\modOpc\obj\Debug\COTES.ISTOK.Loader.Modules.Opc.pdb

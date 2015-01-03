@@ -1,0 +1,45 @@
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\bin\Debug\COTES.ISTOK.Server.Data.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\bin\Debug\COTES.ISTOK.Server.Data.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\bin\Debug\COTES.ISTOK.Server.Data.dll.CodeAnalysisLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\bin\Debug\COTES.ISTOK.Server.Data.dll.lastcodeanalysissucceeded
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\bin\Debug\COTES.ISTOK.Calc.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\bin\Debug\COTES.ISTOK.Common.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\bin\Debug\FastReport.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\bin\Debug\NLog.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\bin\Debug\FastReport.Bars.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\bin\Debug\FastReport.Editor.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\bin\Debug\COTES.ISTOK.Calc.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\bin\Debug\COTES.ISTOK.Common.pdb
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\bin\Debug\FastReport.xml
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\bin\Debug\NLog.xml
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\obj\Debug\ASCommon.csprojResolveAssemblyReference.cache
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\obj\Debug\COTES.ISTOK.ASC.TypeConverters.IntervalTypeConverter.resources
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\obj\Debug\ASCommon.csproj.GenerateResource.Cache
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\obj\Debug\COTES.ISTOK.Server.Data.dll
+D:\Cloud@Mail.Ru\isbk-src\src\ASCommon\obj\Debug\COTES.ISTOK.Server.Data.pdb
+C:\Maildisk\isbk-src\src\ASCommon\bin\Debug\COTES.ISTOK.Server.Data.dll
+C:\Maildisk\isbk-src\src\ASCommon\bin\Debug\COTES.ISTOK.Server.Data.pdb
+C:\Maildisk\isbk-src\src\ASCommon\bin\Debug\COTES.ISTOK.Calc.dll
+C:\Maildisk\isbk-src\src\ASCommon\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src\ASCommon\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src\ASCommon\bin\Debug\COTES.ISTOK.Calc.pdb
+C:\Maildisk\isbk-src\src\ASCommon\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src\ASCommon\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src\ASCommon\obj\Debug\ASCommon.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src\ASCommon\obj\Debug\COTES.ISTOK.ASC.TypeConverters.IntervalTypeConverter.resources
+C:\Maildisk\isbk-src\src\ASCommon\obj\Debug\ASCommon.csproj.GenerateResource.Cache
+C:\Maildisk\isbk-src\src\ASCommon\obj\Debug\COTES.ISTOK.Server.Data.dll
+C:\Maildisk\isbk-src\src\ASCommon\obj\Debug\COTES.ISTOK.Server.Data.pdb
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Debug\COTES.ISTOK.Server.Data.dll
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Debug\COTES.ISTOK.Server.Data.pdb
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Debug\COTES.ISTOK.Calc.dll
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Debug\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Debug\NLog.dll
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Debug\COTES.ISTOK.Calc.pdb
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Debug\NLog.xml
+C:\Maildisk\isbk-src\src - копия\ASCommon\obj\Debug\ASCommon.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\ASCommon\obj\Debug\COTES.ISTOK.ASC.TypeConverters.IntervalTypeConverter.resources
+C:\Maildisk\isbk-src\src - копия\ASCommon\obj\Debug\ASCommon.csproj.GenerateResource.Cache
+C:\Maildisk\isbk-src\src - копия\ASCommon\obj\Debug\COTES.ISTOK.Server.Data.dll
+C:\Maildisk\isbk-src\src - копия\ASCommon\obj\Debug\COTES.ISTOK.Server.Data.pdb

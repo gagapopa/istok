@@ -1,0 +1,66 @@
+﻿@model System.Exception
+@{
+    Layout = null;
+    Exception mod = Model;
+    if (mod == null) { mod = new Exception(); }
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+
+    <style>
+        body {
+            background-color: #000080;
+            font-size: 9pt;
+            color: white;
+            font-family: Fixedsys;
+            text-align: center;
+        }
+            body p {
+                color: #000080;
+                background-color: #c0c0c0;
+            }
+
+            body table {
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+    </style>
+</head>
+<body link="white" alink="white" vlink="white">
+    <br /><br /><br /><br />
+    <table>
+        <tr>
+            <td>    
+                <p>&nbsp;ISTOK-SBK&nbsp;</p>
+                <br />
+*** STOP: 0x0000000c  (0x00000000, 0xEB71092F, 0x00000008, 0xC0000000)<br>
+BAD_WEB_ADDRESS_NOT_HANDLED *** Address EB662040 at EB660000  Date Stamp 36B075CE - Internet.sys<br><br>
+CPUID:Genuine Intel 6.3.3 irql:lf SYSVER 0xF0000565<br /><br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @mod.Message
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @mod.StackTrace
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+Restart and set the recovery options in the system control panel or the /CRASHDEBUG system start option. If this message 
+reappears, contact your system administrator or technical support guru.<br><br>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
