@@ -190,6 +190,7 @@ namespace COTES.ISTOK.ClientCore.UnitProviders
         /// Вызывается при получении значения
         /// </summary>
         /// <param name="x"></param>
+        //FIXME: Вызывается при получении значеий
         private void ValueReceive(Package pack)
         {
             ParamValueItem[] paramValues;
@@ -247,6 +248,11 @@ namespace COTES.ISTOK.ClientCore.UnitProviders
             if (((ParameterGateNode)unitNode).ManualParameters != null)
             {
                 List<int> lstIds = ((ParameterGateNode)unitNode).ManualParameters.ConvertAll<int>(x => x.Idnum);
+                //FIXME: Здесь добавлена праверка на наличие связанных параметров
+                ((ParameterGateNode)unitNode).ManualParameters.ForEach(param => {
+					if (param  as ManualParameterNode != null && ((ManualParameterNode)param).ValueConnectingParamNode > 0)
+						lstIds.Add(((ManualParameterNode)param).ValueConnectingParamNode);
+                                                                       });
                 BeginGetValues(lstIds.ToArray(), beginTime, endTime, Interval, CalcAggregation.Nothing, false);
             }
         }
