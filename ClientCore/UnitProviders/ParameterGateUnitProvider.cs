@@ -169,6 +169,7 @@ namespace COTES.ISTOK.ClientCore.UnitProviders
         {
             ParamValueItem ret = null;
             ParamValueItem[] values;
+//            ParamValueItem[] valuesForManualConnection;
 
             if ((tau > 0 || !valueParamDictionary.TryGetValue(parameterNode.Idnum, out ret))
                 && valueParamOriginalDictionary.TryGetValue(parameterNode.Idnum, out values))
@@ -244,16 +245,37 @@ namespace COTES.ISTOK.ClientCore.UnitProviders
                 endTime = Interval.GetNextTime(QueryTime);
             }
             else endTime = beginTime = DateTime.Now;
+            
 
-            if (((ParameterGateNode)unitNode).ManualParameters != null)
+            if (((ParameterGateNode)UnitNode).ManualParameters != null)
             {
-                List<int> lstIds = ((ParameterGateNode)unitNode).ManualParameters.ConvertAll<int>(x => x.Idnum);
-                //FIXME: Здесь добавлена праверка на наличие связанных параметров
-                ((ParameterGateNode)unitNode).ManualParameters.ForEach(param => {
-					if (param  as ManualParameterNode != null && ((ManualParameterNode)param).ValueConnectingParamNode > 0)
-						lstIds.Add(((ManualParameterNode)param).ValueConnectingParamNode);
-                                                                       });
+            	 //FIXME: Здесь добавлена праверка на наличие связанных параметров
+            	List<int> lstIds = ((ParameterGateNode)UnitNode).ManualParameters.ConvertAll<int>(x => x.Idnum);
+            	//Запрашивает актуальные на данный момент ноды и конвертирует их в ManualParameterNode либо создает пустой листь для автосбора
+            	var newnodes = ((ParameterGateNode)UnitNode).ManualParameters
+            		.All(x => x as ManualParameterNode != null) ? 
+            		strucProvider.GetUnitNodes(lstIds.ToArray())
+                	.Where(p => p as ManualParameterNode != null).ToList()
+            		.ConvertAll<ManualParameterNode>(a => a as ManualParameterNode) : 
+            		new List<ManualParameterNode>();
+               //Отбирает из полученных те, что связаны с параметром автосбора
+                var manualParamsForConnecting = newnodes.Where(mp => (mp.ValueConnectingParamNode > 0)).ToList();
+                //добавляет  Ид параметров автосбора в запрос значений
+                manualParamsForConnecting.ForEach(param => {
+					if (lstIds.All(x => x != param.ValueConnectingParamNode))
+						lstIds.Add(param.ValueConnectingParamNode);
+                                                  });
                 BeginGetValues(lstIds.ToArray(), beginTime, endTime, Interval, CalcAggregation.Nothing, false);
+                //Для каждого связанного ручного параметра проверяет его значение и если NAN то проверяет значение автосбора и если оно нормальное, то подставляет его
+                foreach (ManualParameterNode par in manualParamsForConnecting) {
+                	ParamValueItem[] connectValue;
+    	         	bool getValueTrue = valueParamOriginalDictionary.TryGetValue(par.ValueConnectingParamNode,out connectValue);
+					for (int i = 0; i < valueParamOriginalDictionary[par.Idnum].Length; i++) {
+						double valItem = valueParamOriginalDictionary[par.Idnum][i].Value;
+						if (double.IsNaN(valItem) && getValueTrue && !double.IsNaN(connectValue[i].Value))
+							valueParamOriginalDictionary[par.Idnum][i].Value = connectValue[i].Value;						
+					}
+                }                
             }
         }
 

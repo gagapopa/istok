@@ -54,8 +54,8 @@ namespace COTES.ISTOK.Client
 
             //CommonData.InitFileLog("admin_UI.log");
 
-            //threadUpdater = new Thread(new ThreadStart(UpdateMethod));
-            //threadUpdater.Name = "Updater";
+            threadUpdater = new Thread(new ThreadStart(UpdateMethod));
+            threadUpdater.Name = "Updater";
         }
 
         private void JijoperWe(String text)
@@ -284,11 +284,11 @@ namespace COTES.ISTOK.Client
                 TreeNode node;
                 Diagnostics diag = await Task.Factory.StartNew(() => strucProvider.Session.GetDiagnosticsObject());
 
-                //node = CreateDiagNode(0, diag);
+                node = CreateDiagNode(0, diag);
 
-                //tvNodes.BeginUpdate();
-                //tvNodes.Nodes.Clear();
-                //tvNodes.Nodes.Add(node);
+                tvNodes.BeginUpdate();
+                tvNodes.Nodes.Clear();
+                tvNodes.Nodes.Add(node);
             }
             catch (Exception ex)
             {

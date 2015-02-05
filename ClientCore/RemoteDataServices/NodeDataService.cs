@@ -203,6 +203,7 @@ namespace COTES.ISTOK.ClientCore
                 var unode = GetCachedUnitNode(node);
                 if (unode == null)
                 {
+                	//FIXME:Запрос ноды с глобала
                     var res = AllocQManager(opid).GetUnitNode(session.Uid, node);
                     CommitChanges(res.Changes);
                     UpdateCachedNodes(new UnitNode[] { res.Result });

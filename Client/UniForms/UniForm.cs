@@ -113,8 +113,7 @@ namespace COTES.ISTOK.Client
                     List<BaseUnitControl> controls = new List<BaseUnitControl>();
                     Control control;
 
-                    var types = (from elem in strucProvider.Session.Types//Program.MainForm.Types
-                                 select elem.Idnum).ToArray();
+                    var types = (strucProvider.Session.Types.Select(elem => elem.Idnum)).ToArray();
                     List<int> lstTypes = new List<int>(Filter.GetTypes());
 
                     if (lstTypes.Count == 0)
