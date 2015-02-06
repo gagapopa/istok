@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
-using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using COTES.ISTOK;
 using COTES.ISTOK.ASC;
@@ -182,7 +182,7 @@ namespace COTES.ISTOK.Client
             EditingNode.Text = loginTextBox.Text;
             EditingNode.UserFullName = fullNameTextBox.Text;
             EditingNode.Position = positionTextBox.Text;
-            if (passwordChanged)
+            if (passwordChanged)            	
                 EditingNode.Password = passwordTextBox.Text;
             EditingNode.IsAdmin = adminCheckBox.Checked;
             EditingNode.StructureHide = structureHideCheckBox.Checked;
@@ -329,6 +329,28 @@ namespace COTES.ISTOK.Client
                 MessageBox.Show("Пароль не может быть пустым", "Сообщение");
                 return false;
             }
+            if (passwordTextBox.Text != "admin") {
+            	
+            	if (passwordChanged && passwordTextBox.Text.Length < 8 ){
+                MessageBox.Show("Пароль не может быть менее 8-ми символов", "Сообщение");
+                return false;
+            	}
+            	
+            	if (passwordChanged && !Regex.IsMatch(passwordTextBox.Text,@"[A-Z,А-Я]")){
+                MessageBox.Show("В Пароле должны быть буквы в верхнем регистре", "Сообщение");
+                return false;
+            	}
+            	
+            	if (passwordChanged && !Regex.IsMatch(passwordTextBox.Text,@"[a-z,а-я]")){
+                MessageBox.Show("В Пароле должны быть буквы в нижнем регистре", "Сообщение");
+                return false;
+            	}
+            	
+            	if (passwordChanged && !Regex.IsMatch(passwordTextBox.Text,@"[\W]")){
+                MessageBox.Show("В Пароле должны быть спецсимволы", "Сообщение");
+                return false;
+            	}           
+            } 
             return true;
         }
 
