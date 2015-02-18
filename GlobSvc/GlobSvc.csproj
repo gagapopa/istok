@@ -134,6 +134,7 @@
     <ProjectReference Include="..\CommonLib\CommonLib.csproj">
       <Project>{80429148-427C-4207-BCD0-AE5E38B405D7}</Project>
       <Name>CommonLib</Name>
+      <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

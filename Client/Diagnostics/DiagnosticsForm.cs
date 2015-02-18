@@ -277,12 +277,13 @@ namespace COTES.ISTOK.Client
             return res;
         }
 
-        private async void UpdateData()
+        private  void UpdateData()
         {
             try
             {
                 TreeNode node;
-                Diagnostics diag = await Task.Factory.StartNew(() => strucProvider.Session.GetDiagnosticsObject());
+                Diagnostics diag = strucProvider.Session.GetDiagnosticsObject();
+                //Diagnostics diag = await Task.Factory.StartNew(() => strucProvider.Session.GetDiagnosticsObject());
 
                 node = CreateDiagNode(0, diag);
 

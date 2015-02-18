@@ -54,6 +54,7 @@ namespace COTES.ISTOK.Assignment.Service
             }
             else
                 ShowHelp();
+            Console.ReadLine();
         }
 
         private static void ConsoleRun()

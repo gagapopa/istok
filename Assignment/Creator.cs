@@ -10,6 +10,7 @@ using System.Threading;
 using COTES.ISTOK.ASC;
 using COTES.ISTOK.Assignment.Audit;
 using COTES.ISTOK.Assignment.Extension;
+using COTES.ISTOK.Assignment.Gdiag;
 using COTES.ISTOK.Calc;
 using COTES.ISTOK.DiagnosticsInfo;
 using NLog;
@@ -449,8 +450,8 @@ namespace COTES.ISTOK.Assignment
                 // create also objects
                 this.reportUtility = new ReportUtility(dbwork, unitManager, unitTypeManager, extensionManager, valueReceiver, securityManager, userManager);
 
-                //if (globalDiagnostics == null)
-                //{
+//                if (globalDiagnostics == null)
+//                {
                 GlobalDiag gnode = new GlobalDiag();
                 gnode.Text = System.Net.Dns.GetHostName() + " (globalsvc)";
                 gnode.DbHost = GlobalSettings.Instance.DataBase.Host;
@@ -458,12 +459,14 @@ namespace COTES.ISTOK.Assignment
                 gnode.DbUser = GlobalSettings.Instance.DataBase.User;
                 gnode.Port = GlobalSettings.Instance.Port;
 
-                //globalDiagnostics = new GlobalDiagnostics(gnode,
-                //    registrator,
-                //    blockProxy,
-                //    securityManager);
-                globalDiagnostics = new Diagnostics();
+                globalDiagnostics = new GlobalDiagnostics
+                									(gnode,
+								                    registrator,
+								                    blockProxy,
+								                    securityManager);
+                //globalDiagnostics = new DiagnosticsProxy(glDiagnostics);
                 //globalDiagnostics.AddInfoGetter(securityManager);
+              
                                
                 //RemotingServices.Marshal(globalDiagnostics, "GlobalDiagnostics.rem");
                 //}

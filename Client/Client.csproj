@@ -882,6 +882,10 @@
       <Project>{07E81EE7-0B48-4562-A57C-FC595EC84D99}</Project>
       <Name>ASCommon</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Assignment\Assignment.csproj">
+      <Project>{78472114-6CAA-4634-AB77-2DEEAF2A9C62}</Project>
+      <Name>Assignment</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Calc\Calc.csproj">
       <Project>{B1234928-66F6-49EE-844A-2B302140540E}</Project>
       <Name>Calc</Name>
@@ -991,9 +995,6 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">

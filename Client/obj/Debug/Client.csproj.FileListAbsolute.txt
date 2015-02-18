@@ -310,3 +310,12 @@ C:\Maildisk\isbk-src\src - копия\Client\obj\Debug\Client.csproj.istokclient
 C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\System.Runtime.dll
 C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\System.Runtime.Remoting.dll
 C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\System.Threading.Tasks.dll
+C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\nunit.framework.dll
+C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\COTES.ISTOK.Server.Core.dll
+C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\EntityFramework.dll
+C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\ISTOKReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\ParameterReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\COTES.ISTOK.Server.Core.pdb
+C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\EntityFramework.xml
+C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\ISTOKReceiverExtension.pdb
+C:\Maildisk\isbk-src\src - копия\Client\bin\Debug\ParameterReceiverExtension.pdb

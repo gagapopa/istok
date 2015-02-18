@@ -48,8 +48,9 @@ namespace COTES.ISTOK.DiagnosticsInfo
     }
 
     [DataContract]
-    [KnownType(typeof(GDiagnostics))]
-    public class Diagnostics : ITestConnection<Object>, COTES.ISTOK.DiagnosticsInfo.IDiagnostics
+    [KnownType(typeof(DiagnosticsProxy))]
+    [KnownType(typeof(GlobalDiag))] 
+    public class Diagnostics : MarshalByRefObject ,ITestConnection<Object>, COTES.ISTOK.DiagnosticsInfo.IDiagnostics
     {
         /// <summary>
         /// Список интерфейсов собирателей диагностической информации
@@ -61,8 +62,9 @@ namespace COTES.ISTOK.DiagnosticsInfo
         /// Получить/установить название диагностируемого узла
         /// </summary>
         [DataMember]
-        public virtual String Text { get; set; }
-
+        public virtual String Text { get; set; }        
+        
+		
         #region InfoGetters
         public void AddInfoGetter(ISummaryInfo infoGetter)
         {
@@ -431,11 +433,11 @@ namespace COTES.ISTOK.DiagnosticsInfo
     [DataContract]
     public class DiagnosticsProxy : Diagnostics
     {
-        Diagnostics diag = null;
-
-        public DiagnosticsProxy(Diagnostics diag)
+    	Diagnostics diag;
+    	
+        public DiagnosticsProxy(Diagnostics _diag)
         {
-            this.diag = diag;
+            diag = _diag;
         }
 
         public override bool CanManageBlocks()
@@ -557,16 +559,16 @@ namespace COTES.ISTOK.DiagnosticsInfo
         public override void StopChannel(ChannelInfo channelInfo)
         {
             diag.StopChannel(channelInfo);
-        }
+        }       
         public override string Text
         {
             get
             {
-                return diag.Text;
+            	return diag.Text;
             }
             set
             {
-                diag.Text = value;
+            	diag.Text = value;            	
             }
         }
         //public override void UnloadChannel(ChannelInfo channelInfo)

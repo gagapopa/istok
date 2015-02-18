@@ -5,6 +5,7 @@ using System.Net.Sockets;
 using System.Runtime.Remoting;
 using System.IO;
 using System.IO.Compression;
+using System.Runtime.Serialization;
 
 namespace COTES.ISTOK
 {
@@ -13,16 +14,19 @@ namespace COTES.ISTOK
     /// </summary>
     [Obsolete("Надо переходить на пару Package/ParamValueItem с хранением ИД параметра в пачке")]
     [Serializable]
+    [DataContract]
     public class ParamValueItemWithID : ParamValueItem
     {
         /// <summary>
         /// ИД параметра
         /// </summary>
+        [DataMember]
         public int ParameterID { get; set; }
 
         /// <summary>
         /// ИД канала сбора
         /// </summary>
+        [DataMember]
         public int ChannelID { get; set; }
 
         public ParamValueItemWithID()

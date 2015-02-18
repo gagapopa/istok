@@ -55,3 +55,14 @@ C:\Maildisk\isbk-src\src - копия\ClientCore\obj\Debug\COTES.ISTOK.ClientCor
 C:\Maildisk\isbk-src\src - копия\ClientCore\obj\Debug\ClientCore.csproj.GenerateResource.Cache
 C:\Maildisk\isbk-src\src - копия\ClientCore\obj\Debug\COTES.ISTOK.Client.Core.dll
 C:\Maildisk\isbk-src\src - копия\ClientCore\obj\Debug\COTES.ISTOK.Client.Core.pdb
+C:\Maildisk\isbk-src\src - копия\ClientCore\bin\Debug\NUnit.Framework.dll
+C:\Maildisk\isbk-src\src - копия\ClientCore\bin\Debug\COTES.ISTOK.Server.Core.dll
+C:\Maildisk\isbk-src\src - копия\ClientCore\bin\Debug\EntityFramework.dll
+C:\Maildisk\isbk-src\src - копия\ClientCore\bin\Debug\ISTOKReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\ClientCore\bin\Debug\ParameterReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\ClientCore\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Maildisk\isbk-src\src - копия\ClientCore\bin\Debug\COTES.ISTOK.Server.Core.pdb
+C:\Maildisk\isbk-src\src - копия\ClientCore\bin\Debug\EntityFramework.xml
+C:\Maildisk\isbk-src\src - копия\ClientCore\bin\Debug\ISTOKReceiverExtension.pdb
+C:\Maildisk\isbk-src\src - копия\ClientCore\bin\Debug\ParameterReceiverExtension.pdb
+C:\Maildisk\isbk-src\src - копия\ClientCore\bin\Debug\DocumentFormat.OpenXml.xml

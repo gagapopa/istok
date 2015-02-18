@@ -327,7 +327,7 @@ namespace COTES.ISTOK
     #region Проверка соединения
     /// <summary>
     /// Интерфейс для кривого таймаута
-    /// </summary>
+    /// </summary>    
     [ServiceContract]
     public interface ITestConnection<T>
     {

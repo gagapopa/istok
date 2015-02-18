@@ -4,26 +4,26 @@ using System.Collections.Generic;
 using System.Data;
 using System.Text;
 using COTES.ISTOK;
-using COTES.ISTOK.ASC;
-using COTES.ISTOK.Calc;
 using System.Net.Sockets;
 using COTES.ISTOK.DiagnosticsInfo;
 using System.Runtime.Serialization;
 
-namespace COTES.ISTOK.Assignment
+namespace COTES.ISTOK.Assignment.Gdiag
 {
     /// <summary>
     /// Класс для диагностики общестанционного сервера
     /// </summary>
     [DataContract]
-    [KnownType(typeof(DiagnosticsProxy))]
+    [KnownType(typeof(DiagnosticsProxy))]   
     public class GlobalDiagnostics : Diagnostics
     {
-        GlobalDiag gnode;
+    	[DataMember]
+    	GlobalDiag gnode {get;set;}
+    	
         BlockProxy blockProxy;
         //CalcServer cserv;
         SecurityManager securityManager;
-        ParameterRegistrator registrator;
+        ParameterRegistrator registrator;     
 
         internal GlobalDiagnostics(GlobalDiag gnode,
             ParameterRegistrator registrator,

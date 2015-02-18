@@ -5,9 +5,11 @@ using System.ServiceModel;
 using COTES.ISTOK;
 using COTES.ISTOK.Calc;
 using COTES.ISTOK.Extension;
+using COTES.ISTOK.DiagnosticsInfo;
 
 namespace COTES.ISTOK.ASC
 {
+	[ServiceKnownType("GetFiagTypes",typeof(HelperForDiagnosticType))]	
     [ServiceContract]
     public interface IGlobalQueryManager: ITestConnection<Object>
     {

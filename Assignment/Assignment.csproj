@@ -163,8 +163,8 @@
     <Compile Include="ExportImport\ExportImportManager.cs" />
     <Compile Include="Extension\DomainedExtension.cs" />
     <Compile Include="Extension\ExtensionManager.cs" />
-    <Compile Include="GlobalDiagnostics.cs" />
     <Compile Include="ClientInfo.cs" />
+    <Compile Include="GlobalDiagnostics.cs" />
     <Compile Include="LogReceiverServer.cs" />
     <Compile Include="Schedule\ScheduleManager.cs" />
     <Compile Include="Security\ILockManager.cs" />

@@ -21,7 +21,8 @@ namespace COTES.ISTOK.ClientCore
             string opid = "GetDiagnosticsObject" + Guid.NewGuid().ToString();
             try
             {
-                var res = AllocQManager(opid).GetDiagnosticsObject(session.Uid);
+            	var rm = AllocQManager(opid);
+            	var res = rm.GetDiagnosticsObject(session.Uid);
                 session.CommitDataChanges(res.Changes);
                 return res.Result;
             }
