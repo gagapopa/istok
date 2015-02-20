@@ -9,7 +9,7 @@ using COTES.ISTOK.DiagnosticsInfo;
 
 namespace COTES.ISTOK.ASC
 {
-	[ServiceKnownType("GetFiagTypes",typeof(HelperForDiagnosticType))]	
+	
     [ServiceContract]
     public interface IGlobalQueryManager: ITestConnection<Object>
     {

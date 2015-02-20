@@ -3,14 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
+using System.Text.RegularExpressions;
 using COTES.ISTOK.ASC;
 using COTES.ISTOK.DiagnosticsInfo;
+using System.Runtime.Serialization;
 
 namespace COTES.ISTOK.Assignment
 {
     /// <summary>
     /// Класс, берущий на себя связь с серверами сбора данных
     /// </summary>
+    [DataContract]
     class BlockProxy
     {
         NLog.Logger log = NLog.LogManager.GetCurrentClassLogger();
@@ -51,6 +54,7 @@ namespace COTES.ISTOK.Assignment
 
         public BlockProxy(int maxBlockCount)
         {
+        	blocks = new List<BlockNode>();
             MaxBlockCount = maxBlockCount;
             packer = new UltimateZipper();
             AttemptsNumber = DefaultAttemptsNumber;
@@ -60,16 +64,16 @@ namespace COTES.ISTOK.Assignment
             AttemptSleep = TimeSpan.FromSeconds(20); 
 #else
             AttemptSleep = TimeSpan.FromSeconds(1);
+            
 #endif
         }
 
         #region Диагностика
-        public Diagnostics GetDiagnosticsObject(string uid_block)
+        public IDiagnostics GetDiagnosticsObject(string uid_block)
         {
-            IBlockQueryManager block = GetQueryManager(uid_block);
+            IDiagnostics block = GetBlockDiagProxy(uid_block);
 
-            return block.GetDiagnosticsObject();
-
+            return block;
         }
 
         private IBlockQueryManager GetQueryManager(string uid_block)
@@ -97,7 +101,23 @@ namespace COTES.ISTOK.Assignment
 
             //return factory.CreateChannel();
         }
-        public Diagnostics GetDiagnosticsObject(int idnum)
+        private IDiagnostics GetBlockDiagProxy(string uid_block)
+        {
+        	ChannelFactory<IDiagnostics> factory;
+            String url;
+            if (!dicBlockUIDs.TryGetValue(uid_block, out url))
+            {
+                throw new ServerNotAccessibleException(String.Format("Сервер {0} не доступен", uid_block));
+            }
+            string diagUrl = Regex.Replace(url,"BlockQueryManager","BlockDiagnostics");
+
+            EndpointAddress address = new EndpointAddress(diagUrl);
+            var bind = new NetTcpBinding();
+            factory = new ChannelFactory<IDiagnostics>(bind, address);
+            factory.Open();
+            return factory.CreateChannel();
+        }
+        public IDiagnostics GetDiagnosticsObject(int idnum)
         {
             foreach (var item in Blocks)
                 if (item.Idnum == idnum) return GetDiagnosticsObject(item.BlockUID);
@@ -1163,9 +1183,10 @@ namespace COTES.ISTOK.Assignment
         //        MessagesGetNext = true;
         //    }
         //}
-
-        List<BlockNode> blocks = new List<BlockNode>();
-        public IEnumerable<BlockNode> Blocks { get { return blocks.ToArray(); } }
+		[DataMember]
+		List<BlockNode> blocks{get;set;}
+        [DataMember]
+        public IEnumerable<BlockNode> Blocks { get { return blocks; }  set{blocks = value.ToList();}}
 
         Dictionary<String, BlockCache> blockCache = new Dictionary<string, BlockCache>();
         
@@ -1351,7 +1372,7 @@ namespace COTES.ISTOK.Assignment
                     break;
                 }
             }
-            blocks.Add(newnode);
+            if (!String.IsNullOrEmpty(newnode.BlockUID)) blocks.Add(newnode);
             //if (newnode.Attributes.ContainsKey(CommonData.BlockUIDProperty))
             //{
             //    IBlockQueryManager qm;

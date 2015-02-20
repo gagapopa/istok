@@ -132,7 +132,7 @@ namespace COTES.ISTOK.Block
             {
                 serviceHost.Close();
             }
-
+          
             serviceHost = new ServiceHost(queryManager, new Uri(String.Format("net.tcp://localhost:{0}/BlockQueryManager", BlockSettings.Instance.Port)));
             serviceHost.Open();
 

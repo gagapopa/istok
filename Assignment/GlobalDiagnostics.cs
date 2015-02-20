@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
+using System.ServiceModel;
 using System.Text;
 using COTES.ISTOK;
 using System.Net.Sockets;
@@ -14,29 +15,33 @@ namespace COTES.ISTOK.Assignment.Gdiag
     /// Класс для диагностики общестанционного сервера
     /// </summary>
     [DataContract]
-    [KnownType(typeof(DiagnosticsProxy))]   
+    //[KnownType(typeof(DiagnosticsProxy))]
+    
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single, IncludeExceptionDetailInFaults = true)]
     public class GlobalDiagnostics : Diagnostics
     {
-    	[DataMember]
-    	GlobalDiag gnode {get;set;}
+    	//public GlobalDiagnostics(){}
     	
-        BlockProxy blockProxy;
+    	
+    	BlockProxy blockProxy;
         //CalcServer cserv;
+        
         SecurityManager securityManager;
-        ParameterRegistrator registrator;     
+        
+        ParameterRegistrator registrator;
 
         internal GlobalDiagnostics(GlobalDiag gnode,
             ParameterRegistrator registrator,
             BlockProxy blockProxy,
             SecurityManager securityManager)
-        {
-            this.gnode = gnode;
+        {         	
+            base.gnode = gnode;
             this.registrator = registrator;
             this.blockProxy = blockProxy;
             //this.cserv = cserv;
             this.securityManager = securityManager;
         }
-
+	
         public override string Text
         {
             get
@@ -123,9 +128,9 @@ namespace COTES.ISTOK.Assignment.Gdiag
             return "";
         }
 
-        public override Diagnostics[] GetBlockDiagnostics()
+        public override IDiagnostics[] GetBlockDiagnostics()
         {
-            List<Diagnostics> lst = new List<Diagnostics>();
+            var lst = new List<IDiagnostics>();
 
             foreach (var item in blockProxy.Blocks)
             {
@@ -134,16 +139,16 @@ namespace COTES.ISTOK.Assignment.Gdiag
 
             return lst.ToArray();
         }
-        public override Diagnostics GetBlockDiagnostics(int block_id)
+        public override IDiagnostics GetBlockDiagnostics(int block_id)
         {
-            Diagnostics diag = null;
+            IDiagnostics diag = null;
 
             try
             {
                 diag = blockProxy.GetDiagnosticsObject(block_id);
             }
             catch (SocketException) { }
-            if (diag != null) diag = new DiagnosticsProxy(diag);
+            //if (diag != null) diag = new DiagnosticsProxy(diag);
 
             return diag;
         }

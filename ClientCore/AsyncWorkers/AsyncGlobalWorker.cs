@@ -6,6 +6,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 using System.Threading;
+using COTES.ISTOK.DiagnosticsInfo;
 
 namespace COTES.ISTOK.ClientCore
 {
@@ -48,6 +49,10 @@ namespace COTES.ISTOK.ClientCore
         protected IGlobalQueryManager AllocQManager(string opid)
         {
             return session.AllocQManager(opid);
+        }
+         protected IDiagnostics AllocDiagManager(string opid)
+        {
+            return session.AllocDiagManager(opid);
         }
         protected void FreeQManager(string opid)
         {

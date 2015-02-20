@@ -5,6 +5,7 @@ using System.Net.Sockets;
 using System.Runtime.Remoting;
 using System.IO;
 using System.IO.Compression;
+using System.Runtime.Serialization;
 
 namespace COTES.ISTOK
 {
@@ -12,6 +13,7 @@ namespace COTES.ISTOK
     /// Пачка значений
     /// </summary>
     [Serializable]
+    [DataContract]
     public class Package : ICloneable
     {
         /// <summary>

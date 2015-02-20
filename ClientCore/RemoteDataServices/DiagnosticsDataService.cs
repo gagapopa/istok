@@ -16,15 +16,15 @@ namespace COTES.ISTOK.ClientCore
             //
         }
 
-        public Diagnostics GetDiagnosticsObject()
+        public IDiagnostics GetDiagnosticsObject()
         {
             string opid = "GetDiagnosticsObject" + Guid.NewGuid().ToString();
             try
             {
-            	var rm = AllocQManager(opid);
-            	var res = rm.GetDiagnosticsObject(session.Uid);
-                session.CommitDataChanges(res.Changes);
-                return res.Result;
+            	var rm = AllocDiagManager(opid);
+            	//var res = rm.GetDiagnosticsObject(session.Uid);
+                //session.CommitDataChanges(res.Changes);
+                return rm;
             }
             catch (FaultException ex)
             {

@@ -148,6 +148,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Assignment\Assignment.csproj">
+      <Project>{78472114-6CAA-4634-AB77-2DEEAF2A9C62}</Project>
+      <Name>Assignment</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CommonLib\CommonLib.csproj">
       <Project>{80429148-427C-4207-BCD0-AE5E38B405D7}</Project>
       <Name>CommonLib</Name>

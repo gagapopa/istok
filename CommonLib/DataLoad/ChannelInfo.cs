@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Runtime.Serialization;
 namespace COTES.ISTOK
 {
     /// <summary>
     /// Описание канала сбора
     /// </summary>
     [Serializable]
+    [DataContract]
     public class ChannelInfo : IPropertyable<String>
     {
         /// <summary>

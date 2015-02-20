@@ -200,6 +200,7 @@
     <Compile Include="Configurations\ServerSettings.cs" />
     <Compile Include="Configurations\VPNSettings.cs" />
     <Compile Include="Consts.cs" />
+    <Compile Include="DiagnosticsInfo\HelperForDiagnosticType.cs" />
     <Compile Include="DiagnosticsInfo\IDiagnostics.cs" />
     <Compile Include="ValueAggregator.cs" />
     <Compile Include="DataLoad\DataLoadMethod.cs" />

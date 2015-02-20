@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.ServiceModel;
 using System.Text;
+using System.Runtime.Serialization;
 
 namespace COTES.ISTOK
 {
-    [Serializable]
+    //[Serializable]
+    [DataContract]
     public class BlockParameterValuesRequest
     {
         public ParameterItem[] Parameters { get; set; }

@@ -110,7 +110,7 @@ namespace COTES.ISTOK.Client
         /// <param name="node"></param>
         private void SetNodeState(TreeNode node)
         {
-            Diagnostics diag = null;
+            IDiagnostics diag = null;
             NamedNodeList nodeList = null;
             bool dataError = false;
 
@@ -123,7 +123,7 @@ namespace COTES.ISTOK.Client
                     if (node.Parent != null && node.Parent.Tag is NamedNodeList)
                     {
                         DiagState state = nodeList.State;
-                        Diagnostics pdiag = ((NamedNodeList)node.Parent.Tag).Diagnostics;
+                        IDiagnostics pdiag = ((NamedNodeList)node.Parent.Tag).Diagnostics;
                         if (pdiag != null)
                         {
                             nodeList = new NamedNodeList(pdiag.GetBlockDiagnostics(nodeList.ID), nodeList.ID);
@@ -140,12 +140,12 @@ namespace COTES.ISTOK.Client
                 //if (diag != null)
                 {
                     TestConnection<Object>.Test(diag, null, settings.TimeoutNorm, true);
-                    if (diag.Text != node.Text)
+                    if (diag.GetText() != node.Text)
                     {
                         if (node.TreeView != null && node.TreeView.InvokeRequired)
-                            node.TreeView.Invoke((Action)(() => node.Text = diag.Text));
+                            node.TreeView.Invoke((Action)(() => node.Text = diag.GetText()));
                         else
-                            node.Text = diag.Text;
+                            node.Text = diag.GetText();
                     }
 
                     if (diag.CanManageChannels())
@@ -282,7 +282,7 @@ namespace COTES.ISTOK.Client
             try
             {
                 TreeNode node;
-                Diagnostics diag = strucProvider.Session.GetDiagnosticsObject();
+                IDiagnostics diag = strucProvider.Session.GetDiagnosticsObject();
                 //Diagnostics diag = await Task.Factory.StartNew(() => strucProvider.Session.GetDiagnosticsObject());
 
                 node = CreateDiagNode(0, diag);
@@ -307,7 +307,7 @@ namespace COTES.ISTOK.Client
                 try
                 {
                     NamedNodeList nodeList = (NamedNodeList)node.Tag;
-                    Diagnostics diag;
+                    IDiagnostics diag;
                     try
                     {
                         if (nodeList.Diagnostics == null)
@@ -320,7 +320,7 @@ namespace COTES.ISTOK.Client
                             }
                         }
                         diag = nodeList.Diagnostics;
-                        string tmp = diag.Text;
+                        string tmp = diag.GetText();
                         if (nodeList.Text != tmp)
                         {
                             nodeList.Text = tmp;
@@ -464,7 +464,7 @@ namespace COTES.ISTOK.Client
             }
         }
 
-        private TreeNode CreateDiagNode(int idnum, Diagnostics diag)
+        private TreeNode CreateDiagNode(int idnum, IDiagnostics diag)
         {
             TreeNode node = new TreeNode();
             NamedNodeList nodeList = new NamedNodeList(diag, idnum);
@@ -478,8 +478,9 @@ namespace COTES.ISTOK.Client
                     int[] ids = diag.GetBlocks();
                     foreach (var item in ids)
                     {
-                        node.Nodes.Add(CreateDiagNode(item, null));
-                        //node.Nodes.Add(CreateDiagNode(item, diag.GetBlockDiagnostics(item)));
+                        //node.Nodes.Add(CreateDiagNode(item, null));
+                        IDiagnostics blockDiag = diag.GetBlockDiagnostics(item);
+                        node.Nodes.Add(CreateDiagNode(item, blockDiag));
                     }
                 }
             }
@@ -601,7 +602,7 @@ namespace COTES.ISTOK.Client
     {
         private string m_name;
         //private string m_url;
-        private Diagnostics diagNode = null;
+        private IDiagnostics diagNode = null;
         //private ServiceController svcNode = null;
         //private DiagServerInfo serverInfo = null;
         private Object properties = null;
@@ -611,10 +612,10 @@ namespace COTES.ISTOK.Client
 
         public DataSet DiagData { get; set; }
 
-        public NamedNodeList(/*string url,*/ Diagnostics diag/*, ServiceController service*/)
+        public NamedNodeList(/*string url,*/ IDiagnostics diag/*, ServiceController service*/)
         {
             ID = 0;
-            m_name = "Unknown";
+            m_name = diag.GetText();
             try
             {
                 //if (diag != null) m_name = diag.Text;
@@ -626,7 +627,7 @@ namespace COTES.ISTOK.Client
             state = diagNode == null ? DiagState.Bad : DiagState.Good;
         }
 
-        public NamedNodeList(Diagnostics diag, /*ServiceController service,*/ int idnum)
+        public NamedNodeList(IDiagnostics diag, /*ServiceController service,*/ int idnum)
             : this(diag/*, service*/)
         {
             ID = idnum;
@@ -663,7 +664,7 @@ namespace COTES.ISTOK.Client
         //    }
         //}
 
-        public Diagnostics Diagnostics
+        public IDiagnostics Diagnostics
         {
             get { return diagNode; }
             set { diagNode = value; }

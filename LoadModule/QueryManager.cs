@@ -9,6 +9,7 @@ namespace COTES.ISTOK.Block
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single, IncludeExceptionDetailInFaults = true)]
     class QueryManager : MarshalByRefObject, IBlockQueryManager, IRedundancy, IDisposable
     {
+    	
         private AsyncOperation asyncOperation = new AsyncOperation(NSI.StartNum);
 
         Diagnostics blockDiagnostics;

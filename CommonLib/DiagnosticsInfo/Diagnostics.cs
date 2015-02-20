@@ -34,7 +34,7 @@ namespace COTES.ISTOK.DiagnosticsInfo
         /// </summary>
         HasErrors = 0x8
     }
-
+    
     public interface ISummaryInfo
     {
         System.Data.DataSet GetSummaryInfo();
@@ -48,22 +48,42 @@ namespace COTES.ISTOK.DiagnosticsInfo
     }
 
     [DataContract]
-    [KnownType(typeof(DiagnosticsProxy))]
-    [KnownType(typeof(GlobalDiag))] 
-    public class Diagnostics : MarshalByRefObject ,ITestConnection<Object>, COTES.ISTOK.DiagnosticsInfo.IDiagnostics
+    //[KnownType(typeof(DiagnosticsProxy))]
+    //[KnownType(typeof(GlobalDiag))] 
+    public class Diagnostics : ITestConnection<Object>, IDiagnostics
     {
         /// <summary>
         /// Список интерфейсов собирателей диагностической информации
         /// </summary>
         [DataMember]
         protected List<ISummaryInfo> lstInfoGetters = new List<ISummaryInfo>();
+        
+        /// <summary>
+        /// нода для хранения информации диагностики глобала
+        /// </summary>
+        [DataMember(Order = 1)]
+    	public GlobalDiag gnode {
+        	get;
+        	set;
+        }
 
         /// <summary>
         /// Получить/установить название диагностируемого узла
         /// </summary>
-        [DataMember]
-        public virtual String Text { get; set; }        
+        [DataMember(Order = 2)]
+        public virtual String Text { get; set; }
         
+		[DataMember]
+        public static Diagnostics realDiagnisticsObject;
+
+		public string GetText()
+		{
+			return Text;
+		}
+		public void SetText(string _text)
+		{
+			Text = _text;
+		}
 		
         #region InfoGetters
         public void AddInfoGetter(ISummaryInfo infoGetter)
@@ -72,6 +92,16 @@ namespace COTES.ISTOK.DiagnosticsInfo
 
             lstInfoGetters.Add(infoGetter);
         }
+        /// <summary>
+        /// Получить объект диагностики
+        /// </summary>
+        /// <param name="uid"></param>
+        /// <returns>Класс наследуемый от Diagnostics</returns>
+		public Diagnostics GetDiagnosticsObject(Guid uid)
+		{
+			return realDiagnisticsObject;
+		}
+
         /// <summary>
         /// Настройка собирателей информации
         /// </summary>
@@ -204,7 +234,7 @@ namespace COTES.ISTOK.DiagnosticsInfo
         /// Получить объект для диагностики блочного
         /// </summary>
         /// <returns></returns>
-        public virtual Diagnostics[] GetBlockDiagnostics()
+        public virtual IDiagnostics[] GetBlockDiagnostics()
         {
             throw new NotImplementedException();
         }
@@ -224,7 +254,7 @@ namespace COTES.ISTOK.DiagnosticsInfo
         /// </summary>
         /// <param name="block_id">ИД блочного</param>
         /// <returns></returns>
-        public virtual Diagnostics GetBlockDiagnostics(int block_id)
+        public virtual IDiagnostics GetBlockDiagnostics(int block_id)
         {
             throw new NotImplementedException();
         }
@@ -468,11 +498,11 @@ namespace COTES.ISTOK.DiagnosticsInfo
         {
             return diag.GetAllInfo();
         }
-        public override Diagnostics[] GetBlockDiagnostics()
+        public override IDiagnostics[] GetBlockDiagnostics()
         {
             return diag.GetBlockDiagnostics();
         }
-        public override Diagnostics GetBlockDiagnostics(int block_id)
+        public override IDiagnostics GetBlockDiagnostics(int block_id)
         {
             return diag.GetBlockDiagnostics(block_id);
         }

@@ -1,11 +1,12 @@
 ﻿using System;
-
+using System.Runtime.Serialization;
 namespace COTES.ISTOK
 {
     /// <summary>
     /// Состояние выполнения операции
     /// </summary>
     [Serializable]
+    [DataContract]
     public class OperationInfo
     {
         /// <summary>

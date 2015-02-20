@@ -36,7 +36,7 @@ namespace COTES.ISTOK.ClientCore.TestClientCore
              IGlobalQueryManager qm = factory.CreateChannel();
              var res = qm.Connect("admin","admin");
              Guid UID = res.UserGuid;
-             Diagnostics diagAssert = qm.GetDiagnosticsObject(UID).Result;
+             IDiagnostics diagAssert = qm.GetDiagnosticsObject(UID).Result;
              
              Assert.IsNotNull(diagAssert);
 		}

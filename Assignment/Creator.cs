@@ -250,6 +250,7 @@ namespace COTES.ISTOK.Assignment
 
         private ServiceHost serviceHost = null;
         private ServiceHost loggerHost = null;
+        private ServiceHost diagHost = null;
 
         private void InitWCFServer()
         {
@@ -258,16 +259,24 @@ namespace COTES.ISTOK.Assignment
 
             var logUri = new Uri(String.Format("net.tcp://localhost:{0}/LogReceiverServer", GlobalSettings.Instance.Port));
             loggerHost = new ServiceHost(typeof(LogReceiverServer), logUri);
+            
+            var diagUri = new Uri(String.Format("net.tcp://localhost:{0}/GlobalDiag", GlobalSettings.Instance.Port));
+            var bind = new NetTcpBinding();
+            diagHost = new ServiceHost(Diagnostics.realDiagnisticsObject);
+            diagHost.AddServiceEndpoint(typeof(IDiagnostics),bind,diagUri);
+            
         }
         private void StartWCFServer()
         {
             serviceHost.Open();
             loggerHost.Open();
+            diagHost.Open();
         }
         private void StopWCFServer()
         {
             serviceHost.Close();
             loggerHost.Close();
+            diagHost.Close();
         }
 
         private void ValueGenerator(object state)
@@ -459,7 +468,7 @@ namespace COTES.ISTOK.Assignment
                 gnode.DbUser = GlobalSettings.Instance.DataBase.User;
                 gnode.Port = GlobalSettings.Instance.Port;
 
-                globalDiagnostics = new GlobalDiagnostics
+                globalDiagnostics = Diagnostics.realDiagnisticsObject = new GlobalDiagnostics
                 									(gnode,
 								                    registrator,
 								                    blockProxy,

@@ -115,6 +115,29 @@ namespace COTES.ISTOK.ClientCore
 
             return qm;
         }
+        
+        ChannelFactory<IDiagnostics> diagFactory;
+        private IDiagnostics SetupGlobalDiagnostic(){
+        	
+        	IDiagnostics dg;
+        	
+        	if (diagFactory != null) diagFactory.Abort();
+        	
+        	if (!string.IsNullOrEmpty(HostPort)){        		
+        		EndpointAddress address = new EndpointAddress(string.Format("net.tcp://{0}/GlobalDiag", HostPort));
+        		var bind = new NetTcpBinding();
+                diagFactory = new ChannelFactory<IDiagnostics>(bind, address);
+                diagFactory.Open();
+        	}
+        	try {
+        		dg = diagFactory.CreateChannel();
+        		
+        	} catch (Exception ex) {
+        		log.Error("Не удалось подключиться к серверу диагностики",ex);
+        		throw new UserNotConnectedException("Не удалось подключиться к серверу диагностики",ex);
+        	}
+        	return dg;
+        }
 
         public void Connect(string userName, string password)
         {
@@ -370,7 +393,7 @@ namespace COTES.ISTOK.ClientCore
         #endregion
 
         #region Diagnostics
-        public Diagnostics GetDiagnosticsObject()
+        public IDiagnostics GetDiagnosticsObject()
         {
             return rds.DiagnosticsDataService.GetDiagnosticsObject();
         }
@@ -433,6 +456,23 @@ namespace COTES.ISTOK.ClientCore
             }
             return qManagerList;
         }
+        IDiagnostics diagManager;
+        internal IDiagnostics AllocDiagManager(string opid)
+        {
+            if(string.IsNullOrEmpty(opid))
+                throw new Exception("Cannot alloc manager with this id");
+
+            lock (listsync)
+            {
+                if (lstAllocs.Contains(opid))
+                    throw new Exception("Cannot alloc manager with same id");
+                lstAllocs.Add(opid);
+                if (diagManager == null)
+                    diagManager = SetupGlobalDiagnostic();
+            }
+            return diagManager;
+        }
+        
         internal void FreeQManager(string opid)
         {
             if (string.IsNullOrEmpty(opid))

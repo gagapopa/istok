@@ -139,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="globe.ico" />
+    <Content Include="ProfilingSessions\Session20150220_140532.sdps" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -13,6 +13,7 @@ namespace COTES.ISTOK
     /// Представление значения параметра
     /// </summary>
     [Serializable]
+    [DataContract]
     [KnownType(typeof(CorrectedParamValueItem))]
     [KnownType(typeof(ParamValueItemWithID))]
     public class ParamValueItem : ICloneable, IComparable<ParamValueItem>

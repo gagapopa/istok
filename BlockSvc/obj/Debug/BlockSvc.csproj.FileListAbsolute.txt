@@ -18,3 +18,17 @@ C:\Maildisk\isbk-src\src - копия\BlockSvc\obj\Debug\COTES.ISTOK.Block.Servi
 C:\Maildisk\isbk-src\src - копия\BlockSvc\obj\Debug\BlockSvc.csproj.GenerateResource.Cache
 C:\Maildisk\isbk-src\src - копия\BlockSvc\obj\Debug\istokloader.exe
 C:\Maildisk\isbk-src\src - копия\BlockSvc\obj\Debug\istokloader.pdb
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\COTES.ISTOK.Server.Core.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\EntityFramework.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\COTES.ISTOK.Calc.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\COTES.ISTOK.Server.Data.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\ISTOKReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\ParameterReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\COTES.ISTOK.Server.Core.pdb
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\EntityFramework.xml
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\COTES.ISTOK.Calc.pdb
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\COTES.ISTOK.Server.Data.pdb
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\ISTOKReceiverExtension.pdb
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\ParameterReceiverExtension.pdb
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\DocumentFormat.OpenXml.xml

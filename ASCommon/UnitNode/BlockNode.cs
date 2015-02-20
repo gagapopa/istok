@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Runtime.Serialization;
 using COTES.ISTOK.ASC.TypeConverters;
 
 namespace COTES.ISTOK.ASC
 {
     [Serializable]
+    [DataContract]
     public class BlockNode : UnitNode, IEquatable<BlockNode>
     {
         [DisplayName("Компьютер")]

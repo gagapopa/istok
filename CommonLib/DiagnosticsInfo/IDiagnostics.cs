@@ -2,12 +2,23 @@
 using System.Collections.Generic;
 using System.Data;
 using System.ServiceModel;
+using System.Runtime.Serialization;
 
 namespace COTES.ISTOK.DiagnosticsInfo
 {
-    [ServiceContract]
+	[ServiceContract]
+	[ServiceKnownType("GetFiagTypes",typeof(HelperForDiagnosticType))]	
+	//[ServiceKnownType(typeof(Diagnostics))]
     public interface IDiagnostics : ITestConnection<Object>
     {
+    	[OperationContract]
+    	string GetText();
+    	[OperationContract]
+    	void SetText(string _text);
+    	[OperationContract]
+    	DataSet GetAllInfo();
+    	[OperationContract]
+		Diagnostics GetDiagnosticsObject(Guid uid);
         [OperationContract]
         bool CanManageBlocks();
         [OperationContract]
@@ -23,7 +34,7 @@ namespace COTES.ISTOK.DiagnosticsInfo
         //[OperationContract]
         //Diagnostics[] GetBlockDiagnostics();
         [OperationContract]
-        Diagnostics GetBlockDiagnostics(int block_id);
+        IDiagnostics GetBlockDiagnostics(int block_id);
         [OperationContract]
         String GetBlockDiagnosticsURL(int block_id);
         [OperationContract]
