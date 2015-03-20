@@ -113,6 +113,7 @@ namespace COTES.ISTOK.Assignment
 
             EndpointAddress address = new EndpointAddress(diagUrl);
             var bind = new NetTcpBinding();
+            bind.Security.Mode = SecurityMode.None;
             factory = new ChannelFactory<IDiagnostics>(bind, address);
             factory.Open();
             return factory.CreateChannel();
@@ -1372,7 +1373,7 @@ namespace COTES.ISTOK.Assignment
                     break;
                 }
             }
-            if (!String.IsNullOrEmpty(newnode.BlockUID)) blocks.Add(newnode);
+            blocks.Add(newnode);
             //if (newnode.Attributes.ContainsKey(CommonData.BlockUIDProperty))
             //{
             //    IBlockQueryManager qm;

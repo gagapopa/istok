@@ -7,6 +7,7 @@ using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.ServiceModel;
 using COTES.ISTOK.Block.Redundancy;
+using COTES.ISTOK.DiagnosticsInfo;
 using NLog;
 
 namespace COTES.ISTOK.Block
@@ -140,7 +141,11 @@ namespace COTES.ISTOK.Block
             {
                 diagnosticServiceHost.Close();
             }
-            diagnosticServiceHost = new ServiceHost(blockDiagnostics, new Uri(String.Format("net.tcp://localhost:{0}/BlockDiagnostics", BlockSettings.Instance.Port)));
+            var uriDiag = new Uri(String.Format("net.tcp://localhost:{0}/BlockDiagnostics", BlockSettings.Instance.Port));
+            diagnosticServiceHost = new ServiceHost(blockDiagnostics,uriDiag);
+            var bind = new NetTcpBinding();
+            bind.Security.Mode = SecurityMode.None;
+            diagnosticServiceHost.AddServiceEndpoint(typeof(IDiagnostics),bind,uriDiag.AbsolutePath);
             diagnosticServiceHost.Open();
         }
 

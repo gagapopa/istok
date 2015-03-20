@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.ServiceModel;
 using System.Text;
 using System.Windows.Forms;
 using System.Threading;
@@ -126,7 +128,7 @@ namespace COTES.ISTOK.Client
                         IDiagnostics pdiag = ((NamedNodeList)node.Parent.Tag).Diagnostics;
                         if (pdiag != null)
                         {
-                            nodeList = new NamedNodeList(pdiag.GetBlockDiagnostics(nodeList.ID), nodeList.ID);
+                        	nodeList = new NamedNodeList(GetBlockDiagnostics(pdiag,nodeList.ID));
                             nodeList.State = state;
                             node.Tag = nodeList;
                             if (node.TreeView != null && node.TreeView.InvokeRequired)
@@ -316,7 +318,7 @@ namespace COTES.ISTOK.Client
                             {
                                 NamedNodeList pnodeList = (NamedNodeList)node.Parent.Tag;
                                 if (pnodeList.Diagnostics != null)
-                                    nodeList.Diagnostics = pnodeList.Diagnostics.GetBlockDiagnostics(nodeList.ID);
+                                	nodeList.Diagnostics = GetBlockDiagnostics(pnodeList.Diagnostics,nodeList.ID);
                             }
                         }
                         diag = nodeList.Diagnostics;
@@ -478,8 +480,8 @@ namespace COTES.ISTOK.Client
                     int[] ids = diag.GetBlocks();
                     foreach (var item in ids)
                     {
-                        //node.Nodes.Add(CreateDiagNode(item, null));
-                        IDiagnostics blockDiag = diag.GetBlockDiagnostics(item);
+                        //node.Nodes.Add(CreateDiagNode(item, null));                        
+                        IDiagnostics blockDiag = GetBlockDiagnostics(diag,item);
                         node.Nodes.Add(CreateDiagNode(item, blockDiag));
                     }
                 }
@@ -487,7 +489,31 @@ namespace COTES.ISTOK.Client
 
             return node;
         }
-
+        private Dictionary<int,ChannelFactory<IDiagnostics>> factoryDictionary = new Dictionary<int,ChannelFactory<IDiagnostics>>();
+        private IDiagnostics GetBlockDiagnostics(IDiagnostics diag, int blockId)
+        {
+        	factoryDictionary.Where(f => f.Value.State == CommunicationState.Faulted)
+        		.Select(fc => fc.Key)
+        		.ToList().ForEach(a => factoryDictionary.Remove(a));
+        	
+        	if (!factoryDictionary.ContainsKey(blockId)) 
+        	{
+        	try {
+        		var blockUrl = diag.GetBlockDiagnosticsURL(blockId);
+        		var addr = new EndpointAddress(blockUrl);
+				var bind = new NetTcpBinding();
+				bind.Security.Mode = SecurityMode.None;
+				var factory = new ChannelFactory<IDiagnostics>(bind,addr);
+				factory.Open();
+				var sr = factory.CreateChannel();
+				factoryDictionary.Add(blockId,factory);
+				return sr;
+        	} catch (Exception ex) {
+        		throw new NotImplementedException("Не удалось получить объект диагностики:" + ex.Message);
+        	}
+        	}
+        	return factoryDictionary[blockId].CreateChannel();
+        }
         private void tvNodes_AfterSelect(object sender, TreeViewEventArgs e)
         {
             //UpdateData(tvNodes.SelectedNode);
@@ -574,6 +600,10 @@ namespace COTES.ISTOK.Client
         {
             if (threadUpdater != null)
                 threadUpdater.Abort();
+            foreach (ChannelFactory factory in factoryDictionary.Values) {
+            	factory.Close();
+            }
+            
         }
     }
 

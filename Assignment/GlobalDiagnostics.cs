@@ -116,16 +116,34 @@ namespace COTES.ISTOK.Assignment.Gdiag
 
         public override string GetBlockDiagnosticsURL(int block_id)
         {
-            string urlFormat = "tcp://{0}:{1}/{2}";
-
-            foreach (var item in blockProxy.Blocks)
-                if (item.Idnum == block_id)
-                    return string.Format(urlFormat,
-                        item.Host,
-                        item.Port,
-                        CommonData.BlockDiagnosticsURI);
-            
+            string urlFormat = "net.tcp://{0}:{1}/{2}";
+            try {
+            	var diag = blockProxy.GetDiagnosticsObject(block_id);
+	            if (diag != null && !blockproxyDictionary.ContainsKey(block_id)){
+		                var uri = new Uri(String.Format("net.tcp://localhost:{0}/DiagnosticBlockProxy{1}", GlobalSettings.Instance.Port,block_id));
+		                var prox = new DiagnosticsProxy(diag);
+		                var serviceHost = new ServiceHost(prox);
+		                var bind = new NetTcpBinding();
+		                bind.Security.Mode = SecurityMode.None;
+		                serviceHost.AddServiceEndpoint(typeof(IDiagnostics),bind,uri);
+		                serviceHost.Open();
+		                blockproxyDictionary.Add(block_id,serviceHost);
+	                    }
+            } catch (SocketException) { }
+//            foreach (var item in blockProxy.Blocks)
+//                if (item.Idnum == block_id)
+//                    return string.Format(urlFormat,
+//                        item.Host,
+//                        item.Port,
+//                        CommonData.BlockDiagnosticsURI);
+            if (blockproxyDictionary.ContainsKey(block_id)) {
+            	return string.Format(urlFormat,
+	                     GlobalSettings.Instance.Host,
+	                     GlobalSettings.Instance.Port,
+	                     "DiagnosticBlockProxy" + block_id);
+            }
             return "";
+            
         }
 
         public override IDiagnostics[] GetBlockDiagnostics()
@@ -139,6 +157,7 @@ namespace COTES.ISTOK.Assignment.Gdiag
 
             return lst.ToArray();
         }
+        Dictionary<int,ServiceHost> blockproxyDictionary = new Dictionary<int,ServiceHost>();
         public override IDiagnostics GetBlockDiagnostics(int block_id)
         {
             IDiagnostics diag = null;

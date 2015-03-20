@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Collections;
 using System.Data;
+using System.ServiceModel;
 using System.Runtime.Serialization;
 
 namespace COTES.ISTOK.DiagnosticsInfo
@@ -76,11 +77,12 @@ namespace COTES.ISTOK.DiagnosticsInfo
 		[DataMember]
         public static Diagnostics realDiagnisticsObject;
 
-		public string GetText()
+		public virtual string GetText()
 		{
-			return Text;
+			var txt = Text;
+			return txt;
 		}
-		public void SetText(string _text)
+		public virtual void SetText(string _text)
 		{
 			Text = _text;
 		}
@@ -461,11 +463,12 @@ namespace COTES.ISTOK.DiagnosticsInfo
     }
 
     [DataContract]
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single, IncludeExceptionDetailInFaults = true)]
     public class DiagnosticsProxy : Diagnostics
     {
-    	Diagnostics diag;
+    	IDiagnostics diag;
     	
-        public DiagnosticsProxy(Diagnostics _diag)
+        public DiagnosticsProxy(IDiagnostics _diag)
         {
             diag = _diag;
         }
@@ -498,10 +501,10 @@ namespace COTES.ISTOK.DiagnosticsInfo
         {
             return diag.GetAllInfo();
         }
-        public override IDiagnostics[] GetBlockDiagnostics()
-        {
-            return diag.GetBlockDiagnostics();
-        }
+//        public override IDiagnostics[] GetBlockDiagnostics()
+//        {
+//            return diag.GetBlockDiagnostics();
+//        }
         public override IDiagnostics GetBlockDiagnostics(int block_id)
         {
             return diag.GetBlockDiagnostics(block_id);
@@ -554,10 +557,10 @@ namespace COTES.ISTOK.DiagnosticsInfo
         {
             return diag.GetParameterTransactionInfo();
         }
-        public override DataTable GetParameterTransactionInfo(int transaction_id)
-        {
-            return diag.GetParameterTransactionInfo(transaction_id);
-        }
+//        public override DataTable GetParameterTransactionInfo(int transaction_id)
+//        {
+//            return diag.GetParameterTransactionInfo(transaction_id);
+//        }
         public override ParamValueItemWithID[] GetParameterTransactionValues(int transaction_id)
         {
             return diag.GetParameterTransactionValues(transaction_id);
@@ -594,11 +597,11 @@ namespace COTES.ISTOK.DiagnosticsInfo
         {
             get
             {
-            	return diag.Text;
+            	return diag.GetText();
             }
             set
             {
-            	diag.Text = value;            	
+            	diag.SetText(value);
             }
         }
         //public override void UnloadChannel(ChannelInfo channelInfo)

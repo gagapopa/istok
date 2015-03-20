@@ -13,6 +13,7 @@ namespace COTES.ISTOK.Block
     /// <summary>
     /// Класс для диагностинки и мониторинга каналов на блочном сервере
     /// </summary>
+    
     [System.ServiceModel.ServiceBehavior(InstanceContextMode = System.ServiceModel.InstanceContextMode.Single, 
                                          IncludeExceptionDetailInFaults = true)]
     public class BlockDiagnostics : Diagnostics
@@ -32,7 +33,7 @@ namespace COTES.ISTOK.Block
         {
             redunServer = rServer;
         }
-
+        
         public override bool CanManageChannels()
         {
             return true;
@@ -226,7 +227,6 @@ namespace COTES.ISTOK.Block
                         else
                             values.Add(new ParamValueItemWithID(valueItem, pack.Id));
             }
-
             return values;
         }
 

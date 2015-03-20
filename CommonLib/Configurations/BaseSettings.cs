@@ -121,7 +121,7 @@ namespace COTES.ISTOK
             if (!this.TryGet(key, out result))
                 throw new InvalidOperationException("Same key not found: " + key);
 
-            return result;
+            adminreturn result;
         }
 
         public bool TryGet(string key, out object value)
