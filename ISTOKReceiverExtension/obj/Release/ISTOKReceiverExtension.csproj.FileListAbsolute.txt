@@ -1,0 +1,11 @@
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Release\ISTOKReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Release\ISTOKReceiverExtension.pdb
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Release\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Release\NLog.dll
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Release\ParameterReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Release\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Release\ParameterReceiverExtension.pdb
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Release\NLog.xml
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\obj\Release\ISTOKReceiverExtension.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\obj\Release\ISTOKReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\obj\Release\ISTOKReceiverExtension.pdb

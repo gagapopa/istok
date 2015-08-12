@@ -1,0 +1,9 @@
+C:\Maildisk\isbk-src\src - копия\Calc\bin\Release\COTES.ISTOK.Calc.dll
+C:\Maildisk\isbk-src\src - копия\Calc\bin\Release\COTES.ISTOK.Calc.pdb
+C:\Maildisk\isbk-src\src - копия\Calc\bin\Release\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\Calc\bin\Release\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Calc\bin\Release\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Calc\bin\Release\NLog.xml
+C:\Maildisk\isbk-src\src - копия\Calc\obj\Release\Calc.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\Calc\obj\Release\COTES.ISTOK.Calc.dll
+C:\Maildisk\isbk-src\src - копия\Calc\obj\Release\COTES.ISTOK.Calc.pdb

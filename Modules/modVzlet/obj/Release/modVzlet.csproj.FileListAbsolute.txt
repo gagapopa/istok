@@ -1,0 +1,10 @@
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Release\COTES.ISTOK.Loader.Modules.Vzlet.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Release\COTES.ISTOK.Loader.Modules.Vzlet.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Release\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Release\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Release\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Release\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Release\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Release\NLog.xml
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\obj\Release\COTES.ISTOK.Loader.Modules.Vzlet.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\obj\Release\COTES.ISTOK.Loader.Modules.Vzlet.pdb

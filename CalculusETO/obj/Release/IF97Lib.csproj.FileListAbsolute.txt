@@ -1,0 +1,5 @@
+C:\Maildisk\isbk-src\src - копия\CalculusETO\bin\Release\IF97Lib.dll
+C:\Maildisk\isbk-src\src - копия\CalculusETO\bin\Release\IF97Lib.pdb
+C:\Maildisk\isbk-src\src - копия\CalculusETO\obj\Release\IF97Lib.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\CalculusETO\obj\Release\IF97Lib.dll
+C:\Maildisk\isbk-src\src - копия\CalculusETO\obj\Release\IF97Lib.pdb

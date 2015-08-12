@@ -1,0 +1,5 @@
+C:\Maildisk\isbk-src\src - копия\Calculus\bin\Release\Calculus.dll
+C:\Maildisk\isbk-src\src - копия\Calculus\bin\Release\Calculus.pdb
+C:\Maildisk\isbk-src\src - копия\Calculus\obj\Release\Calculus.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\Calculus\obj\Release\Calculus.dll
+C:\Maildisk\isbk-src\src - копия\Calculus\obj\Release\Calculus.pdb

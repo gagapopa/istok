@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using System.Threading;
 using COTES.ISTOK.ASC;
 using COTES.ISTOK.DiagnosticsInfo;
 using System.Runtime.Serialization;
@@ -101,13 +103,21 @@ namespace COTES.ISTOK.Assignment
 
             //return factory.CreateChannel();
         }
+        private Dictionary<string,ChannelFactory<IDiagnostics>> dictionaryChanFactory = new  Dictionary<string,ChannelFactory<IDiagnostics>>();
         private IDiagnostics GetBlockDiagProxy(string uid_block)
         {
+        	
         	ChannelFactory<IDiagnostics> factory;
             String url;
             if (!dicBlockUIDs.TryGetValue(uid_block, out url))
             {
+            	return null;
                 throw new ServerNotAccessibleException(String.Format("Сервер {0} не доступен", uid_block));
+                
+            }
+            if(dictionaryChanFactory.ContainsKey(uid_block)){
+            	var blks = Blocks;
+            	return dictionaryChanFactory[uid_block].CreateChannel();
             }
             string diagUrl = Regex.Replace(url,"BlockQueryManager","BlockDiagnostics");
 
@@ -115,9 +125,15 @@ namespace COTES.ISTOK.Assignment
             var bind = new NetTcpBinding();
             bind.Security.Mode = SecurityMode.None;
             factory = new ChannelFactory<IDiagnostics>(bind, address);
+            factory.Faulted += (s,e) => {
+            	dicBlockUIDs.Remove(uid_block);
+            	dictionaryChanFactory.Remove(uid_block);
+            	};
             factory.Open();
+            dictionaryChanFactory.Add(uid_block,factory);
             return factory.CreateChannel();
         }
+        
         public IDiagnostics GetDiagnosticsObject(int idnum)
         {
             foreach (var item in Blocks)
@@ -1254,6 +1270,7 @@ namespace COTES.ISTOK.Assignment
                     //dicBlockUIDs[uid] = blockQueryFactory;
                     dicBlockUIDs[uid] = url;
                     success = true;
+                    TestConnection(uid);
                     log.Info("Присоединен новый сервер сбора данных.");
                 }
                 else
@@ -1265,6 +1282,20 @@ namespace COTES.ISTOK.Assignment
                 System.Threading.ThreadPool.QueueUserWorkItem(UdateCacheInfo, uid);
             }
             return success;
+        }
+        private Task TestConnection(string Iud){
+        	return Task.Factory.StartNew(() =>{
+        	                             		try {
+        	                             			while (true) {
+        	                             				IDiagnostics block = GetBlockDiagProxy(Iud);
+        	                             				block.CanManageBlocks();
+        	                             				Thread.Sleep(2000);
+        	                             			}
+        	                             		} catch (CommunicationException) {
+        	                             			DetachBlcok(Iud);
+        	                             			dictionaryChanFactory.Remove(Iud);
+        	                             		}
+        	                             });
         }
 
         private void DetachBlcok(string uid)

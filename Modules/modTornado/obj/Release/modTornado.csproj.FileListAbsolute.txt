@@ -1,0 +1,10 @@
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Release\COTES.ISTOK.Loader.Modules.Tornado.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Release\COTES.ISTOK.Loader.Modules.Tornado.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Release\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Release\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Release\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Release\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Release\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Release\NLog.xml
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\obj\Release\COTES.ISTOK.Loader.Modules.Tornado.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\obj\Release\COTES.ISTOK.Loader.Modules.Tornado.pdb

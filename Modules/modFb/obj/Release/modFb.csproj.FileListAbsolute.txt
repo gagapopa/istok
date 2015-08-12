@@ -1,0 +1,13 @@
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Release\COTES.ISTOK.Loader.Modules.Fb.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Release\COTES.ISTOK.Loader.Modules.Fb.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Release\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Release\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Release\FirebirdSql.Data.FirebirdClient.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Release\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Release\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Release\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Release\FirebirdSql.Data.FirebirdClient.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Release\NLog.xml
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\obj\Release\modFb.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\obj\Release\COTES.ISTOK.Loader.Modules.Fb.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\obj\Release\COTES.ISTOK.Loader.Modules.Fb.pdb

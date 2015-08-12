@@ -1,0 +1,13 @@
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Release\COTES.ISTOK.Server.Data.dll
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Release\COTES.ISTOK.Server.Data.pdb
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Release\COTES.ISTOK.Calc.dll
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Release\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Release\NLog.dll
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Release\COTES.ISTOK.Calc.pdb
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Release\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Release\NLog.xml
+C:\Maildisk\isbk-src\src - копия\ASCommon\obj\Release\ASCommon.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\ASCommon\obj\Release\COTES.ISTOK.ASC.TypeConverters.IntervalTypeConverter.resources
+C:\Maildisk\isbk-src\src - копия\ASCommon\obj\Release\ASCommon.csproj.GenerateResource.Cache
+C:\Maildisk\isbk-src\src - копия\ASCommon\obj\Release\COTES.ISTOK.Server.Data.dll
+C:\Maildisk\isbk-src\src - копия\ASCommon\obj\Release\COTES.ISTOK.Server.Data.pdb

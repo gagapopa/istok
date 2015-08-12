@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ArrayOfServerInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ServerInfo>
+    <URL>tcp://nsk044:8082/querymanager.rem</URL>
+    <Priority>2</Priority>
+    <Version>1.6.0.42</Version>
+    <ConnectionString>w7NTCWUtzJYatcpTORFsykb2iY1+RPjuJ2d5zXx+ajSBjNMviqBq8Mcjd8bw+bk6zuNcrWvI6n6puNn/JHOMvoOyft4PANTpJJS/aB+U3kN8zYixg2w1RCs/7G003Ubw</ConnectionString>
+    <NetworkInterfaces>
+      <string>10.172.147.160</string>
+    </NetworkInterfaces>
+    <Port>8082</Port>
+  </ServerInfo>
+</ArrayOfServerInfo>

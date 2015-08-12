@@ -1,0 +1,4 @@
+obj\Release\Library.wixobj
+obj\Release\LoadServer.wixobj
+obj\Release\Station.wixobj
+obj\Release\ThickClient.wixobj

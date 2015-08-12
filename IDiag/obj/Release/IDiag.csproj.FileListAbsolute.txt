@@ -1,0 +1,12 @@
+C:\Maildisk\isbk-src\src - копия\IDiag\bin\Release\COTES.ISTOK.Diag.dll
+C:\Maildisk\isbk-src\src - копия\IDiag\bin\Release\COTES.ISTOK.Diag.pdb
+C:\Maildisk\isbk-src\src - копия\IDiag\bin\Release\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\IDiag\bin\Release\NLog.dll
+C:\Maildisk\isbk-src\src - копия\IDiag\bin\Release\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\IDiag\bin\Release\NLog.xml
+C:\Maildisk\isbk-src\src - копия\IDiag\obj\Release\IDiag.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\IDiag\obj\Release\COTES.ISTOK.Monitoring.ChannelMonitoringControl.resources
+C:\Maildisk\isbk-src\src - копия\IDiag\obj\Release\COTES.ISTOK.Monitoring.PropertyGridForm.resources
+C:\Maildisk\isbk-src\src - копия\IDiag\obj\Release\IDiag.csproj.GenerateResource.Cache
+C:\Maildisk\isbk-src\src - копия\IDiag\obj\Release\COTES.ISTOK.Diag.dll
+C:\Maildisk\isbk-src\src - копия\IDiag\obj\Release\COTES.ISTOK.Diag.pdb

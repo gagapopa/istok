@@ -1,0 +1,57 @@
+../../DLLs/FastReport/FastReport.dll
+../../DLLs/FastReport/FastReport.Bars.dll
+../../DLLs/FastReport/FastReport.Editor.dll
+C:\Maildisk\isbk-src\src - копия\CalculusETO\bin\Release\IF97Lib.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Release\istokloader.exe
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Release\istokloader.exe.config
+C:\Maildisk\isbk-src\src - копия\CommonLib\bin\Release\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\LoadModule\bin\Release\COTES.ISTOK.Loader.Core.dll
+C:\Maildisk\isbk-src\src - копия\IDiag\bin\Release\COTES.ISTOK.Diag.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modCommon\bin\Release\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Release\NLog.dll
+C:\Maildisk\isbk-src\src - копия\BlockSvc\NLog.config
+C:\Maildisk\isbk-src\src - копия\block_UI\bin\Release\istokloader_ui.exe
+C:\Maildisk\isbk-src\src - копия\block_UI\bin\Release\istokloader_ui.exe.config
+C:\Maildisk\isbk-src\src - копия\Modules\modAtec\bin\Release\COTES.ISTOK.Loader.Modules.Atec.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Release\COTES.ISTOK.Loader.Modules.Fb.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Release\FirebirdSql.Data.FirebirdClient.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modMHT\bin\Release\COTES.ISTOK.Loader.Modules.MHT.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modOpc\bin\Release\COTES.ISTOK.Loader.Modules.Opc.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Release\COTES.ISTOK.Loader.Modules.Random.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modSql\bin\Release\COTES.ISTOK.Loader.Modules.Sql.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modTornado\bin\Release\COTES.ISTOK.Loader.Modules.Tornado.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modVzlet\bin\Release\COTES.ISTOK.Loader.Modules.Vzlet.dll
+../../DLLs/MimeTex.dll
+../../Modules/modOpc/Reference/OpcNetApi.dll
+../../Modules/modOpc/Reference/OpcNetApi.Com.dll
+C:\Maildisk\isbk-src\src - копия\GlobSvc\bin\Release\istoksrv.exe.config
+C:\Maildisk\isbk-src\src - копия\Calc\bin\Release\COTES.ISTOK.Calc.dll
+C:\Maildisk\isbk-src\src - копия\CommonLib\bin\Release\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\GlobSvc\bin\Release\EntityFramework.dll
+../../DLLs/FastReport/FastReport.dll
+../../DLLs/FastReport/FastReport.Bars.dll
+../../DLLs/FastReport/FastReport.Editor.dll
+C:\Maildisk\isbk-src\src - копия\GlobSvc\bin\Release\NLog.dll
+C:\Maildisk\isbk-src\src - копия\GlobSvc\NLog.config
+../../DLLs/DocumentFormat.OpenXml.dll
+C:\Maildisk\isbk-src\src - копия\ParameterReceiverExtension\bin\Release\ParameterReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\ISTOKReceiverExtension\bin\Release\ISTOKReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\GlobSvc\bin\Release\istoksrv.exe
+C:\Maildisk\isbk-src\src - копия\Assignment\bin\Release\COTES.ISTOK.Server.Core.dll
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Release\COTES.ISTOK.Server.Data.dll
+C:\Maildisk\isbk-src\src - копия\global_UI\bin\Release\istoksrv_ui.exe
+C:\Maildisk\isbk-src\src - копия\Client\bin\Release\istokclient.exe
+C:\Maildisk\isbk-src\src - копия\Client\bin\Release\istokclient.exe.config
+C:\Maildisk\isbk-src\src - копия\Client\bin\Release\System.Runtime.dll
+C:\Maildisk\isbk-src\src - копия\Client\bin\Release\System.Threading.Tasks.dll
+C:\Maildisk\isbk-src\src - копия\Client\bin\Release\Microsoft.Threading.Tasks.dll
+C:\Maildisk\isbk-src\src - копия\Client\bin\Release\Microsoft.Threading.Tasks.Extensions.dll
+C:\Maildisk\isbk-src\src - копия\Client\bin\Release\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Maildisk\isbk-src\src - копия\Calc\bin\Release\COTES.ISTOK.Calc.dll
+C:\Maildisk\isbk-src\src - копия\CommonLib\bin\Release\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\ClientCore\bin\Release\COTES.ISTOK.Client.Core.dll
+C:\Maildisk\isbk-src\src - копия\Client\bin\Release\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Client\NLog.config
+../../DLLs/DocumentFormat.OpenXml.dll
+C:\Maildisk\isbk-src\src - копия\ASCommon\bin\Release\COTES.ISTOK.Server.Data.dll
+../../DLLs/ZedGraph.dll

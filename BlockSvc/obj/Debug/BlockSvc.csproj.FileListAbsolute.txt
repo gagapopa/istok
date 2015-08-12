@@ -32,3 +32,6 @@ C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\COTES.ISTOK.Server.Data
 C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\ISTOKReceiverExtension.pdb
 C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\ParameterReceiverExtension.pdb
 C:\Maildisk\isbk-src\src - копия\BlockSvc\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\BlockSvc\bin\x86\Debug\istokloader.exe.config
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\BlockSvc\obj\Debug\istokloader.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\BlockSvc\obj\Debug\istokloader.pdb

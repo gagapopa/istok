@@ -1,0 +1,10 @@
+C:\Maildisk\isbk-src\src - копия\Modules\modMHT\bin\Release\COTES.ISTOK.Loader.Modules.MHT.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modMHT\bin\Release\COTES.ISTOK.Loader.Modules.MHT.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modMHT\bin\Release\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modMHT\bin\Release\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modMHT\bin\Release\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modMHT\bin\Release\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modMHT\bin\Release\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modMHT\bin\Release\NLog.xml
+C:\Maildisk\isbk-src\src - копия\Modules\modMHT\obj\Release\COTES.ISTOK.Loader.Modules.MHT.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modMHT\obj\Release\COTES.ISTOK.Loader.Modules.MHT.pdb

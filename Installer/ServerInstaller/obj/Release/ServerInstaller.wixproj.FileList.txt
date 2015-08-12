@@ -1,0 +1,6 @@
+C:\Maildisk\isbk-src\src - копия\Installer\ServerInstaller\bin\Release\ru-RU\ISTOKServer.msi
+C:\Maildisk\isbk-src\src - копия\Installer\ServerInstaller\bin\Release\ru-RU\ISTOKServer.wixpdb
+obj\Release\Product.wixobj
+obj\Release\ServerInstaller.wixproj.BindContentsFileListru-RU.txt
+obj\Release\ServerInstaller.wixproj.BindOutputsFileListru-RU.txt
+obj\Release\ServerInstaller.wixproj.BindBuiltOutputsFileListru-RU.txt

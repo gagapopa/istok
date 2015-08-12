@@ -1,0 +1,7 @@
+C:\Maildisk\isbk-src\src - копия\ParameterReceiverExtension\bin\Release\ParameterReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\ParameterReceiverExtension\bin\Release\ParameterReceiverExtension.pdb
+C:\Maildisk\isbk-src\src - копия\ParameterReceiverExtension\bin\Release\NLog.dll
+C:\Maildisk\isbk-src\src - копия\ParameterReceiverExtension\bin\Release\NLog.xml
+C:\Maildisk\isbk-src\src - копия\ParameterReceiverExtension\obj\Release\ParameterReceiverExtension.csprojResolveAssemblyReference.cache
+C:\Maildisk\isbk-src\src - копия\ParameterReceiverExtension\obj\Release\ParameterReceiverExtension.dll
+C:\Maildisk\isbk-src\src - копия\ParameterReceiverExtension\obj\Release\ParameterReceiverExtension.pdb

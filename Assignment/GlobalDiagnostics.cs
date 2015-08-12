@@ -129,6 +129,10 @@ namespace COTES.ISTOK.Assignment.Gdiag
 		                serviceHost.Open();
 		                blockproxyDictionary.Add(block_id,serviceHost);
 	                    }
+            	if(diag == null && blockproxyDictionary.ContainsKey(block_id)) {
+            		blockproxyDictionary[block_id].Abort();
+            		blockproxyDictionary.Remove(block_id);
+            	}
             } catch (SocketException) { }
 //            foreach (var item in blockProxy.Blocks)
 //                if (item.Idnum == block_id)

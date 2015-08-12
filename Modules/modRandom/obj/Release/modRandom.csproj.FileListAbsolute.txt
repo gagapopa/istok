@@ -1,0 +1,10 @@
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Release\COTES.ISTOK.Loader.Modules.Random.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Release\COTES.ISTOK.Loader.Modules.Random.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Release\COTES.ISTOK.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Release\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Release\NLog.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Release\COTES.ISTOK.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Release\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\bin\Release\NLog.xml
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\obj\Release\COTES.ISTOK.Loader.Modules.Random.dll
+C:\Maildisk\isbk-src\src - копия\Modules\modRandom\obj\Release\COTES.ISTOK.Loader.Modules.Random.pdb

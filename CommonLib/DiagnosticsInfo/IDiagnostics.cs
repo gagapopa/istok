@@ -6,7 +6,7 @@ using System.Runtime.Serialization;
 
 namespace COTES.ISTOK.DiagnosticsInfo
 {
-	[ServiceContract]
+	[ServiceContract(SessionMode = SessionMode.Required)]
 	[ServiceKnownType("GetFiagTypes",typeof(HelperForDiagnosticType))]	
 	//[ServiceKnownType(typeof(Diagnostics))]
     public interface IDiagnostics : ITestConnection<Object>
