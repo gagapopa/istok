@@ -39,3 +39,16 @@ C:\Maildisk\isbk-src\src - копия\Modules\modFb\bin\Debug\NLog.xml
 C:\Maildisk\isbk-src\src - копия\Modules\modFb\obj\Debug\modFb.csprojResolveAssemblyReference.cache
 C:\Maildisk\isbk-src\src - копия\Modules\modFb\obj\Debug\COTES.ISTOK.Loader.Modules.Fb.dll
 C:\Maildisk\isbk-src\src - копия\Modules\modFb\obj\Debug\COTES.ISTOK.Loader.Modules.Fb.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Fb.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Fb.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modFb\bin\Debug\COTES.ISTOK.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modFb\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modFb\bin\Debug\NLog.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modFb\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modFb\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modFb\bin\Debug\FirebirdSql.Data.FirebirdClient.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modFb\bin\Debug\NLog.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modFb\obj\Debug\modFb.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modFb\obj\Debug\COTES.ISTOK.Loader.Modules.Fb.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modFb\obj\Debug\COTES.ISTOK.Loader.Modules.Fb.pdb

@@ -19,3 +19,13 @@ C:\Maildisk\isbk-src\src - копия\ConfigConvertor\bin\Debug\NLog.xml
 C:\Maildisk\isbk-src\src - копия\ConfigConvertor\obj\Debug\ConfigConvertor.csprojResolveAssemblyReference.cache
 C:\Maildisk\isbk-src\src - копия\ConfigConvertor\obj\Debug\ConfigConvertor.exe
 C:\Maildisk\isbk-src\src - копия\ConfigConvertor\obj\Debug\ConfigConvertor.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ConfigConvertor\bin\Debug\ConfigConvertor.exe.config
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ConfigConvertor\bin\Debug\ConfigConvertor.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ConfigConvertor\bin\Debug\ConfigConvertor.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ConfigConvertor\bin\Debug\COTES.ISTOK.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ConfigConvertor\bin\Debug\NLog.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ConfigConvertor\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ConfigConvertor\bin\Debug\NLog.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ConfigConvertor\obj\Debug\ConfigConvertor.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ConfigConvertor\obj\Debug\ConfigConvertor.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ConfigConvertor\obj\Debug\ConfigConvertor.pdb

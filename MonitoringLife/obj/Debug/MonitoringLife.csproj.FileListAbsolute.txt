@@ -11,3 +11,9 @@ C:\Maildisk\isbk-src\src - копия\MonitoringLife\bin\Debug\MonitoringLife.pd
 C:\Maildisk\isbk-src\src - копия\MonitoringLife\obj\Debug\MonitoringLife.csprojResolveAssemblyReference.cache
 C:\Maildisk\isbk-src\src - копия\MonitoringLife\obj\Debug\MonitoringLife.dll
 C:\Maildisk\isbk-src\src - копия\MonitoringLife\obj\Debug\MonitoringLife.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\MonitoringLife\bin\Debug\MonitoringLife.dll.config
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\MonitoringLife\bin\Debug\MonitoringLife.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\MonitoringLife\bin\Debug\MonitoringLife.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\MonitoringLife\obj\Debug\MonitoringLife.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\MonitoringLife\obj\Debug\MonitoringLife.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\MonitoringLife\obj\Debug\MonitoringLife.pdb

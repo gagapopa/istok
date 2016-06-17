@@ -40,3 +40,15 @@ C:\Maildisk\isbk-src\src - копия\LoadModule\bin\Debug\ru\Microsoft.SqlServe
 C:\Maildisk\isbk-src\src - копия\LoadModule\obj\Debug\LoadModule.csprojResolveAssemblyReference.cache
 C:\Maildisk\isbk-src\src - копия\LoadModule\obj\Debug\COTES.ISTOK.Loader.Core.dll
 C:\Maildisk\isbk-src\src - копия\LoadModule\obj\Debug\COTES.ISTOK.Loader.Core.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\LoadModule\bin\Debug\COTES.ISTOK.Loader.Core.dll.config
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\LoadModule\bin\Debug\COTES.ISTOK.Loader.Core.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\LoadModule\bin\Debug\COTES.ISTOK.Loader.Core.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\LoadModule\bin\Debug\COTES.ISTOK.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\LoadModule\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\LoadModule\bin\Debug\NLog.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\LoadModule\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\LoadModule\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\LoadModule\bin\Debug\NLog.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\LoadModule\obj\Debug\LoadModule.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\LoadModule\obj\Debug\COTES.ISTOK.Loader.Core.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\LoadModule\obj\Debug\COTES.ISTOK.Loader.Core.pdb

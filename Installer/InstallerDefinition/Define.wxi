@@ -76,8 +76,6 @@
   <?define ModOpcTargetPath                       = "$(var.modOpc.TargetPath)"?>
   <?define ModRandomFileName                      = "$(var.modRandom.TargetFileName)"?>
   <?define ModRandomTargetPath                    = "$(var.modRandom.TargetPath)"?>
-  <?define ModSqlFileName                         = "$(var.modSql.TargetFileName)"?>
-  <?define ModSqlTargetPath                       = "$(var.modSql.TargetPath)"?>
   <?define ModTornadoFileName                     = "$(var.modTornado.TargetFileName)"?>
   <?define ModTornadoTargetPath                   = "$(var.modTornado.TargetPath)"?>
   <?define ModVzletFileName                       = "$(var.modVzlet.TargetFileName)"?>

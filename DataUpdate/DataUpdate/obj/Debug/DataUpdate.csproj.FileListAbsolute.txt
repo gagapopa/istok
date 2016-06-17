@@ -42,3 +42,26 @@ C:\Maildisk\isbk-src\src - копия\DataUpdate\DataUpdate\obj\Debug\COTES.ISTO
 C:\Maildisk\isbk-src\src - копия\DataUpdate\DataUpdate\obj\Debug\DataUpdate.csproj.GenerateResource.Cache
 C:\Maildisk\isbk-src\src - копия\DataUpdate\DataUpdate\obj\Debug\DataUpdate.exe
 C:\Maildisk\isbk-src\src - копия\DataUpdate\DataUpdate\obj\Debug\DataUpdate.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\bin\Debug\DataUpdate.exe.config
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\bin\Debug\DataUpdate.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\bin\Debug\DataUpdate.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\bin\Debug\Assignment.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\bin\Debug\COTES.ISTOK.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\bin\Debug\COTES.ISTOK.Server.Data.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\bin\Debug\NLog.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\bin\Debug\COTES.ISTOK.Calc.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\bin\Debug\FastReport.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\bin\Debug\FastReport.Bars.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\bin\Debug\FastReport.Editor.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\bin\Debug\COTES.ISTOK.Server.Data.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\bin\Debug\Assignment.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\bin\Debug\NLog.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\bin\Debug\COTES.ISTOK.Calc.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\bin\Debug\FastReport.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\obj\Debug\DataUpdate.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\obj\Debug\COTES.ISTOKDataUpdate.DataUpdateForm.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\obj\Debug\COTES.ISTOKDataUpdate.Properties.Resources.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\obj\Debug\DataUpdate.csproj.GenerateResource.Cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\obj\Debug\DataUpdate.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\DataUpdate\DataUpdate\obj\Debug\DataUpdate.pdb

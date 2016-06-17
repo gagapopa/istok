@@ -36,3 +36,20 @@ C:\Maildisk\isbk-src\src - копия\PackageViewer\obj\Debug\COTES.ISTOK.Proper
 C:\Maildisk\isbk-src\src - копия\PackageViewer\obj\Debug\PackageViewer.csproj.GenerateResource.Cache
 C:\Maildisk\isbk-src\src - копия\PackageViewer\obj\Debug\PackageViewer.exe
 C:\Maildisk\isbk-src\src - копия\PackageViewer\obj\Debug\PackageViewer.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\PackageViewer\bin\Debug\PackageViewer.exe.config
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\PackageViewer\bin\Debug\PackageViewer.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\PackageViewer\bin\Debug\PackageViewer.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\PackageViewer\bin\Debug\COTES.ISTOK.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\PackageViewer\bin\Debug\COTES.ISTOK.Loader.Core.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\PackageViewer\bin\Debug\NLog.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\PackageViewer\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\PackageViewer\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\PackageViewer\bin\Debug\COTES.ISTOK.Loader.Core.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\PackageViewer\bin\Debug\NLog.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\PackageViewer\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\PackageViewer\obj\Debug\PackageViewer.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\PackageViewer\obj\Debug\COTES.ISTOK.Form1.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\PackageViewer\obj\Debug\COTES.ISTOK.Properties.Resources.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\PackageViewer\obj\Debug\PackageViewer.csproj.GenerateResource.Cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\PackageViewer\obj\Debug\PackageViewer.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\PackageViewer\obj\Debug\PackageViewer.pdb

@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
-using System.Data;
-using System.Data.SqlClient;
-using COTES.ISTOK.Modules;
-using COTES.ISTOK;
 
-namespace COTES.ISTOK.Modules.modSql
+namespace COTES.ISTOK.Modules.Registrator
 {
     class DbTable
     {

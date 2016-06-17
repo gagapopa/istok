@@ -62,3 +62,36 @@ C:\Maildisk\isbk-src\src - копия\global_UI\obj\Debug\COTES.ISTOK.Assignment
 C:\Maildisk\isbk-src\src - копия\global_UI\obj\Debug\global_UI.csproj.GenerateResource.Cache
 C:\Maildisk\isbk-src\src - копия\global_UI\obj\Debug\istoksrv_ui.exe
 C:\Maildisk\isbk-src\src - копия\global_UI\obj\Debug\istoksrv_ui.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\istoksrv_ui.exe.config
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\istoksrv_ui.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\istoksrv_ui.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\COTES.ISTOK.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\COTES.ISTOK.Server.Core.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\NLog.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\EntityFramework.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\COTES.ISTOK.Calc.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\COTES.ISTOK.Server.Data.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\ISTOKReceiverExtension.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\ParameterReceiverExtension.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\FastReport.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\FastReport.Bars.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\FastReport.Editor.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\COTES.ISTOK.Server.Core.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\NLog.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\EntityFramework.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\COTES.ISTOK.Calc.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\COTES.ISTOK.Server.Data.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\ISTOKReceiverExtension.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\ParameterReceiverExtension.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\FastReport.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\obj\Debug\global_UI.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\obj\Debug\COTES.ISTOK.Assignment.UI.CreateDBForm.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\obj\Debug\COTES.ISTOK.Assignment.UI.EnterRegisterKeyForm.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\obj\Debug\COTES.ISTOK.Assignment.UI.Properties.Resources.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\obj\Debug\COTES.ISTOK.Assignment.UI.SettingForm.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\obj\Debug\global_UI.csproj.GenerateResource.Cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\obj\Debug\istoksrv_ui.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\global_UI\obj\Debug\istoksrv_ui.pdb

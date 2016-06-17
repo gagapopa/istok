@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Text;
+using System.Linq;
 using NLog;
 
-namespace COTES.ISTOK.Modules.modSql
+namespace COTES.ISTOK.Modules.Registrator
 {
     /// <summary>
     /// Модуль сбора из SQL
     /// </summary>
-    public class SqlDataLoader : IDataLoader
+    public class Sql2DataLoader : IDataLoader
     {
         Logger log = LogManager.GetCurrentClassLogger();
         String channelLogPrefix = String.Empty;
@@ -21,11 +21,9 @@ namespace COTES.ISTOK.Modules.modSql
         private string m_database;
         private string m_username;
         private string m_password;
-        private string queryWhere;
+        
         private string queryTagNames;
-        private string dateFormat;
-
-        private DbTable quality;
+        
         private DbTable tagNames;
         private DbValuesTable tagValues;
 
@@ -82,29 +80,6 @@ namespace COTES.ISTOK.Modules.modSql
             m_username = channelInfo[SqlDataLoaderFactory.UsernameProperty];
             m_password = channelInfo[SqlDataLoaderFactory.PasswordProperty];
 
-            tagNames = new DbTable();
-            tagNames.Name = channelInfo[SqlDataLoaderFactory.TagNamesTableProperty];
-            tagNames.FieldID = channelInfo[SqlDataLoaderFactory.TagNamesFieldIdProperty];
-            tagNames.FieldName = channelInfo[SqlDataLoaderFactory.TagNamesFieldNameProperty];
-            tagValues = new DbValuesTable();
-            tagValues.Name = channelInfo[SqlDataLoaderFactory.TagValuesTableProperty];
-            tagValues.FieldID = channelInfo[SqlDataLoaderFactory.TagValuesFieldIdProperty];
-            tagValues.FieldName = channelInfo[SqlDataLoaderFactory.TagValuesFieldNameProperty];
-            tagValues.FieldTagID = channelInfo[SqlDataLoaderFactory.TagValuesFieldTagIdProperty];
-            tagValues.FieldTagName = channelInfo[SqlDataLoaderFactory.TagValuesFieldTagNameProperty];
-            tagValues.FieldQualityName = channelInfo[SqlDataLoaderFactory.TagValuesFieldQualityNameProperty];
-            tagValues.FieldQualityID = channelInfo[SqlDataLoaderFactory.TagValuesFieldQualityIdProperty];
-            tagValues.FieldTimeName = channelInfo[SqlDataLoaderFactory.TagValuesFieldTimeNameProperty];
-
-            dateFormat = channelInfo[SqlDataLoaderFactory.DateFormatProperty];
-            if (string.IsNullOrEmpty(dateFormat)) dateFormat = "MM.dd.yyyy HH:mm:ss";
-
-            quality = new DbTable();
-            quality.Name = channelInfo[SqlDataLoaderFactory.QualityTableProperty];
-            quality.FieldID = channelInfo[SqlDataLoaderFactory.QualityFieldIdProperty];
-            quality.FieldName = channelInfo[SqlDataLoaderFactory.QualityFieldNameProperty];
-
-            queryWhere = channelInfo[SqlDataLoaderFactory.QueryWhereProperty];
             queryTagNames = channelInfo[SqlDataLoaderFactory.QueryTagNamesProperty];
 
             parameters = new List<ParameterItem>(channelInfo.Parameters);
@@ -186,27 +161,26 @@ namespace COTES.ISTOK.Modules.modSql
             log.Trace(channelLogPrefix + "Запрос архивных данных за [{0}; {1}].", startTime, endTime);
 
             Connect();
+            m_command.CommandText = "SELECT ID_MEASUREMENT_VALUE, VALUE ,[DATETIME] from NTEC4_INTEGRA ('" + startTime.ToString("yyyyMMdd") + "') ";
+            //m_command.CommandText = "SELECT " + tagValues.FieldTag;
+            //m_command.CommandText += "," + tagValues.Field;
+            //m_command.CommandText += "," + tagValues.FieldTime;
+            //tmp = tagValues.FieldQuality;
+            //if (!string.IsNullOrEmpty(tmp)) m_command.CommandText += "," + tmp;
 
-            m_command.CommandText = "SELECT " + tagValues.FieldTag;
-            m_command.CommandText += "," + tagValues.Field;
-            m_command.CommandText += "," + tagValues.FieldTime;
-            tmp = tagValues.FieldQuality;
-            if (!string.IsNullOrEmpty(tmp)) m_command.CommandText += "," + tmp;
+            //m_command.CommandText += " FROM " + tagValues.Name;
+            //m_command.CommandText += " WHERE (" + FormatTrend(tagValues.FieldTagName,
+            //    tagValues) + ")";
+            ////m_command.CommandText += " AND " + tagValues.FieldTime + ">='" + startTime.ToString(dateFormat) + "'";
+            ////m_command.CommandText += " AND " + tagValues.FieldTime + "<='" + endTime.ToString(dateFormat) + "'";
+            //String isoDateFormat = "yyyy-MM-ddTHH:mm:ss";
+            //m_command.CommandText += " AND " + tagValues.FieldTime + ">='" + startTime.ToString(isoDateFormat) + "'";
+            //m_command.CommandText += " AND " + tagValues.FieldTime + "<='" + endTime.ToString(isoDateFormat) + "'";
 
-            m_command.CommandText += " FROM " + tagValues.Name;
-            m_command.CommandText += " WHERE (" + FormatTrend(tagValues.FieldTagName,
-                tagValues) + ")";
-            //m_command.CommandText += " AND " + tagValues.FieldTime + ">='" + startTime.ToString(dateFormat) + "'";
-            //m_command.CommandText += " AND " + tagValues.FieldTime + "<='" + endTime.ToString(dateFormat) + "'";
-            String isoDateFormat = "yyyy-MM-ddTHH:mm:ss";
-            m_command.CommandText += " AND " + tagValues.FieldTime + ">='" + startTime.ToString(isoDateFormat) + "'";
-            m_command.CommandText += " AND " + tagValues.FieldTime + "<='" + endTime.ToString(isoDateFormat) + "'";
-
-            if (!string.IsNullOrEmpty(queryWhere))
-            {
-                m_command.CommandText += " AND " + queryWhere;
-            }
-
+            //if (!string.IsNullOrEmpty(queryWhere))
+            //{
+            //    m_command.CommandText += " AND " + queryWhere;
+            //}
             m_command.CommandTimeout = 60000;
 
             try
@@ -225,15 +199,7 @@ namespace COTES.ISTOK.Modules.modSql
 
                     String code = dataReader[0].ToString();
 
-                    ParameterItem parameter = null;
-                    for (int i = 0; i < parameters.Count; i++)
-                    {
-                        if (parameters[i][CommonProperty.ParameterCodeProperty] == code)
-                        {
-                            parameter = parameters[i];
-                            break;
-                        }
-                    }
+                    ParameterItem parameter = parameters.FirstOrDefault(t => t[CommonProperty.ParameterCodeProperty] == code);
 
                     if (parameter != null)
                     {
@@ -242,11 +208,13 @@ namespace COTES.ISTOK.Modules.modSql
                             valuesDictionary[parameter] = valuesList = new List<ParamValueItem>();
                         }
 
-                        ParamValueItem value = new ParamValueItem();
+                        ParamValueItem value = new ParamValueItem
+                        {
+                            Value = Convert.ToDouble(dataReader[1]),
+                            Time = (DateTime) dataReader[2],
+                            Quality = Quality.Good
+                        };
 
-                        value.Value = Convert.ToDouble(dataReader[1]);
-                        value.Time = (DateTime)dataReader[2];
-                        value.Quality = Quality.Good;
 
 
                         if (dataReader.FieldCount > 3)

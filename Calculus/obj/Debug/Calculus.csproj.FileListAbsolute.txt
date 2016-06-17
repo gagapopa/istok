@@ -10,3 +10,7 @@ C:\Maildisk\isbk-src\src - копия\Calculus\bin\Debug\Calculus.pdb
 C:\Maildisk\isbk-src\src - копия\Calculus\obj\Debug\Calculus.csprojResolveAssemblyReference.cache
 C:\Maildisk\isbk-src\src - копия\Calculus\obj\Debug\Calculus.dll
 C:\Maildisk\isbk-src\src - копия\Calculus\obj\Debug\Calculus.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Calculus\bin\Debug\Calculus.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Calculus\bin\Debug\Calculus.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Calculus\obj\Debug\Calculus.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Calculus\obj\Debug\Calculus.pdb

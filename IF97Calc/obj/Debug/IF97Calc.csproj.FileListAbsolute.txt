@@ -22,3 +22,14 @@ C:\Maildisk\isbk-src\src - копия\IF97Calc\obj\Debug\IF97Calc.Properties.Res
 C:\Maildisk\isbk-src\src - копия\IF97Calc\obj\Debug\IF97Calc.csproj.GenerateResource.Cache
 C:\Maildisk\isbk-src\src - копия\IF97Calc\obj\Debug\IF97Calc.exe
 C:\Maildisk\isbk-src\src - копия\IF97Calc\obj\Debug\IF97Calc.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IF97Calc\bin\Debug\IF97Calc.exe.config
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IF97Calc\bin\Debug\IF97Calc.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IF97Calc\bin\Debug\IF97Calc.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IF97Calc\bin\Debug\IF97Lib.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IF97Calc\bin\Debug\IF97Lib.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IF97Calc\obj\Debug\IF97Calc.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IF97Calc\obj\Debug\IF97Calc.IF97CalcForm.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IF97Calc\obj\Debug\IF97Calc.Properties.Resources.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IF97Calc\obj\Debug\IF97Calc.csproj.GenerateResource.Cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IF97Calc\obj\Debug\IF97Calc.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IF97Calc\obj\Debug\IF97Calc.pdb

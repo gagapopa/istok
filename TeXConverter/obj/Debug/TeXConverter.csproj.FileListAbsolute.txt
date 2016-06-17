@@ -14,3 +14,10 @@ C:\Maildisk\isbk-src\src - копия\TeXConverter\bin\Debug\TeXConverter.pdb
 C:\Maildisk\isbk-src\src - копия\TeXConverter\obj\Debug\TeXConverter.csprojResolveAssemblyReference.cache
 C:\Maildisk\isbk-src\src - копия\TeXConverter\obj\Debug\TeXConverter.exe
 C:\Maildisk\isbk-src\src - копия\TeXConverter\obj\Debug\TeXConverter.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\TeXConverter\bin\Debug\MimeTeX.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\TeXConverter\bin\Debug\TeXConverter.exe.config
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\TeXConverter\bin\Debug\TeXConverter.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\TeXConverter\bin\Debug\TeXConverter.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\TeXConverter\obj\Debug\TeXConverter.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\TeXConverter\obj\Debug\TeXConverter.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\TeXConverter\obj\Debug\TeXConverter.pdb

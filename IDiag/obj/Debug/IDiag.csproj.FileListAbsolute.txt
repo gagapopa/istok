@@ -24,3 +24,15 @@ C:\Maildisk\isbk-src\src - копия\IDiag\obj\Debug\COTES.ISTOK.Monitoring.Pro
 C:\Maildisk\isbk-src\src - копия\IDiag\obj\Debug\IDiag.csproj.GenerateResource.Cache
 C:\Maildisk\isbk-src\src - копия\IDiag\obj\Debug\COTES.ISTOK.Diag.dll
 C:\Maildisk\isbk-src\src - копия\IDiag\obj\Debug\COTES.ISTOK.Diag.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IDiag\bin\Debug\COTES.ISTOK.Diag.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IDiag\bin\Debug\COTES.ISTOK.Diag.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IDiag\bin\Debug\COTES.ISTOK.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IDiag\bin\Debug\NLog.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IDiag\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IDiag\bin\Debug\NLog.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IDiag\obj\Debug\IDiag.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IDiag\obj\Debug\COTES.ISTOK.Monitoring.ChannelMonitoringControl.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IDiag\obj\Debug\COTES.ISTOK.Monitoring.PropertyGridForm.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IDiag\obj\Debug\IDiag.csproj.GenerateResource.Cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IDiag\obj\Debug\COTES.ISTOK.Diag.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\IDiag\obj\Debug\COTES.ISTOK.Diag.pdb

@@ -21,3 +21,9 @@ C:\Maildisk\isbk-src\src - копия\CommonLib\bin\Debug\NLog.xml
 C:\Maildisk\isbk-src\src - копия\CommonLib\obj\Debug\CommonLib.csprojResolveAssemblyReference.cache
 C:\Maildisk\isbk-src\src - копия\CommonLib\obj\Debug\COTES.ISTOK.Common.dll
 C:\Maildisk\isbk-src\src - копия\CommonLib\obj\Debug\COTES.ISTOK.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\CommonLib\bin\Debug\COTES.ISTOK.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\CommonLib\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\CommonLib\bin\Debug\NLog.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\CommonLib\bin\Debug\NLog.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\CommonLib\obj\Debug\COTES.ISTOK.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\CommonLib\obj\Debug\COTES.ISTOK.Common.pdb

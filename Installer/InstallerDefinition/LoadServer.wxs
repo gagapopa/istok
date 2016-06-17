@@ -186,12 +186,12 @@
                 Name="$(var.ModRandomFileName)"
                 Source="$(var.ModRandomTargetPath)" />
         </Component>
-        <!--Модуль сбора из таблиц SQL-->
+        <!--Модуль сбора из таблиц SQL--><!--
         <Component Id="LoadModule.Sql" Guid="EC6561D5-A3CB-4b43-B812-038F2766082F">
           <File Id="LoadModule.Sql"
                 Name="$(var.ModSqlFileName)"
                 Source="$(var.ModSqlTargetPath)" />
-        </Component>
+        </Component>-->
         <!--Модуль сбора из БД АСУ ТП МСТ-->
         <Component Id="LoadModule.Tornado" Guid="25F30834-6F03-4131-90F6-1072A797F396">
           <File Id="LoadModule.Tornado"
@@ -302,7 +302,7 @@
         <Condition Level="1">LoadModuleRandomEnabled = "yes"</Condition>
         <ComponentRef Id="LoadModule.Random" />
       </Feature>
-      <!--Модуль сбора из таблиц SQL-->
+      <!--Модуль сбора из таблиц SQL--><!--
       <Feature Id="LoadModule.Sql"  
                Title="!(loc.LoadModuleSQLFeatureName)"
                Description="!(loc.LoadModuleSQLFeatureDescription)"
@@ -310,7 +310,7 @@
                InstallDefault="followParent">
         <Condition Level="1">LoadModuleSQLEnabled = "yes"</Condition>
         <ComponentRef Id="LoadModule.Sql" />
-      </Feature>
+      </Feature>-->
       <!--Модуль сбора из БД АСУ ТП МСТ-->
       <Feature Id="LoadModule.Tornado" 
                Title="!(loc.LoadModuleTornadoDBFeatureName)"

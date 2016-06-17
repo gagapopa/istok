@@ -37,3 +37,20 @@ C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\bin\Debug\ru\Micros
 C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\obj\Debug\LoadModule.Tests.csprojResolveAssemblyReference.cache
 C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\obj\Debug\LoadModule.Tests.dll
 C:\Maildisk\isbk-src\src - копия\Tests\LoadModule.Tests\obj\Debug\LoadModule.Tests.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\LoadModule.Tests\bin\Debug\LoadModule.Tests.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\LoadModule.Tests\bin\Debug\LoadModule.Tests.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Loader.Core.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\LoadModule.Tests\bin\Debug\Moq.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\LoadModule.Tests\bin\Debug\nunit.framework.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\LoadModule.Tests\bin\Debug\NLog.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Loader.Core.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\LoadModule.Tests\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\LoadModule.Tests\bin\Debug\nunit.framework.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\LoadModule.Tests\bin\Debug\Moq.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\LoadModule.Tests\bin\Debug\NLog.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\LoadModule.Tests\obj\Debug\LoadModule.Tests.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\LoadModule.Tests\obj\Debug\LoadModule.Tests.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\LoadModule.Tests\obj\Debug\LoadModule.Tests.pdb

@@ -21,3 +21,14 @@ C:\Maildisk\isbk-src\src - копия\KeyGenerator\obj\Debug\KeyGenerator.csproj
 C:\Maildisk\isbk-src\src - копия\KeyGenerator\obj\Debug\KeyGenerator.exe
 C:\Maildisk\isbk-src\src - копия\KeyGenerator\obj\Debug\KeyGenerator.pdb
 C:\Maildisk\isbk-src\src - копия\KeyGenerator\obj\Debug\KeyGenerator.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\KeyGenerator\bin\Debug\KeyGenerator.exe.config
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\KeyGenerator\bin\Debug\KeyGenerator.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\KeyGenerator\bin\Debug\KeyGenerator.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\KeyGenerator\bin\Debug\NLog.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\KeyGenerator\bin\Debug\NLog.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\KeyGenerator\obj\Debug\KeyGenerator.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\KeyGenerator\obj\Debug\COTES.ISTOK.KeyGenerator.KeyGeneratorForm.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\KeyGenerator\obj\Debug\COTES.ISTOK.KeyGenerator.Properties.Resources.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\KeyGenerator\obj\Debug\KeyGenerator.csproj.GenerateResource.Cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\KeyGenerator\obj\Debug\KeyGenerator.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\KeyGenerator\obj\Debug\KeyGenerator.pdb

@@ -50,3 +50,30 @@ C:\Maildisk\isbk-src\src - копия\Assignment\obj\Debug\Assignment.csprojReso
 C:\Maildisk\isbk-src\src - копия\Assignment\obj\Debug\Assignment.csproj.ResolveComReference.cache
 C:\Maildisk\isbk-src\src - копия\Assignment\obj\Debug\COTES.ISTOK.Server.Core.dll
 C:\Maildisk\isbk-src\src - копия\Assignment\obj\Debug\COTES.ISTOK.Server.Core.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\COTES.ISTOK.Server.Core.dll.config
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\COTES.ISTOK.Server.Core.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\COTES.ISTOK.Server.Core.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\COTES.ISTOK.Calc.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\COTES.ISTOK.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\COTES.ISTOK.Server.Data.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\EntityFramework.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\FastReport.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\ISTOKReceiverExtension.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\NLog.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\ParameterReceiverExtension.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\FastReport.Bars.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\FastReport.Editor.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\COTES.ISTOK.Server.Data.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\COTES.ISTOK.Calc.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\ISTOKReceiverExtension.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\ParameterReceiverExtension.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\EntityFramework.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\FastReport.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\bin\Debug\NLog.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\obj\Debug\Assignment.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\obj\Debug\Assignment.csproj.ResolveComReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\obj\Debug\COTES.ISTOK.Server.Core.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Assignment\obj\Debug\COTES.ISTOK.Server.Core.pdb

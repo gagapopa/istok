@@ -31,3 +31,18 @@ C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\bin\Debug\NLog.xml
 C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\obj\Debug\Calc.Tests.csprojResolveAssemblyReference.cache
 C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\obj\Debug\Calc.Tests.dll
 C:\Maildisk\isbk-src\src - копия\Tests\Calc.Tests\obj\Debug\Calc.Tests.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\Calc.Tests\bin\Debug\Calc.Tests.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\Calc.Tests\bin\Debug\Calc.Tests.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\Calc.Tests\bin\Debug\COTES.ISTOK.Calc.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\Calc.Tests\bin\Debug\COTES.ISTOK.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\Calc.Tests\bin\Debug\Moq.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\Calc.Tests\bin\Debug\nunit.framework.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\Calc.Tests\bin\Debug\NLog.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\Calc.Tests\bin\Debug\COTES.ISTOK.Calc.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\Calc.Tests\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\Calc.Tests\bin\Debug\nunit.framework.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\Calc.Tests\bin\Debug\Moq.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\Calc.Tests\bin\Debug\NLog.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\Calc.Tests\obj\Debug\Calc.Tests.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\Calc.Tests\obj\Debug\Calc.Tests.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Tests\Calc.Tests\obj\Debug\Calc.Tests.pdb

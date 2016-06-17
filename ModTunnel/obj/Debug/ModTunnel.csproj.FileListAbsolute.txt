@@ -52,3 +52,29 @@ C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\ru\ModTunnel.resources
 C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\en\ModTunnel.resources.dll
 C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\ModTunnel.exe
 C:\Maildisk\isbk-src\src - копия\ModTunnel\obj\Debug\ModTunnel.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\bin\Debug\ModTunnel.exe.config
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\bin\Debug\ModTunnel.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\bin\Debug\ModTunnel.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\bin\Debug\ru\ModTunnel.resources.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\bin\Debug\en\ModTunnel.resources.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\bin\Debug\COTES.ISTOK.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\bin\Debug\NLog.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\bin\Debug\NLog.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\obj\Debug\ModTunnel.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.ConfigurationForm.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.ModTunnelForm.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.Properties.Resources.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.PropertyGridForm.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.ConfigurationForm.ru.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.ModTunnelForm.ru.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.Properties.Resources.ru.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.Properties.Resources.en.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\obj\Debug\COTES.ISTOK.Modules.Tunnel.PropertyGridForm.ru.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\obj\Debug\ModTunnel.csproj.GenerateResource.Cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\obj\Debug\ru\ModTunnel.resources.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\obj\Debug\en\ModTunnel.resources.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\obj\Debug\ModTunnel.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\ModTunnel\obj\Debug\ModTunnel.pdb

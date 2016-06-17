@@ -1,2 +1,2 @@
-C:\Maildisk\isbk-src\src - копия\Installer\ServerInstaller\bin\Debug\ru-RU\ISTOKServer.msi
-C:\Maildisk\isbk-src\src - копия\Installer\ServerInstaller\bin\Debug\ru-RU\ISTOKServer.wixpdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Installer\ServerInstaller\bin\Debug\ru-RU\ISTOKServer.msi
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Installer\ServerInstaller\bin\Debug\ru-RU\ISTOKServer.wixpdb

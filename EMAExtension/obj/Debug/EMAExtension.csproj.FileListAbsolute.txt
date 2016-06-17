@@ -38,3 +38,24 @@ C:\Maildisk\isbk-src\src - копия\EMAExtension\obj\Debug\COTES.ISTOK.EMA.Pro
 C:\Maildisk\isbk-src\src - копия\EMAExtension\obj\Debug\EMAExtension.csproj.GenerateResource.Cache
 C:\Maildisk\isbk-src\src - копия\EMAExtension\obj\Debug\EMAExtension.dll
 C:\Maildisk\isbk-src\src - копия\EMAExtension\obj\Debug\EMAExtension.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\bin\Debug\EMAExtension.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\bin\Debug\EMAExtension.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\bin\Debug\COTES.ISTOK.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\bin\Debug\COTES.ISTOK.Server.Data.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\bin\Debug\MonitoringLife.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\bin\Debug\NLog.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\bin\Debug\COTES.ISTOK.Calc.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\bin\Debug\FastReport.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\bin\Debug\FastReport.Bars.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\bin\Debug\FastReport.Editor.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\bin\Debug\COTES.ISTOK.Server.Data.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\bin\Debug\MonitoringLife.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\bin\Debug\NLog.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\bin\Debug\COTES.ISTOK.Calc.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\bin\Debug\FastReport.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\obj\Debug\EMAExtension.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\obj\Debug\COTES.ISTOK.EMA.Properties.Resources.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\obj\Debug\EMAExtension.csproj.GenerateResource.Cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\obj\Debug\EMAExtension.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\EMAExtension\obj\Debug\EMAExtension.pdb

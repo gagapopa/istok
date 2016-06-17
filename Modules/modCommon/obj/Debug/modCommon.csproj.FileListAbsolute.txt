@@ -27,3 +27,12 @@ C:\Maildisk\isbk-src\src - копия\Modules\modCommon\bin\Debug\NLog.xml
 C:\Maildisk\isbk-src\src - копия\Modules\modCommon\obj\Debug\modCommon.csprojResolveAssemblyReference.cache
 C:\Maildisk\isbk-src\src - копия\Modules\modCommon\obj\Debug\COTES.ISTOK.Loader.Modules.Common.dll
 C:\Maildisk\isbk-src\src - копия\Modules\modCommon\obj\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modCommon\bin\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modCommon\bin\Debug\COTES.ISTOK.Loader.Modules.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modCommon\bin\Debug\COTES.ISTOK.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modCommon\bin\Debug\NLog.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modCommon\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modCommon\bin\Debug\NLog.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modCommon\obj\Debug\modCommon.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modCommon\obj\Debug\COTES.ISTOK.Loader.Modules.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\Modules\modCommon\obj\Debug\COTES.ISTOK.Loader.Modules.Common.pdb

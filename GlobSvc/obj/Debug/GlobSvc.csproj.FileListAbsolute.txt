@@ -58,3 +58,34 @@ C:\Maildisk\isbk-src\src - копия\GlobSvc\obj\Debug\COTES.ISTOK.Assignment.S
 C:\Maildisk\isbk-src\src - копия\GlobSvc\obj\Debug\GlobSvc.csproj.GenerateResource.Cache
 C:\Maildisk\isbk-src\src - копия\GlobSvc\obj\Debug\istoksrv.exe
 C:\Maildisk\isbk-src\src - копия\GlobSvc\obj\Debug\istoksrv.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\NLog.config
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\istoksrv.exe.config
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\istoksrv.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\istoksrv.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\COTES.ISTOK.Common.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\COTES.ISTOK.Server.Core.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\NLog.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\EntityFramework.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\COTES.ISTOK.Calc.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\COTES.ISTOK.Server.Data.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\ISTOKReceiverExtension.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\ParameterReceiverExtension.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\FastReport.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\FastReport.Bars.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\FastReport.Editor.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\COTES.ISTOK.Server.Core.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\COTES.ISTOK.Common.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\NLog.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\EntityFramework.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\COTES.ISTOK.Calc.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\COTES.ISTOK.Server.Data.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\ISTOKReceiverExtension.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\ParameterReceiverExtension.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\FastReport.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\obj\Debug\GlobSvc.csprojResolveAssemblyReference.cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\obj\Debug\COTES.ISTOK.Assignment.Service.Properties.Resources.resources
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\obj\Debug\GlobSvc.csproj.GenerateResource.Cache
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\obj\Debug\istoksrv.exe
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\GlobSvc\obj\Debug\istoksrv.pdb

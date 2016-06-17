@@ -10,3 +10,7 @@ C:\Maildisk\isbk-src\src - копия\CalculusETO\bin\Debug\IF97Lib.pdb
 C:\Maildisk\isbk-src\src - копия\CalculusETO\obj\Debug\IF97Lib.csprojResolveAssemblyReference.cache
 C:\Maildisk\isbk-src\src - копия\CalculusETO\obj\Debug\IF97Lib.dll
 C:\Maildisk\isbk-src\src - копия\CalculusETO\obj\Debug\IF97Lib.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\CalculusETO\bin\Debug\IF97Lib.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\CalculusETO\bin\Debug\IF97Lib.pdb
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\CalculusETO\obj\Debug\IF97Lib.dll
+C:\Users\tmalyhov\Downloads\src - копия (1)\src - копия\src - копия\CalculusETO\obj\Debug\IF97Lib.pdb

@@ -68,8 +68,7 @@
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(192, 109);
             this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "ISTOK-SBK Ver. x.x.x.xxxx\r\n© JSC E4-COTES\r\n\r\nhttp://www.cotes.ru/666\r\ne-mail: but" +
-                "kov@kf.cotes.ru";
+            this.textBox1.Text = "ISTOK-SBK Ver. x.x.x.xxxx\r\n© JSC E4-COTES\r\ne-mail: cotes@cotes.ru";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // About
